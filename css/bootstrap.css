@@ -3457,7 +3457,7 @@ tbody.collapse.show {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 962px) {
   .navbar-expand-md > .container,
   .navbar-expand-md > .container-fluid {
     padding-right: 0;
@@ -3465,7 +3465,7 @@ tbody.collapse.show {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 963px) {
   .navbar-expand-md {
     -ms-flex-direction: row;
         flex-direction: row;
