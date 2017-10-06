@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>Easy2Train</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Easy2Train</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <!-- SI ES USUARIO USAREMOS ESTA INFO
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Ejercicios <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Convocatorias</a>
+          </li>
+
+        </ul>
+      -->
+      <!-- SI NO ES USUARIO USAREMOS ESTA INFO -->
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Funcionalidades <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active mb-sm-2">
+        <a href="#" class="btn btn-primary btn-primary"><span class="glyphicon glyphicon-plus"></span> Registrarse</a>
+      </ul>
+
+          <form class= "navbar-form form-inline">
+            <div class="form-group">
+              <input type="text" placeholder="Usuario" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Contraseña" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Entrar</button>
+
+        <!--  <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          -->
+
+
+      </div>
+    </nav>
+    <div class="container mt-sm-3">
+  <div class="row">
+
+    <div class="col">
+    <form action"registro.php" method="post" id="registro" accept-charset="UTF-8">
+    <div class="form-group ">
+      <label for="emailRegistro">Email</label>
+      <input type="email" class="form-control" id="emailRegistro" aria-describedby="emailHelp" placeholder="Email">
+      <small id="emailHelp" class="form-text text-muted">Usaremos este correo para enviar las convocatorias</small>
+    </div>
+
+      <div class="row">
+          <div class="form-group col">
+            <label for="nombreRegistro">Nombre</label>
+            <input type="text" class="form-control" id="nombreRegistro" aria-describedby="emailHelp" placeholder="Nombre">
+          </div>
+          <div class="form-group col">
+            <label for="nombreRegistro">Apellido</label>
+            <input type="text" class="form-control" id="apellidoRegistro" aria-describedby="emailHelp" placeholder="Apellido">
+          </div>
+      </div>
+
+
+    <div class="form-group">
+      <label for="contraseñaRegistro">Contraseña</label>
+      <input type="password" class="form-control" id="contraseñaRegistro" placeholder="Contraseña">
+    </div>
+    <button type="submit" name="Submit" value="Submit" class="btn btn-primary">Registrarse</button>
+  </form>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
