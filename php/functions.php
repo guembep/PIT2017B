@@ -1,5 +1,7 @@
 <?php
+	global $db;
 function connectDb(){
+	//Datos de login bbdd
 	$server = "localhost";
 	$user = "root";
 	$password = "toor";
@@ -11,20 +13,31 @@ function connectDb(){
 	    die("La conexión ha fallado, error número " . $db->connect_errno . ": " . $db->connect_error);
 	}
 }
-function createUser($user,$pass,$clubname){
+function createUser($email,$user,$deporte,$pass){
 	//Preparamos la peticion
+	if($db->connect_error){
+	    die("La conexión ha fallado, error número " . $db->connect_errno . ": " . $db->connect_error);
+	}
+	echo $email;
 	echo $user;
+	echo $deporte;
 	echo $pass;
-	echo $clubname;
-	$stmt = $db->prepare("INSERT INTO clubs (user, pass, name) VALUES (?, ?, ?)");
-	$stmt->bind_param('sss',$user1,$pass1,$clubname1);
-	$user1 = $user;
-	$pass1 = $pass;
-	$clubname1 = $clubname;
+	$stmt = $db->prepare("INSERT INTO users (email, user, deporte, pass) VALUES (?, ?, ?, ?)");
+	$stmt->bind_param('ssss',$email,$user,$deporte,$pass);
 	$stmt->execute();
+	$stmt->bind_result($respuesta);
+	echo $respuesta;
 	$stmt->close();	
 }
-function editUser($user,$pass,$clubname){
+function editUser($user,$pass,$email){
+
+}
+function checkLogin(){
+	if(!isset($_SESSION['id'])){
+		return true;
+	}else{
+		return false;
+	}
 
 }
 
