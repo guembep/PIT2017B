@@ -12,11 +12,12 @@
 	echo $user;
 	echo $deporte;
 	echo $pass;
-	$stmt = $db->prepare("INSERT INTO users (email, user, deporte, pass) VALUES (?, ?, ?, ?)");
-	$stmt->bind_param('ssss',$email,$user,$deporte,$pass);
+	$stmt = $db->prepare("SELECT user,email FROM users WHERE user=? OR email=?");
+	$stmt->bind_param('ss',$user,$email);
 	$stmt->execute();
-	$stmt->bind_result($respuesta);
-	echo $respuesta;
+	$stmt->store_result();
+	$numrows = $stmt->num_rows;
+	echo $numrows;
 	$stmt->close();	
 
 ?>
