@@ -58,7 +58,8 @@ $(document).ready(function(){
         console.log(data);
       },
       success: function(data){
-        if(data=="registrado"){
+        estado = data['estado'];
+        if(estado=="registrado"){
           $('#registrar').val('Registrando...');
           console.log("Todo deberia ir bien");
           /* El plan es aqui quitar el form de registro y poner un login */

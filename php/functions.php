@@ -1,5 +1,5 @@
 <?php
-	global $db;
+	global $db;	
 function connectDb(){
 	//Datos de login bbdd
 	$server = "localhost";
