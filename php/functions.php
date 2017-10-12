@@ -10,13 +10,13 @@ function connectDb(){
 	$db = new mysqli($server, $user, $password, $dbname);
 	// Comprobar conexión
 	if($db->connect_error){
-	    die("La conexión ha fallado, error número " . $db->connect_errno . ": " . $db->connect_error);
+	    die("La conexión ha fallado, error número " . $db->connect_error . ": " . $db->connect_error);
 	}
 }
 function createUser($email,$user,$deporte,$pass){
 	//Preparamos la peticion
 	if($db->connect_error){
-	    die("La conexión ha fallado, error número " . $db->connect_errno . ": " . $db->connect_error);
+	    die("La conexión ha fallado, error número " . $db->connect_error . ": " . $db->connect_error);
 	}
 	echo $email;
 	echo $user;
