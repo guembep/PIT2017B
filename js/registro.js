@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   /*$('#registrar').click(function(){ */
 
   /* Parte de validacion */
@@ -48,6 +49,12 @@ $(document).ready(function(){
 
   /*Envio de formulario */
   function submitForm(){
+    $('#Reg').fadeOut();
+    $('#Log').fadeOut();
+
+    setTimeout(function(){
+      $('#Log').load('./loginMini.html').fadeIn();
+    },800);
     var data = $("#form-registro").serialize();
     $.ajax({
       type : 'POST',
@@ -61,6 +68,7 @@ $(document).ready(function(){
         if(data=="registrado"){
           $('#registrar').val('Registrando...');
           console.log("Todo deberia ir bien");
+        //  $('#logReg').load("../loginMini.html");
           /* El plan es aqui quitar el form de registro y poner un login */
         }else{
           $("#resultado").fadeIn(1000, function(){
