@@ -65,7 +65,8 @@ $(document).ready(function(){
         console.log(data);
       },
       success: function(data){
-        if(data=="registrado"){
+        estado = data['estado'];
+        if(estado=="registrado"){
           $('#registrar').val('Registrando...');
           console.log("Todo deberia ir bien");
         //  $('#logReg').load("../loginMini.html");
