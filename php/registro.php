@@ -1,8 +1,7 @@
 <?php
-	ini_set('display_errors', 1);
-	ini_set('display_startup_errors', 1);
-	error_reporting(E_ALL);
 	//Incluimos fichero de conexion a la bd
+	ini_set('session.gc_maxlifetime', 3600);
+	session_set_cookie_params(3600);
 	session_start();
 	include('conectarBD.php');
 	
@@ -20,7 +19,7 @@
 	$pass="pass";*/
 	
 	if(!isset($_SESSION['id'])){
-		//Establecemos conexion co la bd
+		//Establecemos conexion con la bd
 		//Comprobamos que el usuario o el email no exista
 		$stmt = $db->prepare("SELECT user,email FROM users WHERE user=? OR email=?");
 		$stmt->bind_param('ss',$user,$email);
