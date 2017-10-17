@@ -5,8 +5,8 @@
 	session_start();
 	include('conectarBD.php');
 
-	$user=$_GET['user'];
-	$pass=$_GET['pass'];
+	$user=$_POST['user'];
+	$pass=$_POST['pass'];
 	$pass=sha1($pass);
 
 	if(!isset($_SESSION['id'])){
