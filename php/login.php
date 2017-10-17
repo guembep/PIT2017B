@@ -28,6 +28,7 @@
 			$data['estado'] = 'ok';
 		}else{
 			$data['estado'] = 'nook';
+			session_destroy();
 		}	
 	}else{
 		$data['estado'] = 'logged';
