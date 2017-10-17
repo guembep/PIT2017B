@@ -3,13 +3,16 @@
 	ini_set('display_startup_errors', 1);
 	error_reporting(E_ALL);
 	//Incluimos fichero de conexion a la bd
+	session_start();
 	include('conectarBD.php');
 	
 	//Obtenemos los datos del registro
 	$email=$_POST['email'];
 	$user=$_POST['user'];
 	$deporte=$_POST['deporte'];
-	$pass=$_POST['pass'];*/
+	$pass=$_POST['pass'];
+	$pass2=$_POST['rpass'];
+	$pass=sha1($pass);
 	/*$data = array();
 	$email="b@b.b";
 	$user="user1";
@@ -42,6 +45,8 @@
 				$data['estado']='error';
 			}else{
 				$data['estado']='registrado';
+				$_SESSION['id']=$user;
+				$_SESSION['email']=$email;
 			}
 			$stmt->close();
 		}	
