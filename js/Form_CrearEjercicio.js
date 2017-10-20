@@ -27,6 +27,8 @@ $(document).ready(function() {
                     material.appendChild(img);
                     material.appendChild(mat);
                     input.value="";
+            }else{
+                alert("Por favor, introduce correctamente el formato del material");
             }
         };
 
@@ -55,89 +57,50 @@ $(document).ready(function() {
 
 
 
-    
+    //Enviar a servidor
 
-/*
+    $("#registrarejer").click(function (){
+     //  console.log("validando");
       // Parte de validacion
       $("#form-registroejer").validate({
         rules:
         {
           exercisename: {
+            required : true
+          },
+          exercisedescription: {
             required : true,
-
-          },
-           exercisedescripiton: {
-            required: true,
-            minlength: 10
-          },
-          duracion: {
-            required: true,
-            time:true,
+            minlength : 10
           },
           date: {
-            required: true,
-            date: true,
-          },
+            required : true,
+            date : true
+          }
         },
         messages: {
-          exercisename: "Introduce un nombre para el ejercicio",
-          exercisedescripiton:{
-            required: "Introduce una descripcion",
-            minlength: "La descripcion es demasiado corta",
+          exercisename: {
+              required: "Introduce un nombre para el ejercicio"
           },
-          duracion:{
-              required:"Introduce la duracion del ejercicio",
-              time:"Formato de tiempo no valido, debe ser HH:MM"
-          }  ,  
-          email: {
+          exercisedescription: {
+            required: "Introduce una descripcion",
+            minlength: "La descripcion es demasiado corta"
+          },  
+          date: {
             required: "Introduce la fecha",
-              date: "Formato de fecha no valido",
+            date: "Formato de fecha no valido"
           }
         },
-        submitHandler: submitForm
+        submitHandler: function (){
+                //Enviar a addexercise.php
+                    console.log("Enviando");
+              //  $.post( "addexercise.php", { nombre: "#exercisename", descripcion: "#exercisedescription", material: material } );
+                }
       });
-
-
-      // Hasta aqui la validacion 
-*/
-
-
+ });
     //Envio de formulario 
-    
-    $("#registrarejer").click(function (){
-        //Enviar a addexercise.php
-        console.log("enviando");
-      //  $.post( "addexercise.php", { nombre: "#exercisename", descripcion: "#exercisedescription", material: material } );
-    });
-    
- /*     function submitForm(){
-        var data = $("#form-registroejer").serialize();
-        $.ajax({
-          type : 'POST',
-          url : './php/addexercise.php',
-          data : data,
-          beforeSend: function(){
-            $('#registrarejer').val("Comprobando información...");
-            console.log(data);
-          },
-          success: function(data){
-            estado = data['estado'];
-            if(estado=="registrado"){
-              $('#registrarejer').val('Registrando...');
-              console.log("Todo deberia ir bien");
-              // El plan es aqui quitar el form de registro y poner un login 
-            }else{
-              $("#resultado").fadeIn(1000, function(){
-              $("#resultado").html('<div class="alert alert-danger"> <span class="glyphicon glyphicon-info-sign"></span> &nbsp;'+data+' !</div>');
-              $('#registrarejer').val("Añadir");
-              });
-            }
+        
+   
+        
 
-          }
-        });
-        return false;
-      }
-    });
-    */
 
 });
