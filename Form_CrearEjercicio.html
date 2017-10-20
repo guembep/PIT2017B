@@ -31,31 +31,52 @@
     
     <div class="container mt-sm-3">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-8 col-md-offset-3">
 
           <h1><p class="text-center">Introducir nuevo ejercicio</p></h1>
 
           <form method="POST" id="form-registroejer">
 
               <div class="form-group row py-2">
+                  <label for="example-text-input" class="col-5 col-form-label" >Deporte al que pertenece</label>
+                  <div class="col-8">
+                    <input class="form-control" type="text" placeholder="Baloncesto" id="exercisesport" name="exercisesport">
+                  </div>    
+              </div>
+              
+              <div class="form-group row py-2">
+                  <label for="example-text-input" class="col-5 col-form-label" >Categoria</label>
+                  <div class="col-8">
+                    <input class="form-control" type="text" placeholder="Ataque" id="exercisetype" name="exercisetype">
+                  </div>    
+              </div>
+              
+              <div class="form-group row py-2">
+                  <label for="example-text-input" class="col-5 col-form-label" >Subcategoria</label>
+                  <div class="col-8">
+                    <input class="form-control" type="text" placeholder="Pase y control de balon" id="exercisesub" name="exercisesub">
+                  </div>    
+              </div>
+              
+              
+              <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label" >Nombre del ejercicio</label>
-                  <div class="col-10">
-                    <input class="form-control" type="text" placeholder="Ejercicio para mejorar tiros" id="exercisename" name="exercisename">
+                  <div class="col-8">
+                    <input class="form-control" type="text" placeholder="Ejercicio para mejorar pases" id="exercisename" name="exercisename">
                   </div>    
               </div>
               
               <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label">Descripcion del ejercicio</label>
-                  <div class="col-10">
-                    <textarea class="form-control"  id="exercisedescription" name="exercisedescription">
-                     </textarea>
+                  <div class="col-8">
+                    <textarea class="form-control row py-4"  id="exercisedescription" name="exercisedescription"  placeholder="Explique la organizacion, desarrollo, variantes (y lo que considere relevante) del ejercicio" ></textarea>
                   </div>    
               </div>
               
                <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label">Material necesario</label>
                   <a href="#popupInfo" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more"><img src="images/info.ico" height="20px" width="20px"></a>
-                  <div class="col-10" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext">
+                  <div class="col-8" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext">
                         <input class="form-control" type="text" placeholder="10 balones" id="exercisematerial" type="text" >
                         <div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;" >
                           <p>Introduce 'nº material' y presiona Enter. Al hacerlo podras seguir añadiendo mas material.</p>
@@ -66,7 +87,7 @@
               
               <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label">Duracion</label>
-                  <div class="col-10">
+                  <div class="col-8">
                     <input class="form-control" type="time" name="appt-time" placeholder="0:30" id="exercisetime" min="00:01" max="24:00" name="apptime">
                   </div>    
               </div>
@@ -74,7 +95,7 @@
               <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label">Personas minimas</label>
                   <input type="checkbox" id="minpeople" name="minpeople" value="Minpeople"><small>Marcar casilla si es necesario un numero minimo de personas para realizar el ejercicio </small> <br>
-                  <div class="col-10" style="visibility:hidden;" id="divexercisemin">
+                  <div class="col-8" style="visibility:hidden;" id="divexercisemin">
                     <input class="form-control" type="number" value="1" id="exercisemin">
                   </div> 
               </div>
@@ -82,25 +103,30 @@
               <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label">Personas maximas </label>                  
                   <input type="checkbox"  id= "maxpeople" name="maxpeople" value="Maxpeople"> <small> Marcar casilla si es necesario un numero maximo de personas para realizar el ejercicio </small> <br>
-                  <div class="col-10" style="visibility:hidden;" id="divexercisemax">
+                  <div class="col-8" style="visibility:hidden;" id="divexercisemax">
                     <input class="form-control" type="number" value="20" id="exercisemax">
                   </div>  
               </div>
               
               <div class="form-group row">
                   <label for="example-date-input" class="col-5 col-form-label">Fecha</label>
-                  <div class="col-10">
+                  <div class="col-8">
                     <input class="form-control" type="date" placeholder="2011-08-19" id="date" name="date">
                   </div>    
               </div>      
              
-               
+                 <div class="form-group row py-2">
+                  <label for="example-text-input" class="col-5 col-form-label">Foto explicativa</label>
+                  <div class="col-8">
+                    <input type="file"><!-- Solo a modo de ejemplo, cambiar-->
+                  </div>    
+              </div>
 
             <br><br>
 
             <div class="form-group">
               <button type="submit" class="btn btn-primary" id="registrarejer">
-                <span class="glyphicon glyphicon-log-in"></span> &nbsp; Añadir
+                <span class="glyphicon glyphicon-log-in"></span> &nbsp;Añadir
              </button>
             <!--  <input type="button" name="registrar" id="registrar" class="btn btn-success" value="Registrar"> -->
             </div>
