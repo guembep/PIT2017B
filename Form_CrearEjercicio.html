@@ -1,109 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="images/favicon.ico">
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link rel="icon" href="images/favicon.ico"/>
 
     <title>Easy2Train</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet"/>
 
     <!-- Custom styles for this template -->
-    <link href="css/jumbotron.css" rel="stylesheet">
+    <link href="css/jumbotron.css" rel="stylesheet"/>
       
       
       <!--JQuery-->
-    <link href="css/popup.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-      
+      <link href="css/popup.css" rel="stylesheet" />
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+      <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+     
       
   </head>
 
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Easy2Train</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <!-- SI ES USUARIO USAREMOS ESTA INFO
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Ejercicios <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Convocatorias</a>
-          </li>
-
-        </ul>
-      -->
-      <!-- SI NO ES USUARIO USAREMOS ESTA INFO -->
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Funcionalidades <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active ">
-        <a href="./registro.html" class="btn btn-primary btn-primary"><span class="glyphicon glyphicon-plus"></span> Registrarse</a>
-      </li>
-      <li>
-        <br>
-      </li>
-    </ul>
-    <ul class="navbar-nav">
-          <form class= "navbar-form form-inline">
-            <div class="form-group">
-              <input type="text" placeholder="Usuario" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Contraseña" class="form-control">
-            </div>
-            <div class="form-group">
-            <button type="submit" class="btn btn-success">Entrar</button>
-          </div>
-            </form>
-    </ul>
-      </div>
-    </nav>
-    <!-- Hasta aqui va la barra del nav -->
-
+    
     <div class="container mt-sm-3">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-
-
+        <div class="col-md-8 col-md-offset-3">
 
           <h1><p class="text-center">Introducir nuevo ejercicio</p></h1>
 
-          <form method="POST" id="form-registro">
+          <form method="POST" id="form-registroejer">
 
               <div class="form-group row py-2">
-                  <label for="example-text-input" class="col-5 col-form-label">Nombre del ejercicio</label>
-                  <div class="col-10">
-                    <input class="form-control" type="text" placeholder="Ejercicio para mejorar tiros" id="exercisename">
+                  <label for="example-text-input" class="col-5 col-form-label" >Deporte al que pertenece</label>
+                  <div class="col-8">
+                    <input class="form-control" type="text" placeholder="Baloncesto" id="exercisesport" name="exercisesport">
+                  </div>    
+              </div>
+              
+              <div class="form-group row py-2">
+                  <label for="example-text-input" class="col-5 col-form-label" >Categoria</label>
+                  <div class="col-8">
+                    <input class="form-control" type="text" placeholder="Ataque" id="exercisetype" name="exercisetype">
+                  </div>    
+              </div>
+              
+              <div class="form-group row py-2">
+                  <label for="example-text-input" class="col-5 col-form-label" >Subcategoria</label>
+                  <div class="col-8">
+                    <input class="form-control" type="text" placeholder="Pase y control de balon" id="exercisesub" name="exercisesub">
+                  </div>    
+              </div>
+              
+              
+              <div class="form-group row py-2">
+                  <label for="example-text-input" class="col-5 col-form-label" >Nombre del ejercicio</label>
+                  <div class="col-8">
+                    <input class="form-control" type="text" placeholder="Ejercicio para mejorar pases" id="exercisename" name="exercisename">
                   </div>    
               </div>
               
               <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label">Descripcion del ejercicio</label>
-                  <div class="col-10">
-                    <textarea class="form-control"  id="exercisedescription">
-                     </textarea>
+                  <div class="col-8">
+                    <textarea class="form-control row py-4"  id="exercisedescription" name="exercisedescription"  placeholder="Explique la organizacion, desarrollo, variantes (y lo que considere relevante) del ejercicio" ></textarea>
                   </div>    
               </div>
               
                <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label">Material necesario</label>
                   <a href="#popupInfo" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more"><img src="images/info.ico" height="20px" width="20px"></a>
-                  <div class="col-10" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext">
+                  <div class="col-8" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext">
                         <input class="form-control" type="text" placeholder="10 balones" id="exercisematerial" type="text" >
                         <div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;" >
                           <p>Introduce 'nº material' y presiona Enter. Al hacerlo podras seguir añadiendo mas material.</p>
@@ -114,47 +87,46 @@
               
               <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label">Duracion</label>
-                  <div class="col-10">
-                    <input class="form-control" type="time" name="appt-time" placeholder="0:30" id="exercisetime" min="00:01" max="24:00">
+                  <div class="col-8">
+                    <input class="form-control" type="time" name="appt-time" placeholder="0:30" id="exercisetime" min="00:01" max="24:00" name="apptime">
                   </div>    
               </div>
               
               <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label">Personas minimas</label>
-                  <input type="checkbox" id="minpeople" name="minpeople" value="Minpeople"><br> 
-                  <div class="col-10">
+                  <input type="checkbox" id="minpeople" name="minpeople" value="Minpeople"><small>Marcar casilla si es necesario un numero minimo de personas para realizar el ejercicio </small> <br>
+                  <div class="col-8" style="visibility:hidden;" id="divexercisemin">
                     <input class="form-control" type="number" value="1" id="exercisemin">
-                  </div>  
-                  <input type="checkbox"  id= "maxpeople" name="maxpeople" value="Maxpeople"> <small>Marcar casilla si es necesario un numero maximo de personas para realizar el ejercicio </small> <br>
+                  </div> 
               </div>
               
               <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label">Personas maximas </label>                  
-                     
-                  <div class="col-10">
-                    <input class="form-control" type="number" value="20" id="exercisemax">
-                  </div>    
                   <input type="checkbox"  id= "maxpeople" name="maxpeople" value="Maxpeople"> <small> Marcar casilla si es necesario un numero maximo de personas para realizar el ejercicio </small> <br>
+                  <div class="col-8" style="visibility:hidden;" id="divexercisemax">
+                    <input class="form-control" type="number" value="20" id="exercisemax">
+                  </div>  
               </div>
-              
-              
-              
-              
               
               <div class="form-group row">
                   <label for="example-date-input" class="col-5 col-form-label">Fecha</label>
-                  <div class="col-10">
-                    <input class="form-control" type="date" placeholder="2011-08-19" id="date">
+                  <div class="col-8">
+                    <input class="form-control" type="date" placeholder="2011-08-19" id="date" name="date">
                   </div>    
               </div>      
              
-               
+                 <div class="form-group row py-2">
+                  <label for="example-text-input" class="col-5 col-form-label">Foto explicativa</label>
+                  <div class="col-8">
+                    <input type="file"><!-- Solo a modo de ejemplo, cambiar-->
+                  </div>    
+              </div>
 
             <br><br>
 
             <div class="form-group">
-              <button type="submit" class="btn btn-primary" id="registrar">
-                <span class="glyphicon glyphicon-log-in"></span> &nbsp; Añadir
+              <button type="submit" class="btn btn-primary" id="registrarejer">
+                <span class="glyphicon glyphicon-log-in"></span> &nbsp;Añadir
              </button>
             <!--  <input type="button" name="registrar" id="registrar" class="btn btn-success" value="Registrar"> -->
             </div>
@@ -173,19 +145,19 @@
  
       
       
+     
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
         <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/popper.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
-        <script type="text/javascript" src="js/registro.js"></script>
+        
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
       <!--  <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
-      
-        <script src="Form_CrearEjercicio.js"></script>
+        <script type="text/javascript" src="js/Form_CrearEjercicio.js"></script>
       
   </body>
 </html>
