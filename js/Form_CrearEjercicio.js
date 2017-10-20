@@ -1,22 +1,23 @@
-$(document).ready(function(){
-  var material = [];
+$(document).ready(function() {
+  var  materialA = [];
   var i=0;    
+  var matseparado= [];
   var  input=document.getElementById("exercisematerial");
-    input.addEventListener("keypress", enter);
+  input.addEventListener("keypress", enter);
   var  material=document.getElementById("materialintroduced");
 
-    function enter(e){
+  function enter(e){
         var tecla = e.keyCode;
         if (tecla==13) {
-            //Añadir con fondo de etiqueta lo qque haya introducido
+            //Añadir con foto de etiqueta lo que haya introducido
             var valor= input.value;
             //Comprobar si los valores introducidos en material son validos
-            var matseparado=valor.split(" ");
-            if ((matseparado.length==2) && (isNaN(matseparado[0]))){
+            matseparado=valor.split(" ");
+            if ((matseparado.length>=2) && (!isNaN(matseparado[0])) ){ 
                     var  mat=document.createElement("div");
                     mat.innerHTML=input.value;
                     mat.setAttribute("class","material");
-                    material[i]=input.value;
+                    materialA[i]=input.value;
                     i++;
                     var  img=document.createElement("img");
                     img.setAttribute("src","images/etiqueta.png");
@@ -25,6 +26,7 @@ $(document).ready(function(){
                     img.setAttribute("align", "left");
                     material.appendChild(img);
                     material.appendChild(mat);
+                    input.value="";
             }
         };
 
@@ -53,9 +55,9 @@ $(document).ready(function(){
 
 
 
-    /*
+    
 
-
+/*
       // Parte de validacion
       $("#form-registroejer").validate({
         rules:
@@ -97,15 +99,16 @@ $(document).ready(function(){
 
 
       // Hasta aqui la validacion 
-
 */
+
 
     //Envio de formulario 
     
-    $("#form-registroejer").click(funtion{
+    $("#registrarejer").click(function (){
         //Enviar a addexercise.php
         console.log("enviando");
-    })
+      //  $.post( "addexercise.php", { nombre: "#exercisename", descripcion: "#exercisedescription", material: material } );
+    });
     
  /*     function submitForm(){
         var data = $("#form-registroejer").serialize();
