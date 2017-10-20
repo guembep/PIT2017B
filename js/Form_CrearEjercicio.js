@@ -12,7 +12,7 @@ $(document).ready(function(){
             var valor= input.value;
             //Comprobar si los valores introducidos en material son validos
             var matseparado=valor.split(" ");
-            if ((matseparado.length==2) && (isNaN(matseparado[0])){
+            if ((matseparado.length==2) && (isNaN(matseparado[0]))){
                     var  mat=document.createElement("div");
                     mat.innerHTML=input.value;
                     mat.setAttribute("class","material");
