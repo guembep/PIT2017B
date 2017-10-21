@@ -23,27 +23,26 @@ if( $password1 != "" && $password2 != "" && $idusuario != "" && $token != "" ){
       <div class="col-md-2"></div>
       <div class="col-md-8">
 <?php
-   $conexion = new mysqli('localhost', 'root', 'toor', 'easy2train');
+   $conexion = new mysqli('easy2train.es.mysql', 'easy2train_es','ps7SrwTfhh8XRy2UsdgKizDj', 'easy2train_es');
    $sql = " SELECT * FROM tblreseteopass WHERE token = '$token' ";
    $resultado = $conexion->query($sql);
    if( $resultado->num_rows > 0 ){
       $usuario = $resultado->fetch_assoc();
       if( sha1( $usuario['idusuario'] === $idusuario ) ){
          if( $password1 === $password2 ){
-            $sql = "UPDATE users SET password = '".sha1($password1)."' WHERE id = ".$usuario['idusuario'];
-            $resultado = $conexion->query($sql);
-            if($resultado){
+          
+            $sql = "UPDATE users SET password = '".sha1($password1)."' WHERE id = ".$usuario['idusuario'];  
+         
+            $resultado = $conexion->query($sql);  
+           
+            
+                echo "hola";
                $sql = "DELETE FROM tblreseteopass WHERE token = '$token';"; // ME FALTA EN LA BD QUE EL LINK DE LA BD TENGA CADUCIDAD
                $resultado = $conexion->query( $sql );
 ?>
                <p class="alert alert-info"> La contraseña se actualizó con exito. </p>
 <?php
-            }
-            else{
-?>
-              <p class="alert alert-danger"> Ocurrió un error al actualizar la contraseña, intentalo más tarde </p>
-<?php
-            }
+            
          }
          else{
 ?>

@@ -2,7 +2,7 @@
 $token = $_GET['token'];
 $idusuario = $_GET['idusuario'];
  
-$conexion = new mysqli('localhost', 'root', 'toor', 'easy2train');
+ $conexion = new mysqli('easy2train.es.mysql', 'easy2train_es','ps7SrwTfhh8XRy2UsdgKizDj', 'easy2train_es');
  
 $sql = "SELECT * FROM tblreseteopass WHERE token = '$token'";
 $resultado = $conexion->query($sql);
@@ -32,7 +32,7 @@ if( $resultado->num_rows > 0 ){
        <p></p>
        <div class="form-group">
         <label for="password"> Nueva contraseña </label>
-        < input type="password" class="form-control" name="password1" required>
+        <input type="password" class="form-control" name="password1" required>
        </div>
        <div class="form-group">
         <label for="password2"> Confirmar contraseña </label>

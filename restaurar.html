@@ -82,7 +82,7 @@
     $("#frmRestablecer").submit(function(event){
       event.preventDefault();
       $.ajax({
-        url:'https://www.easy2train.es/php/validaremail.php',
+        url:'php/validaremail.php',
         type:'post',
         dataType:'json',
         data:$("#frmRestablecer").serializeArray()

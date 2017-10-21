@@ -1,5 +1,3 @@
-
-
 <?php
 
 error_reporting(E_ALL);
@@ -12,20 +10,19 @@ function generarLinkTemporal($idusuario, $username){
    $token = sha1($cadena);
  
    $conexion = new mysqli('easy2train.es.mysql', 'easy2train_es','ps7SrwTfhh8XRy2UsdgKizDj', 'easy2train_es');
-   	if($registro>connect_error){
-	    die("La conexión ha fallado, error número " . $reistro->connect_error . ": " . $registro->connect_error);
-	}
+
    // Se inserta el registro en la tabla tblreseteopass
    $sql = "INSERT INTO tblreseteopass (idusuario, username, token, creado) VALUES($idusuario,'$username','$token',NOW());";
    $resultado = $conexion->query($sql);
    if($resultado){
       // Se devuelve el link que se enviara al usuario
-      $enlace = "http://".$_SERVER["easy2train.es"].'/php/restablecer.php?idusuario='.sha1($idusuario).'&token='.$token;
+      $enlace = "http://easy2train.es/php/restablecer.php?idusuario=".sha1($idusuario).'&token='.$token;
       return $enlace;
    }
-   else
+   else{
       return FALSE;
    }
+}
 
  
 function enviarEmail( $email, $link ){
@@ -50,7 +47,7 @@ function enviarEmail( $email, $link ){
    mail($email, "Recuperar contraseña", $mensaje, $cabeceras);
 }
 
-$email =  htmlspecialchars($_POST['email']);
+$email = htmlspecialchars($_POST['email']);
 $respuesta = new stdClass();
 echo "hola";
 
@@ -58,8 +55,7 @@ if( $email != "" ){
    $conexion = new mysqli('easy2train.es.mysql', 'easy2train_es','ps7SrwTfhh8XRy2UsdgKizDj', 'easy2train_es');
 
    	// Comprobar conexión
-	if($conexion->connect_error){
-	    die("La conexión ha fallado, error número " . $conexion->connect_error . ": " . $conexion->connect_error);
+
    $sql = " SELECT * FROM users WHERE email = '$email' ";
    $resultado = $conexion->query($sql);
    if($resultado->num_rows > 0){
@@ -69,14 +65,17 @@ if( $email != "" ){
         enviarEmail( $email, $linkTemporal );
         $respuesta->mensaje = '<div class="alert alert-info"> Un correo ha sido enviado a su cuenta de email con las instrucciones para restablecer la contraseña </div>';
       }
-   }
-   else
+   
+ }
+   else{
       $respuesta->mensaje = '<div class="alert alert-warning"> No existe una cuenta asociada a ese correo. </div>';
+   }
    
 }
-else
+else{
    $respuesta->mensaje= "Debes introducir el email de la cuenta";
-   	header('Content-type: application/json; charset=utf-8');
+ }
+
  echo json_encode( $respuesta );
 
 ?>
