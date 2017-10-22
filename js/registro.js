@@ -39,6 +39,9 @@ $(document).ready(function(){
       rpass:{
         required: "Debes introducir tu contraseña",
         equalTo: "Las contraseñas no coinciden"
+      },
+      deporte: {
+        required: "Debes seleccionar un deporte"
       }
     },
     submitHandler: submitForm
