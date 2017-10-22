@@ -27,7 +27,7 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <!-- SI ES USUARIO USAREMOS ESTA INFO -->
+          <!-- SI ES USUARIO USAREMOS ESTA INFO
           <li class="nav-item active">
             <a class="nav-link" href="#">Ejercicios <span class="sr-only">(current)</span></a>
           </li>
@@ -36,8 +36,8 @@
           </li>
 
         </ul>
-
-      <!-- SI NO ES USUARIO USAREMOS ESTA INFO
+-->
+      <!-- SI NO ES USUARIO USAREMOS ESTA INFO -->
       <li class="nav-item active">
         <a class="nav-link" href="#">Funcionalidades <span class="sr-only">(current)</span></a>
       </li>
@@ -48,20 +48,20 @@
         <br>
       </li>
     </ul>
-    <ul class="navbar-nav">
-          <form class= "navbar-form form-inline">
+    <ul id="login" class="navbar-nav">
+          <form id="form-entrar" method="POST" class= "navbar-form form-inline">
             <div class="form-group">
-              <input type="text" placeholder="Usuario" class="form-control">
+              <input id="user" name="user" type="text" placeholder="Usuario" class="form-control">
             </div>
             <div class="form-group">
-              <input type="password" placeholder="Contraseña" class="form-control">
+              <input  id="pass" name="pass" type="password" placeholder="Contraseña" class="form-control">
             </div>
             <div class="form-group">
-            <button type="submit" class="btn btn-success">Entrar</button>
+            <button id="entrar"  class="btn btn-success">Entrar</button>
           </div>
             </form>
     </ul>
-  -->
+
         <!--  <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
               <a class="dropdown-item" href="#">Action</a>
@@ -122,11 +122,13 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+  <!--  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script> -->
     <script src="js/popper.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/login.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
   </body>
 </html>
