@@ -29,14 +29,14 @@ if( $password1 != "" && $password2 != "" && $idusuario != "" && $token != "" ){
    if( $resultado->num_rows > 0 ){
       $usuario = $resultado->fetch_assoc();
       if( sha1( $usuario['idusuario'] === $idusuario ) ){
-         if( $password1 === $password2 ){
+         if( $password1 == $password2 ){
           
-            $sql = "UPDATE users SET password = '".sha1($password1)."' WHERE id = ".$usuario['idusuario'];  
+            $sql = "UPDATE users SET pass = '".sha1($password1)."' WHERE id = ".$usuario['idusuario'];  
          
             $resultado = $conexion->query($sql);  
            
             
-                echo "hola";
+            
                $sql = "DELETE FROM tblreseteopass WHERE token = '$token';"; // ME FALTA EN LA BD QUE EL LINK DE LA BD TENGA CADUCIDAD
                $resultado = $conexion->query( $sql );
 ?>

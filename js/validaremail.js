@@ -2,7 +2,7 @@
 $(document).ready(function(){
   function submitForm(){
 
-    setTimeout(function(){
+  
 
     var data = $("#frmRestablecer").serialize();
     $.ajax({
@@ -24,4 +24,5 @@ $(document).ready(function(){
     });
     return false;
   }
+ 
 });

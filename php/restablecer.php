@@ -9,16 +9,20 @@ $resultado = $conexion->query($sql);
  
 if( $resultado->num_rows > 0 ){
    $usuario = $resultado->fetch_assoc();
-   if( sha1($usuario['idusuario']) == $idusuario ){
+ 
+   if(sha1($usuario['idusuario']) == $idusuario ){
 ?>
 <!DOCTYPE html>
 <html lang="es">
  <head>
   <meta name="author" content="denker">
   <title> Restablecer contraseña </title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
  </head>
  
  <body>
@@ -50,8 +54,6 @@ if( $resultado->num_rows > 0 ){
   <div class="col-md-4"></div>
   </div> <!-- /container -->
  
-  <script src="js/jquery-1.11.1.js"></script>
-  <script src="js/bootstrap.min.js"></script>
  </body>
 </html>
 <?php

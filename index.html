@@ -26,8 +26,9 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <!-- SI ES USUARIO USAREMOS ESTA INFO
+
+          <!-- SI ES USUARIO USAREMOS ESTA INFO -->
+          <ul id="siUser" class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Ejercicios <span class="sr-only">(current)</span></a>
           </li>
@@ -36,8 +37,11 @@
           </li>
 
         </ul>
--->
+
+
       <!-- SI NO ES USUARIO USAREMOS ESTA INFO -->
+
+    <ul id="noUser" class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Funcionalidades <span class="sr-only">(current)</span></a>
       </li>
@@ -70,14 +74,12 @@
             </div>
           </li>
         -->
-
-
-      </div>
+    </div>
     </nav>
 <!-- Hasta aqui va el nav -->
 
 
-
+    <div id=bodyNav >
     <!--Esta es la parte del "jumbotron" TODO añadir texto con info de la web -->
     <div class="jumbotron">
       <div class="container">
@@ -117,6 +119,7 @@
         <p>&copy; Easy2Train 2017</p>
       </footer>
     </div> <!-- /container -->
+  </div>
 
 
     <!-- Bootstrap core JavaScript
