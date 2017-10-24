@@ -5,12 +5,12 @@
 	$arraybusqueda = array();
 	$dias = 15; //Rango de dias en los que queremos buscar partidos
 	if(!isset($_SESSION['deporte'])){
-		$deporte = "baloncesto";
+		$deporte = $_GET['deporte'];
 	}else{
 		$deporte = $_SESSION['deporte'];
 	}
 	if(!isset($_SESSION['equipo'])){
-		$equipo = "lagunak";
+		$equipo = $_GET['equipo'];
 	}else{
 		$equipo = $_SESSION['equipo'];
 	}
