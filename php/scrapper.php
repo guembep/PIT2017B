@@ -76,6 +76,14 @@
 		//Comenzamos a recorrer el json en busca de los partidos que incluyan al equipo
 		foreach ($elementos['items'] as $partido) {
 			if ((stripos($partido['ELOCAL'], $equipo) !== false)||(stripos($partido['EVISITANTE'], $equipo) !== false)) {
+			unset($partido['Campo']);
+			unset($partido['OCATEGORIA']);
+			unset($partido['arbitro1']);
+			unset($partido['arbitro2']);
+			unset($partido['ELOCALPAT']);
+			unset($partido['EVISITANTEPAT']);
+			unset($partido['EVISITANTENOID']);
+			unset($partido['ELOCALNOID']);
 	    	$arraybusqueda[] = $partido;
 			}
 		}
