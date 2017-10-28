@@ -1,7 +1,7 @@
 AppConfig = {
     clickType: "mouse",
     playersCount: 25,
-    buttonToBoardHeightCoeff: .030548,
+    buttonToBoardHeightCoeff: .040548,
     buttonsPanelLeftToBoardWidthCoeff: .473816,
     fontsizeToButtonWidthCoeff: .8,
     playersColors: [{
@@ -185,13 +185,13 @@ var BoardHelpers = {
                 playerToBoardWidthCoeff: .0235656
             },
             "field-hockey": {
-                bgColor: "#738554",
+                bgColor: "#e5c0c5",
                 strokeColor: "#ffffff",
                 heightToWidthCoeff: .6392,
                 playerToBoardWidthCoeff: .026184
             },
             handball: {
-                bgColor: "#738554",
+                bgColor: "#432499",
                 strokeColor: "#ffffff",
                 heightToWidthCoeff: .572,
                 playerToBoardWidthCoeff: .02182
