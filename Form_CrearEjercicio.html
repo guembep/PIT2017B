@@ -79,7 +79,8 @@
                   <div class="col-8" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext">
                         <input class="form-control" type="text" placeholder="10 balones" id="exercisematerial" type="text" >
                         <div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;" >
-                          <p>Introduce 'nº material' y presiona Enter. Al hacerlo podras seguir añadiendo mas material.</p>
+                          <p>Introduce 'nº material' y presiona la tecla de flecha hacia la derecha. Al hacerlo podras seguir añadiendo mas material.</p>
+						  <img src="images/flechadcha.png">
                         </div>  
                   </div>    
               </div>
@@ -108,20 +109,30 @@
                   </div>  
               </div>
               
-              <div class="form-group row">
+              <div class="form-group row py-2">
+                  <label for="example-text-input" class="col-5 col-form-label">Rango de edades </label>                  
+                  <input type="checkbox"  id= "rangoedad" name="rangoedad" value="Rangoedad"> <small> Marcar casilla si hay un rango de edad concreto necesario para realizar el ejercicio </small> <br>
+                 <div class= "col-5 input-group" style="visibility:hidden;" id="divrangoedad">
+						<input class="form-control input-group-addon" type="number" value="10" id="exerciseedad1">
+						<p class="input-group-addon"> - </p>
+						<input class="form-control" type="number" value="15" id="exerciseedad2">
+                 </div>  
+              </div>
+              
+        <!--      <div class="form-group row">
                   <label for="example-date-input" class="col-5 col-form-label">Fecha</label>
                   <div class="col-8">
                     <input class="form-control" type="date" placeholder="2011-08-19" id="date" name="date">
                   </div>    
               </div>      
-             
-                 <div class="form-group row py-2">
+            --> 
+           <!--      <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label">Foto explicativa</label>
                   <div class="col-8">
-                    <input type="file"><!-- Solo a modo de ejemplo, cambiar-->
+                    <input type="file">
                   </div>    
               </div>
-
+		-->
             <br><br>
 
             <div class="form-group">
@@ -136,7 +147,7 @@
             <span id="result"></span>
 
           </form>
-
+			<p id="resultado"></p>
         </div>
       </div>
     </div>
@@ -149,7 +160,7 @@
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
         <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
         <script type="text/javascript" src="js/popper.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
