@@ -15,7 +15,8 @@ $(document).ready(function(){
         success: function(data){
           estado = data['estado'];
           console.log(estado);
-          if(estado=="ok"){
+        //  if(estado=="ok"){
+        if(estado=="logged"){
             $('#login').fadeOut();
             $('#siUser').show();
             $('#noUser').hide();
@@ -25,9 +26,10 @@ $(document).ready(function(){
             //},800);
             //$('#registrar').val('Registrando...');
             console.log("Todo deberia ir bien");
-            $('#bodyNav').load('./selec.html');
+            $('#bodyNav').load('./registrado.html');
             //  $('#logReg').load("../loginMini.html");
             /* El plan es aqui quitar el form de registro y poner un login */
+            
           }else{
             console.log("Algo no ha ido bien");
             //$("#resultado").fadeIn(1000, function(){

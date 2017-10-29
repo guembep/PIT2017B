@@ -29,11 +29,12 @@
   <body>
 
     
-    <div class="container mt-sm-3">
+    <div class="container">
       <div class="row">
-        <div class="col-md-8 col-md-offset-3">
+		  
+        <h1><p class="text-center">Introducir nuevo ejercicio</p></h1>
+        <div class="col-md-8 ">
 
-          <h1><p class="text-center">Introducir nuevo ejercicio</p></h1>
 
           <form method="POST" id="form-registroejer">
 
@@ -79,11 +80,12 @@
                   <div class="col-8" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext">
                         <input class="form-control" type="text" placeholder="10 balones" id="exercisematerial" type="text" >
                         <div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;" >
-                          <p>Introduce 'nº material' y presiona la tecla de flecha hacia la derecha. Al hacerlo podras seguir añadiendo mas material.</p>
-						  <img src="images/flechadcha.png">
+                          <p>Introduce 'nº material' y presiona la tecla +. Al hacerlo podras seguir añadiendo más material.</p>
+						  <img src="images/mas.png"><small>La situación de la tecla puede variar</small>
                         </div>  
                   </div>    
               </div>
+              <small id="resultadomat"></small>
                <div id="materialintroduced"></div>
               
               <div class="form-group row py-2">
@@ -97,7 +99,7 @@
                   <label for="example-text-input" class="col-5 col-form-label">Personas minimas</label>
                   <input type="checkbox" id="minpeople" name="minpeople" value="Minpeople"><small>Marcar casilla si es necesario un numero minimo de personas para realizar el ejercicio </small> <br>
                   <div class="col-8" style="visibility:hidden;" id="divexercisemin">
-                    <input class="form-control" type="number" value="1" id="exercisemin">
+                    <input class="form-control" type="number" value="0" id="exercisemin">
                   </div> 
               </div>
               
@@ -105,7 +107,7 @@
                   <label for="example-text-input" class="col-5 col-form-label">Personas maximas </label>                  
                   <input type="checkbox"  id= "maxpeople" name="maxpeople" value="Maxpeople"> <small> Marcar casilla si es necesario un numero maximo de personas para realizar el ejercicio </small> <br>
                   <div class="col-8" style="visibility:hidden;" id="divexercisemax">
-                    <input class="form-control" type="number" value="20" id="exercisemax">
+                    <input class="form-control" type="number" value="0" id="exercisemax">
                   </div>  
               </div>
               
@@ -113,34 +115,32 @@
                   <label for="example-text-input" class="col-5 col-form-label">Rango de edades </label>                  
                   <input type="checkbox"  id= "rangoedad" name="rangoedad" value="Rangoedad"> <small> Marcar casilla si hay un rango de edad concreto necesario para realizar el ejercicio </small> <br>
                  <div class= "col-5 input-group" style="visibility:hidden;" id="divrangoedad">
-						<input class="form-control input-group-addon" type="number" value="10" id="exerciseedad1">
+						<input class="form-control input-group-addon" type="number" value="0" id="exerciseedad1">
 						<p class="input-group-addon"> - </p>
-						<input class="form-control" type="number" value="15" id="exerciseedad2">
+						<input class="form-control input-group-addon" type="number" value="0" id="exerciseedad2">
                  </div>  
               </div>
               
-        <!--      <div class="form-group row">
-                  <label for="example-date-input" class="col-5 col-form-label">Fecha</label>
-                  <div class="col-8">
-                    <input class="form-control" type="date" placeholder="2011-08-19" id="date" name="date">
-                  </div>    
-              </div>      
-            --> 
-           <!--      <div class="form-group row py-2">
+              <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label">Foto explicativa</label>
                   <div class="col-8">
-                    <input type="file">
+                  <!--
+                    <button class="btn btn-primary" id="addfoto">
+						<span class="glyphicon glyphicon-log-in"></span> Realizar dibujo del ejercicio
+					</button>
+				-->	
+				    <input type="button" onclick='location.href="./pizarra/pizarra.html"' value="Añadir imagen explicativa" name="botonimg" /> 
                   </div>    
               </div>
-		-->
+		
             <br><br>
 
             <div class="form-group">
-              <button type="submit" class="btn btn-primary" id="registrarejer">
+              <button class="btn btn-primary" id="registrarejer">
                 <span class="glyphicon glyphicon-log-in"></span> &nbsp;Añadir
              </button>
             <!--  <input type="button" name="registrar" id="registrar" class="btn btn-success" value="Registrar"> -->
-            </div>
+        </div>
 
             <br>
 
@@ -148,12 +148,15 @@
 
           </form>
 			<p id="resultado"></p>
-        </div>
+		
+       </div>
+        <div class="col-md-4">
+			    <img src="images/varios.jpg">
+		</div>
       </div>
     </div>
       
-      
- 
+    
       
       
      

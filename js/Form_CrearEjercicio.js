@@ -3,12 +3,14 @@ $(document).ready(function() {
   var i=0;    
   var matseparado= [];
   var  input=document.getElementById("exercisematerial");
-  input.addEventListener("keypress", punto);
   var  material=document.getElementById("materialintroduced");
+  input.addEventListener("keypress", mas);
 
-  function punto(e){
-        var tecla = e.keyCode;
-        if (tecla==39) {
+  function mas(e){
+	    $("#resultadomat").html("");
+        var tecla = (document.all) ? e.keyCode  :e.which;
+        if (tecla==43) {
+			//var mas=true;
             //Añadir con foto de etiqueta lo que haya introducido
             var valor= input.value;
             //Comprobar si los valores introducidos en material son validos
@@ -28,13 +30,14 @@ $(document).ready(function() {
                     material.appendChild(img);
                     material.appendChild(mat);
                     input.value="";
+                    e.preventDefault();
             }else{
-                alert("Por favor, introduce correctamente el formato del material");
+                $("#resultadomat").html("Por favor, introduce correctamente el formato del material");
             }
-        };
-
+        }; 
     } 
     
+	
     // Segun si esta o no pulsada la casilla de personas min o max se vera el input o no
     $("#minpeople").change(function visibmin(){
         if (this.checked){
@@ -66,7 +69,7 @@ $(document).ready(function() {
     });
 
 
-    //Enviar a servidor
+    //Analizar si ha rellenado los campos requeridos
 
     $("#registrarejer").click(function (){
      //  console.log("validando");
@@ -109,10 +112,10 @@ $(document).ready(function() {
             minlength: "La descripcion es demasiado corta"
           }
         },
-        submitHandler: function (){
-                //Enviar a addexercise.php
-                console.log("Enviando");
-                
+        submitHandler: function (){ //Enviar datos a servidor
+			//Comprobar los tics de las opciones no obligatorias
+			
+			//
                 $.ajax({
 					data: { exercisesport:$("#exercisesport").val(), exercisetype: $("#exercisetype").val(), exercisesub: $("#exercisesub").val(), exercisename: $("#exercisename").val(), exercisedescription: $("#exercisedescription").val(), exercisetime: $("#exercisetime").val(),exercisematerial: $("#exercisematerial").val(), exercisemin: $("#exercisemin").val(), exercisemax: $("#exercisemax").val(), materialintroduced: JSON.stringify(materialA) }, //datos que se envian a traves de ajax
 					url:   './php/Form_CrearEjercicio.php', //archivo que recibe la peticion
@@ -134,7 +137,6 @@ $(document).ready(function() {
          }
       });
  });
-    //Envio de formulario 
         
    
         
