@@ -3,7 +3,7 @@ $(document).ready(function(){
   $('#entrar').click(function(){
   /*Envio de formulario */
     console.log("Carga el js");
-    console.log($('#user').val());
+    //console.log($('#user').val());
 
     if(($('#user').val()=="") || ($('#pass').val()=="")){
       $('#badPass').html('<b class="text-danger">Debes introducir un email y contraseña!</b>').hide();
@@ -22,7 +22,7 @@ $(document).ready(function(){
           estado = data['estado'];
           console.log(estado);
         //  if(estado=="ok"){
-        if(estado=="logged"){
+        if((estado=="logged")||(estado=="ok")){
             $('#login').fadeOut();
             $('#siUser').show();
             $('#noUser').hide();
