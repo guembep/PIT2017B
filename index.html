@@ -53,6 +53,7 @@
       </li>
     </ul>
     <ul id="login" class="navbar-nav">
+      <li>
           <form id="form-entrar" method="POST" class= "navbar-form form-inline">
             <div class="form-group">
               <input id="user" name="user" type="text" placeholder="Usuario" class="form-control">
@@ -64,6 +65,11 @@
             <button id="entrar"  class="btn btn-success">Entrar</button>
           </div>
             </form>
+            <div id="badPass" class="container">
+            </div>
+      </li>
+      <li>
+      </li>
     </ul>
 
         <!--  <li class="nav-item dropdown">
@@ -91,6 +97,44 @@
     <!-- Hasta aqui el jumbotron -->
 
 
+    <!--modal-->
+    <div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h1 class="text-center mr-3">Resetea tu contraseña</h1>
+          </div>
+          <div class="modal-body">
+              <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="text-center">
+
+                              <p>Escribe el email asociado a tu cuenta para recuperar tu contraseña.</p>
+                                <div class="panel-body">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <input class="form-control input-lg" placeholder="E-mail" name="email" type="email">
+                                        </div>
+                                        <input class="btn btn-lg btn-primary btn-block" value="Enviar contraseña" type="submit">
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mensaje" class="mt-5"><div class="alert alert-warning"> No existe una cuenta asociada a ese correo. </div></div>
+          </div>
+          <div class="modal-footer">
+              <div class="col-md-12">
+              <button class="btn" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+    		  </div>
+          </div>
+      </div>
+      </div>
+    </div>
+    <div id="mensaje"></div>
 
     <!-- Parte con las columnas y fotos -->
     <div class="container">
@@ -133,6 +177,6 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
-    
+
   </body>
 </html>
