@@ -117,13 +117,13 @@ $(document).ready(function() {
 			
 			//
                 $.ajax({
-					data: { exercisesport:$("#exercisesport").val(), exercisetype: $("#exercisetype").val(), exercisesub: $("#exercisesub").val(), exercisename: $("#exercisename").val(), exercisedescription: $("#exercisedescription").val(), exercisetime: $("#exercisetime").val(),exercisematerial: $("#exercisematerial").val(), exercisemin: $("#exercisemin").val(), exercisemax: $("#exercisemax").val(), materialintroduced: JSON.stringify(materialA) }, //datos que se envian a traves de ajax
+					data: { exercisesport:$("#exercisesport").val(), exercisetype: $("#exercisetype").val(), exercisesub: $("#exercisesub").val(), exercisename: $("#exercisename").val(), exercisedescription: $("#exercisedescription").val(), exercisetime: $("#exercisetime").val(), exercisematerial: JSON.stringify(materialA), exercisemin: $("#exercisemin").val(), exercisemax: $("#exercisemax").val()}, //datos que se envian a traves de ajax
 					url:   './php/Form_CrearEjercicio.php', //archivo que recibe la peticion
 					type:  'post', //método de envio
 					beforeSend: function () {
 							$("#resultado").html("Procesando, espere por favor...");
 					},
-					success:  function (response) { //una vez que el archivo recibe el request lo procesa y lo devuelve
+					success:  function (response) { console.log(response);//una vez que el archivo recibe el request lo procesa y lo devuelve
                         $("#resultado").html("Ejercicio añadido");
                         materialA=[];
                         $("input").each(function(){	
