@@ -20,7 +20,7 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="https://easy2train.es">Easy2Train</a>
+      <a class="navbar-brand" id="inicio" href="https://easy2train.es">Easy2Train</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -90,7 +90,44 @@
     </div>
     <!-- Hasta aqui el jumbotron -->
 
+    <!--modal-->
+    <div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h1 class="text-center mr-3">Resetea tu contraseña</h1>
+          </div>
+          <div class="modal-body">
+              <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="text-center">
 
+                              <p>Escribe el email asociado a tu cuenta para recuperar tu contraseña.</p>
+                                <div class="panel-body">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <input class="form-control input-lg" placeholder="E-mail" name="email" type="email">
+                                        </div>
+                                        <input class="btn btn-lg btn-primary btn-block" value="Enviar contraseña" type="submit">
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mensaje" class="mt-5"></div>
+          </div>
+          <div class="modal-footer">
+              <div class="col-md-12">
+              <button class="btn" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+    		  </div>
+          </div>
+      </div>
+      </div>
+    </div>
+<div id="mensaje"></div>
 
     <!-- Parte con las columnas y fotos -->
     <div class="container">
@@ -129,10 +166,10 @@
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script> -->
     <script src="js/popper.js"></script>
     <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="js/login.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
-    
   </body>
 </html>
