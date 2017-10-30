@@ -1,12 +1,4 @@
-
-var sesion=Cookies.get('PHPSESSID');
-if (sesion==null){
-	$('#siUser').hide();
-}else{
-	$('#siUser').show();
-    $('#noUser').hide();
-    $('#login').hide();
-}	
+  $('#siUser').hide();
 $(document).ready(function(){
   $('#entrar').click(function(){
   /*Envio de formulario */
@@ -23,7 +15,8 @@ $(document).ready(function(){
         success: function(data){
           estado = data['estado'];
           console.log(estado);
-          if((estado=="ok")||(estado=="logged")){ //quitar opcion logged cuando haya cerrar sesion
+        //  if(estado=="ok"){
+        if(estado=="logged"){
             $('#login').fadeOut();
             $('#siUser').show();
             $('#noUser').hide();
@@ -34,9 +27,9 @@ $(document).ready(function(){
             //$('#registrar').val('Registrando...');
             console.log("Todo deberia ir bien");
             $('#bodyNav').load('./registrado.html');
-            $("#inicio").attr("href", "http://www.easy2train.es/registrado.html")
             //  $('#logReg').load("../loginMini.html");
             /* El plan es aqui quitar el form de registro y poner un login */
+            
           }else{
             console.log("Algo no ha ido bien");
             //$("#resultado").fadeIn(1000, function(){
