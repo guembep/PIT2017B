@@ -1,5 +1,4 @@
 <?php
-
 	//Nos conectamos a la base de datos.
 	ini_set('session.gc_maxlifetime', 3600);
 	session_set_cookie_params(3600);
@@ -16,7 +15,6 @@
 	 $material = $_POST['exercisematerial'];
 	 $personmin = $_POST['exercisemin'];
 	 $personmax = $_POST['exercisemax'];
-	 $url = $_POST['materialintroduced'];
 	//$sport = "Balonmano";
 	//$category = "Ataque 6-0";
 	//$subcategory = "Juego con pivote";
@@ -26,16 +24,17 @@
 	//$material = "10 balones, 4 conos";
 	//$personmin = 7;
 	//$personmax = 17;
-	//$url = "pass";
-	$data = array();
-
+	$url = "pass";
+//	$data = array();
+	
+	
 	//Si el usuario está registrado hacemos la petición para subir el ejercicio.
 	
 	if(!isset($_SESSION['id'])){
 
 		$stmt = $db->prepare("INSERT INTO `ejercicios`(`deporte`, `categoria`, `subcategoria`, `nombre`, `explicacion`, `duracion`, `material`, `personasmin`, `personasmax`, `foto`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 		
-		echo 'Deporte: ' .$sport;
+		//echo 'Deporte: ' .$sport;
 
 	    $stmt->bind_param('sssssssiis', $sport, $category, $subcategory, $name, $description, $duration, $material, $personmin, $personmax, $url);
 	    
@@ -47,7 +46,7 @@
 		}
 		$stmt->close();
 	}
-
+	else{echo "No hay conexion";}
 	echo json_encode($data);
-
+	
 ?>
