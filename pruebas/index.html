@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>Easy2Train</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="https://easy2train.es">Easy2Train</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+          <!-- SI ES USUARIO USAREMOS ESTA INFO -->
+          <ul id="siUser" class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="">Ejercicios <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Convocatorias</a>
+          </li>
+
+        </ul>
+
+
+      <!-- SI NO ES USUARIO USAREMOS ESTA INFO -->
+
+    <ul id="noUser" class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="./funcionalidades.html">Funcionalidades <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active ">
+        <a href="./registro.html" class="btn btn-primary btn-primary"><span class="glyphicon glyphicon-plus"></span> Registrarse</a>
+      </li>
+      <li>
+        <br>
+      </li>
+    </ul>
+    <ul id="login" class="navbar-nav">
+          <form id="form-entrar" method="POST" class= "navbar-form form-inline">
+            <div class="form-group">
+              <input id="user" name="user" type="text" placeholder="Usuario" class="form-control">
+            </div>
+            <div class="form-group">
+              <input  id="pass" name="pass" type="password" placeholder="Contraseña" class="form-control">
+            </div>
+            <div class="form-group">
+            <button id="entrar"  class="btn btn-success">Entrar</button>
+          </div>
+            </form>
+    </ul>
+
+        <!--  <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        -->
+    </div>
+    </nav>
+<!-- Hasta aqui va el nav -->
+<h1 id="title"></h1>
+<div id="contenido">
+    <div id=bodyNav >
+    <!--Esta es la parte del "jumbotron" TODO añadir texto con info de la web -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Hola!</h1>
+        <p>Texto que explica un poco de que va la web</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Mas información &raquo;</a></p>
+      </div>
+    </div>
+    <!-- Hasta aqui el jumbotron -->
+
+
+
+    <!-- Parte con las columnas y fotos -->
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Facil acceso a convocatorias</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <img src="images/convocatorias.jpg" class="img-fluid" alt="Convocatorias">
+        </div>
+        <div class="col-md-4">
+          <h2>Crea ejecicios</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <img src="images/creaEjercicios.png" class="img-fluid" alt="Convocatorias">
+        </div>
+        <div class="col-md-4">
+          <h2>Prepara Entrenamientos</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <img src="images/preparaEntrenamientos.jpg" class="img-fluid" alt="PreparaEntrenamientos">
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Easy2Train 2017</p>
+      </footer>
+    </div> <!-- /container -->
+  </div>
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <!--  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script> -->
+    <script src="js/popper.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+    
+  </body>
+</html>
