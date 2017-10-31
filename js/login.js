@@ -5,6 +5,8 @@ if (sesion==null){
 	$('#siUser').show();
     $('#noUser').hide();
     $('#login').hide();
+    $('#bodyNav').load('./registrado.html');
+    $("#inicio").attr("href", "http://www.easy2train.es/registrado.html");
 }	
 $(document).ready(function(){
   $('#entrar').click(function(){
@@ -37,7 +39,7 @@ $(document).ready(function(){
             //$('#registrar').val('Registrando...');
             console.log("Todo deberia ir bien");
             $('#bodyNav').load('./registrado.html');
-            $("#inicio").attr("href", "http://www.easy2train.es/registrado.html")
+            $("#inicio").attr("href", "http://www.easy2train.es/registrado.html");
             //  $('#logReg').load("../loginMini.html");
             /* El plan es aqui quitar el form de registro y poner un login */
           }else{
@@ -55,7 +57,7 @@ $(document).ready(function(){
       return false;
 	  }
 });
-});
+
 $("#frmRestablecer").submit(function(event){
   event.preventDefault();
   $.ajax({

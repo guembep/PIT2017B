@@ -29,7 +29,7 @@ function nuevoejercicio(){
             var nuevoscript = document.createElement( "script" );
 		//	nuevoscript.setAttribute("type","text/javascript");
 			nuevoscript.setAttribute("src","js/Form_CrearEjercicio.js");
-			$("#contenido").append(nuevoscript);
+			$("body").append(nuevoscript);
         if(statusTxt == "error")
             console.log("Error: " + xhr.status + ": " + xhr.statusText);
     });
