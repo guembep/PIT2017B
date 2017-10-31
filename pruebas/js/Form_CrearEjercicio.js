@@ -1,5 +1,5 @@
+var  materialA = [];
 $(document).ready(function() {
-  var  materialA = [];
   var i=0;    
   var matseparado= [];
   var  input=document.getElementById("exercisematerial");
@@ -114,26 +114,8 @@ $(document).ready(function() {
         },
         submitHandler: function (){ //Enviar datos a servidor
 			//Comprobar los tics de las opciones no obligatorias
-			
-			//
-                $.ajax({
-					data: { exercisesport:$("#exercisesport").val(), exercisetype: $("#exercisetype").val(), exercisesub: $("#exercisesub").val(), exercisename: $("#exercisename").val(), exercisedescription: $("#exercisedescription").val(), exercisetime: $("#exercisetime").val(),exercisematerial: $("#exercisematerial").val(), exercisemin: $("#exercisemin").val(), exercisemax: $("#exercisemax").val(), materialintroduced: JSON.stringify(materialA) }, //datos que se envian a traves de ajax
-					url:   './php/Form_CrearEjercicio.php', //archivo que recibe la peticion
-					type:  'post', //método de envio
-					beforeSend: function () {
-							$("#resultado").html("Procesando, espere por favor...");
-					},
-					success:  function (response) { //una vez que el archivo recibe el request lo procesa y lo devuelve
-                        $("#resultado").html("Ejercicio añadido");
-                        materialA=[];
-                        $("input").each(function(){	
-								$($(this)).val('');
-						});
-						$("textarea").val(" ");
-						$(".material").remove();
-						$(".etiqueta").remove();
-					}
-				});
+           document.getElementById("btn_save_image_img").click();
+
          }
       });
  });
