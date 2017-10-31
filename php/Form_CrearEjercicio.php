@@ -24,12 +24,8 @@
 	//$material = "10 balones, 4 conos";
 	//$personmin = 7;
 	//$personmax = 17;
-<<<<<<< HEAD
-	$url = "pass";
-=======
 	//$url = "url";
->>>>>>> 789789b7d481798309a0e4b8822a0a2079a84410
-//	$data = array();
+    $data = array();
 	
 	
 	//Si el usuario está registrado hacemos la petición para subir el ejercicio.
@@ -52,15 +48,14 @@
 		}
 		$stmt->close();
 		
+		$foto = sha1(time());
+		$data['foto'] = $foto;
+		
 		//$stmt = $db->prepare("SELECT 'id' FROM 'ejercicios' WHERE  ")
 	}else{
 	    echo "No hay conexion";
 	    
 	}
-<<<<<<< HEAD
-	else{echo "No hay conexion";}
-=======
->>>>>>> 789789b7d481798309a0e4b8822a0a2079a84410
 	echo json_encode($data);
 	
 ?>
