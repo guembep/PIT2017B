@@ -6,6 +6,7 @@
 
     <meta name="description" content="">
     <meta name="author" content="">
+      <script type="text/javascript" src="/js/jquery.min.js"></script>
     <link rel="icon" href="images/favicon.ico">
 
     <title>Easy2Train</title>
@@ -18,20 +19,37 @@
   </head>
 
   <body>
-     <p id="demo"></p>
-     
-     
+     <div id="demo"></div>
      <script>
-     $.get('php/cogerejercicioBD.php?code=show')
-     .done(function( data ) {
-     var obj = JSON.parse(data);
-     document.getElementById("demo").innerHTML = obj.id + ", " + obj.categoria; 
-     
-  });
-     </script>
+     $.ajax({
+    // En data puedes utilizar un objeto JSON, un array o un query string
+    data: {"parametro1" : "valor1", "parametro2" : "valor2","parametro3" : "valor3","parametro4" : "valor4", "parametro5" : "valor5","parametro6" : "valor6"},
+    //Cambiar a type: POST si necesario
+    type: "POST",
+    // Formato de datos que se espera en la respuesta
+    dataType: "json",
+    // URL a la que se enviará la solicitud Ajax
+    url: "php/cogerejerciciosBD.php",
+})
+.done(function( data, textStatus, jqXHR ) {
+     if ( console && console.log ) {
+         console.log( "La solicitud se ha completado correctamente." );
+        var div = document.getElementById("demo");
+        div.textContent = data.email;
+        data.email;
+        data.id;
+     }
+ })
+ .fail(function( jqXHR, textStatus, errorThrown ) {
+     if ( console && console.log ) {
+         console.log( "La solicitud a fallado: " +  textStatus);
+     }
+});
+</script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
      <script src="js/popper.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script src="js/login.js"></script>
+  
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
