@@ -3,6 +3,33 @@ $(document).ready(function(){
 	$("#linkconvocatorias").click(function (){console.log("acceder a convocatorias"); convocatorias();});
 
 
+function lista(){
+	console.log("Cargando listado...");
+		/*$("#contenido").load("./htmlcojoejerciciophp.html", function(responseTxt, statusTxt, xhr){
+				if(statusTxt == "success"){
+				console.log("Carga de listado correcta");
+				}	
+				if(statusTxt == "error"){
+					console.log("Error: " + xhr.status + ": " + xhr.statusText);
+				}
+			});	*/
+		$.ajax({
+			url: "./php/cogerejerciciosBD.php",
+			success:( function (response) {
+					console.log( "La solicitud se ha completado correctamente" );
+				/*	var div = document.getElementById("demo");
+					div.textContent = data.email;
+					data.email;
+					data.id;*/
+					$("#contenido").html("Listado de ejercicios: "+response);
+			 }),
+			 error:(function(xhr, status){
+					 console.log( "La solicitud ha fallado: " +  status);
+			})
+		});	
+			
+}
+
 function ejercicios(){
 	$("#title").html("Ejercicios");
 	$("#contenido").html("listado de ejercicios"); 
@@ -18,6 +45,16 @@ function ejercicios(){
 	$("#botonAddExercise").click(function (){console.log("acceder a añadir ejercicio"); 
 		nuevoejercicio();
 		});
+		
+	var listado = document.createElement( "input" );
+	listado.setAttribute("type","button");
+	listado.setAttribute("id","botonListado");
+	listado.setAttribute("value","Ver listado de ejercicios");
+	$("#contenido").append(listado);
+	$("#botonListado").click(function (){
+		console.log("acceder a lista de ejercicios"); 
+		lista();	
+	});	
 }
 
 function convocatorias(){
@@ -51,4 +88,6 @@ function nuevoejercicio(){
 		}
     });
 }
+
+
 });
