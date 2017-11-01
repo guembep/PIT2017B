@@ -5,7 +5,11 @@ $(document).ready(function(){
 
 function ejercicios(){
 	$("#title").html("Ejercicios");
-	$("#contenido").html("listado de ejercicios"); //Leer contenido ejercicios de servidor, AJAX
+	$("#contenido").html("listado de ejercicios"); 
+	//Cuando este listo el html de coger listado ejers
+	//$("#contenido").load("./htmlcojoejerciciophp.html"); 
+	//console.log("Añadiendo lista de ejercicios...");
+	
 	var nuevoejer = document.createElement( "input" );
 	nuevoejer.setAttribute("type","button");
 	nuevoejer.setAttribute("id","botonAddExercise");
@@ -24,14 +28,27 @@ function convocatorias(){
 function nuevoejercicio(){
 	console.log("Cargando pagina de nuevo ejercicio");
 	$("#contenido").load("./Form_CrearEjercicio.html", function(responseTxt, statusTxt, xhr){
-        if(statusTxt == "success")
+        if(statusTxt == "success"){
             console.log("Carga de página correcta");
-            var nuevoscript = document.createElement( "script" );
+            var nuevoscriptA = document.createElement( "script" );
+			nuevoscriptA.setAttribute("type","text/javascript");
+			nuevoscriptA.setAttribute("src","https://code.jquery.com/jquery-1.9.1.min.js");
+			$("body").append(nuevoscriptA);
+			console.log(nuevoscriptA);
+			var nuevoscriptB = document.createElement( "script" );
+			nuevoscriptB.setAttribute("type","text/javascript");
+			nuevoscriptB.setAttribute("src","https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js");
+			$("body").append(nuevoscriptB);
+			console.log(nuevoscriptB);	
+			var nuevoscriptC = document.createElement( "script" );
 		//	nuevoscript.setAttribute("type","text/javascript");
-			nuevoscript.setAttribute("src","js/Form_CrearEjercicio.js");
-			$("body").append(nuevoscript);
-        if(statusTxt == "error")
+			nuevoscriptC.setAttribute("src","js/Form_CrearEjercicio.js");
+			$("body").append(nuevoscriptC);
+			console.log(nuevoscriptC);
+		}	
+        if(statusTxt == "error"){
             console.log("Error: " + xhr.status + ": " + xhr.statusText);
+		}
     });
 }
 });
