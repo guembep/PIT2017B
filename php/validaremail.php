@@ -25,34 +25,25 @@ function generarLinkTemporal($idusuario, $username){
 
  
 function enviarEmail( $email, $link ){
-require("PHPMailer.php");
-$mail = new PHPMailer();
-
-
-//Luego tenemos que iniciar la validación por SMTP:
-$mail->IsSMTP();
-$mail->SMTPAuth = true;
-$mail->Host = "send.one.com"; // A RELLENAR. Aquí pondremos el SMTP a utilizar. Por ej. mail.midominio.com
-$mail->Port = 465; // Puerto de conexión al servidor de envio. 
-$mail->From = "psb2j@easy2train.es"; // A RELLENARDesde donde enviamos (Para mostrar). Puede ser el mismo que el email creado previamente.
-$mail->FromName = "EASY2TRAIN"; //A RELLENAR Nombre a mostrar del remitente. 
-$mail->AddAddress("$email"); // Esta es la dirección a donde enviamos 
-$mail->IsHTML(true); // El correo se envía como HTML 
-$mail->Subject = "Restablece tu contrasñea"; // Este es el titulo del email. 
-$body = " Hemos recibido una petición para restablecer la contraseña de tu cuenta"; 
-$body .= "Si hiciste esta petición, haz clic en el siguiente enlace, si no hiciste esta petición puedes ignorar este correo. El enlace $link";
-$mail->Body = $body; // Mensaje a enviar.
-$exito = $mail->Send(); // Envía el correo.
-if($exito){ 
-    echo "El correo fue enviado correctamente."; 
-    
-}else{ 
-    echo "Hubo un problema. Contacta a un administrador.";
-    } 
-
-
-
-
+   $mensaje = '<html>
+     <head>
+        <title>Restablece tu contraseña</title>
+     </head>
+     <body>
+       <p>Hemos recibido una petición para restablecer la contraseña de tu cuenta.</p>
+       <p>Si hiciste esta petición, haz clic en el siguiente enlace, si no hiciste esta petición puedes ignorar este correo.</p>
+       <p>
+         <strong>Enlace para restablecer tu contraseña</strong><br>
+         <a href="'.$link.'"> Restablecer contraseña </a>
+       </p>
+     </body>
+    </html>';
+ 
+   $cabeceras = 'MIME-Version: 1.0' . "\r\n";
+   $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+   $cabeceras .= 'From: <psb2j@easy2train.es>' . "\r\n";
+   // Se envia el correo al usuario
+   mail($email, "Recuperar contraseña", $mensaje, $cabeceras);
 }
 
 $email =  htmlspecialchars($_POST['email']);
