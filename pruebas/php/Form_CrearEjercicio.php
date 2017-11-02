@@ -73,7 +73,7 @@
 		
 		
 	}else{
-	    echo "No hay sesion de usuario";
+	    $data['estado'] = "No hay sesion de usuario";
 	    
 	}
 	echo json_encode($data);

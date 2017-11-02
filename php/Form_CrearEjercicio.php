@@ -9,6 +9,7 @@
     $sport = $_POST['exercisesport'];  
     $category = $_POST['exercisetype'];
     $subcategory = $_POST['exercisesub'];
+    $club = 1;
 	$name = $_POST['exercisename'];
 	$description = $_POST['exercisedescription'];
 	$duration = $_POST['exercisetime'];
@@ -35,9 +36,7 @@
 	if(isset($_SESSION['id'])){
 
         $iduser = $_SESSION['id'];
-        $//iduser = 2;
-        $foto = sha1(time());
-        $data['foto'] = $foto;
+        $data['foto'] = $imagename;
         
         //$url =  Enchufamos la url con la imagen .png
         //$club = $_SESSION['idequipo']; //Cuando tengamos url y equipo implementamos
@@ -50,7 +49,7 @@
 	    $stmt->bind_param('sissssssiis', $sport, $club, $category, $subcategory, $name, $description, $duration, $material, $personmin, $personmax, $imagename);
 	    
 	    if($stmt->execute()===false){
-			$data['estado']='error';
+			$data['estado']='error1';
 
 		}else{
 			move_uploaded_file($_FILES['imagen']['tmp_name'], $imagename);	
@@ -62,7 +61,7 @@
 	        $stmt-> bind_param('ii', $iduser, $idejercicio);
 	        
 	        if($stmt->execute()===false){
-				$data['estado']='error';
+				$data['estado']='error2';
 
 			}else{
 				$data['estado']='subido';
@@ -73,7 +72,7 @@
 		
 		
 	}else{
-	    echo "No hay sesion de usuario";
+	    $data['estado'] = "No hay sesion de usuario";
 	    
 	}
 	echo json_encode($data);
