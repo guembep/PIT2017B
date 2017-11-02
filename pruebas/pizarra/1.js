@@ -269,11 +269,11 @@
                         fd.append('exercisetime', $("#exercisetime").val() );
                         fd.append('exercisemin', $("#exercisemin").val() );
                         fd.append('exercisemax', $("#exercisemax").val() );
-                        fd.append('materialintroduced', JSON.stringify(materialA)); //datos que se envian a traves de ajax*/
+                        fd.append('exercisematerial', JSON.stringify(materialA)); //datos que se envian a traves de ajax*/
                         fd.append('imagename', Date.now());
 
 					$.ajax({
-		                url: "pizarra/php/imagen.php",
+		                url: "../php/Form_CrearEjercicio.php",
 		                type: "POST",
 		                data: fd,
 		                processData: false,
