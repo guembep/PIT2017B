@@ -25,7 +25,7 @@
 	//$personmin = 7;
 	//$personmax = 17;
 	//$url = "url";
-//	$data = array();
+    $data = array();
 	
 	
 	//Si el usuario está registrado hacemos la petición para subir el ejercicio.
@@ -47,6 +47,9 @@
 			$data['estado']='subido';
 		}
 		$stmt->close();
+		
+		$foto = sha1(time());
+		$data['foto'] = $foto;
 		
 		//$stmt = $db->prepare("SELECT 'id' FROM 'ejercicios' WHERE  ")
 	}else{

@@ -9,20 +9,23 @@
     <link rel="icon" href="images/favicon.ico"/>
 
     <title>Easy2Train</title>
-
-    <!-- Bootstrap core CSS -->
+	<!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet"/>
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet"/>
-      
-      
+    
       <!--JQuery-->
-      <link href="css/popup.css" rel="stylesheet" />
-      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
-      <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-      <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+     <link href="css/popup.css" rel="stylesheet" />
+<!--      <link rel="stylesheet" href="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" /> -->
+     <link rel="stylesheet" href="css/popper.css"/>
+    
      
+     <!-- <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <script src="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>-->
+  <!--   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+   -->
+      
       
   </head>
 
@@ -76,7 +79,7 @@
               
                <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label">Material necesario</label>
-                  <a href="#popupInfo" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more"><img src="images/info.ico" height="20px" width="20px"></a>
+                  <a href="#popupInfo" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="How to"><img src="images/info.ico" height="20px" width="20px"></a>
                   <div class="col-8" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext">
                         <input class="form-control" type="text" placeholder="10 balones" id="exercisematerial" type="text" >
                         <div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;" >
@@ -91,7 +94,7 @@
               <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label">Duracion</label>
                   <div class="col-8">
-                    <input class="form-control" type="time" name="appt-time" placeholder="0:30" id="exercisetime" min="00:01" max="24:00" name="apptime">
+                    <input class="form-control" type="time" name="appt-time" placeholder="02:30" id="exercisetime" min="00:01" max="24:00" name="apptime">
                   </div>    
               </div>
               
@@ -163,7 +166,9 @@
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+  <!--      <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
         <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
         <script type="text/javascript" src="js/popper.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -172,6 +177,6 @@
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
       <!--  <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
         <script type="text/javascript" src="js/Form_CrearEjercicio.js"></script>
-      
+     
   </body>
 </html>

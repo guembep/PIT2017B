@@ -261,7 +261,17 @@
                         d = URL.createObjectURL(e);
                         var fd = new FormData();
                         fd.append('imagen', e);
-                        console.log(d);
+                        fd.append('exercisesport', $("#exercisesport").val() );
+                        fd.append('exercisestype', $("#exercisetype").val() );
+                        fd.append('exercisesub', $("#exercisesub").val() );
+                        fd.append('exercisename', $("#exercisename").val() );
+                        fd.append('exercisedescription', $("#exercisedescription").val() );
+                        fd.append('exercisetime', $("#exercisetime").val() );
+                        fd.append('exercisemin', $("#exercisemin").val() );
+                        fd.append('exercisemax', $("#exercisemax").val() );
+                        fd.append('materialintroduced', JSON.stringify(materialA)); //datos que se envian a traves de ajax*/
+                        fd.append('imagename', Date.now());
+
 					$.ajax({
 		                url: "pizarra/php/imagen.php",
 		                type: "POST",

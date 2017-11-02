@@ -19,9 +19,9 @@
       
       <!--JQuery-->
       <link href="css/popup.css" rel="stylesheet" />
-      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
-      <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-      <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+      <link rel="stylesheet" href="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+      <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <script src="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
     <!--Pizarra--> 
               <!-- CSS STYLE -->
         <link rel="stylesheet" type="text/css" href="pizarra/style.css">
@@ -29,7 +29,7 @@
         
         <!-- javascript -->
         </script><script type="text/javascript" async="" src="pizarra/watch.js"></script><script type="text/javascript" src="pizarra/jquery-2.js"></script>
-        <script type="text/javascript" src="/pizarra/jquery.js"></script>
+        <script type="text/javascript" src="pizarra/jquery.js"></script>
 
         <script type="text/javascript" src="pizarra/1.js"></script>
         <script type="text/javascript" src="pizarra/2.js"></script>
@@ -46,7 +46,7 @@
         <h1><p class="text-center">Introducir nuevo ejercicio</p></h1>
       </div>
       <div class="row">
-        <div class="col-md-4 " style="overflow-y: scroll; height: 525px;">
+        <div class="col-md-3 " style="overflow-y: scroll; height: 525px;">
 
 
           <form method="POST" id="form-registroejer">
@@ -134,18 +134,7 @@
                  </div>  
               </div>
               
-              <div class="form-group row py-2">
-                  <label for="example-text-input" class="col-5 col-form-label">Foto explicativa</label>
-                  <div class="col-8">
-                  <!--
-                    <button class="btn btn-primary" id="addfoto">
-						<span class="glyphicon glyphicon-log-in"></span> Realizar dibujo del ejercicio
-					</button>
-				-->	
-				    <input type="button" onclick='location.href="./pizarra/pizarra.html"' value="Añadir imagen explicativa" name="botonimg" /> 
-                  </div>    
-              </div>
-		
+    
             <br><br>
 
             <div class="form-group">
@@ -163,7 +152,7 @@
 			<p id="resultado"></p>
 		
        </div>
-        <div class="col-md-8">
+        <div class="col-md-6">
           <div id="left_menu_panel" style="font-size: 19px;">
         <img src="pizarra/mw-close.png" id="close" style="width: 15px; height: 15px; right: 4px; top: 4px;"> 
       <span id="board_type_label" style="line-height: 58px;">Handball</span>
@@ -3428,7 +3417,7 @@
           <div class="button" id="btn_left_menu_panel" style="height: 29px; line-height: 27px; margin-right: 12px; margin-top: 2.9px; padding: 0px; font-size: 24px;"><img hidden="true" id="btn_left_menu_panel_img" src="pizarra/left_menu_panel.png" style="height: 29px; width: 29px;"></div> 
           <div  hidden="true" class="button" id="btn_link" title="Get positions link" style="height: 29px; line-height: 27px; margin-right: 3px; margin-top: 2.9px; padding: 0px; font-size: 24px; display: block;"><img hidden="true" id="btn_link_img" src="pizarra/link.png" style="height: 29px; width: 29px;"></div>
           <div class="button" hidden="true" id="btn_animation_links" title="Get animation link" style="height: 29px; line-height: 27px; margin-right: 3px; margin-top: 2.9px; padding: 0px; font-size: 24px;"><img id="btn_animation_links_img" src="pizarra/link.png" style="height: 29px; width: 29px;"></div>
-          <div class="button" id="btn_save_image" title="Save as image" style="height: 29px; line-height: 27px; margin-right: 3px; margin-top: 2.9px; padding: 0px; font-size: 24px; display: block;"><img id="btn_save_image_img" src="pizarra/save.png" style="height: 29px; width: 29px;"></div>
+          <div class="button" id="btn_save_image" hidden="true" title="Save as image" style="height: 29px; line-height: 27px; margin-right: 3px; margin-top: 2.9px; padding: 0px; font-size: 24px; display: block;"><img id="btn_save_image_img" src="pizarra/save.png" style="height: 29px; width: 29px;"></div>
           <div class="button" id="btn_fullscreen" title="Fullscreen (on/off)" style="height: 29px; line-height: 27px; margin-right: 3px; margin-top: 2.9px; padding: 0px; font-size: 24px; display: block;"><img id="btn_fullscreen_img" src="pizarra/fullscreen-off.png" style="height: 29px; width: 29px;"></div>
           <div class="button" id="btn_animation" title="Creating animation" style="height: 29px; line-height: 27px; margin-right: 3px; margin-top: 2.9px; padding: 0px; font-size: 24px; margin-left: 9px; display: block;"><a href="#animation"><img hidden="true" id="btn_animation_img" src="pizarra/create-animation.png" style="height: 29px; width: 29px;"></a></div>
           <div class="button anim-frames-arrows" id="btn_animation_frames_left" title="" style="height: 29px; line-height: 27px; margin-right: 0px; margin-top: 2.9px; padding: 0px; font-size: 24px; width: 14.5px; margin-left: 9.66657px;"><img id="btn_animation_frames_left_img" src="pizarra/frames-left.png" style="height: 29px; width: 14.5px;"></div>
