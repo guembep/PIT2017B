@@ -1,15 +1,15 @@
 var sesion=Cookies.get('PHPSESSID');
+$("#inicio").click(function(){document.location.href="https://easy2train.es"});
 if (sesion==null){
 	$('#siUser').hide();
 }else{
 	$('#siUser').show();
     $('#noUser').hide();
     $('#login').hide();
-<<<<<<< HEAD
+    
     //$('#textoprincipal').innerHTML = "h1 class=\"display-3\" >Bienvenido!</h1>";
     
     //prueba load registrado.html
-    $("#contenido").html("");
     $("#contenido").load("./registrado.html", function(responseTxt, statusTxt, xhr){
 			if(statusTxt == "success"){
 				console.log("Carga de página registrado correcta");
@@ -26,11 +26,7 @@ if (sesion==null){
 		script.setAttribute("src","js/registrado.js");
 	$("body").append(script);*/
 }	
-=======
-    $('#bodyNav').load('./registrado.html');
-    $("#inicio").attr("href", "https://www.easy2train.es/registrado.html");
-}
->>>>>>> b99062f43a05c28f2a2e40131bc68cab38fc22e4
+
 $(document).ready(function(){
   $('#entrar').click(function(){
   /*Envio de formulario */
