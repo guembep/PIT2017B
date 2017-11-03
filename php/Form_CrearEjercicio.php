@@ -6,24 +6,27 @@
 	include('conectarBD.php');
 
 	//Recogemos los datos del ejercicio en variables.
-	 $sport = $_POST['exercisesport'];
-	 $category = $_POST['exercisetype'];
-     $subcategory = $_POST['exercisesub'];
-	 $name = $_POST['exercisename'];
-	 $description = $_POST['exercisedescription'];
-	 $duration = $_POST['exercisetime'];
-     $material = $_POST['exercisematerial'];
-	 $personmin = $_POST['exercisemin'];
-	 $personmax = $_POST['exercisemax'];
-	//$sport = "Balonmano";
-	//$category = "Ataque 6-0";
-	//$subcategory = "Juego con pivote";
-	//$name = "Ataque en 6-0 juego con pivote 1";
+    $sport = $_POST['exercisesport'];  
+    $category = $_POST['exercisestype'];
+    $subcategory = $_POST['exercisesub'];
+    $club = 1;
+	$name = $_POST['exercisename'];
+	$description = $_POST['exercisedescription'];
+	$duration = $_POST['exercisetime'];
+    $material = $_POST['exercisematerial'];
+	$personmin = (int)$_POST['exercisemin'];
+	$personmax = (int)$_POST['exercisemax'];
+	$imagename = "../images/ejercicios/".sha1($_POST['imagename']).".png";
+
+	//$sport = "Baloncesto";
+	//$category = "Ataque";
+	//$subcategory = "Tiro";
+	//$name = "Mejora tiros libres";
 	//$description = "descripcion";
-    //$duration = "15:00";
-	//$material = "10 balones, 4 conos";
+    //$duration = "07:30";
+	//$material = "10 balones";
 	//$personmin = 7;
-	//$personmax = 17;
+	//$personmax = 14;
 	//$url = "url";
     $data = array();
 	
@@ -32,28 +35,43 @@
 	
 	if(isset($_SESSION['id'])){
 
-        $iduser = $_SESSION['id'];
+        $iduser = (int)$_SESSION['id'];
+        
+        //$url =  Enchufamos la url con la imagen .png
+        //$club = $_SESSION['idequipo']; //Cuando tengamos url y equipo implementamos
+        //$data['idequipo'] = $club;
 
-		$stmt = $db->prepare("INSERT INTO `ejercicios`(`deporte`, `categoria`, `subcategoria`, `nombre`, `explicacion`, `duracion`, `material`, `personasmin`, `personasmax`, `foto`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+		$stmt = $db->prepare("INSERT INTO `ejercicios`(`deporte`, `idequipo`, `categoria`, `subcategoria`, `nombre`, `explicacion`, `duracion`, `material`, `personasmin`, `personasmax`, `foto`, `idusuario`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 		
 		//echo 'Deporte: ' .$sport;
+	    $stmt->bind_param('sissssssiisi', $sport, $club, $category, $subcategory, $name, $description, $duration, $material, $personmin, $personmax, $imagename, $iduser);
 
-	    $stmt->bind_param('sssssssiis', $sport, $category, $subcategory, $name, $description, $duration, $material, $personmin, $personmax, $url);
-	    
-		if($stmt->execute()===false){
-			$data['estado']='error';
+	    if($stmt->execute()===false){
+			$data['estado']='error1';
+			$data['foto'] = var_dump($stmt);
 
 		}else{
-			$data['estado']='subido';
-		}
-		$stmt->close();
+			move_uploaded_file($_FILES['imagen']['tmp_name'], $imagename);	
+			$idejercicio =  mysqli_insert_id($db);
+			
+		    //$data['id'] = $idejercicio;
+		    
+	        $stmt = $db->prepare("INSERT INTO `ejerciciosusers`(`iduser`, `idejercicio`) VALUES (?, ?)");
+	        $stmt-> bind_param('ii', $iduser, $idejercicio);
+	        
+	        if($stmt->execute()===false){
+				$data['estado']='error2';
+
+			}else{
+				$data['estado']='subido';
+			}
+	    }  
+        $stmt->close();
 		
-		$foto = sha1(time());
-		$data['foto'] = $foto;
 		
-		//$stmt = $db->prepare("SELECT 'id' FROM 'ejercicios' WHERE  ")
+		
 	}else{
-	    echo "No hay conexion";
+	    $data['estado'] = "No hay sesion de usuario";
 	    
 	}
 	echo json_encode($data);

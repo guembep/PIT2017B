@@ -186,7 +186,7 @@ var BoardHelpers = {
             },
             "field-hockey": {
                 bgColor: "#e5c0c5",
-                strokeColor: "#ffffff",
+                strokeColor: "#000000",
                 heightToWidthCoeff: .6392,
                 playerToBoardWidthCoeff: .026184
             },
