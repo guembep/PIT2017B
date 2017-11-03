@@ -5,8 +5,25 @@ if (sesion==null){
 	$('#siUser').show();
     $('#noUser').hide();
     $('#login').hide();
-    $('#bodyNav').load('./registrado.html');
-    $("#inicio").attr("href", "https://www.easy2train.es/registrado.html");
+    //$('#textoprincipal').innerHTML = "h1 class=\"display-3\" >Bienvenido!</h1>";
+    
+    //prueba load registrado.html
+    $("#contenido").html("");
+    $("#contenido").load("./registrado.html", function(responseTxt, statusTxt, xhr){
+			if(statusTxt == "success"){
+				console.log("Carga de página registrado correcta");
+			}	
+			if(statusTxt == "error"){
+				console.log("Error: " + xhr.status + ": " + xhr.statusText);
+			}
+		});
+
+   // $("#inicio").attr("href", "https://www.easy2train.es/registrado.html");
+	//$("#inicio").attr("href", "https://www.easy2train.es");
+	/*var script = document.createElement( "script" );
+		script.setAttribute("type","text/javascript");
+		script.setAttribute("src","js/registrado.js");
+	$("body").append(script);*/
 }	
 $(document).ready(function(){
   $('#entrar').click(function(){
