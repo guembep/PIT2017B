@@ -473,7 +473,7 @@ div#top_ad_adapted, div#bottom_ad_adapted {
 
 @media(min-width: 800px) { 
 	div#top_ad_adapted, div#bottom_ad_adapted { 
-		width: 700px; 
+		width: 500px; 
 		height: 65px;
 		/*margin-bottom: 7px;*/
 		display: block;
@@ -485,7 +485,7 @@ div#top_ad_adapted, div#bottom_ad_adapted {
 }
 @media(min-width: 1000px) { 
 	div#top_ad_adapted, div#bottom_ad_adapted {
-		width: 850px; 
+		width: 500px; 
 		height: 90px;
 		/*margin-bottom: 10px;*/
 		display: block;

@@ -236,7 +236,7 @@ var BoardHelpers = {
     },
     Board = function(J) {
         function q() {
-            var a = +(.97 * window.innerWidth).toFixed(),
+            var a = +(.65 * window.innerWidth).toFixed(),
                 b = window.innerHeight,
                 e = a,
                 c = 200;
