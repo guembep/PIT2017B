@@ -1,7 +1,5 @@
 <?php
 	//Incluimos fichero de conexion a la bd y ajustamos tiempo de variables de sesion
-	ini_set('session.gc_maxlifetime', 3600);
-	session_set_cookie_params(3600);
 	session_start();
 	include('conectarBD.php');
 
@@ -28,7 +26,8 @@
 			$data['estado'] = 'ok';
 		}else{
 			$data['estado'] = 'nook';
-			session_destroy();
+			session_destroy(); // destroy session
+			setcookie("PHPSESSID","",time()-3600,"/"); // delete session cookie 
 		}	
 	}else{
 		$data['estado'] = 'logged';

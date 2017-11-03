@@ -5,6 +5,7 @@ if (sesion==null){
 	$('#siUser').show();
     $('#noUser').hide();
     $('#login').hide();
+<<<<<<< HEAD
     //$('#textoprincipal').innerHTML = "h1 class=\"display-3\" >Bienvenido!</h1>";
     
     //prueba load registrado.html
@@ -25,6 +26,11 @@ if (sesion==null){
 		script.setAttribute("src","js/registrado.js");
 	$("body").append(script);*/
 }	
+=======
+    $('#bodyNav').load('./registrado.html');
+    $("#inicio").attr("href", "https://www.easy2train.es/registrado.html");
+}
+>>>>>>> b99062f43a05c28f2a2e40131bc68cab38fc22e4
 $(document).ready(function(){
   $('#entrar').click(function(){
   /*Envio de formulario */
@@ -32,8 +38,11 @@ $(document).ready(function(){
 	if(($('#user').val()=="") || ($('#pass').val()=="")){
       $('#badPass').html('<b class="text-danger">Debes introducir un email y contraseña!</b>').hide();
       $('#badPass').fadeIn(300);
+			console.log("no hay pass");
+
       return false;
 	}else{
+
       var data = $("#form-entrar").serialize();
       $.ajax({
         type : 'POST',
@@ -88,4 +97,3 @@ $("#frmRestablecer").submit(function(event){
   });
 });
 });
-
