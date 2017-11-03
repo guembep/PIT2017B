@@ -12,7 +12,7 @@ error_reporting(E_ALL);
 
 if(isset($_SESSION['id'])){
 	$id=$_SESSION['id'];
-$sql = "SELECT * FROM users WHERE id=".$id;
+$sql = "SELECT * FROM ejercicios WHERE idusuario=".$id;
 $resultado = $db->query($sql);
 	if (!$resultado) {
     die('No se pudo consultar:' . mysql_error());
