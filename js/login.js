@@ -1,15 +1,17 @@
 var sesion=Cookies.get('PHPSESSID');
+console.log("la variable sesion es : "+sesion);
 $("#inicio").click(function(){document.location.href="https://easy2train.es"});
 if (sesion==null){
 	$('#siUser').hide();
+	$("#logout").hide();
+	$('#noUser').show();
+    $('#login').show();
 }else{
 	$('#siUser').show();
+	$("#logout").show();
     $('#noUser').hide();
     $('#login').hide();
     
-    //$('#textoprincipal').innerHTML = "h1 class=\"display-3\" >Bienvenido!</h1>";
-    
-    //prueba load registrado.html
     $("#contenido").load("./registrado.html", function(responseTxt, statusTxt, xhr){
 			if(statusTxt == "success"){
 				console.log("Carga de página registrado correcta");
@@ -18,13 +20,6 @@ if (sesion==null){
 				console.log("Error: " + xhr.status + ": " + xhr.statusText);
 			}
 		});
-
-   // $("#inicio").attr("href", "https://www.easy2train.es/registrado.html");
-	//$("#inicio").attr("href", "https://www.easy2train.es");
-	/*var script = document.createElement( "script" );
-		script.setAttribute("type","text/javascript");
-		script.setAttribute("src","js/registrado.js");
-	$("body").append(script);*/
 }	
 
 $(document).ready(function(){
@@ -53,6 +48,7 @@ $(document).ready(function(){
           if((estado=="ok")||(estado=="logged")){ //quitar opcion logged cuando haya cerrar sesion
             $('#login').fadeOut();
             $('#siUser').show();
+            $("#logout").show();
             $('#noUser').hide();
             //  $('#Log').fadeOut();
           //  setTimeout(function(){
@@ -92,4 +88,19 @@ $("#frmRestablecer").submit(function(event){
     $("#email").val('');
   });
 });
+
+$("#logoutbtn").click( function(){
+	console.log("cerrando sesion...");
+	$.ajax({
+		url:"./php/logout.php",
+		success:( function (response) {
+					console.log( "La sesión ha sido cerrada");
+					document.location.href="https://easy2train.es";
+				 }),
+	    error:(function(xhr, status){
+						 console.log( "La solicitud de cerrar sesión ha fallado: " +  status);
+				})
+	});
+});
+
 });
