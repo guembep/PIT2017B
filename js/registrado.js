@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	$("#linkejercicios").click(function (){console.log("acceder a ejercicios"); ejercicios();});
 	$("#linkconvocatorias").click(function (){console.log("acceder a convocatorias"); convocatorias();});
 
