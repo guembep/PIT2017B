@@ -1,9 +1,9 @@
+
 $(document).ready(function(){
-	console.log("registrado.js funcionando");
+
 	$("#linkejercicios").click(function (){console.log("acceder a ejercicios"); ejercicios();});
 	$("#linkconvocatorias").click(function (){console.log("acceder a convocatorias"); convocatorias();});
-
-
+	
 	function lista(){
 		console.log("Cargando listado...");
 			/*$("#contenido").load("./htmlcojoejerciciophp.html", function(responseTxt, statusTxt, xhr){
@@ -26,9 +26,8 @@ $(document).ready(function(){
 				 }),
 				 error:(function(xhr, status){
 						 console.log( "La solicitud ha fallado: " +  status);
-				})
-			});	
-				
+				 })
+			});				
 	}
 
 	function ejercicios(){
@@ -82,8 +81,8 @@ $(document).ready(function(){
 		$("#botonListado").click(function (){
 		console.log("acceder a lista de ejercicios"); 
 		lista();	
-	});	
-}
+		});	
+	}
 		
 	function convocatorias(){
 		$("#title").html("Convocatorias");
@@ -92,29 +91,10 @@ $(document).ready(function(){
 
 	function nuevoejercicio(){
 		console.log("Cargando pagina de nuevo ejercicio");
-		$("#contenido").load("./Form_CrearEjercicio.html", function(responseTxt, statusTxt, xhr){
-			if(statusTxt == "success"){
-				console.log("Carga de página correcta");
-				var nuevoscriptA = document.createElement( "script" );
-				nuevoscriptA.setAttribute("type","text/javascript");
-				nuevoscriptA.setAttribute("src","https://code.jquery.com/jquery-1.9.1.min.js");
-				$("body").append(nuevoscriptA);
-				console.log(nuevoscriptA);
-				var nuevoscriptB = document.createElement( "script" );
-				nuevoscriptB.setAttribute("type","text/javascript");
-				nuevoscriptB.setAttribute("src","https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js");
-				$("body").append(nuevoscriptB);
-				console.log(nuevoscriptB);	
-				var nuevoscriptC = document.createElement( "script" );
-			//	nuevoscript.setAttribute("type","text/javascript");
-				nuevoscriptC.setAttribute("src","js/Form_CrearEjercicio.js");
-				$("body").append(nuevoscriptC);
-				console.log(nuevoscriptC);
-			}	
-			if(statusTxt == "error"){
-				console.log("Error: " + xhr.status + ": " + xhr.statusText);
-			}
-		});
+		$("#title").html("");
+		$("#contenido").html("");
+		$("#contenido").append("<iframe src='https://easy2train.es/Form_CrearEjercicio.html' width='"+window.innerWidth+"'' height='800' frameborder='0' transparency='transparency'></iframe>");
+		
 	}
 
 

@@ -1,5 +1,4 @@
 var sesion=Cookies.get('PHPSESSID');
-console.log("la variable sesion es : "+sesion);
 $("#inicio").click(function(){document.location.href="https://easy2train.es"});
 if (sesion==null){
 	$('#siUser').hide();
@@ -14,7 +13,6 @@ if (sesion==null){
     
     $("#contenido").load("./registrado.html", function(responseTxt, statusTxt, xhr){
 			if(statusTxt == "success"){
-				console.log("Carga de página registrado correcta");
 			}	
 			if(statusTxt == "error"){
 				console.log("Error: " + xhr.status + ": " + xhr.statusText);
@@ -56,8 +54,10 @@ $(document).ready(function(){
             //},800);
             //$('#registrar').val('Registrando...');
             console.log("Todo deberia ir bien");
-            $('#bodyNav').load('./registrado.html');
-            $("#inicio").attr("href", "https://www.easy2train.es/registrado.html");
+              
+            document.location.href="https://easy2train.es";
+           // $("#inicio").attr("href", "https://www.easy2train.es");
+           // $('#bodyNav').load('./registrado.html');
             //  $('#logReg').load("../loginMini.html");
             /* El plan es aqui quitar el form de registro y poner un login */
           }else{
@@ -74,33 +74,32 @@ $(document).ready(function(){
       });
       return false;
 	  }
-});
-
-$("#frmRestablecer").submit(function(event){
-  event.preventDefault();
-  $.ajax({
-    url:'php/validaremail.php',
-    type:'post',
-    dataType:'json',
-    data:$("#frmRestablecer").serializeArray()
-  }).done(function(respuesta){
-    $("#mensaje").html(respuesta.mensaje);
-    $("#email").val('');
   });
-});
 
-$("#logoutbtn").click( function(){
-	console.log("cerrando sesion...");
-	$.ajax({
-		url:"./php/logout.php",
-		success:( function (response) {
-					console.log( "La sesión ha sido cerrada");
-					document.location.href="https://easy2train.es";
-				 }),
-	    error:(function(xhr, status){
-						 console.log( "La solicitud de cerrar sesión ha fallado: " +  status);
-				})
-	});
-});
+  $("#frmRestablecer").submit(function(event){
+    event.preventDefault();
+    $.ajax({
+      url:'php/validaremail.php',
+      type:'post',
+      dataType:'json',
+      data:$("#frmRestablecer").serializeArray()
+    }).done(function(respuesta){
+      $("#mensaje").html(respuesta.mensaje);
+      $("#email").val('');
+    });
+  });
+
+  $("#logoutbtn").click( function(){
+  	console.log("cerrando sesion...");
+  	$.ajax({
+  		url:"./php/logout.php",
+  		success:( function (response) {
+  					document.location.href="https://easy2train.es";
+  				 }),
+  	  error:(function(xhr, status){
+  						 console.log( "La solicitud de cerrar sesión ha fallado: " +  status);
+  		})
+  	});
+  });
 
 });
