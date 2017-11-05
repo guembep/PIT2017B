@@ -1,5 +1,7 @@
 var  materialA = [];
 $(document).ready(function() {
+  var ancho =window.innerWidth*0.95;
+  $(".container").attr("style","max-width: "+ancho+"px;")   ;
   var i=0;    
   var matseparado= [];
   var  input=document.getElementById("exercisematerial");

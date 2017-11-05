@@ -1,16 +1,7 @@
 $(document).ready(function(){
-	console.log("registrado.js funcionando");
 	$("#linkejercicios").click(function (){console.log("acceder a ejercicios"); ejercicios();});
 	$("#linkconvocatorias").click(function (){console.log("acceder a convocatorias"); convocatorias();});
 
-	//Ajusta el tamaño de un iframe al de su contenido interior para evitar scroll
-	function autofitIframe(id){
-		if (!window.opera && document.all && document.getElementById){
-			id.style.height=id.contentWindow.document.body.scrollHeight;
-		} else if(document.getElementById) {
-			id.style.height=id.contentDocument.body.scrollHeight+"px";
-		}
-	}
 
 	function lista(){
 		console.log("Cargando listado...");
@@ -99,61 +90,10 @@ $(document).ready(function(){
 
 	function nuevoejercicio(){
 		console.log("Cargando pagina de nuevo ejercicio");
-<<<<<<< HEAD
-
-			$("#contenido").html("");
-			$("#contenido").append("<iframe src='https://easy2train.es/Form_CrearEjercicio.html' scrolling='no' width='"+screen.width+"'' height='"+screen.height+"' frameborder='0' transparency='transparency' ></iframe>");
+		$("#title").html("");
+		$("#contenido").html("");
+		$("#contenido").append("<iframe src='https://easy2train.es/Form_CrearEjercicio.html' width='"+window.innerWidth+"'' height='800' frameborder='0' transparency='transparency'></iframe>");
 		
-=======
-		$("#contenido").load("./Form_CrearEjercicio.html", function(responseTxt, statusTxt, xhr){
-			if(statusTxt == "success"){
-				console.log("Carga de página correcta");
-				var nuevoscriptA = document.createElement( "script" );
-				nuevoscriptA.setAttribute("type","text/javascript");
-				nuevoscriptA.setAttribute("src","https://code.jquery.com/jquery-1.9.1.min.js");
-				$("body").append(nuevoscriptA);
-				console.log(nuevoscriptA);
-				var nuevoscriptB = document.createElement( "script" );
-				nuevoscriptB.setAttribute("type","text/javascript");
-				nuevoscriptB.setAttribute("src","https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js");
-				$("body").append(nuevoscriptB);
-				console.log(nuevoscriptB);
-				var nuevoscriptE = document.createElement( "script" );
-				nuevoscriptE.setAttribute("src","pizarra/watch.js");
-				$("body").append(nuevoscriptE);
-				console.log(nuevoscriptE);
-				var nuevoscriptF = document.createElement( "script" );
-				nuevoscriptF.setAttribute("src","pizarra/jquery-2.js");
-				$("body").append(nuevoscriptF);
-				console.log(nuevoscriptF);
-				var nuevoscriptG = document.createElement( "script" );
-				nuevoscriptG.setAttribute("src","pizarra/jquery.js");
-				$("body").append(nuevoscriptG);
-				console.log(nuevoscriptG);
-				var nuevoscriptH = document.createElement( "script" );
-				nuevoscriptH.setAttribute("src","pizarra/1.js");
-				$("body").append(nuevoscriptH);
-				console.log(nuevoscriptH);
-				var nuevoscriptD = document.createElement( "script" );
-				nuevoscriptD.setAttribute("src","pizarra/2.js");
-				$("body").append(nuevoscriptD);
-				console.log(nuevoscriptD);
-				var nuevoscriptI = document.createElement( "script" );
-				nuevoscriptI.setAttribute("src","pizarra/markup_handball.js");
-				$("body").append(nuevoscriptI);
-				console.log(nuevoscriptI);
-				var nuevoscriptC = document.createElement( "script" );
-			//	nuevoscript.setAttribute("type","text/javascript");
-				nuevoscriptC.setAttribute("src","js/Form_CrearEjercicio.js");
-				$("body").append(nuevoscriptC);
-				console.log(nuevoscriptC);
-
-			}	
-			if(statusTxt == "error"){
-				console.log("Error: " + xhr.status + ": " + xhr.statusText);
-			}
-		});
->>>>>>> f6e2edd47960a7ac323a12a7e2f9c3c2fdd15c3e
 	}
 
 
