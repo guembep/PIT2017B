@@ -3,6 +3,14 @@ $(document).ready(function(){
 	$("#linkejercicios").click(function (){console.log("acceder a ejercicios"); ejercicios();});
 	$("#linkconvocatorias").click(function (){console.log("acceder a convocatorias"); convocatorias();});
 
+	//Ajusta el tamaño de un iframe al de su contenido interior para evitar scroll
+	function autofitIframe(id){
+		if (!window.opera && document.all && document.getElementById){
+			id.style.height=id.contentWindow.document.body.scrollHeight;
+		} else if(document.getElementById) {
+			id.style.height=id.contentDocument.body.scrollHeight+"px";
+		}
+	}
 
 	function lista(){
 		console.log("Cargando listado...");
@@ -26,9 +34,8 @@ $(document).ready(function(){
 				 }),
 				 error:(function(xhr, status){
 						 console.log( "La solicitud ha fallado: " +  status);
-				})
-			});	
-				
+				 })
+			});				
 	}
 
 	function ejercicios(){
@@ -82,8 +89,8 @@ $(document).ready(function(){
 		$("#botonListado").click(function (){
 		console.log("acceder a lista de ejercicios"); 
 		lista();	
-	});	
-}
+		});	
+	}
 		
 	function convocatorias(){
 		$("#title").html("Convocatorias");
@@ -92,29 +99,10 @@ $(document).ready(function(){
 
 	function nuevoejercicio(){
 		console.log("Cargando pagina de nuevo ejercicio");
-		$("#contenido").load("./Form_CrearEjercicio.html", function(responseTxt, statusTxt, xhr){
-			if(statusTxt == "success"){
-				console.log("Carga de página correcta");
-				var nuevoscriptA = document.createElement( "script" );
-				nuevoscriptA.setAttribute("type","text/javascript");
-				nuevoscriptA.setAttribute("src","https://code.jquery.com/jquery-1.9.1.min.js");
-				$("body").append(nuevoscriptA);
-				console.log(nuevoscriptA);
-				var nuevoscriptB = document.createElement( "script" );
-				nuevoscriptB.setAttribute("type","text/javascript");
-				nuevoscriptB.setAttribute("src","https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js");
-				$("body").append(nuevoscriptB);
-				console.log(nuevoscriptB);	
-				var nuevoscriptC = document.createElement( "script" );
-			//	nuevoscript.setAttribute("type","text/javascript");
-				nuevoscriptC.setAttribute("src","js/Form_CrearEjercicio.js");
-				$("body").append(nuevoscriptC);
-				console.log(nuevoscriptC);
-			}	
-			if(statusTxt == "error"){
-				console.log("Error: " + xhr.status + ": " + xhr.statusText);
-			}
-		});
+
+			$("#contenido").html("");
+			$("#contenido").append("<iframe src='https://easy2train.es/Form_CrearEjercicio.html' scrolling='no' width='"+screen.width+"'' height='"+screen.height+"' frameborder='0' transparency='transparency' ></iframe>");
+		
 	}
 
 

@@ -74,33 +74,33 @@ $(document).ready(function(){
       });
       return false;
 	  }
-});
-
-$("#frmRestablecer").submit(function(event){
-  event.preventDefault();
-  $.ajax({
-    url:'php/validaremail.php',
-    type:'post',
-    dataType:'json',
-    data:$("#frmRestablecer").serializeArray()
-  }).done(function(respuesta){
-    $("#mensaje").html(respuesta.mensaje);
-    $("#email").val('');
   });
-});
 
-$("#logoutbtn").click( function(){
-	console.log("cerrando sesion...");
-	$.ajax({
-		url:"./php/logout.php",
-		success:( function (response) {
-					console.log( "La sesión ha sido cerrada");
-					document.location.href="https://easy2train.es";
-				 }),
-	    error:(function(xhr, status){
-						 console.log( "La solicitud de cerrar sesión ha fallado: " +  status);
-				})
-	});
-});
+  $("#frmRestablecer").submit(function(event){
+    event.preventDefault();
+    $.ajax({
+      url:'php/validaremail.php',
+      type:'post',
+      dataType:'json',
+      data:$("#frmRestablecer").serializeArray()
+    }).done(function(respuesta){
+      $("#mensaje").html(respuesta.mensaje);
+      $("#email").val('');
+    });
+  });
+
+  $("#logoutbtn").click( function(){
+  	console.log("cerrando sesion...");
+  	$.ajax({
+  		url:"./php/logout.php",
+  		success:( function (response) {
+  					console.log( "La sesión ha sido cerrada");
+  					document.location.href="https://easy2train.es";
+  				 }),
+  	  error:(function(xhr, status){
+  						 console.log( "La solicitud de cerrar sesión ha fallado: " +  status);
+  		})
+  	});
+  });
 
 });
