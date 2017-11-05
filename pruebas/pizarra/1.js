@@ -253,9 +253,6 @@
         else {
             var c = document.createElement("a");
             if ("download" in c) {
-                c.download = a;
-                c.style.display = "none";
-                document.body.appendChild(c);
                 try {
                     var e = k(b),
                         d = URL.createObjectURL(e);
@@ -285,15 +282,9 @@
 		                    console.log('error')
 	                	}
 	           		 });                        
-                    c.href = d;
-                    c.onclick = function() {
-                        URL.revokeObjectURL(d)
-                    }
                 } catch (u) {
                     console.warn("This browser does not support object URLs. Falling back to string URL."), c.href = b
                 }
-                c.click();
-                document.body.removeChild(c)
             } else window.open(b, "_temp", "menubar=no,toolbar=no,status=no")
         }
     };
