@@ -35,9 +35,7 @@
 	if(isset($_SESSION['id'])){
 
         $iduser = $_SESSION['id'];
-        $//iduser = 2;
-        $foto = sha1(time());
-        $data['foto'] = $foto;
+        $data['foto'] = $imagename;
         
         //$url =  Enchufamos la url con la imagen .png
         //$club = $_SESSION['idequipo']; //Cuando tengamos url y equipo implementamos
