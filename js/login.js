@@ -1,13 +1,25 @@
 var sesion=Cookies.get('PHPSESSID');
+$("#inicio").click(function(){document.location.href="https://easy2train.es"});
 if (sesion==null){
 	$('#siUser').hide();
+	$("#logout").hide();
+	$('#noUser').show();
+    $('#login').show();
 }else{
 	$('#siUser').show();
+	$("#logout").show();
     $('#noUser').hide();
     $('#login').hide();
-    $('#bodyNav').load('./registrado.html');
-    $("#inicio").attr("href", "https://www.easy2train.es/registrado.html");
+    
+    $("#contenido").load("./registrado.html", function(responseTxt, statusTxt, xhr){
+			if(statusTxt == "success"){
+			}	
+			if(statusTxt == "error"){
+				console.log("Error: " + xhr.status + ": " + xhr.statusText);
+			}
+		});
 }	
+
 $(document).ready(function(){
   $('#entrar').click(function(){
   /*Envio de formulario */
@@ -15,8 +27,11 @@ $(document).ready(function(){
 	if(($('#user').val()=="") || ($('#pass').val()=="")){
       $('#badPass').html('<b class="text-danger">Debes introducir un email y contraseña!</b>').hide();
       $('#badPass').fadeIn(300);
+			console.log("no hay pass");
+
       return false;
 	}else{
+
       var data = $("#form-entrar").serialize();
       $.ajax({
         type : 'POST',
@@ -31,6 +46,7 @@ $(document).ready(function(){
           if((estado=="ok")||(estado=="logged")){ //quitar opcion logged cuando haya cerrar sesion
             $('#login').fadeOut();
             $('#siUser').show();
+            $("#logout").show();
             $('#noUser').hide();
             //  $('#Log').fadeOut();
           //  setTimeout(function(){
@@ -38,8 +54,10 @@ $(document).ready(function(){
             //},800);
             //$('#registrar').val('Registrando...');
             console.log("Todo deberia ir bien");
-            $('#bodyNav').load('./registrado.html');
-            $("#inicio").attr("href", "https://www.easy2train.es/registrado.html");
+              
+            document.location.href="https://easy2train.es";
+           // $("#inicio").attr("href", "https://www.easy2train.es");
+           // $('#bodyNav').load('./registrado.html');
             //  $('#logReg').load("../loginMini.html");
             /* El plan es aqui quitar el form de registro y poner un login */
           }else{
@@ -56,19 +74,32 @@ $(document).ready(function(){
       });
       return false;
 	  }
-});
-
-$("#frmRestablecer").submit(function(event){
-  event.preventDefault();
-  $.ajax({
-    url:'php/validaremail.php',
-    type:'post',
-    dataType:'json',
-    data:$("#frmRestablecer").serializeArray()
-  }).done(function(respuesta){
-    $("#mensaje").html(respuesta.mensaje);
-    $("#email").val('');
   });
-});
-});
 
+  $("#frmRestablecer").submit(function(event){
+    event.preventDefault();
+    $.ajax({
+      url:'php/validaremail.php',
+      type:'post',
+      dataType:'json',
+      data:$("#frmRestablecer").serializeArray()
+    }).done(function(respuesta){
+      $("#mensaje").html(respuesta.mensaje);
+      $("#email").val('');
+    });
+  });
+
+  $("#logoutbtn").click( function(){
+  	console.log("cerrando sesion...");
+  	$.ajax({
+  		url:"./php/logout.php",
+  		success:( function (response) {
+  					document.location.href="https://easy2train.es";
+  				 }),
+  	  error:(function(xhr, status){
+  						 console.log( "La solicitud de cerrar sesión ha fallado: " +  status);
+  		})
+  	});
+  });
+
+});

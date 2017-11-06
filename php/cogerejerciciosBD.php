@@ -12,23 +12,25 @@ error_reporting(E_ALL);
 
 if(isset($_SESSION['id'])){
 	$id=$_SESSION['id'];
-$sql = "SELECT * FROM users WHERE id=".$id;
+$sql = "SELECT * FROM ejercicios WHERE idusuario=".$id;
 $resultado = $db->query($sql);
 	if (!$resultado) {
     die('No se pudo consultar:' . mysql_error());
 	}
 	/* array asociativo */
-$arrayejercicio = $resultado->fetch_array(MYSQLI_ASSOC);
+$k=0;
+while ($row = $resultado->fetch_array(MYSQLI_ASSOC)) {
+foreach ($row as $key => $value) {
+    $result[$k][$key] = $value;
+}
+$k++;
+}
 }else{
 	    echo "No hay conexion";
 	    
 	}
 // comprobar
-foreach($arrayejercicio as $campo=>$valor)
-	{
-	echo "El " . $campo . " es " . $valor;
-	echo "<br>";
-	}
+
    header('Content-type: application/json; charset=utf-8');
-	echo json_encode($arrayejercicio);
+	print json_encode($result);
 ?>

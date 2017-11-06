@@ -7,15 +7,15 @@
 
 	//Recogemos los datos del ejercicio en variables.
     $sport = $_POST['exercisesport'];  
-    $category = $_POST['exercisetype'];
+    $category = $_POST['exercisestype'];
     $subcategory = $_POST['exercisesub'];
     $club = 1;
 	$name = $_POST['exercisename'];
 	$description = $_POST['exercisedescription'];
 	$duration = $_POST['exercisetime'];
     $material = $_POST['exercisematerial'];
-	$personmin = $_POST['exercisemin'];
-	$personmax = $_POST['exercisemax'];
+	$personmin = (int)$_POST['exercisemin'];
+	$personmax = (int)$_POST['exercisemax'];
 	$imagename = "../images/ejercicios/".sha1($_POST['imagename']).".png";
 
 	//$sport = "Baloncesto";
@@ -35,21 +35,20 @@
 	
 	if(isset($_SESSION['id'])){
 
-        $iduser = $_SESSION['id'];
-        $data['foto'] = $imagename;
+        $iduser = (int)$_SESSION['id'];
         
         //$url =  Enchufamos la url con la imagen .png
         //$club = $_SESSION['idequipo']; //Cuando tengamos url y equipo implementamos
         //$data['idequipo'] = $club;
 
-		$stmt = $db->prepare("INSERT INTO `ejercicios`(`deporte`, `idequipo`, `categoria`, `subcategoria`, `nombre`, `explicacion`, `duracion`, `material`, `personasmin`, `personasmax`, `foto`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+		$stmt = $db->prepare("INSERT INTO `ejercicios`(`deporte`, `idequipo`, `categoria`, `subcategoria`, `nombre`, `explicacion`, `duracion`, `material`, `personasmin`, `personasmax`, `foto`, `idusuario`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 		
 		//echo 'Deporte: ' .$sport;
+	    $stmt->bind_param('sissssssiisi', $sport, $club, $category, $subcategory, $name, $description, $duration, $material, $personmin, $personmax, $imagename, $iduser);
 
-	    $stmt->bind_param('sissssssiis', $sport, $club, $category, $subcategory, $name, $description, $duration, $material, $personmin, $personmax, $imagename);
-	    
 	    if($stmt->execute()===false){
 			$data['estado']='error1';
+			$data['foto'] = var_dump($stmt);
 
 		}else{
 			move_uploaded_file($_FILES['imagen']['tmp_name'], $imagename);	

@@ -1,0 +1,3 @@
+* * * * * /usr/share/easy2train/peticionmaquinaexterna.sh
+30 8 * * * --> 8.30 de la mañana cada dia del mes
+@daily --> una vez al dia
