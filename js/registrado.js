@@ -5,6 +5,7 @@ $(document).ready(function(){
 	$("#linkconvocatorias").click(function (){console.log("acceder a convocatorias"); convocatorias();});
 	
 	function lista(){
+		$("#title").show();
 		console.log("Cargando listado...");
 			/*$("#contenido").load("./htmlcojoejerciciophp.html", function(responseTxt, statusTxt, xhr){
 					if(statusTxt == "success"){
@@ -32,6 +33,7 @@ $(document).ready(function(){
 
 	function ejercicios(){
 		
+		$("#title").show();
 		$("#title").html("Ejercicios");
 		$("#contenido").html("<br>"); 
 		
@@ -85,11 +87,15 @@ $(document).ready(function(){
 	}
 		
 	function convocatorias(){
+
+		$("#title").show();
 		$("#title").html("Convocatorias");
 		$("#contenido").html("listado de convocatorias");
 	}
 
 	function nuevoejercicio(){
+		
+		$("#title").show();
 		console.log("Cargando pagina de nuevo ejercicio");
 		$("#title").html("");
 		$("#contenido").html("");
