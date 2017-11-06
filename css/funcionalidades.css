@@ -279,19 +279,18 @@ li {
     margin-left: 35%;
 }
  .social-proof .cta p { 
-    text-align: center;
+   
      
-      padding-left: 40% }
-    .social-proof .cta a { 
-    text-align: center;
-     
-      padding-left: 40% }
+      margin-left: 30%;
+      margin:0 auto;
+      }
+
       @media only screen and (max-width: 800px) {
         .social-proof .cta a {
           display: block;
           max-width: 200px;
           margin: 0 auto;
-          padding-left: 30%} }   
+          padding-left: 38%} }   
     
   .row {
     max-width: 1520px;
@@ -368,7 +367,7 @@ a:visited.button-primary {
 
 h2 {
     font-family: "Gotham_SSm_5r", Helvetica, Arial, sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     line-height: 45px;
 }
 
@@ -380,9 +379,9 @@ p {
 }
 
 
-
+#title{ font-family:"Lucida Console",monospace; margin-left:20px; letter-spacing:2px; margin-top: 15px; font-variant: small-caps}
 .jumbotron {
-    background-image: url ("horizontal.jpg");
+    background-image: url("../images/jumbotron2.png");
     margin-bottom: 0px;
     background-position: 0% 25%;
     background-size: cover;
@@ -407,3 +406,11 @@ _reboot.scss:39
     box-sizing: inherit;
 }
  
+ 
+ .display-3 {
+    padding-left: 25%;
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 0 auto;
+}
