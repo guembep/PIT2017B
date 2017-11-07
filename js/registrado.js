@@ -89,8 +89,8 @@ $(document).ready(function(){
 	function convocatorias(){
 
 		$("#title").show();
-		$("#title").html("Convocatorias");
-		$("#contenido").html("listado de convocatorias");
+		$("#title").html("Próximos Partidos");
+		$("#contenido").load('/scrapper.html');
 	}
 
 	function nuevoejercicio(){
