@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	//INICIALICAMOS VARIABLES
 	$arraybusqueda = array();
 	if(!isset($_SESSION['deporte'])){
@@ -24,7 +25,4 @@
 	}		
 	header('Content-type: application/json; charset=utf-8');
 	print json_encode($arraybusqueda);
-
-
-
 ?>

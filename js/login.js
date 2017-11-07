@@ -1,5 +1,6 @@
 var sesion=Cookies.get('PHPSESSID');
 $("#inicio").click(function(){document.location.href="https://easy2train.es"});
+$("#title").hide();
 if (sesion==null){
 	$('#siUser').hide();
 	$("#logout").hide();
