@@ -1,0 +1,33 @@
+
+<link href="css/scrapper.css" rel="stylesheet"/>
+      <div class="container">
+      	<div class="row">
+      		<table class="table table-bordered">
+              <thead id="tabla">
+                <tr>
+                  <th>EQUIPO LOCAL</th>
+                  <th>EQUIPO VISITANTE</th>
+                  <th>CATEGORIA</th>
+                  <th>FECHA</th>
+                  <th>HORA</th>
+                  <th>LUGAR</th>
+                  <th>MUNICIPIO</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">	
+              </tbody>
+            </table>
+      	</div>
+      </div>
+<script id="plantillatabla" type="text/template">
+	<tr #evenodd>
+        <td>#Local</td>
+        <td>#Visitante</td>
+        <td>#Categoria</td>
+        <td>#Fecha</td>
+        <td>#Hora</td>
+        <td>#Lugar</td>
+        <td>#Municipio</td>
+	</tr>
+</script>
+<script type="text/javascript"  src="js/scrapper.js"></script>

@@ -15,12 +15,20 @@
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
+
+    <link href="css/popup.css" rel="stylesheet" />
+     <link rel="stylesheet" href="css/popper.css"/>
+    
+   <!--  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" /> -->
+   <!--   <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <script src="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+     -->
   </head>
 
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="https://easy2train.es">Easy2Train</a>
+      <a class="navbar-brand" id="inicio" href="">Easy2Train</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,14 +38,22 @@
           <!-- SI ES USUARIO USAREMOS ESTA INFO -->
           <ul id="siUser" class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="">Ejercicios <span class="sr-only">(current)</span></a>
-          </li>
+            <a class="nav-link" id="linkejercicios" href="#" >Ejercicios <span class="sr-only">(current)</span></a>
+			</li>
           <li class="nav-item">
-            <a class="nav-link" href="">Convocatorias</a>
-          </li>
+            <a class="nav-link" id="linkconvocatorias" href="#">Convocatorias</a>
+			</li>
 
         </ul>
-
+		<ul id="logout" class="navbar-nav">
+			<li>
+				 
+				   <button id="logoutbtn"  type="button" class="btn btn-default btn-sm" > 
+					     Cerrar sesión <img src="images/logout.png" height="20" width="20">
+				   </button>
+				 
+			</li>
+		</ul>
 
       <!-- SI NO ES USUARIO USAREMOS ESTA INFO -->
 
@@ -53,6 +69,25 @@
       </li>
     </ul>
     <ul id="login" class="navbar-nav">
+  <li>
+      <form id="form-entrar" method="POST" class= "navbar-form form-inline">
+        <div class="form-group">
+          <input id="user" name="user" type="text" placeholder="Usuario" class="form-control">
+        </div>
+        <div class="form-group">
+          <input  id="pass" name="pass" type="password" placeholder="Contraseña" class="form-control">
+        </div>
+        <div class="form-group">
+        <button id="entrar"  class="btn btn-success">Entrar</button>
+      </div>
+        </form>
+        <div id="badPass" class="container">
+        </div>
+  </li>
+  <li>
+  </li>
+</ul>
+  <!--  <ul id="login" class="navbar-nav">
           <form id="form-entrar" method="POST" class= "navbar-form form-inline">
             <div class="form-group">
               <input id="user" name="user" type="text" placeholder="Usuario" class="form-control">
@@ -64,7 +99,7 @@
             <button id="entrar"  class="btn btn-success">Entrar</button>
           </div>
             </form>
-    </ul>
+    </ul> -->
 
         <!--  <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -82,15 +117,54 @@
     <div id=bodyNav >
     <!--Esta es la parte del "jumbotron" TODO añadir texto con info de la web -->
     <div class="jumbotron">
-      <div class="container">
-        <h1 class="display-3">Hola!</h1>
+      <div class="container" id="textoprincipal">
+        <h1 class="display-3" >Hola!</h1>
         <p>Texto que explica un poco de que va la web</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Mas información &raquo;</a></p>
       </div>
     </div>
     <!-- Hasta aqui el jumbotron -->
 
+    <!--modal-->
+    <div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h1 class="text-center mr-3">Resetea tu contraseña</h1>
+          </div>
+          <div class="modal-body">
+              <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="text-center">
 
+                              <p>Escribe el email asociado a tu cuenta para recuperar tu contraseña.</p>
+                                <div class="panel-body">
+                              <form id="frmRestablecer" action="/php/validaremail.php" method="post">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <input class="form-control input-lg" placeholder="E-mail" id="email" name="email" type="email">
+                                        </div>
+                                        <input class="btn btn-lg btn-primary btn-block" value="Enviar contraseña" type="submit">
+                                    </fieldset>
+                              </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mensaje" class="mt-5"></div>
+          </div>
+          <div class="modal-footer">
+              <div class="col-md-12">
+              <button class="btn" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+    		  </div>
+          </div>
+      </div>
+      </div>
+    </div>
+<div id="mensaje"></div>
 
     <!-- Parte con las columnas y fotos -->
     <div class="container">
@@ -125,14 +199,23 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-  <!--  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script> -->
-    <script src="js/popper.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/login.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+    <script language="javascript" type="text/javascript"  src="js/jquery.min.js"></script>
+    <script type="text/javascript"  src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script language="javascript" type="text/javascript"  src="js/popper.js"></script>
+    <script type="text/javascript"  src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
-    
+
+      <script type="text/javascript"  src="js/login.js"></script>
+      
+      <!-- Para cuando estas registrado-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/registrado.js"></script>
+
+    <script type="text/javascript"  src="js/login.js"></script>
+
   </body>
 </html>

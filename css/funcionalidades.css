@@ -1,0 +1,416 @@
+body {
+    font-family: "Gotham_SSm_4r", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    padding-top: 84px;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+
+
+.general {
+    padding: 0 0 75px;
+    text-align: center;
+    margin: auto;
+    padding: 1em 3em;
+    margin: 3em 10%;
+}
+
+.general {
+  padding: 0 0 75px; }
+  @media only screen and (max-width: 960px) {
+    .general {
+      margin: 0 30px;
+      padding: 0 0 50px; } }
+  @media only screen and (max-width: 600px) {
+    .general {
+      margin: 0;
+      padding: 0 0 30px; } }
+
+.general-list {
+  list-style-type: none; }
+  .general-list li {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px; }
+    .general-list li.image-on-right {
+      flex-direction: row-reverse; }
+    .general-list li:last-child {
+      margin-bottom: 0; }
+    @media only screen and (max-width: 960px) {
+      .general-list li {
+        margin-bottom: 140px;
+        flex-wrap: wrap; } }
+    @media only screen and (max-width: 600px) {
+      .general-list li {
+        margin-bottom: 100px; } }
+  .general-list .image img {
+    display: block;
+    width: 456px;
+    height: 456px; }
+    @media only screen and (max-width: 960px) {
+      .general-list .image img {
+        width: 335px;
+        height: 335px; } }
+    @media only screen and (max-width: 600px) {
+      .general-list .image img {
+        width: 200px;
+        height: 200px; } }
+  .general-list .content {
+    max-width: 380px;
+    margin-left: 56px; }
+    @media only screen and (max-width: 960px) {
+      .general-list .content {
+        max-width: 460px;
+        margin-left: 0; } }
+  .general-list h2 {
+    font-size: 60px;
+    margin-bottom: 35px; }
+    @media only screen and (max-width: 960px) {
+      .general-list h2 {
+        text-align: center; } }
+    @media only screen and (max-width: 600px) {
+      .general-list h2 {
+        text-align: left; } }
+  .general-list p {
+    font-family: "webfont";
+    font-size: 36px;
+    line-height: 36px; }
+    .general-list p:lang(pl), .general-list p:lang(tr), .general-list p:lang(vi), .general-list p:lang(da), .general-list p:lang(nl), .general-list p:lang(fi), .general-list p:lang(fr), .general-list p:lang(pt), .general-list p:lang(pt-br), .general-list p:lang(sv) {
+      font-family: "Gotham_SSm_4r", Helvetica, Arial, sans-serif; }
+    .general-list p:lang(ko) {
+      font-family: "\B098\B214\ACE0\B515", "NanumGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", "DotumChe", "Dotum", sans-serif; }
+    .genneral-list p:lang(ja), .general-list p:lang(jp) {
+      font-family: "\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3", "Hiragino Kaku Gothic ProN", "\30E1\30A4\30EA\30AA", Meiryo, "MS P\30B4\30B7\30C3\30AF", "MS PGothic", sans-serif; }
+    .general-list p:lang(zh-cn), .general-list p:lang(zh-tw) {
+      font-family: "Hiragino Sans GB", "STHeiti", "Microsoft Yahei", sans-serif; }
+    .general-list p:lang(ru) {
+      font-family: sans-serif; }
+    @media only screen and (max-width: 960px) {
+      .general-list p {
+        text-align: center; } }
+    @media only screen and (max-width: 600px) {
+      .general-list p {
+        text-align: left; } }
+  .general-list .link-wrapper {
+    margin-top: 32px; }
+    .general-list .link-wrapper a:link, .general-list .link-wrapper a:visited, .general-list .link-wrapper a:hover, .general-list .link-wrapper a:active {
+      text-decoration: none;
+      border-bottom: 0 solid transparent;
+      transition: 0.3s border ease-in-out, 0.3s color ease-in-out;
+      font-family: "Gotham_SSm_5r", Helvetica, Arial, sans-serif;
+      border-bottom: 2px solid #2dbe60; }
+      .general-list .link-wrapper a:link:focus, .general-list .link-wrapper a:link:hover, .general-list .link-wrapper a:visited:focus, .general-list .link-wrapper a:visited:hover, .general-list .link-wrapper a:hover:focus, .general-list .link-wrapper a:hover:hover, .general-list .link-wrapper a:active:focus, .general-list .link-wrapper a:active:hover {
+        color: #2dbe60;
+        border-color: "transparent";
+        transition: 0.1s border ease-in-out, 0.1s color ease-in-out; }
+      .general-list .link-wrapper a:link:lang(ko), .general-list .link-wrapper a:visited:lang(ko), .general-list .link-wrapper a:hover:lang(ko), .general-list .link-wrapper a:active:lang(ko) {
+        font-family: "\B098\B214\ACE0\B515", "NanumGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", "DotumChe", "Dotum", sans-serif; }
+      .general-list .link-wrapper a:link:lang(ja), .general-list .link-wrapper a:link:lang(jp), .general-list .link-wrapper a:visited:lang(ja), .general-list .link-wrapper a:visited:lang(jp), .general-list .link-wrapper a:hover:lang(ja), .general-list .link-wrapper a:hover:lang(jp), .general-list .link-wrapper a:active:lang(ja), .general-list .link-wrapper a:active:lang(jp) {
+        font-family: "\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3", "Hiragino Kaku Gothic ProN", "\30E1\30A4\30EA\30AA", Meiryo, "MS P\30B4\30B7\30C3\30AF", "MS PGothic", sans-serif; }
+      .general-list .link-wrapper a:link:lang(zh-cn), .general-list .link-wrapper a:link:lang(zh-tw), .general-list .link-wrapper a:visited:lang(zh-cn), .general-list .link-wrapper a:visited:lang(zh-tw), .general-list .link-wrapper a:hover:lang(zh-cn), .general-list .link-wrapper a:hover:lang(zh-tw), .general-list .link-wrapper a:active:lang(zh-cn), .general-list .link-wrapper a:active:lang(zh-tw) {
+        font-family: "Hiragino Sans GB", "STHeiti", "Microsoft Yahei", sans-serif; }
+      .general-list .link-wrapper a:link:lang(ru), .general-list .link-wrapper a:visited:lang(ru), .general-list .link-wrapper a:hover:lang(ru), .general-list .link-wrapper a:active:lang(ru) {
+        font-family: sans-serif;
+        font-weight: bold; }
+
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+
+.general-list {
+ 
+    list-style-type: none;
+}
+
+
+
+
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.general-list li {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+
+
+
+
+li {
+    display: list-item;
+    text-align: center;
+}
+  
+  .general-list .content {
+    max-width: 480px;
+    margin-left: 56px;
+}
+
+
+
+div {
+    display: block;
+}
+ .general-list .image img {
+    display: block;
+    width: 456px;
+    height: 456px;
+}
+
+
+.general-list h2 {
+    margin-bottom: 35px;
+}
+
+
+
+.general-list p {
+    font-family: "webfont";
+    font-size: 20px;
+    line-height: 36px;
+}
+
+
+
+
+
+  .general-list li.image-on-right {
+    flex-direction: row-reverse;
+}
+
+.general-list li {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.general-list {
+    list-style-type: none;
+}
+
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+  
+  .general-list li:last-child {
+    margin-bottom: 0;
+}
+
+.general-list li {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.general-list {
+    list-style-type: none;
+}
+
+
+        .social-proof {
+          text-align: center;
+
+  background-color: #f9f9f9; }
+  @media only screen and (max-width: 600px) {
+    .social-proof {
+      padding: 90px 0 90px; } }
+  .social-proof h2 {
+  font-size: 40px;
+    text-align: center;
+    margin: 100px 400px 100px; }
+   
+
+.social-proof h2 {
+    max-width: 949px;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 25%;
+}
+ .social-proof .cta p { 
+   
+     
+      margin-left: 30%;
+      margin:0 auto;
+      }
+
+      @media only screen and (max-width: 800px) {
+        .social-proof .cta a {
+          display: block;
+          max-width: 200px;
+          margin: 0 auto;
+          padding-left: 38%} }   
+    
+  .row {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+}
+
+.social-proof {
+    padding: 95px 0 95px;
+    background-color: #f9f9f9;
+}
+
+
+
+.button-primary,     
+a:link.button-primary,
+a:visited.button-primary {
+  display: inline-block;
+  font-family: "Gotham_SSm_5r", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  background: #2dbe60;
+  border: double;
+  margin:0 auto;
+  border-radius: 8px;
+  padding: 18px 20px 17px ;
+  transition: .3s background ease-in-out;
+  -webkit-font-smoothing: antialiased; }
+  .button-primary:lang(ko),
+  a:link.button-primary:lang(ko),
+  a:visited.button-primary:lang(ko) {
+    font-family: "\B098\B214\ACE0\B515", "NanumGothic", "\B9D1\C740   \ACE0\B515", "Malgun Gothic", "\B3CB\C6C0", "DotumChe", "Dotum", sans-serif; }
+  .button-primary:lang(ja), .button-primary:lang(jp),
+  a:link.button-primary:lang(ja),
+  a:link.button-primary:lang(jp),
+  a:visited.button-primary:lang(ja),
+  a:visited.button-primary:lang(jp) {
+    font-family: "\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3", "Hiragino Kaku Gothic ProN", "\30E1\30A4\30EA\30AA", Meiryo, "MS P\30B4\30B7\30C3\30AF", "MS PGothic", sans-serif; }
+  .button-primary:lang(zh-cn), .button-primary:lang(zh-tw),
+  a:link.button-primary:lang(zh-cn),
+  a:link.button-primary:lang(zh-tw),
+  a:visited.button-primary:lang(zh-cn),
+  a:visited.button-primary:lang(zh-tw) {
+    font-family: "Hiragino Sans GB", "STHeiti", "Microsoft Yahei", sans-serif; }
+  .button-primary:lang(ru),
+  a:link.button-primary:lang(ru),
+  a:visited.button-primary:lang(ru) {
+    font-family: sans-serif;
+    font-weight: bold; }
+  .button-primary:hover,
+  a:link.button-primary:hover,
+  a:visited.button-primary:hover {
+    background: #0d9f40;
+    transition: .1s background ease-in-out; }
+
+      .row {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+
+
+
+h2 {
+    font-family: "Gotham_SSm_5r", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    line-height: 45px;
+}
+
+
+p {
+    margin: 0 auto;
+    padding-left: 3%;
+  
+}
+
+
+#title{ font-family:"Lucida Console",monospace; margin-left:20px; letter-spacing:2px; margin-top: 15px; font-variant: small-caps}
+.jumbotron {
+    background-image: url("../images/jumbotron2.png");
+    margin-bottom: 0px;
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+@media (min-width: 576px)
+_alert.scss:45
+.jumbotron {
+    padding: 4rem 2rem;
+}
+_alert.scss:6
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+}
+_reboot.scss:39
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+ 
+ 
+ .display-3 {
+    padding-left: 25%;
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 0 auto;
+}
