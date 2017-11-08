@@ -60,13 +60,22 @@ $(document).ready(function() {
             document.getElementById("divexercisemax").style.visibility = "hidden"; 
         }
     });
-	$("#rangoedad").change(function (){
+	  $("#rangoedad").change(function (){
         if (this.checked){
             //console.log("Activando max... ");
             document.getElementById("divrangoedad").style.visibility = "visible"; 
         }else {
             //console.log("Desactivando max... ");
             document.getElementById("divrangoedad").style.visibility = "hidden"; 
+        }
+    });
+    $("#imgcheck").change(function (){
+        if (this.checked){
+            //console.log("Activando max... ");
+            document.getElementById("divimg").style.visibility = "visible"; 
+        }else {
+            //console.log("Desactivando max... ");
+            document.getElementById("divimg").style.visibility = "hidden"; 
         }
     });
 
