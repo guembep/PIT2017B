@@ -33,7 +33,7 @@
 	//Si el usuario está registrado hacemos la petición para subir el ejercicio.
 	
 	if(isset($_SESSION['id'])){
-		$sport = $_SESSION['deporte'];  
+		$sport = $_SESSION['deporte'];
         $iduser = (int)$_SESSION['id'];
         
         //$url =  Enchufamos la url con la imagen .png
