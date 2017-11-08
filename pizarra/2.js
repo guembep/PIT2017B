@@ -169,10 +169,10 @@ var BoardHelpers = {
                 playerToBoardWidthCoeff: .02182
             },
             "basketball-new": {
-                bgColor: "#738554",
+                bgColor: "#282c31",
                 strokeColor: "#ffffff",
                 heightToWidthCoeff: .5976,
-                playerToBoardWidthCoeff: .02182
+                playerToBoardWidthCoeff: .03182
             },
             hockey: {
                 bgColor: "#738554",

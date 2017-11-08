@@ -6,7 +6,6 @@
 	include('conectarBD.php');
 
 	//Recogemos los datos del ejercicio en variables.
-    $sport = $_POST['exercisesport'];  
     $category = $_POST['exercisestype'];
     $subcategory = $_POST['exercisesub'];
     $club = 1;
@@ -34,7 +33,7 @@
 	//Si el usuario está registrado hacemos la petición para subir el ejercicio.
 	
 	if(isset($_SESSION['id'])){
-
+		$sport = $_SESSION['deporte'];  
         $iduser = (int)$_SESSION['id'];
         
         //$url =  Enchufamos la url con la imagen .png
@@ -72,7 +71,6 @@
 		
 	}else{
 	    $data['estado'] = "No hay sesion de usuario";
-	    
 	}
 	echo json_encode($data);
 	
