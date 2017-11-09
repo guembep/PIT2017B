@@ -3,7 +3,7 @@ AppConfig = {
     playersCount: 25,
     buttonToBoardHeightCoeff: .040548,
     buttonsPanelLeftToBoardWidthCoeff: .473816,
-    fontsizeToButtonWidthCoeff: .8,
+    fontsizeToButtonWidthCoeff: .7,
     playersColors: [{
         background: "#8B2323",
         font: "#CCCCCC"
@@ -35,18 +35,14 @@ AppConfig = {
         },
         {
             background: "#CC3333"
-        }, {
-            background: "#222333"
-        }, {
-            background: "#0000FF"
         }
     ],
     shapesColors: [{
-        stroke: "#0000FF",
-        fill: "#0000FF"
-    }, {
         stroke: "#FF3300",
         fill: "#FF3300"
+    }, {
+        stroke: "#0000FF",
+        fill: "#0000FF"
     }, {
         stroke: "#FF7F50",
         fill: "#FF7F50"
@@ -57,8 +53,8 @@ AppConfig = {
         stroke: "#FFFFFF",
         fill: "#FFFFFF"
     }, {
-        stroke: "#000000",
-        fill: "#000000"
+        stroke: "#3aff3a",
+        fill: "#3aff3a"
     }]
 };
 isTouch() && (AppConfig.clickType = "touch");
@@ -173,10 +169,10 @@ var BoardHelpers = {
                 playerToBoardWidthCoeff: .02182
             },
             "basketball-new": {
-                bgColor: "#738554",
+                bgColor: "#282c31",
                 strokeColor: "#ffffff",
                 heightToWidthCoeff: .5976,
-                playerToBoardWidthCoeff: .02182
+                playerToBoardWidthCoeff: .03182
             },
             hockey: {
                 bgColor: "#738554",
@@ -191,10 +187,10 @@ var BoardHelpers = {
                 playerToBoardWidthCoeff: .026184
             },
             handball: {
-                bgColor: "#432499",
+                bgColor: "#282c31",
                 strokeColor: "#ffffff",
                 heightToWidthCoeff: .572,
-                playerToBoardWidthCoeff: .02182
+                playerToBoardWidthCoeff: .03182
             },
             bandy: {
                 bgColor: "#738554",
@@ -1793,7 +1789,7 @@ var BoardHelpers = {
         c.enable = function() {
             if (m && "null" != m) {
                 B = !0;
-                var a = _siteUri + "Public/Images/cursors/pencil.png";
+                //var a = _siteUri + "Public/Images/cursors/pencil.png";
                 document.querySelector("#" + h).style.cursor = 'url("' + a + '"), default'
             }
         };
@@ -1843,7 +1839,7 @@ var BoardHelpers = {
                 }
         };
         c.setShapeType = function(a) {
-            (m = a) && "null" != a ? (B = !0, a = _siteUri + "Public/Images/cursors/pencil.png", document.querySelector("#" + h).style.cursor =
+            (m = a) && "null" != a ? (B = !0, a = "", document.querySelector("#" + h).style.cursor =
                 'url("' + a + '"), default') : (B = !1, document.querySelector("#" + h).style.cursor = "default")
         };
         c.setStrokeStyle = function(a) {

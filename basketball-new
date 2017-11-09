@@ -1,0 +1,3474 @@
+
+		<!DOCTYPE html> 
+<html id='main_html'>
+	<head>
+		
+		<title>			
+			Tactical board online Basketball (new marking) - TACTICAL-BOARD.COM			
+		</title>		
+		
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>	
+		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>			
+		<meta content='Tactical board online Basketball (new marking) - TACTICAL-BOARD.COM' name='Description'>
+		
+		<meta property='og:description' content='Tactical board online Basketball (new marking) - TACTICAL-BOARD.COM' />
+		<meta property='og:title' content='Tactical board online Basketball (new marking)' />
+		<meta property='og:type' content='website' />
+		<meta property='og:url' content='http://tactical-board.com/uk/basketball-new' />
+		<meta property='og:image' content='http://tactical-board.com/Public/Images/logo-big.png?1'/>
+		<meta property='og:site_name' content='tactical-board.com' />
+		
+		<!-- ICON -->
+		<link rel='icon' href='http://tactical-board.com/Public/Images/logo-small.png' type='image/x-icon' />
+		<link rel='shortcut icon' href='http://tactical-board.com/Public/Images/logo-small.png' type='image/x-icon' />
+		
+		<!-- CSS STYLE -->
+		<link rel='stylesheet' type='text/css' href='http://tactical-board.com/Public/Css/style.css?6' />
+		<link rel='stylesheet' type='text/css' href='http://tactical-board.com/Public/Css/modal-window.css?11' />				
+		
+		<!-- javascript -->
+		<script type='text/javascript' src='http://tactical-board.com/Public/Js/jquery-2.2.4.min.js?1'></script>
+		<script type='text/javascript' src='http://tactical-board.com/Public/Js/jquery.zclip.js?1'></script>
+		<script type='text/javascript' src='http://tactical-board.com/Public/Js/adsbygoogle.js?1'></script>
+
+		<script type='text/javascript' src='http://tactical-board.com/Public/Js/1.js?16'></script>
+		<script type='text/javascript' src='http://tactical-board.com/Public/Js/2.js?26'></script>
+		<script type='text/javascript' src='http://tactical-board.com/Public/Js/markup_basketball-new.js?4'></script>
+
+		<!-- Yandex.Metrika counter -->
+		<script type='text/javascript'>
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function() {
+				try {
+					w.yaCounter25937516 = new Ya.Metrika({id:25937516,
+							clickmap:true,
+							trackLinks:true,
+							accurateTrackBounce:true});
+				} catch(e) { }
+			});
+		
+			var n = d.getElementsByTagName('script')[0],
+				s = d.createElement('script'),
+				f = function () { n.parentNode.insertBefore(s, n); };
+			s.type = 'text/javascript';
+			s.async = true;
+			s.src = (d.location.protocol == 'https:' ? 'https:' : 'http:') + '//mc.yandex.ru/metrika/watch.js';
+		
+			if (w.opera == '[object Opera]') {
+				d.addEventListener('DOMContentLoaded', f, false);
+			} else { f(); }
+		})(document, window, 'yandex_metrika_callbacks');
+		</script>
+		<noscript><div><img src='//mc.yandex.ru/watch/25937516' style='position:absolute; left:-9999px;' alt='' /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-54105427-1', 'auto');
+			ga('send', 'pageview');		
+		</script>
+
+	</head>
+	<body id='main_body'>
+		<div id='left_menu_panel'>
+  			<img src='http://tactical-board.com/Public/Images/buttons/mw-close.png' id='close'> 
+			<span id='board_type_label'>Basketball (new marking)</span>
+			<div class='button menu_item' id='btn_page_main'>&nbsp; Home &nbsp;</div>
+			<div class='button menu_item' id='btn_page_animation'>&nbsp; Creating animation &nbsp;</div>
+			
+			<div class='button menu_item' id='btn_board_type'>&nbsp; Change sport (board type) &nbsp;</div>
+			<div class='button menu_item' id='btn_language'>&nbsp; Change language &nbsp;</div>
+			<div id='social_buttons'>
+				<div class='button' id='btn_facebook'><A href='https://www.facebook.com/pages/Tactical-Boardcom/1552861071612672' target='_blank'><img id='btn_facebook_img' src='http://tactical-board.com/Public/Images/social/facebook.png?1'></A></div>
+				<div class='button' id='btn_vk'><A href='http://vk.com/tactical_board' target='_blank'><img id='btn_vk_img' src='http://tactical-board.com/Public/Images/social/vk.png?1'></A></div>
+				<div class='button' id='btn_youtube'><A href='https://www.youtube.com/channel/UClT2j8DWtJ_28mhZXFZbVqQ' target='_blank'><img id='btn_youtube_img' src='http://tactical-board.com/Public/Images/social/youtube.png?1'></A></div>					
+				<div class='button' id='btn_mail' title="Send us a feedback, please."><img id='btn_mail_img' src='http://tactical-board.com/Public/Images/buttons/mail.png?1'></div>
+			</div>	
+		</div>
+		
+			<div id='top_ad_adapted'>
+				
+				<script async src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
+				<!-- t-board top adapted -->
+				<ins class='adsbygoogle'
+					style='display:block'
+					data-ad-client='ca-pub-6786479482869941'
+					data-ad-slot='8424058555'
+					data-ad-format='auto'></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+				
+			</div>
+			
+
+			<div id='board'>
+				
+				<svg id='svg_canvas' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='background:position:absolute;left:0px;top:0px;'>
+					<rect id='svg_bg_rect' class='svg-bg-rect' x='0' y='0' />
+					<g id='board_svg_markup' />
+					<g id='shapes_1_section' />
+					<g id='shapes_2_section' />
+					<g id='players_section'>
+					<g id='main_player_25_1' class='player' display='none'>
+						<circle id='main_player_25_1_shape' class='svg-player-shape' />
+						<text id='main_player_25_1_number' class='svg-player-number'>25</text>
+						<text id='main_player_25_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_25_1' class='player' display='none'>
+						<circle id='animation_player_25_1_shape' class='svg-player-shape' />
+						<text id='animation_player_25_1_number' class='svg-player-number'>25</text>
+						<text id='animation_player_25_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_24_1' class='player' display='none'>
+						<circle id='main_player_24_1_shape' class='svg-player-shape' />
+						<text id='main_player_24_1_number' class='svg-player-number'>24</text>
+						<text id='main_player_24_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_24_1' class='player' display='none'>
+						<circle id='animation_player_24_1_shape' class='svg-player-shape' />
+						<text id='animation_player_24_1_number' class='svg-player-number'>24</text>
+						<text id='animation_player_24_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_23_1' class='player' display='none'>
+						<circle id='main_player_23_1_shape' class='svg-player-shape' />
+						<text id='main_player_23_1_number' class='svg-player-number'>23</text>
+						<text id='main_player_23_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_23_1' class='player' display='none'>
+						<circle id='animation_player_23_1_shape' class='svg-player-shape' />
+						<text id='animation_player_23_1_number' class='svg-player-number'>23</text>
+						<text id='animation_player_23_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_22_1' class='player' display='none'>
+						<circle id='main_player_22_1_shape' class='svg-player-shape' />
+						<text id='main_player_22_1_number' class='svg-player-number'>22</text>
+						<text id='main_player_22_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_22_1' class='player' display='none'>
+						<circle id='animation_player_22_1_shape' class='svg-player-shape' />
+						<text id='animation_player_22_1_number' class='svg-player-number'>22</text>
+						<text id='animation_player_22_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_21_1' class='player' display='none'>
+						<circle id='main_player_21_1_shape' class='svg-player-shape' />
+						<text id='main_player_21_1_number' class='svg-player-number'>21</text>
+						<text id='main_player_21_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_21_1' class='player' display='none'>
+						<circle id='animation_player_21_1_shape' class='svg-player-shape' />
+						<text id='animation_player_21_1_number' class='svg-player-number'>21</text>
+						<text id='animation_player_21_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_20_1' class='player' display='none'>
+						<circle id='main_player_20_1_shape' class='svg-player-shape' />
+						<text id='main_player_20_1_number' class='svg-player-number'>20</text>
+						<text id='main_player_20_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_20_1' class='player' display='none'>
+						<circle id='animation_player_20_1_shape' class='svg-player-shape' />
+						<text id='animation_player_20_1_number' class='svg-player-number'>20</text>
+						<text id='animation_player_20_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_19_1' class='player' display='none'>
+						<circle id='main_player_19_1_shape' class='svg-player-shape' />
+						<text id='main_player_19_1_number' class='svg-player-number'>19</text>
+						<text id='main_player_19_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_19_1' class='player' display='none'>
+						<circle id='animation_player_19_1_shape' class='svg-player-shape' />
+						<text id='animation_player_19_1_number' class='svg-player-number'>19</text>
+						<text id='animation_player_19_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_18_1' class='player' display='none'>
+						<circle id='main_player_18_1_shape' class='svg-player-shape' />
+						<text id='main_player_18_1_number' class='svg-player-number'>18</text>
+						<text id='main_player_18_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_18_1' class='player' display='none'>
+						<circle id='animation_player_18_1_shape' class='svg-player-shape' />
+						<text id='animation_player_18_1_number' class='svg-player-number'>18</text>
+						<text id='animation_player_18_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_17_1' class='player' display='none'>
+						<circle id='main_player_17_1_shape' class='svg-player-shape' />
+						<text id='main_player_17_1_number' class='svg-player-number'>17</text>
+						<text id='main_player_17_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_17_1' class='player' display='none'>
+						<circle id='animation_player_17_1_shape' class='svg-player-shape' />
+						<text id='animation_player_17_1_number' class='svg-player-number'>17</text>
+						<text id='animation_player_17_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_16_1' class='player' display='none'>
+						<circle id='main_player_16_1_shape' class='svg-player-shape' />
+						<text id='main_player_16_1_number' class='svg-player-number'>16</text>
+						<text id='main_player_16_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_16_1' class='player' display='none'>
+						<circle id='animation_player_16_1_shape' class='svg-player-shape' />
+						<text id='animation_player_16_1_number' class='svg-player-number'>16</text>
+						<text id='animation_player_16_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_15_1' class='player' display='none'>
+						<circle id='main_player_15_1_shape' class='svg-player-shape' />
+						<text id='main_player_15_1_number' class='svg-player-number'>15</text>
+						<text id='main_player_15_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_15_1' class='player' display='none'>
+						<circle id='animation_player_15_1_shape' class='svg-player-shape' />
+						<text id='animation_player_15_1_number' class='svg-player-number'>15</text>
+						<text id='animation_player_15_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_14_1' class='player' display='none'>
+						<circle id='main_player_14_1_shape' class='svg-player-shape' />
+						<text id='main_player_14_1_number' class='svg-player-number'>14</text>
+						<text id='main_player_14_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_14_1' class='player' display='none'>
+						<circle id='animation_player_14_1_shape' class='svg-player-shape' />
+						<text id='animation_player_14_1_number' class='svg-player-number'>14</text>
+						<text id='animation_player_14_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_13_1' class='player' display='none'>
+						<circle id='main_player_13_1_shape' class='svg-player-shape' />
+						<text id='main_player_13_1_number' class='svg-player-number'>13</text>
+						<text id='main_player_13_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_13_1' class='player' display='none'>
+						<circle id='animation_player_13_1_shape' class='svg-player-shape' />
+						<text id='animation_player_13_1_number' class='svg-player-number'>13</text>
+						<text id='animation_player_13_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_12_1' class='player' display='none'>
+						<circle id='main_player_12_1_shape' class='svg-player-shape' />
+						<text id='main_player_12_1_number' class='svg-player-number'>12</text>
+						<text id='main_player_12_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_12_1' class='player' display='none'>
+						<circle id='animation_player_12_1_shape' class='svg-player-shape' />
+						<text id='animation_player_12_1_number' class='svg-player-number'>12</text>
+						<text id='animation_player_12_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_11_1' class='player' display='none'>
+						<circle id='main_player_11_1_shape' class='svg-player-shape' />
+						<text id='main_player_11_1_number' class='svg-player-number'>11</text>
+						<text id='main_player_11_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_11_1' class='player' display='none'>
+						<circle id='animation_player_11_1_shape' class='svg-player-shape' />
+						<text id='animation_player_11_1_number' class='svg-player-number'>11</text>
+						<text id='animation_player_11_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_10_1' class='player' display='none'>
+						<circle id='main_player_10_1_shape' class='svg-player-shape' />
+						<text id='main_player_10_1_number' class='svg-player-number'>10</text>
+						<text id='main_player_10_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_10_1' class='player' display='none'>
+						<circle id='animation_player_10_1_shape' class='svg-player-shape' />
+						<text id='animation_player_10_1_number' class='svg-player-number'>10</text>
+						<text id='animation_player_10_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_9_1' class='player' display='none'>
+						<circle id='main_player_9_1_shape' class='svg-player-shape' />
+						<text id='main_player_9_1_number' class='svg-player-number'>9</text>
+						<text id='main_player_9_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_9_1' class='player' display='none'>
+						<circle id='animation_player_9_1_shape' class='svg-player-shape' />
+						<text id='animation_player_9_1_number' class='svg-player-number'>9</text>
+						<text id='animation_player_9_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_8_1' class='player' display='none'>
+						<circle id='main_player_8_1_shape' class='svg-player-shape' />
+						<text id='main_player_8_1_number' class='svg-player-number'>8</text>
+						<text id='main_player_8_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_8_1' class='player' display='none'>
+						<circle id='animation_player_8_1_shape' class='svg-player-shape' />
+						<text id='animation_player_8_1_number' class='svg-player-number'>8</text>
+						<text id='animation_player_8_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_7_1' class='player' display='none'>
+						<circle id='main_player_7_1_shape' class='svg-player-shape' />
+						<text id='main_player_7_1_number' class='svg-player-number'>7</text>
+						<text id='main_player_7_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_7_1' class='player' display='none'>
+						<circle id='animation_player_7_1_shape' class='svg-player-shape' />
+						<text id='animation_player_7_1_number' class='svg-player-number'>7</text>
+						<text id='animation_player_7_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_6_1' class='player' display='none'>
+						<circle id='main_player_6_1_shape' class='svg-player-shape' />
+						<text id='main_player_6_1_number' class='svg-player-number'>6</text>
+						<text id='main_player_6_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_6_1' class='player' display='none'>
+						<circle id='animation_player_6_1_shape' class='svg-player-shape' />
+						<text id='animation_player_6_1_number' class='svg-player-number'>6</text>
+						<text id='animation_player_6_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_5_1' class='player' display='none'>
+						<circle id='main_player_5_1_shape' class='svg-player-shape' />
+						<text id='main_player_5_1_number' class='svg-player-number'>5</text>
+						<text id='main_player_5_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_5_1' class='player' display='none'>
+						<circle id='animation_player_5_1_shape' class='svg-player-shape' />
+						<text id='animation_player_5_1_number' class='svg-player-number'>5</text>
+						<text id='animation_player_5_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_4_1' class='player' display='none'>
+						<circle id='main_player_4_1_shape' class='svg-player-shape' />
+						<text id='main_player_4_1_number' class='svg-player-number'>4</text>
+						<text id='main_player_4_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_4_1' class='player' display='none'>
+						<circle id='animation_player_4_1_shape' class='svg-player-shape' />
+						<text id='animation_player_4_1_number' class='svg-player-number'>4</text>
+						<text id='animation_player_4_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_3_1' class='player' display='none'>
+						<circle id='main_player_3_1_shape' class='svg-player-shape' />
+						<text id='main_player_3_1_number' class='svg-player-number'>3</text>
+						<text id='main_player_3_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_3_1' class='player' display='none'>
+						<circle id='animation_player_3_1_shape' class='svg-player-shape' />
+						<text id='animation_player_3_1_number' class='svg-player-number'>3</text>
+						<text id='animation_player_3_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_2_1' class='player' display='none'>
+						<circle id='main_player_2_1_shape' class='svg-player-shape' />
+						<text id='main_player_2_1_number' class='svg-player-number'>2</text>
+						<text id='main_player_2_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_2_1' class='player' display='none'>
+						<circle id='animation_player_2_1_shape' class='svg-player-shape' />
+						<text id='animation_player_2_1_number' class='svg-player-number'>2</text>
+						<text id='animation_player_2_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_1_1' class='player' display='none'>
+						<circle id='main_player_1_1_shape' class='svg-player-shape' />
+						<text id='main_player_1_1_number' class='svg-player-number'>1</text>
+						<text id='main_player_1_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_1_1' class='player' display='none'>
+						<circle id='animation_player_1_1_shape' class='svg-player-shape' />
+						<text id='animation_player_1_1_number' class='svg-player-number'>1</text>
+						<text id='animation_player_1_1_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_25_2' class='player' display='none'>
+						<circle id='main_player_25_2_shape' class='svg-player-shape' />
+						<text id='main_player_25_2_number' class='svg-player-number'>25</text>
+						<text id='main_player_25_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_25_2' class='player' display='none'>
+						<circle id='animation_player_25_2_shape' class='svg-player-shape' />
+						<text id='animation_player_25_2_number' class='svg-player-number'>25</text>
+						<text id='animation_player_25_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_24_2' class='player' display='none'>
+						<circle id='main_player_24_2_shape' class='svg-player-shape' />
+						<text id='main_player_24_2_number' class='svg-player-number'>24</text>
+						<text id='main_player_24_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_24_2' class='player' display='none'>
+						<circle id='animation_player_24_2_shape' class='svg-player-shape' />
+						<text id='animation_player_24_2_number' class='svg-player-number'>24</text>
+						<text id='animation_player_24_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_23_2' class='player' display='none'>
+						<circle id='main_player_23_2_shape' class='svg-player-shape' />
+						<text id='main_player_23_2_number' class='svg-player-number'>23</text>
+						<text id='main_player_23_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_23_2' class='player' display='none'>
+						<circle id='animation_player_23_2_shape' class='svg-player-shape' />
+						<text id='animation_player_23_2_number' class='svg-player-number'>23</text>
+						<text id='animation_player_23_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_22_2' class='player' display='none'>
+						<circle id='main_player_22_2_shape' class='svg-player-shape' />
+						<text id='main_player_22_2_number' class='svg-player-number'>22</text>
+						<text id='main_player_22_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_22_2' class='player' display='none'>
+						<circle id='animation_player_22_2_shape' class='svg-player-shape' />
+						<text id='animation_player_22_2_number' class='svg-player-number'>22</text>
+						<text id='animation_player_22_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_21_2' class='player' display='none'>
+						<circle id='main_player_21_2_shape' class='svg-player-shape' />
+						<text id='main_player_21_2_number' class='svg-player-number'>21</text>
+						<text id='main_player_21_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_21_2' class='player' display='none'>
+						<circle id='animation_player_21_2_shape' class='svg-player-shape' />
+						<text id='animation_player_21_2_number' class='svg-player-number'>21</text>
+						<text id='animation_player_21_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_20_2' class='player' display='none'>
+						<circle id='main_player_20_2_shape' class='svg-player-shape' />
+						<text id='main_player_20_2_number' class='svg-player-number'>20</text>
+						<text id='main_player_20_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_20_2' class='player' display='none'>
+						<circle id='animation_player_20_2_shape' class='svg-player-shape' />
+						<text id='animation_player_20_2_number' class='svg-player-number'>20</text>
+						<text id='animation_player_20_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_19_2' class='player' display='none'>
+						<circle id='main_player_19_2_shape' class='svg-player-shape' />
+						<text id='main_player_19_2_number' class='svg-player-number'>19</text>
+						<text id='main_player_19_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_19_2' class='player' display='none'>
+						<circle id='animation_player_19_2_shape' class='svg-player-shape' />
+						<text id='animation_player_19_2_number' class='svg-player-number'>19</text>
+						<text id='animation_player_19_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_18_2' class='player' display='none'>
+						<circle id='main_player_18_2_shape' class='svg-player-shape' />
+						<text id='main_player_18_2_number' class='svg-player-number'>18</text>
+						<text id='main_player_18_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_18_2' class='player' display='none'>
+						<circle id='animation_player_18_2_shape' class='svg-player-shape' />
+						<text id='animation_player_18_2_number' class='svg-player-number'>18</text>
+						<text id='animation_player_18_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_17_2' class='player' display='none'>
+						<circle id='main_player_17_2_shape' class='svg-player-shape' />
+						<text id='main_player_17_2_number' class='svg-player-number'>17</text>
+						<text id='main_player_17_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_17_2' class='player' display='none'>
+						<circle id='animation_player_17_2_shape' class='svg-player-shape' />
+						<text id='animation_player_17_2_number' class='svg-player-number'>17</text>
+						<text id='animation_player_17_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_16_2' class='player' display='none'>
+						<circle id='main_player_16_2_shape' class='svg-player-shape' />
+						<text id='main_player_16_2_number' class='svg-player-number'>16</text>
+						<text id='main_player_16_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_16_2' class='player' display='none'>
+						<circle id='animation_player_16_2_shape' class='svg-player-shape' />
+						<text id='animation_player_16_2_number' class='svg-player-number'>16</text>
+						<text id='animation_player_16_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_15_2' class='player' display='none'>
+						<circle id='main_player_15_2_shape' class='svg-player-shape' />
+						<text id='main_player_15_2_number' class='svg-player-number'>15</text>
+						<text id='main_player_15_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_15_2' class='player' display='none'>
+						<circle id='animation_player_15_2_shape' class='svg-player-shape' />
+						<text id='animation_player_15_2_number' class='svg-player-number'>15</text>
+						<text id='animation_player_15_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_14_2' class='player' display='none'>
+						<circle id='main_player_14_2_shape' class='svg-player-shape' />
+						<text id='main_player_14_2_number' class='svg-player-number'>14</text>
+						<text id='main_player_14_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_14_2' class='player' display='none'>
+						<circle id='animation_player_14_2_shape' class='svg-player-shape' />
+						<text id='animation_player_14_2_number' class='svg-player-number'>14</text>
+						<text id='animation_player_14_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_13_2' class='player' display='none'>
+						<circle id='main_player_13_2_shape' class='svg-player-shape' />
+						<text id='main_player_13_2_number' class='svg-player-number'>13</text>
+						<text id='main_player_13_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_13_2' class='player' display='none'>
+						<circle id='animation_player_13_2_shape' class='svg-player-shape' />
+						<text id='animation_player_13_2_number' class='svg-player-number'>13</text>
+						<text id='animation_player_13_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_12_2' class='player' display='none'>
+						<circle id='main_player_12_2_shape' class='svg-player-shape' />
+						<text id='main_player_12_2_number' class='svg-player-number'>12</text>
+						<text id='main_player_12_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_12_2' class='player' display='none'>
+						<circle id='animation_player_12_2_shape' class='svg-player-shape' />
+						<text id='animation_player_12_2_number' class='svg-player-number'>12</text>
+						<text id='animation_player_12_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_11_2' class='player' display='none'>
+						<circle id='main_player_11_2_shape' class='svg-player-shape' />
+						<text id='main_player_11_2_number' class='svg-player-number'>11</text>
+						<text id='main_player_11_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_11_2' class='player' display='none'>
+						<circle id='animation_player_11_2_shape' class='svg-player-shape' />
+						<text id='animation_player_11_2_number' class='svg-player-number'>11</text>
+						<text id='animation_player_11_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_10_2' class='player' display='none'>
+						<circle id='main_player_10_2_shape' class='svg-player-shape' />
+						<text id='main_player_10_2_number' class='svg-player-number'>10</text>
+						<text id='main_player_10_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_10_2' class='player' display='none'>
+						<circle id='animation_player_10_2_shape' class='svg-player-shape' />
+						<text id='animation_player_10_2_number' class='svg-player-number'>10</text>
+						<text id='animation_player_10_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_9_2' class='player' display='none'>
+						<circle id='main_player_9_2_shape' class='svg-player-shape' />
+						<text id='main_player_9_2_number' class='svg-player-number'>9</text>
+						<text id='main_player_9_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_9_2' class='player' display='none'>
+						<circle id='animation_player_9_2_shape' class='svg-player-shape' />
+						<text id='animation_player_9_2_number' class='svg-player-number'>9</text>
+						<text id='animation_player_9_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_8_2' class='player' display='none'>
+						<circle id='main_player_8_2_shape' class='svg-player-shape' />
+						<text id='main_player_8_2_number' class='svg-player-number'>8</text>
+						<text id='main_player_8_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_8_2' class='player' display='none'>
+						<circle id='animation_player_8_2_shape' class='svg-player-shape' />
+						<text id='animation_player_8_2_number' class='svg-player-number'>8</text>
+						<text id='animation_player_8_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_7_2' class='player' display='none'>
+						<circle id='main_player_7_2_shape' class='svg-player-shape' />
+						<text id='main_player_7_2_number' class='svg-player-number'>7</text>
+						<text id='main_player_7_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_7_2' class='player' display='none'>
+						<circle id='animation_player_7_2_shape' class='svg-player-shape' />
+						<text id='animation_player_7_2_number' class='svg-player-number'>7</text>
+						<text id='animation_player_7_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_6_2' class='player' display='none'>
+						<circle id='main_player_6_2_shape' class='svg-player-shape' />
+						<text id='main_player_6_2_number' class='svg-player-number'>6</text>
+						<text id='main_player_6_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_6_2' class='player' display='none'>
+						<circle id='animation_player_6_2_shape' class='svg-player-shape' />
+						<text id='animation_player_6_2_number' class='svg-player-number'>6</text>
+						<text id='animation_player_6_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_5_2' class='player' display='none'>
+						<circle id='main_player_5_2_shape' class='svg-player-shape' />
+						<text id='main_player_5_2_number' class='svg-player-number'>5</text>
+						<text id='main_player_5_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_5_2' class='player' display='none'>
+						<circle id='animation_player_5_2_shape' class='svg-player-shape' />
+						<text id='animation_player_5_2_number' class='svg-player-number'>5</text>
+						<text id='animation_player_5_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_4_2' class='player' display='none'>
+						<circle id='main_player_4_2_shape' class='svg-player-shape' />
+						<text id='main_player_4_2_number' class='svg-player-number'>4</text>
+						<text id='main_player_4_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_4_2' class='player' display='none'>
+						<circle id='animation_player_4_2_shape' class='svg-player-shape' />
+						<text id='animation_player_4_2_number' class='svg-player-number'>4</text>
+						<text id='animation_player_4_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_3_2' class='player' display='none'>
+						<circle id='main_player_3_2_shape' class='svg-player-shape' />
+						<text id='main_player_3_2_number' class='svg-player-number'>3</text>
+						<text id='main_player_3_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_3_2' class='player' display='none'>
+						<circle id='animation_player_3_2_shape' class='svg-player-shape' />
+						<text id='animation_player_3_2_number' class='svg-player-number'>3</text>
+						<text id='animation_player_3_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_2_2' class='player' display='none'>
+						<circle id='main_player_2_2_shape' class='svg-player-shape' />
+						<text id='main_player_2_2_number' class='svg-player-number'>2</text>
+						<text id='main_player_2_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_2_2' class='player' display='none'>
+						<circle id='animation_player_2_2_shape' class='svg-player-shape' />
+						<text id='animation_player_2_2_number' class='svg-player-number'>2</text>
+						<text id='animation_player_2_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_1_2' class='player' display='none'>
+						<circle id='main_player_1_2_shape' class='svg-player-shape' />
+						<text id='main_player_1_2_number' class='svg-player-number'>1</text>
+						<text id='main_player_1_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_1_2' class='player' display='none'>
+						<circle id='animation_player_1_2_shape' class='svg-player-shape' />
+						<text id='animation_player_1_2_number' class='svg-player-number'>1</text>
+						<text id='animation_player_1_2_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_25_3' class='player' display='none'>
+						<circle id='main_player_25_3_shape' class='svg-player-shape' />
+						<text id='main_player_25_3_number' class='svg-player-number'>25</text>
+						<text id='main_player_25_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_25_3' class='player' display='none'>
+						<circle id='animation_player_25_3_shape' class='svg-player-shape' />
+						<text id='animation_player_25_3_number' class='svg-player-number'>25</text>
+						<text id='animation_player_25_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_24_3' class='player' display='none'>
+						<circle id='main_player_24_3_shape' class='svg-player-shape' />
+						<text id='main_player_24_3_number' class='svg-player-number'>24</text>
+						<text id='main_player_24_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_24_3' class='player' display='none'>
+						<circle id='animation_player_24_3_shape' class='svg-player-shape' />
+						<text id='animation_player_24_3_number' class='svg-player-number'>24</text>
+						<text id='animation_player_24_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_23_3' class='player' display='none'>
+						<circle id='main_player_23_3_shape' class='svg-player-shape' />
+						<text id='main_player_23_3_number' class='svg-player-number'>23</text>
+						<text id='main_player_23_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_23_3' class='player' display='none'>
+						<circle id='animation_player_23_3_shape' class='svg-player-shape' />
+						<text id='animation_player_23_3_number' class='svg-player-number'>23</text>
+						<text id='animation_player_23_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_22_3' class='player' display='none'>
+						<circle id='main_player_22_3_shape' class='svg-player-shape' />
+						<text id='main_player_22_3_number' class='svg-player-number'>22</text>
+						<text id='main_player_22_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_22_3' class='player' display='none'>
+						<circle id='animation_player_22_3_shape' class='svg-player-shape' />
+						<text id='animation_player_22_3_number' class='svg-player-number'>22</text>
+						<text id='animation_player_22_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_21_3' class='player' display='none'>
+						<circle id='main_player_21_3_shape' class='svg-player-shape' />
+						<text id='main_player_21_3_number' class='svg-player-number'>21</text>
+						<text id='main_player_21_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_21_3' class='player' display='none'>
+						<circle id='animation_player_21_3_shape' class='svg-player-shape' />
+						<text id='animation_player_21_3_number' class='svg-player-number'>21</text>
+						<text id='animation_player_21_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_20_3' class='player' display='none'>
+						<circle id='main_player_20_3_shape' class='svg-player-shape' />
+						<text id='main_player_20_3_number' class='svg-player-number'>20</text>
+						<text id='main_player_20_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_20_3' class='player' display='none'>
+						<circle id='animation_player_20_3_shape' class='svg-player-shape' />
+						<text id='animation_player_20_3_number' class='svg-player-number'>20</text>
+						<text id='animation_player_20_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_19_3' class='player' display='none'>
+						<circle id='main_player_19_3_shape' class='svg-player-shape' />
+						<text id='main_player_19_3_number' class='svg-player-number'>19</text>
+						<text id='main_player_19_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_19_3' class='player' display='none'>
+						<circle id='animation_player_19_3_shape' class='svg-player-shape' />
+						<text id='animation_player_19_3_number' class='svg-player-number'>19</text>
+						<text id='animation_player_19_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_18_3' class='player' display='none'>
+						<circle id='main_player_18_3_shape' class='svg-player-shape' />
+						<text id='main_player_18_3_number' class='svg-player-number'>18</text>
+						<text id='main_player_18_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_18_3' class='player' display='none'>
+						<circle id='animation_player_18_3_shape' class='svg-player-shape' />
+						<text id='animation_player_18_3_number' class='svg-player-number'>18</text>
+						<text id='animation_player_18_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_17_3' class='player' display='none'>
+						<circle id='main_player_17_3_shape' class='svg-player-shape' />
+						<text id='main_player_17_3_number' class='svg-player-number'>17</text>
+						<text id='main_player_17_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_17_3' class='player' display='none'>
+						<circle id='animation_player_17_3_shape' class='svg-player-shape' />
+						<text id='animation_player_17_3_number' class='svg-player-number'>17</text>
+						<text id='animation_player_17_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_16_3' class='player' display='none'>
+						<circle id='main_player_16_3_shape' class='svg-player-shape' />
+						<text id='main_player_16_3_number' class='svg-player-number'>16</text>
+						<text id='main_player_16_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_16_3' class='player' display='none'>
+						<circle id='animation_player_16_3_shape' class='svg-player-shape' />
+						<text id='animation_player_16_3_number' class='svg-player-number'>16</text>
+						<text id='animation_player_16_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_15_3' class='player' display='none'>
+						<circle id='main_player_15_3_shape' class='svg-player-shape' />
+						<text id='main_player_15_3_number' class='svg-player-number'>15</text>
+						<text id='main_player_15_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_15_3' class='player' display='none'>
+						<circle id='animation_player_15_3_shape' class='svg-player-shape' />
+						<text id='animation_player_15_3_number' class='svg-player-number'>15</text>
+						<text id='animation_player_15_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_14_3' class='player' display='none'>
+						<circle id='main_player_14_3_shape' class='svg-player-shape' />
+						<text id='main_player_14_3_number' class='svg-player-number'>14</text>
+						<text id='main_player_14_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_14_3' class='player' display='none'>
+						<circle id='animation_player_14_3_shape' class='svg-player-shape' />
+						<text id='animation_player_14_3_number' class='svg-player-number'>14</text>
+						<text id='animation_player_14_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_13_3' class='player' display='none'>
+						<circle id='main_player_13_3_shape' class='svg-player-shape' />
+						<text id='main_player_13_3_number' class='svg-player-number'>13</text>
+						<text id='main_player_13_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_13_3' class='player' display='none'>
+						<circle id='animation_player_13_3_shape' class='svg-player-shape' />
+						<text id='animation_player_13_3_number' class='svg-player-number'>13</text>
+						<text id='animation_player_13_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_12_3' class='player' display='none'>
+						<circle id='main_player_12_3_shape' class='svg-player-shape' />
+						<text id='main_player_12_3_number' class='svg-player-number'>12</text>
+						<text id='main_player_12_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_12_3' class='player' display='none'>
+						<circle id='animation_player_12_3_shape' class='svg-player-shape' />
+						<text id='animation_player_12_3_number' class='svg-player-number'>12</text>
+						<text id='animation_player_12_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_11_3' class='player' display='none'>
+						<circle id='main_player_11_3_shape' class='svg-player-shape' />
+						<text id='main_player_11_3_number' class='svg-player-number'>11</text>
+						<text id='main_player_11_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_11_3' class='player' display='none'>
+						<circle id='animation_player_11_3_shape' class='svg-player-shape' />
+						<text id='animation_player_11_3_number' class='svg-player-number'>11</text>
+						<text id='animation_player_11_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_10_3' class='player' display='none'>
+						<circle id='main_player_10_3_shape' class='svg-player-shape' />
+						<text id='main_player_10_3_number' class='svg-player-number'>10</text>
+						<text id='main_player_10_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_10_3' class='player' display='none'>
+						<circle id='animation_player_10_3_shape' class='svg-player-shape' />
+						<text id='animation_player_10_3_number' class='svg-player-number'>10</text>
+						<text id='animation_player_10_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_9_3' class='player' display='none'>
+						<circle id='main_player_9_3_shape' class='svg-player-shape' />
+						<text id='main_player_9_3_number' class='svg-player-number'>9</text>
+						<text id='main_player_9_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_9_3' class='player' display='none'>
+						<circle id='animation_player_9_3_shape' class='svg-player-shape' />
+						<text id='animation_player_9_3_number' class='svg-player-number'>9</text>
+						<text id='animation_player_9_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_8_3' class='player' display='none'>
+						<circle id='main_player_8_3_shape' class='svg-player-shape' />
+						<text id='main_player_8_3_number' class='svg-player-number'>8</text>
+						<text id='main_player_8_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_8_3' class='player' display='none'>
+						<circle id='animation_player_8_3_shape' class='svg-player-shape' />
+						<text id='animation_player_8_3_number' class='svg-player-number'>8</text>
+						<text id='animation_player_8_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_7_3' class='player' display='none'>
+						<circle id='main_player_7_3_shape' class='svg-player-shape' />
+						<text id='main_player_7_3_number' class='svg-player-number'>7</text>
+						<text id='main_player_7_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_7_3' class='player' display='none'>
+						<circle id='animation_player_7_3_shape' class='svg-player-shape' />
+						<text id='animation_player_7_3_number' class='svg-player-number'>7</text>
+						<text id='animation_player_7_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_6_3' class='player' display='none'>
+						<circle id='main_player_6_3_shape' class='svg-player-shape' />
+						<text id='main_player_6_3_number' class='svg-player-number'>6</text>
+						<text id='main_player_6_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_6_3' class='player' display='none'>
+						<circle id='animation_player_6_3_shape' class='svg-player-shape' />
+						<text id='animation_player_6_3_number' class='svg-player-number'>6</text>
+						<text id='animation_player_6_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_5_3' class='player' display='none'>
+						<circle id='main_player_5_3_shape' class='svg-player-shape' />
+						<text id='main_player_5_3_number' class='svg-player-number'>5</text>
+						<text id='main_player_5_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_5_3' class='player' display='none'>
+						<circle id='animation_player_5_3_shape' class='svg-player-shape' />
+						<text id='animation_player_5_3_number' class='svg-player-number'>5</text>
+						<text id='animation_player_5_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_4_3' class='player' display='none'>
+						<circle id='main_player_4_3_shape' class='svg-player-shape' />
+						<text id='main_player_4_3_number' class='svg-player-number'>4</text>
+						<text id='main_player_4_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_4_3' class='player' display='none'>
+						<circle id='animation_player_4_3_shape' class='svg-player-shape' />
+						<text id='animation_player_4_3_number' class='svg-player-number'>4</text>
+						<text id='animation_player_4_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_3_3' class='player' display='none'>
+						<circle id='main_player_3_3_shape' class='svg-player-shape' />
+						<text id='main_player_3_3_number' class='svg-player-number'>3</text>
+						<text id='main_player_3_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_3_3' class='player' display='none'>
+						<circle id='animation_player_3_3_shape' class='svg-player-shape' />
+						<text id='animation_player_3_3_number' class='svg-player-number'>3</text>
+						<text id='animation_player_3_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_2_3' class='player' display='none'>
+						<circle id='main_player_2_3_shape' class='svg-player-shape' />
+						<text id='main_player_2_3_number' class='svg-player-number'>2</text>
+						<text id='main_player_2_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_2_3' class='player' display='none'>
+						<circle id='animation_player_2_3_shape' class='svg-player-shape' />
+						<text id='animation_player_2_3_number' class='svg-player-number'>2</text>
+						<text id='animation_player_2_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_1_3' class='player' display='none'>
+						<circle id='main_player_1_3_shape' class='svg-player-shape' />
+						<text id='main_player_1_3_number' class='svg-player-number'>1</text>
+						<text id='main_player_1_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_1_3' class='player' display='none'>
+						<circle id='animation_player_1_3_shape' class='svg-player-shape' />
+						<text id='animation_player_1_3_number' class='svg-player-number'>1</text>
+						<text id='animation_player_1_3_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_25_4' class='player' display='none'>
+						<circle id='main_player_25_4_shape' class='svg-player-shape' />
+						<text id='main_player_25_4_number' class='svg-player-number'>25</text>
+						<text id='main_player_25_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_25_4' class='player' display='none'>
+						<circle id='animation_player_25_4_shape' class='svg-player-shape' />
+						<text id='animation_player_25_4_number' class='svg-player-number'>25</text>
+						<text id='animation_player_25_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_24_4' class='player' display='none'>
+						<circle id='main_player_24_4_shape' class='svg-player-shape' />
+						<text id='main_player_24_4_number' class='svg-player-number'>24</text>
+						<text id='main_player_24_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_24_4' class='player' display='none'>
+						<circle id='animation_player_24_4_shape' class='svg-player-shape' />
+						<text id='animation_player_24_4_number' class='svg-player-number'>24</text>
+						<text id='animation_player_24_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_23_4' class='player' display='none'>
+						<circle id='main_player_23_4_shape' class='svg-player-shape' />
+						<text id='main_player_23_4_number' class='svg-player-number'>23</text>
+						<text id='main_player_23_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_23_4' class='player' display='none'>
+						<circle id='animation_player_23_4_shape' class='svg-player-shape' />
+						<text id='animation_player_23_4_number' class='svg-player-number'>23</text>
+						<text id='animation_player_23_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_22_4' class='player' display='none'>
+						<circle id='main_player_22_4_shape' class='svg-player-shape' />
+						<text id='main_player_22_4_number' class='svg-player-number'>22</text>
+						<text id='main_player_22_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_22_4' class='player' display='none'>
+						<circle id='animation_player_22_4_shape' class='svg-player-shape' />
+						<text id='animation_player_22_4_number' class='svg-player-number'>22</text>
+						<text id='animation_player_22_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_21_4' class='player' display='none'>
+						<circle id='main_player_21_4_shape' class='svg-player-shape' />
+						<text id='main_player_21_4_number' class='svg-player-number'>21</text>
+						<text id='main_player_21_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_21_4' class='player' display='none'>
+						<circle id='animation_player_21_4_shape' class='svg-player-shape' />
+						<text id='animation_player_21_4_number' class='svg-player-number'>21</text>
+						<text id='animation_player_21_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_20_4' class='player' display='none'>
+						<circle id='main_player_20_4_shape' class='svg-player-shape' />
+						<text id='main_player_20_4_number' class='svg-player-number'>20</text>
+						<text id='main_player_20_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_20_4' class='player' display='none'>
+						<circle id='animation_player_20_4_shape' class='svg-player-shape' />
+						<text id='animation_player_20_4_number' class='svg-player-number'>20</text>
+						<text id='animation_player_20_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_19_4' class='player' display='none'>
+						<circle id='main_player_19_4_shape' class='svg-player-shape' />
+						<text id='main_player_19_4_number' class='svg-player-number'>19</text>
+						<text id='main_player_19_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_19_4' class='player' display='none'>
+						<circle id='animation_player_19_4_shape' class='svg-player-shape' />
+						<text id='animation_player_19_4_number' class='svg-player-number'>19</text>
+						<text id='animation_player_19_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_18_4' class='player' display='none'>
+						<circle id='main_player_18_4_shape' class='svg-player-shape' />
+						<text id='main_player_18_4_number' class='svg-player-number'>18</text>
+						<text id='main_player_18_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_18_4' class='player' display='none'>
+						<circle id='animation_player_18_4_shape' class='svg-player-shape' />
+						<text id='animation_player_18_4_number' class='svg-player-number'>18</text>
+						<text id='animation_player_18_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_17_4' class='player' display='none'>
+						<circle id='main_player_17_4_shape' class='svg-player-shape' />
+						<text id='main_player_17_4_number' class='svg-player-number'>17</text>
+						<text id='main_player_17_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_17_4' class='player' display='none'>
+						<circle id='animation_player_17_4_shape' class='svg-player-shape' />
+						<text id='animation_player_17_4_number' class='svg-player-number'>17</text>
+						<text id='animation_player_17_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_16_4' class='player' display='none'>
+						<circle id='main_player_16_4_shape' class='svg-player-shape' />
+						<text id='main_player_16_4_number' class='svg-player-number'>16</text>
+						<text id='main_player_16_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_16_4' class='player' display='none'>
+						<circle id='animation_player_16_4_shape' class='svg-player-shape' />
+						<text id='animation_player_16_4_number' class='svg-player-number'>16</text>
+						<text id='animation_player_16_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_15_4' class='player' display='none'>
+						<circle id='main_player_15_4_shape' class='svg-player-shape' />
+						<text id='main_player_15_4_number' class='svg-player-number'>15</text>
+						<text id='main_player_15_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_15_4' class='player' display='none'>
+						<circle id='animation_player_15_4_shape' class='svg-player-shape' />
+						<text id='animation_player_15_4_number' class='svg-player-number'>15</text>
+						<text id='animation_player_15_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_14_4' class='player' display='none'>
+						<circle id='main_player_14_4_shape' class='svg-player-shape' />
+						<text id='main_player_14_4_number' class='svg-player-number'>14</text>
+						<text id='main_player_14_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_14_4' class='player' display='none'>
+						<circle id='animation_player_14_4_shape' class='svg-player-shape' />
+						<text id='animation_player_14_4_number' class='svg-player-number'>14</text>
+						<text id='animation_player_14_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_13_4' class='player' display='none'>
+						<circle id='main_player_13_4_shape' class='svg-player-shape' />
+						<text id='main_player_13_4_number' class='svg-player-number'>13</text>
+						<text id='main_player_13_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_13_4' class='player' display='none'>
+						<circle id='animation_player_13_4_shape' class='svg-player-shape' />
+						<text id='animation_player_13_4_number' class='svg-player-number'>13</text>
+						<text id='animation_player_13_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_12_4' class='player' display='none'>
+						<circle id='main_player_12_4_shape' class='svg-player-shape' />
+						<text id='main_player_12_4_number' class='svg-player-number'>12</text>
+						<text id='main_player_12_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_12_4' class='player' display='none'>
+						<circle id='animation_player_12_4_shape' class='svg-player-shape' />
+						<text id='animation_player_12_4_number' class='svg-player-number'>12</text>
+						<text id='animation_player_12_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_11_4' class='player' display='none'>
+						<circle id='main_player_11_4_shape' class='svg-player-shape' />
+						<text id='main_player_11_4_number' class='svg-player-number'>11</text>
+						<text id='main_player_11_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_11_4' class='player' display='none'>
+						<circle id='animation_player_11_4_shape' class='svg-player-shape' />
+						<text id='animation_player_11_4_number' class='svg-player-number'>11</text>
+						<text id='animation_player_11_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_10_4' class='player' display='none'>
+						<circle id='main_player_10_4_shape' class='svg-player-shape' />
+						<text id='main_player_10_4_number' class='svg-player-number'>10</text>
+						<text id='main_player_10_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_10_4' class='player' display='none'>
+						<circle id='animation_player_10_4_shape' class='svg-player-shape' />
+						<text id='animation_player_10_4_number' class='svg-player-number'>10</text>
+						<text id='animation_player_10_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_9_4' class='player' display='none'>
+						<circle id='main_player_9_4_shape' class='svg-player-shape' />
+						<text id='main_player_9_4_number' class='svg-player-number'>9</text>
+						<text id='main_player_9_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_9_4' class='player' display='none'>
+						<circle id='animation_player_9_4_shape' class='svg-player-shape' />
+						<text id='animation_player_9_4_number' class='svg-player-number'>9</text>
+						<text id='animation_player_9_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_8_4' class='player' display='none'>
+						<circle id='main_player_8_4_shape' class='svg-player-shape' />
+						<text id='main_player_8_4_number' class='svg-player-number'>8</text>
+						<text id='main_player_8_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_8_4' class='player' display='none'>
+						<circle id='animation_player_8_4_shape' class='svg-player-shape' />
+						<text id='animation_player_8_4_number' class='svg-player-number'>8</text>
+						<text id='animation_player_8_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_7_4' class='player' display='none'>
+						<circle id='main_player_7_4_shape' class='svg-player-shape' />
+						<text id='main_player_7_4_number' class='svg-player-number'>7</text>
+						<text id='main_player_7_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_7_4' class='player' display='none'>
+						<circle id='animation_player_7_4_shape' class='svg-player-shape' />
+						<text id='animation_player_7_4_number' class='svg-player-number'>7</text>
+						<text id='animation_player_7_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_6_4' class='player' display='none'>
+						<circle id='main_player_6_4_shape' class='svg-player-shape' />
+						<text id='main_player_6_4_number' class='svg-player-number'>6</text>
+						<text id='main_player_6_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_6_4' class='player' display='none'>
+						<circle id='animation_player_6_4_shape' class='svg-player-shape' />
+						<text id='animation_player_6_4_number' class='svg-player-number'>6</text>
+						<text id='animation_player_6_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_5_4' class='player' display='none'>
+						<circle id='main_player_5_4_shape' class='svg-player-shape' />
+						<text id='main_player_5_4_number' class='svg-player-number'>5</text>
+						<text id='main_player_5_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_5_4' class='player' display='none'>
+						<circle id='animation_player_5_4_shape' class='svg-player-shape' />
+						<text id='animation_player_5_4_number' class='svg-player-number'>5</text>
+						<text id='animation_player_5_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_4_4' class='player' display='none'>
+						<circle id='main_player_4_4_shape' class='svg-player-shape' />
+						<text id='main_player_4_4_number' class='svg-player-number'>4</text>
+						<text id='main_player_4_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_4_4' class='player' display='none'>
+						<circle id='animation_player_4_4_shape' class='svg-player-shape' />
+						<text id='animation_player_4_4_number' class='svg-player-number'>4</text>
+						<text id='animation_player_4_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_3_4' class='player' display='none'>
+						<circle id='main_player_3_4_shape' class='svg-player-shape' />
+						<text id='main_player_3_4_number' class='svg-player-number'>3</text>
+						<text id='main_player_3_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_3_4' class='player' display='none'>
+						<circle id='animation_player_3_4_shape' class='svg-player-shape' />
+						<text id='animation_player_3_4_number' class='svg-player-number'>3</text>
+						<text id='animation_player_3_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_2_4' class='player' display='none'>
+						<circle id='main_player_2_4_shape' class='svg-player-shape' />
+						<text id='main_player_2_4_number' class='svg-player-number'>2</text>
+						<text id='main_player_2_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_2_4' class='player' display='none'>
+						<circle id='animation_player_2_4_shape' class='svg-player-shape' />
+						<text id='animation_player_2_4_number' class='svg-player-number'>2</text>
+						<text id='animation_player_2_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_1_4' class='player' display='none'>
+						<circle id='main_player_1_4_shape' class='svg-player-shape' />
+						<text id='main_player_1_4_number' class='svg-player-number'>1</text>
+						<text id='main_player_1_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_1_4' class='player' display='none'>
+						<circle id='animation_player_1_4_shape' class='svg-player-shape' />
+						<text id='animation_player_1_4_number' class='svg-player-number'>1</text>
+						<text id='animation_player_1_4_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_25_5' class='player' display='none'>
+						<circle id='main_player_25_5_shape' class='svg-player-shape' />
+						<text id='main_player_25_5_number' class='svg-player-number'>25</text>
+						<text id='main_player_25_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_25_5' class='player' display='none'>
+						<circle id='animation_player_25_5_shape' class='svg-player-shape' />
+						<text id='animation_player_25_5_number' class='svg-player-number'>25</text>
+						<text id='animation_player_25_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_24_5' class='player' display='none'>
+						<circle id='main_player_24_5_shape' class='svg-player-shape' />
+						<text id='main_player_24_5_number' class='svg-player-number'>24</text>
+						<text id='main_player_24_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_24_5' class='player' display='none'>
+						<circle id='animation_player_24_5_shape' class='svg-player-shape' />
+						<text id='animation_player_24_5_number' class='svg-player-number'>24</text>
+						<text id='animation_player_24_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_23_5' class='player' display='none'>
+						<circle id='main_player_23_5_shape' class='svg-player-shape' />
+						<text id='main_player_23_5_number' class='svg-player-number'>23</text>
+						<text id='main_player_23_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_23_5' class='player' display='none'>
+						<circle id='animation_player_23_5_shape' class='svg-player-shape' />
+						<text id='animation_player_23_5_number' class='svg-player-number'>23</text>
+						<text id='animation_player_23_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_22_5' class='player' display='none'>
+						<circle id='main_player_22_5_shape' class='svg-player-shape' />
+						<text id='main_player_22_5_number' class='svg-player-number'>22</text>
+						<text id='main_player_22_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_22_5' class='player' display='none'>
+						<circle id='animation_player_22_5_shape' class='svg-player-shape' />
+						<text id='animation_player_22_5_number' class='svg-player-number'>22</text>
+						<text id='animation_player_22_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_21_5' class='player' display='none'>
+						<circle id='main_player_21_5_shape' class='svg-player-shape' />
+						<text id='main_player_21_5_number' class='svg-player-number'>21</text>
+						<text id='main_player_21_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_21_5' class='player' display='none'>
+						<circle id='animation_player_21_5_shape' class='svg-player-shape' />
+						<text id='animation_player_21_5_number' class='svg-player-number'>21</text>
+						<text id='animation_player_21_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_20_5' class='player' display='none'>
+						<circle id='main_player_20_5_shape' class='svg-player-shape' />
+						<text id='main_player_20_5_number' class='svg-player-number'>20</text>
+						<text id='main_player_20_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_20_5' class='player' display='none'>
+						<circle id='animation_player_20_5_shape' class='svg-player-shape' />
+						<text id='animation_player_20_5_number' class='svg-player-number'>20</text>
+						<text id='animation_player_20_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_19_5' class='player' display='none'>
+						<circle id='main_player_19_5_shape' class='svg-player-shape' />
+						<text id='main_player_19_5_number' class='svg-player-number'>19</text>
+						<text id='main_player_19_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_19_5' class='player' display='none'>
+						<circle id='animation_player_19_5_shape' class='svg-player-shape' />
+						<text id='animation_player_19_5_number' class='svg-player-number'>19</text>
+						<text id='animation_player_19_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_18_5' class='player' display='none'>
+						<circle id='main_player_18_5_shape' class='svg-player-shape' />
+						<text id='main_player_18_5_number' class='svg-player-number'>18</text>
+						<text id='main_player_18_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_18_5' class='player' display='none'>
+						<circle id='animation_player_18_5_shape' class='svg-player-shape' />
+						<text id='animation_player_18_5_number' class='svg-player-number'>18</text>
+						<text id='animation_player_18_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_17_5' class='player' display='none'>
+						<circle id='main_player_17_5_shape' class='svg-player-shape' />
+						<text id='main_player_17_5_number' class='svg-player-number'>17</text>
+						<text id='main_player_17_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_17_5' class='player' display='none'>
+						<circle id='animation_player_17_5_shape' class='svg-player-shape' />
+						<text id='animation_player_17_5_number' class='svg-player-number'>17</text>
+						<text id='animation_player_17_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_16_5' class='player' display='none'>
+						<circle id='main_player_16_5_shape' class='svg-player-shape' />
+						<text id='main_player_16_5_number' class='svg-player-number'>16</text>
+						<text id='main_player_16_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_16_5' class='player' display='none'>
+						<circle id='animation_player_16_5_shape' class='svg-player-shape' />
+						<text id='animation_player_16_5_number' class='svg-player-number'>16</text>
+						<text id='animation_player_16_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_15_5' class='player' display='none'>
+						<circle id='main_player_15_5_shape' class='svg-player-shape' />
+						<text id='main_player_15_5_number' class='svg-player-number'>15</text>
+						<text id='main_player_15_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_15_5' class='player' display='none'>
+						<circle id='animation_player_15_5_shape' class='svg-player-shape' />
+						<text id='animation_player_15_5_number' class='svg-player-number'>15</text>
+						<text id='animation_player_15_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_14_5' class='player' display='none'>
+						<circle id='main_player_14_5_shape' class='svg-player-shape' />
+						<text id='main_player_14_5_number' class='svg-player-number'>14</text>
+						<text id='main_player_14_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_14_5' class='player' display='none'>
+						<circle id='animation_player_14_5_shape' class='svg-player-shape' />
+						<text id='animation_player_14_5_number' class='svg-player-number'>14</text>
+						<text id='animation_player_14_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_13_5' class='player' display='none'>
+						<circle id='main_player_13_5_shape' class='svg-player-shape' />
+						<text id='main_player_13_5_number' class='svg-player-number'>13</text>
+						<text id='main_player_13_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_13_5' class='player' display='none'>
+						<circle id='animation_player_13_5_shape' class='svg-player-shape' />
+						<text id='animation_player_13_5_number' class='svg-player-number'>13</text>
+						<text id='animation_player_13_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_12_5' class='player' display='none'>
+						<circle id='main_player_12_5_shape' class='svg-player-shape' />
+						<text id='main_player_12_5_number' class='svg-player-number'>12</text>
+						<text id='main_player_12_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_12_5' class='player' display='none'>
+						<circle id='animation_player_12_5_shape' class='svg-player-shape' />
+						<text id='animation_player_12_5_number' class='svg-player-number'>12</text>
+						<text id='animation_player_12_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_11_5' class='player' display='none'>
+						<circle id='main_player_11_5_shape' class='svg-player-shape' />
+						<text id='main_player_11_5_number' class='svg-player-number'>11</text>
+						<text id='main_player_11_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_11_5' class='player' display='none'>
+						<circle id='animation_player_11_5_shape' class='svg-player-shape' />
+						<text id='animation_player_11_5_number' class='svg-player-number'>11</text>
+						<text id='animation_player_11_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_10_5' class='player' display='none'>
+						<circle id='main_player_10_5_shape' class='svg-player-shape' />
+						<text id='main_player_10_5_number' class='svg-player-number'>10</text>
+						<text id='main_player_10_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_10_5' class='player' display='none'>
+						<circle id='animation_player_10_5_shape' class='svg-player-shape' />
+						<text id='animation_player_10_5_number' class='svg-player-number'>10</text>
+						<text id='animation_player_10_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_9_5' class='player' display='none'>
+						<circle id='main_player_9_5_shape' class='svg-player-shape' />
+						<text id='main_player_9_5_number' class='svg-player-number'>9</text>
+						<text id='main_player_9_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_9_5' class='player' display='none'>
+						<circle id='animation_player_9_5_shape' class='svg-player-shape' />
+						<text id='animation_player_9_5_number' class='svg-player-number'>9</text>
+						<text id='animation_player_9_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_8_5' class='player' display='none'>
+						<circle id='main_player_8_5_shape' class='svg-player-shape' />
+						<text id='main_player_8_5_number' class='svg-player-number'>8</text>
+						<text id='main_player_8_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_8_5' class='player' display='none'>
+						<circle id='animation_player_8_5_shape' class='svg-player-shape' />
+						<text id='animation_player_8_5_number' class='svg-player-number'>8</text>
+						<text id='animation_player_8_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_7_5' class='player' display='none'>
+						<circle id='main_player_7_5_shape' class='svg-player-shape' />
+						<text id='main_player_7_5_number' class='svg-player-number'>7</text>
+						<text id='main_player_7_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_7_5' class='player' display='none'>
+						<circle id='animation_player_7_5_shape' class='svg-player-shape' />
+						<text id='animation_player_7_5_number' class='svg-player-number'>7</text>
+						<text id='animation_player_7_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_6_5' class='player' display='none'>
+						<circle id='main_player_6_5_shape' class='svg-player-shape' />
+						<text id='main_player_6_5_number' class='svg-player-number'>6</text>
+						<text id='main_player_6_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_6_5' class='player' display='none'>
+						<circle id='animation_player_6_5_shape' class='svg-player-shape' />
+						<text id='animation_player_6_5_number' class='svg-player-number'>6</text>
+						<text id='animation_player_6_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_5_5' class='player' display='none'>
+						<circle id='main_player_5_5_shape' class='svg-player-shape' />
+						<text id='main_player_5_5_number' class='svg-player-number'>5</text>
+						<text id='main_player_5_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_5_5' class='player' display='none'>
+						<circle id='animation_player_5_5_shape' class='svg-player-shape' />
+						<text id='animation_player_5_5_number' class='svg-player-number'>5</text>
+						<text id='animation_player_5_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_4_5' class='player' display='none'>
+						<circle id='main_player_4_5_shape' class='svg-player-shape' />
+						<text id='main_player_4_5_number' class='svg-player-number'>4</text>
+						<text id='main_player_4_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_4_5' class='player' display='none'>
+						<circle id='animation_player_4_5_shape' class='svg-player-shape' />
+						<text id='animation_player_4_5_number' class='svg-player-number'>4</text>
+						<text id='animation_player_4_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_3_5' class='player' display='none'>
+						<circle id='main_player_3_5_shape' class='svg-player-shape' />
+						<text id='main_player_3_5_number' class='svg-player-number'>3</text>
+						<text id='main_player_3_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_3_5' class='player' display='none'>
+						<circle id='animation_player_3_5_shape' class='svg-player-shape' />
+						<text id='animation_player_3_5_number' class='svg-player-number'>3</text>
+						<text id='animation_player_3_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_2_5' class='player' display='none'>
+						<circle id='main_player_2_5_shape' class='svg-player-shape' />
+						<text id='main_player_2_5_number' class='svg-player-number'>2</text>
+						<text id='main_player_2_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_2_5' class='player' display='none'>
+						<circle id='animation_player_2_5_shape' class='svg-player-shape' />
+						<text id='animation_player_2_5_number' class='svg-player-number'>2</text>
+						<text id='animation_player_2_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_1_5' class='player' display='none'>
+						<circle id='main_player_1_5_shape' class='svg-player-shape' />
+						<text id='main_player_1_5_number' class='svg-player-number'>1</text>
+						<text id='main_player_1_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_1_5' class='player' display='none'>
+						<circle id='animation_player_1_5_shape' class='svg-player-shape' />
+						<text id='animation_player_1_5_number' class='svg-player-number'>1</text>
+						<text id='animation_player_1_5_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_25_6' class='player' display='none'>
+						<circle id='main_player_25_6_shape' class='svg-player-shape' />
+						<text id='main_player_25_6_number' class='svg-player-number'>25</text>
+						<text id='main_player_25_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_25_6' class='player' display='none'>
+						<circle id='animation_player_25_6_shape' class='svg-player-shape' />
+						<text id='animation_player_25_6_number' class='svg-player-number'>25</text>
+						<text id='animation_player_25_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_24_6' class='player' display='none'>
+						<circle id='main_player_24_6_shape' class='svg-player-shape' />
+						<text id='main_player_24_6_number' class='svg-player-number'>24</text>
+						<text id='main_player_24_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_24_6' class='player' display='none'>
+						<circle id='animation_player_24_6_shape' class='svg-player-shape' />
+						<text id='animation_player_24_6_number' class='svg-player-number'>24</text>
+						<text id='animation_player_24_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_23_6' class='player' display='none'>
+						<circle id='main_player_23_6_shape' class='svg-player-shape' />
+						<text id='main_player_23_6_number' class='svg-player-number'>23</text>
+						<text id='main_player_23_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_23_6' class='player' display='none'>
+						<circle id='animation_player_23_6_shape' class='svg-player-shape' />
+						<text id='animation_player_23_6_number' class='svg-player-number'>23</text>
+						<text id='animation_player_23_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_22_6' class='player' display='none'>
+						<circle id='main_player_22_6_shape' class='svg-player-shape' />
+						<text id='main_player_22_6_number' class='svg-player-number'>22</text>
+						<text id='main_player_22_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_22_6' class='player' display='none'>
+						<circle id='animation_player_22_6_shape' class='svg-player-shape' />
+						<text id='animation_player_22_6_number' class='svg-player-number'>22</text>
+						<text id='animation_player_22_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_21_6' class='player' display='none'>
+						<circle id='main_player_21_6_shape' class='svg-player-shape' />
+						<text id='main_player_21_6_number' class='svg-player-number'>21</text>
+						<text id='main_player_21_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_21_6' class='player' display='none'>
+						<circle id='animation_player_21_6_shape' class='svg-player-shape' />
+						<text id='animation_player_21_6_number' class='svg-player-number'>21</text>
+						<text id='animation_player_21_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_20_6' class='player' display='none'>
+						<circle id='main_player_20_6_shape' class='svg-player-shape' />
+						<text id='main_player_20_6_number' class='svg-player-number'>20</text>
+						<text id='main_player_20_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_20_6' class='player' display='none'>
+						<circle id='animation_player_20_6_shape' class='svg-player-shape' />
+						<text id='animation_player_20_6_number' class='svg-player-number'>20</text>
+						<text id='animation_player_20_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_19_6' class='player' display='none'>
+						<circle id='main_player_19_6_shape' class='svg-player-shape' />
+						<text id='main_player_19_6_number' class='svg-player-number'>19</text>
+						<text id='main_player_19_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_19_6' class='player' display='none'>
+						<circle id='animation_player_19_6_shape' class='svg-player-shape' />
+						<text id='animation_player_19_6_number' class='svg-player-number'>19</text>
+						<text id='animation_player_19_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_18_6' class='player' display='none'>
+						<circle id='main_player_18_6_shape' class='svg-player-shape' />
+						<text id='main_player_18_6_number' class='svg-player-number'>18</text>
+						<text id='main_player_18_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_18_6' class='player' display='none'>
+						<circle id='animation_player_18_6_shape' class='svg-player-shape' />
+						<text id='animation_player_18_6_number' class='svg-player-number'>18</text>
+						<text id='animation_player_18_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_17_6' class='player' display='none'>
+						<circle id='main_player_17_6_shape' class='svg-player-shape' />
+						<text id='main_player_17_6_number' class='svg-player-number'>17</text>
+						<text id='main_player_17_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_17_6' class='player' display='none'>
+						<circle id='animation_player_17_6_shape' class='svg-player-shape' />
+						<text id='animation_player_17_6_number' class='svg-player-number'>17</text>
+						<text id='animation_player_17_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_16_6' class='player' display='none'>
+						<circle id='main_player_16_6_shape' class='svg-player-shape' />
+						<text id='main_player_16_6_number' class='svg-player-number'>16</text>
+						<text id='main_player_16_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_16_6' class='player' display='none'>
+						<circle id='animation_player_16_6_shape' class='svg-player-shape' />
+						<text id='animation_player_16_6_number' class='svg-player-number'>16</text>
+						<text id='animation_player_16_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_15_6' class='player' display='none'>
+						<circle id='main_player_15_6_shape' class='svg-player-shape' />
+						<text id='main_player_15_6_number' class='svg-player-number'>15</text>
+						<text id='main_player_15_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_15_6' class='player' display='none'>
+						<circle id='animation_player_15_6_shape' class='svg-player-shape' />
+						<text id='animation_player_15_6_number' class='svg-player-number'>15</text>
+						<text id='animation_player_15_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_14_6' class='player' display='none'>
+						<circle id='main_player_14_6_shape' class='svg-player-shape' />
+						<text id='main_player_14_6_number' class='svg-player-number'>14</text>
+						<text id='main_player_14_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_14_6' class='player' display='none'>
+						<circle id='animation_player_14_6_shape' class='svg-player-shape' />
+						<text id='animation_player_14_6_number' class='svg-player-number'>14</text>
+						<text id='animation_player_14_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_13_6' class='player' display='none'>
+						<circle id='main_player_13_6_shape' class='svg-player-shape' />
+						<text id='main_player_13_6_number' class='svg-player-number'>13</text>
+						<text id='main_player_13_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_13_6' class='player' display='none'>
+						<circle id='animation_player_13_6_shape' class='svg-player-shape' />
+						<text id='animation_player_13_6_number' class='svg-player-number'>13</text>
+						<text id='animation_player_13_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_12_6' class='player' display='none'>
+						<circle id='main_player_12_6_shape' class='svg-player-shape' />
+						<text id='main_player_12_6_number' class='svg-player-number'>12</text>
+						<text id='main_player_12_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_12_6' class='player' display='none'>
+						<circle id='animation_player_12_6_shape' class='svg-player-shape' />
+						<text id='animation_player_12_6_number' class='svg-player-number'>12</text>
+						<text id='animation_player_12_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_11_6' class='player' display='none'>
+						<circle id='main_player_11_6_shape' class='svg-player-shape' />
+						<text id='main_player_11_6_number' class='svg-player-number'>11</text>
+						<text id='main_player_11_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_11_6' class='player' display='none'>
+						<circle id='animation_player_11_6_shape' class='svg-player-shape' />
+						<text id='animation_player_11_6_number' class='svg-player-number'>11</text>
+						<text id='animation_player_11_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_10_6' class='player' display='none'>
+						<circle id='main_player_10_6_shape' class='svg-player-shape' />
+						<text id='main_player_10_6_number' class='svg-player-number'>10</text>
+						<text id='main_player_10_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_10_6' class='player' display='none'>
+						<circle id='animation_player_10_6_shape' class='svg-player-shape' />
+						<text id='animation_player_10_6_number' class='svg-player-number'>10</text>
+						<text id='animation_player_10_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_9_6' class='player' display='none'>
+						<circle id='main_player_9_6_shape' class='svg-player-shape' />
+						<text id='main_player_9_6_number' class='svg-player-number'>9</text>
+						<text id='main_player_9_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_9_6' class='player' display='none'>
+						<circle id='animation_player_9_6_shape' class='svg-player-shape' />
+						<text id='animation_player_9_6_number' class='svg-player-number'>9</text>
+						<text id='animation_player_9_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_8_6' class='player' display='none'>
+						<circle id='main_player_8_6_shape' class='svg-player-shape' />
+						<text id='main_player_8_6_number' class='svg-player-number'>8</text>
+						<text id='main_player_8_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_8_6' class='player' display='none'>
+						<circle id='animation_player_8_6_shape' class='svg-player-shape' />
+						<text id='animation_player_8_6_number' class='svg-player-number'>8</text>
+						<text id='animation_player_8_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_7_6' class='player' display='none'>
+						<circle id='main_player_7_6_shape' class='svg-player-shape' />
+						<text id='main_player_7_6_number' class='svg-player-number'>7</text>
+						<text id='main_player_7_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_7_6' class='player' display='none'>
+						<circle id='animation_player_7_6_shape' class='svg-player-shape' />
+						<text id='animation_player_7_6_number' class='svg-player-number'>7</text>
+						<text id='animation_player_7_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_6_6' class='player' display='none'>
+						<circle id='main_player_6_6_shape' class='svg-player-shape' />
+						<text id='main_player_6_6_number' class='svg-player-number'>6</text>
+						<text id='main_player_6_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_6_6' class='player' display='none'>
+						<circle id='animation_player_6_6_shape' class='svg-player-shape' />
+						<text id='animation_player_6_6_number' class='svg-player-number'>6</text>
+						<text id='animation_player_6_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_5_6' class='player' display='none'>
+						<circle id='main_player_5_6_shape' class='svg-player-shape' />
+						<text id='main_player_5_6_number' class='svg-player-number'>5</text>
+						<text id='main_player_5_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_5_6' class='player' display='none'>
+						<circle id='animation_player_5_6_shape' class='svg-player-shape' />
+						<text id='animation_player_5_6_number' class='svg-player-number'>5</text>
+						<text id='animation_player_5_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_4_6' class='player' display='none'>
+						<circle id='main_player_4_6_shape' class='svg-player-shape' />
+						<text id='main_player_4_6_number' class='svg-player-number'>4</text>
+						<text id='main_player_4_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_4_6' class='player' display='none'>
+						<circle id='animation_player_4_6_shape' class='svg-player-shape' />
+						<text id='animation_player_4_6_number' class='svg-player-number'>4</text>
+						<text id='animation_player_4_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_3_6' class='player' display='none'>
+						<circle id='main_player_3_6_shape' class='svg-player-shape' />
+						<text id='main_player_3_6_number' class='svg-player-number'>3</text>
+						<text id='main_player_3_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_3_6' class='player' display='none'>
+						<circle id='animation_player_3_6_shape' class='svg-player-shape' />
+						<text id='animation_player_3_6_number' class='svg-player-number'>3</text>
+						<text id='animation_player_3_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_2_6' class='player' display='none'>
+						<circle id='main_player_2_6_shape' class='svg-player-shape' />
+						<text id='main_player_2_6_number' class='svg-player-number'>2</text>
+						<text id='main_player_2_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_2_6' class='player' display='none'>
+						<circle id='animation_player_2_6_shape' class='svg-player-shape' />
+						<text id='animation_player_2_6_number' class='svg-player-number'>2</text>
+						<text id='animation_player_2_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_1_6' class='player' display='none'>
+						<circle id='main_player_1_6_shape' class='svg-player-shape' />
+						<text id='main_player_1_6_number' class='svg-player-number'>1</text>
+						<text id='main_player_1_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_1_6' class='player' display='none'>
+						<circle id='animation_player_1_6_shape' class='svg-player-shape' />
+						<text id='animation_player_1_6_number' class='svg-player-number'>1</text>
+						<text id='animation_player_1_6_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_25_7' class='player' display='none'>
+						<circle id='main_player_25_7_shape' class='svg-player-shape' />
+						<text id='main_player_25_7_number' class='svg-player-number'>25</text>
+						<text id='main_player_25_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_25_7' class='player' display='none'>
+						<circle id='animation_player_25_7_shape' class='svg-player-shape' />
+						<text id='animation_player_25_7_number' class='svg-player-number'>25</text>
+						<text id='animation_player_25_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_24_7' class='player' display='none'>
+						<circle id='main_player_24_7_shape' class='svg-player-shape' />
+						<text id='main_player_24_7_number' class='svg-player-number'>24</text>
+						<text id='main_player_24_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_24_7' class='player' display='none'>
+						<circle id='animation_player_24_7_shape' class='svg-player-shape' />
+						<text id='animation_player_24_7_number' class='svg-player-number'>24</text>
+						<text id='animation_player_24_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_23_7' class='player' display='none'>
+						<circle id='main_player_23_7_shape' class='svg-player-shape' />
+						<text id='main_player_23_7_number' class='svg-player-number'>23</text>
+						<text id='main_player_23_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_23_7' class='player' display='none'>
+						<circle id='animation_player_23_7_shape' class='svg-player-shape' />
+						<text id='animation_player_23_7_number' class='svg-player-number'>23</text>
+						<text id='animation_player_23_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_22_7' class='player' display='none'>
+						<circle id='main_player_22_7_shape' class='svg-player-shape' />
+						<text id='main_player_22_7_number' class='svg-player-number'>22</text>
+						<text id='main_player_22_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_22_7' class='player' display='none'>
+						<circle id='animation_player_22_7_shape' class='svg-player-shape' />
+						<text id='animation_player_22_7_number' class='svg-player-number'>22</text>
+						<text id='animation_player_22_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_21_7' class='player' display='none'>
+						<circle id='main_player_21_7_shape' class='svg-player-shape' />
+						<text id='main_player_21_7_number' class='svg-player-number'>21</text>
+						<text id='main_player_21_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_21_7' class='player' display='none'>
+						<circle id='animation_player_21_7_shape' class='svg-player-shape' />
+						<text id='animation_player_21_7_number' class='svg-player-number'>21</text>
+						<text id='animation_player_21_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_20_7' class='player' display='none'>
+						<circle id='main_player_20_7_shape' class='svg-player-shape' />
+						<text id='main_player_20_7_number' class='svg-player-number'>20</text>
+						<text id='main_player_20_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_20_7' class='player' display='none'>
+						<circle id='animation_player_20_7_shape' class='svg-player-shape' />
+						<text id='animation_player_20_7_number' class='svg-player-number'>20</text>
+						<text id='animation_player_20_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_19_7' class='player' display='none'>
+						<circle id='main_player_19_7_shape' class='svg-player-shape' />
+						<text id='main_player_19_7_number' class='svg-player-number'>19</text>
+						<text id='main_player_19_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_19_7' class='player' display='none'>
+						<circle id='animation_player_19_7_shape' class='svg-player-shape' />
+						<text id='animation_player_19_7_number' class='svg-player-number'>19</text>
+						<text id='animation_player_19_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_18_7' class='player' display='none'>
+						<circle id='main_player_18_7_shape' class='svg-player-shape' />
+						<text id='main_player_18_7_number' class='svg-player-number'>18</text>
+						<text id='main_player_18_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_18_7' class='player' display='none'>
+						<circle id='animation_player_18_7_shape' class='svg-player-shape' />
+						<text id='animation_player_18_7_number' class='svg-player-number'>18</text>
+						<text id='animation_player_18_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_17_7' class='player' display='none'>
+						<circle id='main_player_17_7_shape' class='svg-player-shape' />
+						<text id='main_player_17_7_number' class='svg-player-number'>17</text>
+						<text id='main_player_17_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_17_7' class='player' display='none'>
+						<circle id='animation_player_17_7_shape' class='svg-player-shape' />
+						<text id='animation_player_17_7_number' class='svg-player-number'>17</text>
+						<text id='animation_player_17_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_16_7' class='player' display='none'>
+						<circle id='main_player_16_7_shape' class='svg-player-shape' />
+						<text id='main_player_16_7_number' class='svg-player-number'>16</text>
+						<text id='main_player_16_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_16_7' class='player' display='none'>
+						<circle id='animation_player_16_7_shape' class='svg-player-shape' />
+						<text id='animation_player_16_7_number' class='svg-player-number'>16</text>
+						<text id='animation_player_16_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_15_7' class='player' display='none'>
+						<circle id='main_player_15_7_shape' class='svg-player-shape' />
+						<text id='main_player_15_7_number' class='svg-player-number'>15</text>
+						<text id='main_player_15_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_15_7' class='player' display='none'>
+						<circle id='animation_player_15_7_shape' class='svg-player-shape' />
+						<text id='animation_player_15_7_number' class='svg-player-number'>15</text>
+						<text id='animation_player_15_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_14_7' class='player' display='none'>
+						<circle id='main_player_14_7_shape' class='svg-player-shape' />
+						<text id='main_player_14_7_number' class='svg-player-number'>14</text>
+						<text id='main_player_14_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_14_7' class='player' display='none'>
+						<circle id='animation_player_14_7_shape' class='svg-player-shape' />
+						<text id='animation_player_14_7_number' class='svg-player-number'>14</text>
+						<text id='animation_player_14_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_13_7' class='player' display='none'>
+						<circle id='main_player_13_7_shape' class='svg-player-shape' />
+						<text id='main_player_13_7_number' class='svg-player-number'>13</text>
+						<text id='main_player_13_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_13_7' class='player' display='none'>
+						<circle id='animation_player_13_7_shape' class='svg-player-shape' />
+						<text id='animation_player_13_7_number' class='svg-player-number'>13</text>
+						<text id='animation_player_13_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_12_7' class='player' display='none'>
+						<circle id='main_player_12_7_shape' class='svg-player-shape' />
+						<text id='main_player_12_7_number' class='svg-player-number'>12</text>
+						<text id='main_player_12_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_12_7' class='player' display='none'>
+						<circle id='animation_player_12_7_shape' class='svg-player-shape' />
+						<text id='animation_player_12_7_number' class='svg-player-number'>12</text>
+						<text id='animation_player_12_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_11_7' class='player' display='none'>
+						<circle id='main_player_11_7_shape' class='svg-player-shape' />
+						<text id='main_player_11_7_number' class='svg-player-number'>11</text>
+						<text id='main_player_11_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_11_7' class='player' display='none'>
+						<circle id='animation_player_11_7_shape' class='svg-player-shape' />
+						<text id='animation_player_11_7_number' class='svg-player-number'>11</text>
+						<text id='animation_player_11_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_10_7' class='player' display='none'>
+						<circle id='main_player_10_7_shape' class='svg-player-shape' />
+						<text id='main_player_10_7_number' class='svg-player-number'>10</text>
+						<text id='main_player_10_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_10_7' class='player' display='none'>
+						<circle id='animation_player_10_7_shape' class='svg-player-shape' />
+						<text id='animation_player_10_7_number' class='svg-player-number'>10</text>
+						<text id='animation_player_10_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_9_7' class='player' display='none'>
+						<circle id='main_player_9_7_shape' class='svg-player-shape' />
+						<text id='main_player_9_7_number' class='svg-player-number'>9</text>
+						<text id='main_player_9_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_9_7' class='player' display='none'>
+						<circle id='animation_player_9_7_shape' class='svg-player-shape' />
+						<text id='animation_player_9_7_number' class='svg-player-number'>9</text>
+						<text id='animation_player_9_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_8_7' class='player' display='none'>
+						<circle id='main_player_8_7_shape' class='svg-player-shape' />
+						<text id='main_player_8_7_number' class='svg-player-number'>8</text>
+						<text id='main_player_8_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_8_7' class='player' display='none'>
+						<circle id='animation_player_8_7_shape' class='svg-player-shape' />
+						<text id='animation_player_8_7_number' class='svg-player-number'>8</text>
+						<text id='animation_player_8_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_7_7' class='player' display='none'>
+						<circle id='main_player_7_7_shape' class='svg-player-shape' />
+						<text id='main_player_7_7_number' class='svg-player-number'>7</text>
+						<text id='main_player_7_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_7_7' class='player' display='none'>
+						<circle id='animation_player_7_7_shape' class='svg-player-shape' />
+						<text id='animation_player_7_7_number' class='svg-player-number'>7</text>
+						<text id='animation_player_7_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_6_7' class='player' display='none'>
+						<circle id='main_player_6_7_shape' class='svg-player-shape' />
+						<text id='main_player_6_7_number' class='svg-player-number'>6</text>
+						<text id='main_player_6_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_6_7' class='player' display='none'>
+						<circle id='animation_player_6_7_shape' class='svg-player-shape' />
+						<text id='animation_player_6_7_number' class='svg-player-number'>6</text>
+						<text id='animation_player_6_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_5_7' class='player' display='none'>
+						<circle id='main_player_5_7_shape' class='svg-player-shape' />
+						<text id='main_player_5_7_number' class='svg-player-number'>5</text>
+						<text id='main_player_5_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_5_7' class='player' display='none'>
+						<circle id='animation_player_5_7_shape' class='svg-player-shape' />
+						<text id='animation_player_5_7_number' class='svg-player-number'>5</text>
+						<text id='animation_player_5_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_4_7' class='player' display='none'>
+						<circle id='main_player_4_7_shape' class='svg-player-shape' />
+						<text id='main_player_4_7_number' class='svg-player-number'>4</text>
+						<text id='main_player_4_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_4_7' class='player' display='none'>
+						<circle id='animation_player_4_7_shape' class='svg-player-shape' />
+						<text id='animation_player_4_7_number' class='svg-player-number'>4</text>
+						<text id='animation_player_4_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_3_7' class='player' display='none'>
+						<circle id='main_player_3_7_shape' class='svg-player-shape' />
+						<text id='main_player_3_7_number' class='svg-player-number'>3</text>
+						<text id='main_player_3_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_3_7' class='player' display='none'>
+						<circle id='animation_player_3_7_shape' class='svg-player-shape' />
+						<text id='animation_player_3_7_number' class='svg-player-number'>3</text>
+						<text id='animation_player_3_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_2_7' class='player' display='none'>
+						<circle id='main_player_2_7_shape' class='svg-player-shape' />
+						<text id='main_player_2_7_number' class='svg-player-number'>2</text>
+						<text id='main_player_2_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_2_7' class='player' display='none'>
+						<circle id='animation_player_2_7_shape' class='svg-player-shape' />
+						<text id='animation_player_2_7_number' class='svg-player-number'>2</text>
+						<text id='animation_player_2_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_1_7' class='player' display='none'>
+						<circle id='main_player_1_7_shape' class='svg-player-shape' />
+						<text id='main_player_1_7_number' class='svg-player-number'>1</text>
+						<text id='main_player_1_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_1_7' class='player' display='none'>
+						<circle id='animation_player_1_7_shape' class='svg-player-shape' />
+						<text id='animation_player_1_7_number' class='svg-player-number'>1</text>
+						<text id='animation_player_1_7_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_25_8' class='player' display='none'>
+						<circle id='main_player_25_8_shape' class='svg-player-shape' />
+						<text id='main_player_25_8_number' class='svg-player-number'>25</text>
+						<text id='main_player_25_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_25_8' class='player' display='none'>
+						<circle id='animation_player_25_8_shape' class='svg-player-shape' />
+						<text id='animation_player_25_8_number' class='svg-player-number'>25</text>
+						<text id='animation_player_25_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_24_8' class='player' display='none'>
+						<circle id='main_player_24_8_shape' class='svg-player-shape' />
+						<text id='main_player_24_8_number' class='svg-player-number'>24</text>
+						<text id='main_player_24_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_24_8' class='player' display='none'>
+						<circle id='animation_player_24_8_shape' class='svg-player-shape' />
+						<text id='animation_player_24_8_number' class='svg-player-number'>24</text>
+						<text id='animation_player_24_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_23_8' class='player' display='none'>
+						<circle id='main_player_23_8_shape' class='svg-player-shape' />
+						<text id='main_player_23_8_number' class='svg-player-number'>23</text>
+						<text id='main_player_23_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_23_8' class='player' display='none'>
+						<circle id='animation_player_23_8_shape' class='svg-player-shape' />
+						<text id='animation_player_23_8_number' class='svg-player-number'>23</text>
+						<text id='animation_player_23_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_22_8' class='player' display='none'>
+						<circle id='main_player_22_8_shape' class='svg-player-shape' />
+						<text id='main_player_22_8_number' class='svg-player-number'>22</text>
+						<text id='main_player_22_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_22_8' class='player' display='none'>
+						<circle id='animation_player_22_8_shape' class='svg-player-shape' />
+						<text id='animation_player_22_8_number' class='svg-player-number'>22</text>
+						<text id='animation_player_22_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_21_8' class='player' display='none'>
+						<circle id='main_player_21_8_shape' class='svg-player-shape' />
+						<text id='main_player_21_8_number' class='svg-player-number'>21</text>
+						<text id='main_player_21_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_21_8' class='player' display='none'>
+						<circle id='animation_player_21_8_shape' class='svg-player-shape' />
+						<text id='animation_player_21_8_number' class='svg-player-number'>21</text>
+						<text id='animation_player_21_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_20_8' class='player' display='none'>
+						<circle id='main_player_20_8_shape' class='svg-player-shape' />
+						<text id='main_player_20_8_number' class='svg-player-number'>20</text>
+						<text id='main_player_20_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_20_8' class='player' display='none'>
+						<circle id='animation_player_20_8_shape' class='svg-player-shape' />
+						<text id='animation_player_20_8_number' class='svg-player-number'>20</text>
+						<text id='animation_player_20_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_19_8' class='player' display='none'>
+						<circle id='main_player_19_8_shape' class='svg-player-shape' />
+						<text id='main_player_19_8_number' class='svg-player-number'>19</text>
+						<text id='main_player_19_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_19_8' class='player' display='none'>
+						<circle id='animation_player_19_8_shape' class='svg-player-shape' />
+						<text id='animation_player_19_8_number' class='svg-player-number'>19</text>
+						<text id='animation_player_19_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_18_8' class='player' display='none'>
+						<circle id='main_player_18_8_shape' class='svg-player-shape' />
+						<text id='main_player_18_8_number' class='svg-player-number'>18</text>
+						<text id='main_player_18_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_18_8' class='player' display='none'>
+						<circle id='animation_player_18_8_shape' class='svg-player-shape' />
+						<text id='animation_player_18_8_number' class='svg-player-number'>18</text>
+						<text id='animation_player_18_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_17_8' class='player' display='none'>
+						<circle id='main_player_17_8_shape' class='svg-player-shape' />
+						<text id='main_player_17_8_number' class='svg-player-number'>17</text>
+						<text id='main_player_17_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_17_8' class='player' display='none'>
+						<circle id='animation_player_17_8_shape' class='svg-player-shape' />
+						<text id='animation_player_17_8_number' class='svg-player-number'>17</text>
+						<text id='animation_player_17_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_16_8' class='player' display='none'>
+						<circle id='main_player_16_8_shape' class='svg-player-shape' />
+						<text id='main_player_16_8_number' class='svg-player-number'>16</text>
+						<text id='main_player_16_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_16_8' class='player' display='none'>
+						<circle id='animation_player_16_8_shape' class='svg-player-shape' />
+						<text id='animation_player_16_8_number' class='svg-player-number'>16</text>
+						<text id='animation_player_16_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_15_8' class='player' display='none'>
+						<circle id='main_player_15_8_shape' class='svg-player-shape' />
+						<text id='main_player_15_8_number' class='svg-player-number'>15</text>
+						<text id='main_player_15_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_15_8' class='player' display='none'>
+						<circle id='animation_player_15_8_shape' class='svg-player-shape' />
+						<text id='animation_player_15_8_number' class='svg-player-number'>15</text>
+						<text id='animation_player_15_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_14_8' class='player' display='none'>
+						<circle id='main_player_14_8_shape' class='svg-player-shape' />
+						<text id='main_player_14_8_number' class='svg-player-number'>14</text>
+						<text id='main_player_14_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_14_8' class='player' display='none'>
+						<circle id='animation_player_14_8_shape' class='svg-player-shape' />
+						<text id='animation_player_14_8_number' class='svg-player-number'>14</text>
+						<text id='animation_player_14_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_13_8' class='player' display='none'>
+						<circle id='main_player_13_8_shape' class='svg-player-shape' />
+						<text id='main_player_13_8_number' class='svg-player-number'>13</text>
+						<text id='main_player_13_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_13_8' class='player' display='none'>
+						<circle id='animation_player_13_8_shape' class='svg-player-shape' />
+						<text id='animation_player_13_8_number' class='svg-player-number'>13</text>
+						<text id='animation_player_13_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_12_8' class='player' display='none'>
+						<circle id='main_player_12_8_shape' class='svg-player-shape' />
+						<text id='main_player_12_8_number' class='svg-player-number'>12</text>
+						<text id='main_player_12_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_12_8' class='player' display='none'>
+						<circle id='animation_player_12_8_shape' class='svg-player-shape' />
+						<text id='animation_player_12_8_number' class='svg-player-number'>12</text>
+						<text id='animation_player_12_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_11_8' class='player' display='none'>
+						<circle id='main_player_11_8_shape' class='svg-player-shape' />
+						<text id='main_player_11_8_number' class='svg-player-number'>11</text>
+						<text id='main_player_11_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_11_8' class='player' display='none'>
+						<circle id='animation_player_11_8_shape' class='svg-player-shape' />
+						<text id='animation_player_11_8_number' class='svg-player-number'>11</text>
+						<text id='animation_player_11_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_10_8' class='player' display='none'>
+						<circle id='main_player_10_8_shape' class='svg-player-shape' />
+						<text id='main_player_10_8_number' class='svg-player-number'>10</text>
+						<text id='main_player_10_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_10_8' class='player' display='none'>
+						<circle id='animation_player_10_8_shape' class='svg-player-shape' />
+						<text id='animation_player_10_8_number' class='svg-player-number'>10</text>
+						<text id='animation_player_10_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_9_8' class='player' display='none'>
+						<circle id='main_player_9_8_shape' class='svg-player-shape' />
+						<text id='main_player_9_8_number' class='svg-player-number'>9</text>
+						<text id='main_player_9_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_9_8' class='player' display='none'>
+						<circle id='animation_player_9_8_shape' class='svg-player-shape' />
+						<text id='animation_player_9_8_number' class='svg-player-number'>9</text>
+						<text id='animation_player_9_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_8_8' class='player' display='none'>
+						<circle id='main_player_8_8_shape' class='svg-player-shape' />
+						<text id='main_player_8_8_number' class='svg-player-number'>8</text>
+						<text id='main_player_8_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_8_8' class='player' display='none'>
+						<circle id='animation_player_8_8_shape' class='svg-player-shape' />
+						<text id='animation_player_8_8_number' class='svg-player-number'>8</text>
+						<text id='animation_player_8_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_7_8' class='player' display='none'>
+						<circle id='main_player_7_8_shape' class='svg-player-shape' />
+						<text id='main_player_7_8_number' class='svg-player-number'>7</text>
+						<text id='main_player_7_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_7_8' class='player' display='none'>
+						<circle id='animation_player_7_8_shape' class='svg-player-shape' />
+						<text id='animation_player_7_8_number' class='svg-player-number'>7</text>
+						<text id='animation_player_7_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_6_8' class='player' display='none'>
+						<circle id='main_player_6_8_shape' class='svg-player-shape' />
+						<text id='main_player_6_8_number' class='svg-player-number'>6</text>
+						<text id='main_player_6_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_6_8' class='player' display='none'>
+						<circle id='animation_player_6_8_shape' class='svg-player-shape' />
+						<text id='animation_player_6_8_number' class='svg-player-number'>6</text>
+						<text id='animation_player_6_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_5_8' class='player' display='none'>
+						<circle id='main_player_5_8_shape' class='svg-player-shape' />
+						<text id='main_player_5_8_number' class='svg-player-number'>5</text>
+						<text id='main_player_5_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_5_8' class='player' display='none'>
+						<circle id='animation_player_5_8_shape' class='svg-player-shape' />
+						<text id='animation_player_5_8_number' class='svg-player-number'>5</text>
+						<text id='animation_player_5_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_4_8' class='player' display='none'>
+						<circle id='main_player_4_8_shape' class='svg-player-shape' />
+						<text id='main_player_4_8_number' class='svg-player-number'>4</text>
+						<text id='main_player_4_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_4_8' class='player' display='none'>
+						<circle id='animation_player_4_8_shape' class='svg-player-shape' />
+						<text id='animation_player_4_8_number' class='svg-player-number'>4</text>
+						<text id='animation_player_4_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_3_8' class='player' display='none'>
+						<circle id='main_player_3_8_shape' class='svg-player-shape' />
+						<text id='main_player_3_8_number' class='svg-player-number'>3</text>
+						<text id='main_player_3_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_3_8' class='player' display='none'>
+						<circle id='animation_player_3_8_shape' class='svg-player-shape' />
+						<text id='animation_player_3_8_number' class='svg-player-number'>3</text>
+						<text id='animation_player_3_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_2_8' class='player' display='none'>
+						<circle id='main_player_2_8_shape' class='svg-player-shape' />
+						<text id='main_player_2_8_number' class='svg-player-number'>2</text>
+						<text id='main_player_2_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_2_8' class='player' display='none'>
+						<circle id='animation_player_2_8_shape' class='svg-player-shape' />
+						<text id='animation_player_2_8_number' class='svg-player-number'>2</text>
+						<text id='animation_player_2_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='main_player_1_8' class='player' display='none'>
+						<circle id='main_player_1_8_shape' class='svg-player-shape' />
+						<text id='main_player_1_8_number' class='svg-player-number'>1</text>
+						<text id='main_player_1_8_name' class='svg-player-name'></text>
+					</g>
+				
+					<g id='animation_player_1_8' class='player' display='none'>
+						<circle id='animation_player_1_8_shape' class='svg-player-shape' />
+						<text id='animation_player_1_8_number' class='svg-player-number'>1</text>
+						<text id='animation_player_1_8_name' class='svg-player-name'></text>
+					</g>
+				</g>
+					<g id='balls_section'>
+					<g id='main_ball_20_1' class='ball' display='none'>
+						<circle id='main_ball_20_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_20_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_20_1' class='ball' display='none'>
+						<circle id='animation_ball_20_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_20_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_19_1' class='ball' display='none'>
+						<circle id='main_ball_19_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_19_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_19_1' class='ball' display='none'>
+						<circle id='animation_ball_19_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_19_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_18_1' class='ball' display='none'>
+						<circle id='main_ball_18_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_18_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_18_1' class='ball' display='none'>
+						<circle id='animation_ball_18_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_18_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_17_1' class='ball' display='none'>
+						<circle id='main_ball_17_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_17_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_17_1' class='ball' display='none'>
+						<circle id='animation_ball_17_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_17_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_16_1' class='ball' display='none'>
+						<circle id='main_ball_16_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_16_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_16_1' class='ball' display='none'>
+						<circle id='animation_ball_16_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_16_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_15_1' class='ball' display='none'>
+						<circle id='main_ball_15_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_15_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_15_1' class='ball' display='none'>
+						<circle id='animation_ball_15_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_15_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_14_1' class='ball' display='none'>
+						<circle id='main_ball_14_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_14_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_14_1' class='ball' display='none'>
+						<circle id='animation_ball_14_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_14_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_13_1' class='ball' display='none'>
+						<circle id='main_ball_13_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_13_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_13_1' class='ball' display='none'>
+						<circle id='animation_ball_13_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_13_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_12_1' class='ball' display='none'>
+						<circle id='main_ball_12_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_12_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_12_1' class='ball' display='none'>
+						<circle id='animation_ball_12_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_12_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_11_1' class='ball' display='none'>
+						<circle id='main_ball_11_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_11_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_11_1' class='ball' display='none'>
+						<circle id='animation_ball_11_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_11_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_10_1' class='ball' display='none'>
+						<circle id='main_ball_10_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_10_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_10_1' class='ball' display='none'>
+						<circle id='animation_ball_10_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_10_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_9_1' class='ball' display='none'>
+						<circle id='main_ball_9_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_9_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_9_1' class='ball' display='none'>
+						<circle id='animation_ball_9_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_9_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_8_1' class='ball' display='none'>
+						<circle id='main_ball_8_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_8_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_8_1' class='ball' display='none'>
+						<circle id='animation_ball_8_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_8_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_7_1' class='ball' display='none'>
+						<circle id='main_ball_7_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_7_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_7_1' class='ball' display='none'>
+						<circle id='animation_ball_7_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_7_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_6_1' class='ball' display='none'>
+						<circle id='main_ball_6_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_6_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_6_1' class='ball' display='none'>
+						<circle id='animation_ball_6_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_6_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_5_1' class='ball' display='none'>
+						<circle id='main_ball_5_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_5_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_5_1' class='ball' display='none'>
+						<circle id='animation_ball_5_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_5_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_4_1' class='ball' display='none'>
+						<circle id='main_ball_4_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_4_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_4_1' class='ball' display='none'>
+						<circle id='animation_ball_4_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_4_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_3_1' class='ball' display='none'>
+						<circle id='main_ball_3_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_3_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_3_1' class='ball' display='none'>
+						<circle id='animation_ball_3_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_3_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_2_1' class='ball' display='none'>
+						<circle id='main_ball_2_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_2_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_2_1' class='ball' display='none'>
+						<circle id='animation_ball_2_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_2_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_1_1' class='ball' display='none'>
+						<circle id='main_ball_1_1_shape' class='svg-ball-shape' />
+						<text id='main_ball_1_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_1_1' class='ball' display='none'>
+						<circle id='animation_ball_1_1_shape' class='svg-ball-shape' />
+						<text id='animation_ball_1_1_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_20_2' class='ball' display='none'>
+						<circle id='main_ball_20_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_20_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_20_2' class='ball' display='none'>
+						<circle id='animation_ball_20_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_20_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_19_2' class='ball' display='none'>
+						<circle id='main_ball_19_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_19_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_19_2' class='ball' display='none'>
+						<circle id='animation_ball_19_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_19_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_18_2' class='ball' display='none'>
+						<circle id='main_ball_18_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_18_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_18_2' class='ball' display='none'>
+						<circle id='animation_ball_18_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_18_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_17_2' class='ball' display='none'>
+						<circle id='main_ball_17_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_17_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_17_2' class='ball' display='none'>
+						<circle id='animation_ball_17_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_17_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_16_2' class='ball' display='none'>
+						<circle id='main_ball_16_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_16_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_16_2' class='ball' display='none'>
+						<circle id='animation_ball_16_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_16_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_15_2' class='ball' display='none'>
+						<circle id='main_ball_15_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_15_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_15_2' class='ball' display='none'>
+						<circle id='animation_ball_15_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_15_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_14_2' class='ball' display='none'>
+						<circle id='main_ball_14_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_14_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_14_2' class='ball' display='none'>
+						<circle id='animation_ball_14_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_14_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_13_2' class='ball' display='none'>
+						<circle id='main_ball_13_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_13_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_13_2' class='ball' display='none'>
+						<circle id='animation_ball_13_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_13_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_12_2' class='ball' display='none'>
+						<circle id='main_ball_12_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_12_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_12_2' class='ball' display='none'>
+						<circle id='animation_ball_12_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_12_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_11_2' class='ball' display='none'>
+						<circle id='main_ball_11_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_11_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_11_2' class='ball' display='none'>
+						<circle id='animation_ball_11_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_11_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_10_2' class='ball' display='none'>
+						<circle id='main_ball_10_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_10_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_10_2' class='ball' display='none'>
+						<circle id='animation_ball_10_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_10_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_9_2' class='ball' display='none'>
+						<circle id='main_ball_9_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_9_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_9_2' class='ball' display='none'>
+						<circle id='animation_ball_9_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_9_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_8_2' class='ball' display='none'>
+						<circle id='main_ball_8_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_8_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_8_2' class='ball' display='none'>
+						<circle id='animation_ball_8_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_8_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_7_2' class='ball' display='none'>
+						<circle id='main_ball_7_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_7_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_7_2' class='ball' display='none'>
+						<circle id='animation_ball_7_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_7_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_6_2' class='ball' display='none'>
+						<circle id='main_ball_6_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_6_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_6_2' class='ball' display='none'>
+						<circle id='animation_ball_6_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_6_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_5_2' class='ball' display='none'>
+						<circle id='main_ball_5_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_5_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_5_2' class='ball' display='none'>
+						<circle id='animation_ball_5_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_5_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_4_2' class='ball' display='none'>
+						<circle id='main_ball_4_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_4_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_4_2' class='ball' display='none'>
+						<circle id='animation_ball_4_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_4_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_3_2' class='ball' display='none'>
+						<circle id='main_ball_3_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_3_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_3_2' class='ball' display='none'>
+						<circle id='animation_ball_3_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_3_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_2_2' class='ball' display='none'>
+						<circle id='main_ball_2_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_2_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_2_2' class='ball' display='none'>
+						<circle id='animation_ball_2_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_2_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_1_2' class='ball' display='none'>
+						<circle id='main_ball_1_2_shape' class='svg-ball-shape' />
+						<text id='main_ball_1_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_1_2' class='ball' display='none'>
+						<circle id='animation_ball_1_2_shape' class='svg-ball-shape' />
+						<text id='animation_ball_1_2_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_20_3' class='ball' display='none'>
+						<circle id='main_ball_20_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_20_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_20_3' class='ball' display='none'>
+						<circle id='animation_ball_20_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_20_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_19_3' class='ball' display='none'>
+						<circle id='main_ball_19_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_19_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_19_3' class='ball' display='none'>
+						<circle id='animation_ball_19_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_19_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_18_3' class='ball' display='none'>
+						<circle id='main_ball_18_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_18_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_18_3' class='ball' display='none'>
+						<circle id='animation_ball_18_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_18_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_17_3' class='ball' display='none'>
+						<circle id='main_ball_17_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_17_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_17_3' class='ball' display='none'>
+						<circle id='animation_ball_17_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_17_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_16_3' class='ball' display='none'>
+						<circle id='main_ball_16_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_16_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_16_3' class='ball' display='none'>
+						<circle id='animation_ball_16_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_16_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_15_3' class='ball' display='none'>
+						<circle id='main_ball_15_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_15_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_15_3' class='ball' display='none'>
+						<circle id='animation_ball_15_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_15_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_14_3' class='ball' display='none'>
+						<circle id='main_ball_14_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_14_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_14_3' class='ball' display='none'>
+						<circle id='animation_ball_14_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_14_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_13_3' class='ball' display='none'>
+						<circle id='main_ball_13_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_13_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_13_3' class='ball' display='none'>
+						<circle id='animation_ball_13_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_13_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_12_3' class='ball' display='none'>
+						<circle id='main_ball_12_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_12_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_12_3' class='ball' display='none'>
+						<circle id='animation_ball_12_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_12_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_11_3' class='ball' display='none'>
+						<circle id='main_ball_11_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_11_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_11_3' class='ball' display='none'>
+						<circle id='animation_ball_11_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_11_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_10_3' class='ball' display='none'>
+						<circle id='main_ball_10_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_10_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_10_3' class='ball' display='none'>
+						<circle id='animation_ball_10_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_10_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_9_3' class='ball' display='none'>
+						<circle id='main_ball_9_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_9_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_9_3' class='ball' display='none'>
+						<circle id='animation_ball_9_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_9_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_8_3' class='ball' display='none'>
+						<circle id='main_ball_8_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_8_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_8_3' class='ball' display='none'>
+						<circle id='animation_ball_8_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_8_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_7_3' class='ball' display='none'>
+						<circle id='main_ball_7_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_7_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_7_3' class='ball' display='none'>
+						<circle id='animation_ball_7_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_7_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_6_3' class='ball' display='none'>
+						<circle id='main_ball_6_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_6_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_6_3' class='ball' display='none'>
+						<circle id='animation_ball_6_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_6_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_5_3' class='ball' display='none'>
+						<circle id='main_ball_5_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_5_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_5_3' class='ball' display='none'>
+						<circle id='animation_ball_5_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_5_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_4_3' class='ball' display='none'>
+						<circle id='main_ball_4_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_4_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_4_3' class='ball' display='none'>
+						<circle id='animation_ball_4_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_4_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_3_3' class='ball' display='none'>
+						<circle id='main_ball_3_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_3_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_3_3' class='ball' display='none'>
+						<circle id='animation_ball_3_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_3_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_2_3' class='ball' display='none'>
+						<circle id='main_ball_2_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_2_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_2_3' class='ball' display='none'>
+						<circle id='animation_ball_2_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_2_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_1_3' class='ball' display='none'>
+						<circle id='main_ball_1_3_shape' class='svg-ball-shape' />
+						<text id='main_ball_1_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_1_3' class='ball' display='none'>
+						<circle id='animation_ball_1_3_shape' class='svg-ball-shape' />
+						<text id='animation_ball_1_3_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_20_4' class='ball' display='none'>
+						<circle id='main_ball_20_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_20_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_20_4' class='ball' display='none'>
+						<circle id='animation_ball_20_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_20_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_19_4' class='ball' display='none'>
+						<circle id='main_ball_19_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_19_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_19_4' class='ball' display='none'>
+						<circle id='animation_ball_19_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_19_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_18_4' class='ball' display='none'>
+						<circle id='main_ball_18_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_18_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_18_4' class='ball' display='none'>
+						<circle id='animation_ball_18_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_18_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_17_4' class='ball' display='none'>
+						<circle id='main_ball_17_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_17_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_17_4' class='ball' display='none'>
+						<circle id='animation_ball_17_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_17_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_16_4' class='ball' display='none'>
+						<circle id='main_ball_16_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_16_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_16_4' class='ball' display='none'>
+						<circle id='animation_ball_16_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_16_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_15_4' class='ball' display='none'>
+						<circle id='main_ball_15_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_15_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_15_4' class='ball' display='none'>
+						<circle id='animation_ball_15_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_15_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_14_4' class='ball' display='none'>
+						<circle id='main_ball_14_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_14_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_14_4' class='ball' display='none'>
+						<circle id='animation_ball_14_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_14_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_13_4' class='ball' display='none'>
+						<circle id='main_ball_13_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_13_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_13_4' class='ball' display='none'>
+						<circle id='animation_ball_13_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_13_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_12_4' class='ball' display='none'>
+						<circle id='main_ball_12_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_12_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_12_4' class='ball' display='none'>
+						<circle id='animation_ball_12_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_12_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_11_4' class='ball' display='none'>
+						<circle id='main_ball_11_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_11_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_11_4' class='ball' display='none'>
+						<circle id='animation_ball_11_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_11_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_10_4' class='ball' display='none'>
+						<circle id='main_ball_10_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_10_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_10_4' class='ball' display='none'>
+						<circle id='animation_ball_10_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_10_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_9_4' class='ball' display='none'>
+						<circle id='main_ball_9_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_9_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_9_4' class='ball' display='none'>
+						<circle id='animation_ball_9_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_9_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_8_4' class='ball' display='none'>
+						<circle id='main_ball_8_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_8_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_8_4' class='ball' display='none'>
+						<circle id='animation_ball_8_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_8_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_7_4' class='ball' display='none'>
+						<circle id='main_ball_7_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_7_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_7_4' class='ball' display='none'>
+						<circle id='animation_ball_7_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_7_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_6_4' class='ball' display='none'>
+						<circle id='main_ball_6_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_6_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_6_4' class='ball' display='none'>
+						<circle id='animation_ball_6_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_6_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_5_4' class='ball' display='none'>
+						<circle id='main_ball_5_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_5_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_5_4' class='ball' display='none'>
+						<circle id='animation_ball_5_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_5_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_4_4' class='ball' display='none'>
+						<circle id='main_ball_4_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_4_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_4_4' class='ball' display='none'>
+						<circle id='animation_ball_4_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_4_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_3_4' class='ball' display='none'>
+						<circle id='main_ball_3_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_3_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_3_4' class='ball' display='none'>
+						<circle id='animation_ball_3_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_3_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_2_4' class='ball' display='none'>
+						<circle id='main_ball_2_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_2_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_2_4' class='ball' display='none'>
+						<circle id='animation_ball_2_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_2_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='main_ball_1_4' class='ball' display='none'>
+						<circle id='main_ball_1_4_shape' class='svg-ball-shape' />
+						<text id='main_ball_1_4_name' class='svg-ball-name'></text>
+					</g>
+				
+					<g id='animation_ball_1_4' class='ball' display='none'>
+						<circle id='animation_ball_1_4_shape' class='svg-ball-shape' />
+						<text id='animation_ball_1_4_name' class='svg-ball-name'></text>
+					</g>
+				</g>
+				</svg>
+							
+				<div id='context_menu_player_main' class='context-menu'>
+					<input type='text' id='context_menu_player_number_main' placeholder="Number" maxlength='2'>
+					<input type='text' id='context_menu_player_name_main' placeholder="Name" maxlength='25'>
+					<input type='hidden' id='context_menu_player_id_main' value=''>
+					<div class='button' id='context_menu_player_delete_btn_main'>Delete</div>
+				</div>
+				<div id='context_menu_ball_main' class='context-menu'>
+					<input type='text' id='context_menu_ball_name_main' placeholder="Name" maxlength='25'>
+					<input type='hidden' id='context_menu_ball_id_main' value=''>
+					<div class='button' id='context_menu_ball_delete_btn_main'>Delete</div>
+				</div>
+				<div id='context_menu_shape_main' class='context-menu shape-context-menu'>	
+					<input type='hidden' id='context_menu_shape_id_main' value=''>
+					<div class='button shape_delete_button' id='context_menu_shape_delete_btn_main'>Delete</div>
+				</div>	
+				
+				<div id='context_menu_player_animation' class='context-menu'>
+					<input type='text' id='context_menu_player_number_animation' placeholder="Number" maxlength='2'>
+					<input type='text' id='context_menu_player_name_animation' placeholder="Name" maxlength='25'>
+					<input type='hidden' id='context_menu_player_id_animation' value=''>
+					<div class='button' id='context_menu_player_delete_btn_animation'>Delete</div>
+				</div>
+				<div id='context_menu_ball_animation' class='context-menu'>
+					<input type='text' id='context_menu_ball_name_animation' placeholder="Name" maxlength='25'>
+					<input type='hidden' id='context_menu_ball_id_animation' value=''>
+					<div class='button' id='context_menu_ball_delete_btn_animation'>Delete</div>
+				</div>
+				<div id='context_menu_shape_animation' class='context-menu shape-context-menu'>	
+					<input type='hidden' id='context_menu_shape_id_animation' value=''>
+					<div class='button shape_delete_button' id='context_menu_shape_delete_btn_animation'>Delete</div>
+				</div>	
+										
+				<div class='top-buttons-panel' id='top_buttons_panel'>
+					<div class='button' id='btn_back'><img id='btn_back_img' src='http://tactical-board.com/Public/Images/buttons/back.png?1'></div>
+					<div class='button' id='btn_left_menu_panel'><img id='btn_left_menu_panel_img' src='http://tactical-board.com/Public/Images/buttons/left_menu_panel.png?2'></div>	
+					<div class='button' id='btn_link' title="Get positions link"><img id='btn_link_img' src='http://tactical-board.com/Public/Images/buttons/link.png?1'></div>
+					<div class='button' id='btn_animation_links' title="Get animation link"><img id='btn_animation_links_img' src='http://tactical-board.com/Public/Images/buttons/link.png?1'></div>
+					<div class='button' id='btn_save_image' title="Save as image"><img id='btn_save_image_img' src='http://tactical-board.com/Public/Images/buttons/save.png?1'></div>
+					<div class='button' id='btn_fullscreen' title="Fullscreen (on/off)"><img id='btn_fullscreen_img' src='http://tactical-board.com/Public/Images/buttons/fullscreen-off.png?1'></div>
+					<div class='button' id='btn_animation' title="Creating animation"><A href='#animation'><img id='btn_animation_img' src='http://tactical-board.com/Public/Images/buttons/create-animation.png?1'></A></div>
+					<div class='button anim-frames-arrows' id='btn_animation_frames_left' title=''><img id='btn_animation_frames_left_img' src='http://tactical-board.com/Public/Images/buttons/frames-left.png?3'></div>
+					<div class='anim-frames-container' id='anim_frames_container'>
+						<div class='anim-frames-box' id='anim_frames_box'>
+							<div class='anim-frame anim-frame-selected' id='btn_anim_start_frame' title="View frame">
+								<div class='anim-frame-text'>0</div>
+								<img class='anim-frame-img' src='http://tactical-board.com/Public/Images/buttons/frame.png?1'>
+							</div>
+							<div class='anim-frame' id='btn_anim_add_frame' title="Add a new frame">
+								<img class='anim-frame-img' src='http://tactical-board.com/Public/Images/buttons/frame-add.png?1'>
+							</div>
+						</div>
+						<div id='context_menu_frame_button' class='context-menu'>	
+							<input type='hidden' id='context_menu_frame_button_index' value=''>
+							<img id='remove_frame_button_img' src='http://tactical-board.com/Public/Images/buttons/frame-remove.png?1' title="Remove a frame">							
+						</div>						
+					</div>
+					<div class='button anim-frames-arrows' id='btn_animation_frames_right' title=''><img id='btn_animation_frames_right_img' src='http://tactical-board.com/Public/Images/buttons/frames-right.png?3'></div>
+					
+					<div class='button' id='btn_animation_remove_last_frame' title="Remove a last frame"><img id='btn_animation_remove_last_frame_img' src='http://tactical-board.com/Public/Images/buttons/frame-remove-last.png?1'></div>
+					
+					<div class='animation-buttons-panel' id='animation_buttons_panel'>
+						<img class='button' id='animation_play' src='http://tactical-board.com/Public/Images/buttons/animation_play.png?1' title="Play">
+						<img class='button' id='animation_play_current_frame' src='http://tactical-board.com/Public/Images/buttons/animation_play_current_frame.png?1' title="Play current frame">
+						<img class='button' id='animation_pause' src='http://tactical-board.com/Public/Images/buttons/animation_pause.png?1' title="Pause">
+						<img class='button' id='animation_stop' src='http://tactical-board.com/Public/Images/buttons/animation_stop.png?1' title="Stop">
+						<img class='button_no_hover' id='animation_repeat' src='http://tactical-board.com/Public/Images/buttons/animation_repeat.png?1' title="Repeat">
+						
+						<div class='button anim-speed-setters' id='btn_animation_speed_minus' title="Animation speed"><img id='btn_animation_speed_minus_img' src='http://tactical-board.com/Public/Images/buttons/animation-speed-minus.png?3'></div>
+						<div class='button anim-speed-setters' id='btn_animation_speed' title="Animation speed">
+							<div class='anim-frame-text' id='animation_speed_text'></div>					
+							<img id='btn_animation_speed_img' src='http://tactical-board.com/Public/Images/buttons/frame.png?1'>
+						</div>
+						<div class='button anim-speed-setters' id='btn_animation_speed_plus' title="Animation speed"><img id='btn_animation_speed_plus_img' src='http://tactical-board.com/Public/Images/buttons/animation-speed-plus.png?3'></div>
+					</div>
+					
+				</div>
+
+				<div class='shapes-buttons-panel' id='shapes_buttons_panel'>					
+					<div class='shapes-selector-column' id='shapes_elements' style='margin-left:0px;'>
+						<img class='button hidden' id='shape_shapeType_null' src='http://tactical-board.com/Public/Images/buttons/shapes/shape-type-null.png?1' title="Cancel shapes drawing">
+						<img class='button hidden' id='shape_shapeType_pencil' src='http://tactical-board.com/Public/Images/buttons/shapes/shape-type-pencil.png?1'>						
+						<img class='button hidden' id='shape_shapeType_line' src='http://tactical-board.com/Public/Images/buttons/shapes/shape-type-line.png?1'>
+						<img class='button hidden' id='shape_shapeType_curve-line' src='http://tactical-board.com/Public/Images/buttons/shapes/shape-type-curve-line.png?1'>
+						<img class='button hidden' id='shape_shapeType_rectangle' src='http://tactical-board.com/Public/Images/buttons/shapes/shape-type-rectangle.png?1'>
+						<img class='button hidden' id='shape_shapeType_ellipse' src='http://tactical-board.com/Public/Images/buttons/shapes/shape-type-ellipse.png?1'>
+						<img class='button hidden' id='shape_shapeType_polygon' src='http://tactical-board.com/Public/Images/buttons/shapes/shape-type-polygon.png?1'>						
+						<img class='button' id='shape_shapeType' src='http://tactical-board.com/Public/Images/buttons/shapes/shape-type-null.png?1' title="Choose the type of drawing shape">
+					</div>
+					<div class='shapes-selector-column' id='shapes_stroke_styles' style='margin-left:90px;'>
+						<img class='button hidden' id='shape_strokeStyle_solid' src='http://tactical-board.com/Public/Images/buttons/shapes/stroke-style-solid.png?1' title="Solid">
+						<img class='button hidden' id='shape_strokeStyle_dashed' src='http://tactical-board.com/Public/Images/buttons/shapes/stroke-style-dashed.png?1' title="Dashed">
+						<img class='button' id='shape_strokeStyle' src='http://tactical-board.com/Public/Images/buttons/shapes/stroke-style-solid.png?1' title="Choose shape line style">
+					</div>
+					<div class='shapes-selector-column' id='shapes_arrow' style='margin-left:180px;'>
+						<img class='button hidden' id='shape_arrow_both' src='http://tactical-board.com/Public/Images/buttons/shapes/arrow-both.png?1' title="Arrows from two sides">
+						<img class='button hidden' id='shape_arrow_start' src='http://tactical-board.com/Public/Images/buttons/shapes/arrow-start.png?1' title="Arrowhead in the beginning">
+						<img class='button hidden' id='shape_arrow_end' src='http://tactical-board.com/Public/Images/buttons/shapes/arrow-end.png?1' title="Arrowhead in the end">
+						<img class='button hidden' id='shape_arrow_none' src='http://tactical-board.com/Public/Images/buttons/shapes/arrow-none.png?1' title="Without arrows">
+						<img class='button' id='shape_arrow' src='http://tactical-board.com/Public/Images/buttons/shapes/arrow-none.png?1' title="Add an arrowhead to the line">
+					</div>
+					<div class='shapes-selector-column' id='shapes_colors' style='margin-left:270px;'>
+						<input id='shape_color_button_title' type='hidden' value="Choose shape color">
+					</div> 
+					<img class='button' id='remove_last_shape' src='http://tactical-board.com/Public/Images/buttons/remove-last-pencil-line.png?1' title="Remove last drawn shape">
+					<img class='button' id='remove_all_shapes' src='http://tactical-board.com/Public/Images/buttons/pencil-clean.png?1' title="Remove all drawn shapes">				
+				</div>
+				<div id='animation_progress_bar_container'>
+					<div id='animation_progress_bar_line'></div>
+				</div>
+						
+				<img class='button' id='clear_all_button' src='http://tactical-board.com/Public/Images/buttons/clear-all.png?1' title="Clear all from the board">
+				<img class='button' id='clear_animation_button' src='http://tactical-board.com/Public/Images/buttons/clear_animation.png?1' title="Delete an animation (start new one)">
+			</div>
+
+			<div id='bottom_ad_adapted'>
+ 				
+				<script async src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
+				<!-- t-board bottom adapted -->
+				<ins class='adsbygoogle'
+					style='display:block'
+					data-ad-client='ca-pub-6786479482869941'
+					data-ad-slot='9761190951'
+					data-ad-format='auto'></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+					
+			</div>
+			
+		
+		<input id='param_current_page' type='hidden' value='main'>
+		<input id='param_board_type' type='hidden' value='basketball-new'>
+		<input id='param_board_key' type='hidden' value='bn'>
+		<input id='param_lang_key' type='hidden' value='uk'>		
+				
+		<input id='param_site_name' type='hidden' value='tactical-board.com'>
+		<input id='param_site_uri' type='hidden' value='http://tactical-board.com/'>
+		<input id='param_feedback_mail' type='hidden' value='info@tactical-board.com'>					
+		<input id='param_is_mobile' type='hidden' value='0'>
+		<input id='param_is_tablet' type='hidden' value='0'>
+		<input id='param_remote_ip' type='hidden' value='130.206.158.188'>
+		<div class='bg-loading' id='bg_loading_link_data_store'>
+			<div class='bg-loading-image'></div>
+		</div>		
+		<div class='bg-loading' id='bg_loading_players'>
+			<div class='bg-loading-image'></div>
+		</div>
+		<div class='bg-loading' id='bg_loading_balls'>
+			<div class='bg-loading-image'></div>
+		</div>
+		<div class='bg-loading' id='bg_loading_shapes'>
+			<div class='bg-loading-image'></div>
+		</div>		
+	</body>
+</html>
+	
