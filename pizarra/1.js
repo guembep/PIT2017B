@@ -256,7 +256,7 @@
                 try {
                     var e = k(b),
                         d = URL.createObjectURL(e);
-                        var fd = new FormData();
+                         fd = new FormData();
                         fd.append('imagen', e);
                         fd.append('exercisesport', $("#exercisesport").val() );
                         fd.append('exercisestype', $("#exercisetype").val() );
@@ -268,6 +268,32 @@
                         fd.append('exercisemax', $("#exercisemax").val() );
                         fd.append('exercisematerial', JSON.stringify(materialA)); //datos que se envian a traves de ajax*/
                         fd.append('imagename', Date.now());
+                       
+                   /*    if ($("#imgcheck").prop('checked')){
+					 // fd.append('imgexterna',$("#exerciseimg"));
+						//var formData = new FormData();
+						var file=document.getElementById("exerciseimg").files[0];
+						  fd.append("imgexterna", file);
+						  // console.log("intentando ajax img ext");
+					     $.ajax({ 
+							url: "./php/Form_CrearEjercicio.php",
+							type: "POST",
+							data: formData,
+							processData: false,
+							contentType: false,
+							success: function(response) {
+								if (response!="ok"){
+									document.getElementById("result").innerHTML="Lo sentimos, no se ha podido subir el archivo externo...";
+								}else{
+									console.log('ok-imgext');
+								}
+							},
+							error: function(jqXHR,textStatus,errorThrown) {
+								console.log('error: '+textStatus);
+								console.log(jqXHR.status);
+							}
+						 });    
+						}*/
 
 					$.ajax({
 		                url: "../php/Form_CrearEjercicio.php",
@@ -276,7 +302,7 @@
 		                processData: false,
    						contentType: false,
 		                success: function() {
-		                    console.log('ok');
+							console.log("ok");
 		                },
 		                error: function() {
 		                    console.log('error')
