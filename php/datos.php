@@ -1,7 +1,7 @@
 <meta hhtp-equiv="Content-Type" content="text/html; charset-UTF-8" />
 <link href="/css/perfil.css" rel="stylesheet" type="text/css">
 <?php 
-
+ 
 class DatoUser{
  
 private $id;
@@ -23,6 +23,7 @@ private $id;
         $resultado = mysqli_fetch_array($result);
         $nombre = $resultado["user"];
         $correo = $resultado["email"];
+        $deporte =$resultado["deporte"];
      
  ?>
  
@@ -30,6 +31,7 @@ private $id;
         <h1>Datos personales</h1>
         <p> Nombre: <?php  echo "$nombre"; ?></p>
         <p> Correo: <?php  echo "$correo"; ?></p>
+         <p> Deporte: <?php  echo "$deporte"; ?></p>
         </div>
 
  <?php

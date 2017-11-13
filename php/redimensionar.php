@@ -6,6 +6,7 @@ include("conectarBD.php");
     class Redimensionar {
         private $name;
         private $type;
+        private $temp;
 // informacion de la imagen redimensionada
         private $Img_redimensionada;
         private $Redimensionar_width;
@@ -30,10 +31,11 @@ include("conectarBD.php");
         
         public $error;
         
-        public function __construct($source,$tipo) {
+        public function __construct($source,$tipo,$temp) {
             $this->type = $tipo;
-            $image_info = getimagesize($source);
             
+            $image_info = getimagesize($source);
+            $this->temp=$tmp;
             if($image_info) {
                 $this->image_width = $image_info[0];
                 $this->image_height = $image_info[1];
@@ -133,15 +135,27 @@ include("conectarBD.php");
         public function guardar($i){
          
             $id=$i;
+           
+          
+            $sql = "SELECT * FROM users WHERE user ='$id'";
+            $conexion = new mysqli('easy2train.es.mysql', 'easy2train_es','ps7SrwTfhh8XRy2UsdgKizDj', 'easy2train_es');
+            $resultado = $conexion->query($sql);
+         $result = mysqli_fetch_array($resultado);
             ob_start();
-            imagejpeg($this->Img_redimensionada);
-            $jpg = ob_get_contents();
+           
             ob_end_clean();
             $tipo=$this->type;
-            $conexion = new mysqli('easy2train.es.mysql', 'easy2train_es','ps7SrwTfhh8XRy2UsdgKizDj', 'easy2train_es');
-            $jpg = str_replace('##','##',mysqli_real_escape_string($conexion,$jpg)); 
-            $sq2 = "UPDATE users SET imagenredi = '$jpg', tipoimagenredi = '$tipo' WHERE user = '$id'" ;
-            $result=$conexion->query($sq2);
+            $jpg=$result['foto'];
+            $red='redi';
+            $var1=$red;
+            $var1 .= $jpg;
+           imagejpeg($this->Img_redimensionada,$var1);
+           
+            $rutimagenredi=$Img_redimensionada;
+            $sq2 = "UPDATE users SET imagenredi = '$var1', tipoimagenredi = '$type' WHERE user = '$id'" ;
+            $resulta=$conexion->query($sq2);
+            //borro imagen
+            unlink($jpg);
         }
         public function guardar2($i){
 
@@ -198,5 +212,3 @@ include("conectarBD.php");
             imagedestroy($this->img_original);
         }
     }
-    
-?> 

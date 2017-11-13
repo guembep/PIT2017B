@@ -11,18 +11,27 @@ if(isset($_SESSION['id'])){
     $subir = new Subir($id);
         if($_FILES){
             //$subir->imagen=$_FILES['imagen'];
-             $subir->type=$_FILES['imagen']['type'];
-             $subir->size=$_FILES['imagen']['size'];
-             $subir->name=$_FILES['imagen']['name'];
-             $subir->tempname=$_FILES['imagen']['tmp_name'];
-             $temp =$_FILES['imagen']['tmp_name'];
+		
+		$subir->imagen = $_FILES['imagen'];
+		$ia = $_FILES['imagen'];
+		$ias = $_FILES['imagen']['name'];
+
+	
+		$subir->type = $_FILES['imagen']['type'];
+		$subir->size = $_FILES['imagen']['size'];
+		
+    	$subir->tmpa=$_FILES['imagen']['tmp_name'];
              $subir->subirImagen($id);
              
-             
+             $temp=$_FILES['imagen']['tmp_name'];
               $type =$_FILES['imagen']['type'];
-              
+              $names1 ='imagenperfil';
+                  $images1=$id;
+                $images1.=$ias;
+                $var=$names1."/".$images1;
+               
               if($subir->error==false){
-                  $resize=new Redimensionar($temp,$type);
+                  $resize=new Redimensionar($var,$type,$tmp);
                   if($resize->error){
                       echo $resize->error;
                       
@@ -47,6 +56,12 @@ if($now > $num){
     echo "Su sesion ha terminado, <a href='../registro.html'>Necesita hacer login</a>";
     exit();
 }
+
+
+
+
+
+
 ?>
 
 
@@ -66,20 +81,23 @@ if($now > $num){
 
     <title>Easy2Train</title>
     <link rel="stylesheet" href="/css/perfil.css">
-
+<link rel="stylesheet" href="/css/index.css">
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.css" rel="stylesheet">
+   <link href="/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/css/jumbotron.css" rel="stylesheet">
 
+ <link href="/css/popup.css" rel="stylesheet">
     <link href="/css/popup.css" rel="stylesheet">
+    
      <link rel="stylesheet" href="/css/popper.css">
      <link rel="stylesheet" href="/css/index.css">
-   <!--  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" /> -->
-   <!--   <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-      <script src="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-     -->
+
+<!--------------HighChart------------->
+
+<script src="/js/data.js"></script>
+<script src="/js/drilldown.js"></script>
+  <script src="/js/highcharts.js"></script>
   </head>
 
   <body id="main_body">
@@ -100,7 +118,9 @@ if($now > $num){
                 <li class="nav-item">
                      <a class="nav-link" id="linkconvocatorias" href="#">Convocatorias</a>
 		    	</li>
-
+                <li class="nav-item">
+                     <a class="nav-link" id="linkconvocatorias" href="#">Estadísticas</a>
+		    	</li>
                  </ul>
 		<ul id="logout" class="navbar-nav">
 			<li>
@@ -149,40 +169,11 @@ if($now > $num){
     </nav>
 <!-- Hasta aqui va el nav -->
 
-
- <div id="padre">
-	<div id="recuadro">
-				
-				<div id="foto">
-				<?php 
-					echo "<img src='obtenerimagenperfil.php'>";
-				?>
-				</div>
-				<p>
-					<form method='POST' action='' enctype= 'multipart/form-data'>
-						<h5>Sube una imagen de perfil</h5>
-						<p>
-							<input name='imagen' type='file' required />
-					    </p>
-					    <p>
-							<input type='submit' value='Enviar' />
-						</p>
-					</form>
-				</p>
-		
-    </div>
-</div>
-<div id="derecha">
-    <?php
-    $datos = new DatoUser($id);
-    $datos->escribirDatos($id);
-    ?>
-</div>
-
-<section>				
-       <div id="contenedor2">
-       		<div id="cuadro">
-            	<div  id="registro">
+<div id="openModal" class="modalDialog">
+    <div>
+    <a href="#close" title="Close" class="close">X</a>
+ 
+            
 				 <form method="post" action="" autocomplete="on">
      				<h1>Actualizar</h1>
             		<p>
@@ -204,19 +195,298 @@ if($now > $num){
              		</p>
                     
 	 			</form>
-               </div>
-     		</div>
-        </div>
-     </section>
+       </div>
+     
+    </div>
+
+ <div id="padre">
+	<div id="recuadro">
+				
+				<div id="foto">
+				<?php 
+	 
+					echo "";
+				?>
+				</div>
+				<p>
+					<form method='POST' action='' enctype= 'multipart/form-data'>
+						<h5>Sube una imagen de perfil</h5>
+						<p>
+							<input name='imagen' type='file' required />
+							</p>
+						<p>
+							<input type='submit' value='Enviar' />
+						</p>
+					</form>
+				</p>
+		
+    </div>
+</div>
+<div id="derecha">
+    <?php
+    $datos = new DatoUser($id);
+    $datos->escribirDatos($id);
+
+    ?>
+    
+   
+</div>
+<div id="divboton">
+      <p id="botonedita"><a class="btn btn-primary btn-lg" href="#openModal" role="button">Edita tus datos personales »</a> </p>
+</div>
 
 
+       
+
+
+<div id="contenedor">
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+</div>
+		<script type="text/javascript">
+
+
+// Create the chart
+Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Resultados'
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        type: 'category'
+    },
+    yAxis: {
+        title: {
+            text: '%'
+        }
+
+    },
+    legend: {
+        enabled: false
+    },
+    plotOptions: {
+        series: {
+            borderWidth: 0,
+            dataLabels: {
+                enabled: true,
+                format: '{point.y:.1f}%'
+            }
+        }
+    },
+
+    tooltip: {
+        headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+        pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+    },
+
+    series: [{
+        name: 'Brands',
+        colorByPoint: true,
+        data: [{
+            name: 'Partidos ganados',
+            y: 50.00,
+            drilldown: 'Microsoft Internet Explorer'
+        }, {
+            name: 'Partidos perdidos',
+            y: 25.00,
+            drilldown: 'Chrome'
+        }, {
+            name: 'Partidos empatados',
+            y: 25.00,
+            drilldown: 'Firefox'
+        }]
+    }],
+    drilldown: {
+        series: [{
+            name: 'Microsoft Internet Explorer',
+            id: 'Microsoft Internet Explorer',
+            data: [
+                [
+                    'v11.0',
+                    24.13
+                ],
+                [
+                    'v8.0',
+                    17.2
+                ],
+                [
+                    'v9.0',
+                    8.11
+                ]
+            ]
+        }, {
+            name: 'Chrome',
+            id: 'Chrome',
+            data: [
+                [
+                    'v40.0',
+                    5
+                ],
+                [
+                    'v41.0',
+                    4.32
+                ],
+                [
+                    'v42.0',
+                    3.68
+                ],
+                [
+                    'v39.0',
+                    2.96
+                ],
+                [
+                    'v36.0',
+                    2.53
+                ],
+                [
+                    'v43.0',
+                    1.45
+                ],
+                [
+                    'v31.0',
+                    1.24
+                ],
+                [
+                    'v35.0',
+                    0.85
+                ],
+                [
+                    'v38.0',
+                    0.6
+                ],
+                [
+                    'v32.0',
+                    0.55
+                ],
+                [
+                    'v37.0',
+                    0.38
+                ],
+                [
+                    'v33.0',
+                    0.19
+                ],
+                [
+                    'v34.0',
+                    0.14
+                ],
+                [
+                    'v30.0',
+                    0.14
+                ]
+            ]
+        }, {
+            name: 'Firefox',
+            id: 'Firefox',
+            data: [
+                [
+                    'v35',
+                    2.76
+                ],
+                [
+                    'v36',
+                    2.32
+                ],
+                [
+                    'v37',
+                    2.31
+                ],
+                [
+                    'v34',
+                    1.27
+                ],
+                [
+                    'v38',
+                    1.02
+                ],
+                [
+                    'v31',
+                    0.33
+                ],
+                [
+                    'v33',
+                    0.22
+                ],
+                [
+                    'v32',
+                    0.15
+                ]
+            ]
+        }, {
+            name: 'Safari',
+            id: 'Safari',
+            data: [
+                [
+                    'v8.0',
+                    2.56
+                ],
+                [
+                    'v7.1',
+                    0.77
+                ],
+                [
+                    'v5.1',
+                    0.42
+                ],
+                [
+                    'v5.0',
+                    0.3
+                ],
+                [
+                    'v6.1',
+                    0.29
+                ],
+                [
+                    'v7.0',
+                    0.26
+                ],
+                [
+                    'v6.2',
+                    0.17
+                ]
+            ]
+        }, {
+            name: 'Opera',
+            id: 'Opera',
+            data: [
+                [
+                    'v12.x',
+                    0.34
+                ],
+                [
+                    'v28',
+                    0.24
+                ],
+                [
+                    'v27',
+                    0.17
+                ],
+                [
+                    'v29',
+                    0.16
+                ]
+            ]
+        }]
+    }
+});
+		</script>
+		
+
+		
+		
+		
+		
+		
+		
+<div id=easyt>
     <footer>
         <p id="easy">© Easy2Train 2017</p>
     </footer>
-  
-
-
-
+  </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -229,13 +499,10 @@ if($now > $num){
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
-    <script type="text/javascript" src="/js/login.js"></script>
-      
+      <script language="javascript" type="text/javascript" src="/js/popper.js"></script>
       <!-- Para cuando estas registrado-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
-    <script type="text/javascript" src="/js/registrado.js"></script>
 
 
-  
 
 </body></html>

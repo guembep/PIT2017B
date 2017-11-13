@@ -1,12 +1,14 @@
 #title{ font-family:"Lucida Console",monospace; margin-left:20px; letter-spacing:2px; margin-top: 15px; font-variant: small-caps}
 .jumbotron{ 
 	background-image: url("/images/deporte.jpg");  
-	margin-bottom: 0px;
 	background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     text-shadow: black 0.3em 0.3em 0.3em;
+    padding-bottom: 55vh ;
+    margin-bottom: 20px;
+    border-radius: 0%;
 }
 
 
@@ -69,7 +71,3 @@
 }
 
 .close:hover { background: #00d9ff; }
-
-
-
-
