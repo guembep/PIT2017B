@@ -1,0 +1,73 @@
+<div class="container">
+    <h1>Editar Perfil</h1>
+  	<hr>
+	<div class="row">
+      <!-- left column -->
+      <div class="col-md-4">
+        <div class="text-center">
+        <div class="profile-userpic">
+          <img src="images/foto-perfil.jpg">
+        </div>
+          <br>
+          <h6>Cambiar foto de perfil</h6>
+          <input class="form-control" type="file">
+        </div>
+      </div>
+      
+      <!-- edit form column -->
+      <div class="col-md-8 personal-info">
+        
+        <h3>Datos Personales</h3>
+        
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Usuario:</label>
+            <div class="col-lg-8">
+              <input id="modprofileuser" class="form-control" value="Jane" type="text" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Email:</label>
+            <div class="col-lg-8">
+              <input id="modprofileemail" class="form-control" value="Bishop" type="text" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Deporte</label>
+                <select name="deporte" class="custom-select " id="modprofiledeporte">
+                  <option value="" selected>Selecciona un deporte</option>
+                  <option value="balonmano">Balonmano</option>
+                  <option value="baloncesto">Baloncesto</option>
+                </select>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Equipo:</label>
+            <div class="col-lg-8">
+              <input id="modprofileequipo" class="form-control" value="Bishop" type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Password:</label>
+            <div class="col-md-8">
+              <input class="form-control" value="" type="password">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Confirm password:</label>
+            <div class="col-md-8">
+              <input class="form-control" value="" type="password">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-8">
+              <input class="btn btn-primary" value="Guardar Cambios" type="button">
+              <span></span>
+              <input class="btn btn-default" value="Cancelar" type="reset">
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+<hr>

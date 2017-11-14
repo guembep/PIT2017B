@@ -3,7 +3,8 @@ $(document).ready(function(){
 
 	$("#linkejercicios").click(function (){console.log("acceder a ejercicios"); ejercicios();});
 	$("#linkconvocatorias").click(function (){console.log("acceder a convocatorias"); convocatorias();});
-	
+	$("#linkperfil").click(function (){console.log("acceder a perfil"); perfil();});
+
 	function lista(){
 		$("#title").show();
 		console.log("Cargando listado...");
@@ -114,6 +115,12 @@ $(document).ready(function(){
 				 })
 			});				
 		
+	}
+
+	function perfil(){
+		$("#title").html("");
+		$("#contenido").html("");
+		$("#contenido").load('/perfil.html');
 	}
 
 
