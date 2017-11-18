@@ -1,3 +1,9 @@
+
+@media screen and (max-width: 750px) {
+	#textoprincipal h1{
+		font-size: 300%;
+	}
+}
 #title{ font-family:"Lucida Console",monospace; margin-left:20px; letter-spacing:2px; margin-top: 15px; font-variant: small-caps}
 .jumbotron{ 
 	background-image: url("/images/deporte.jpg");  
@@ -73,17 +79,32 @@
 .close:hover { background: #00d9ff; }
 
 
-
-#popupDemo-popup.ui-popup-container {
-    position: absolute;
-    margin: 2% 0 0 25%;
-    top: 0 !important;
-    left: 0 !important;
-    width: 50%;
-    height: 70%;
+@media screen and (min-width: 750px) {
+	#popupDemo-popup.ui-popup-container {
+	    position: absolute;
+	    margin: 2% 0 0 25%;
+	    top: 0 !important;
+	    left: 0 !important;
+	    width: 50%;
+	    height: 70%;
+	    z-index:500000000;
+	}
 }
+
+@media screen and (max-width: 750px) {
+	#popupDemo-popup.ui-popup-container {
+	    position: absolute;
+		margin: 2% 0 0 2%;
+		top: 0 !important;
+		left: 0 !important;
+		width: 90%;
+		height: 90%;
+		z-index: 500000000;
+	}
+}
+
 #popupDemo{
-	 width: 100%;
-    height: 100%;
-    max-width: 100% !important;
+		width: 100%;
+	    height: 100%;
+	    max-width: 100% !important;
 }
