@@ -1,9 +1,13 @@
 
 $(document).ready(function(){
 
-	$("#linkejercicios").click(function (){console.log("acceder a ejercicios"); ejercicios();});
-	$("#linkconvocatorias").click(function (){console.log("acceder a convocatorias"); convocatorias();});
-	$("#linkperfil").click(function (){console.log("acceder a perfil"); perfil();});
+	$("#linkejercicios").click(function (){ ejercicios();});
+	$("#linkconvocatorias").click(function (){ convocatorias();});
+	$("#linkperfil").click(function (){perfil();});
+
+	
+	
+
 
 	function lista(){
 		$("#title").show();
@@ -76,6 +80,28 @@ $(document).ready(function(){
 		div2.append(div3crea);
 		div.append(div2);
 		$("#contenido").append(div);
+
+		var div3compra = document.createElement("div");
+			div3compra.setAttribute("class","col-md-4");
+		var hcompra = document.createElement("h2");
+			hcompra.innerHTML = "Compra paquetes de ejercicios";
+		var enlacecompra = document.createElement("a");
+			enlacecompra.setAttribute("href","#");
+		var compraejers = document.createElement("img");
+			compraejers.setAttribute("src","./images/comprarEjercicios.png");
+			compraejers.setAttribute("id","botonCompra");
+			compraejers.setAttribute("alt","Compra paquetes de ejercicios");
+			compraejers.setAttribute("heigth","200");
+			compraejers.setAttribute("width", "200");
+
+		div3compra.append(hcompra);
+		enlacecompra.append(compraejers);
+		div3compra.append(enlacecompra);
+		div2.append(div3compra);
+		div.append(div2);
+
+		$("#contenido").append(div);
+		
 		
 		$("#botonAddExercise").click(function (){console.log("acceder a añadir ejercicio"); 
 		nuevoejercicio();
@@ -85,6 +111,12 @@ $(document).ready(function(){
 		console.log("acceder a lista de ejercicios"); 
 		lista();	
 		});	
+
+		$("#botonCompra").click(function(){
+			console.log("acceder a compra de ejercicios");
+			compra();
+		})
+
 	}
 		
 	function convocatorias(){
@@ -121,6 +153,12 @@ $(document).ready(function(){
 		$("#title").html("");
 		$("#contenido").html("");
 		$("#contenido").load('/perfil.html');
+	}
+
+	function compra(){
+		$("#title").html("");
+		$("#contenido").html("");
+		$("#contenido").load('/comprarEjercicios.html');
 	}
 
 
