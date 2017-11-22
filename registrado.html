@@ -15,57 +15,98 @@
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
-   
+    <link href="css/slider.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
      
   </head>
 
   <body>
-  		
-		<div id=bodyNav >
-			<div class="jumbotron jumbregistrado">
-			  <div class="container">
-				<h1 class="display-3" id="welcomeuser">Bienvenid@!</h1>
-        <p>Crea, visualiza y edita tus propios ejercicios</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Ver demo &raquo;</a></p>
-			  </div>
-			</div>
-		</div>
-	<div class="container" style="margin: 2em 25%">
-	  <div class="row">
-	   <div class="col-md-4">
-        	<img src="images/ejercicios.jpg" class="img-fluid" alt="Ejercicios" >
-        </div>
-       <div class="col-md-4" >
-          <h3><p id="ejers">Mis ejercicios: </p></h3>
-          <div class="col-md-1" style="text-align: center; margin:auto 0;">
-          </div>
-          <div class="col-md-3" style="text-align: center; margin:auto 0;">
-            <h3>
-              <p>Crear</p>
-          <!--    <p>Modificar</p> -->
-              <p>Visualizar</p>
-            </h3>
-          </div>
-        </div>
-        
-      
-      </div>
-      <div class="row">
-      	<div class="col-md-4">
-        	<img src="images/calendario.png" class="img-fluid" alt="Convocatorias" >
-        </div>
-        <div class="col-md-4" style="text-align: center; margin:auto 0;">
-          <h3>Acceder a convocatorias</h3>
-        </div>
-      </div>
-      
 
-      <hr>
+  <!-- Slider-->
+ 
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1" ></li>
+    <li data-target="#demo" data-slide-to="2" ></li>
+    <li data-target="#demo" data-slide-to="3" ></li>
+    <li data-target="#demo" data-slide-to="4" ></li>
+    <li data-target="#demo" data-slide-to="5" ></li>
 
-      
-    </div> <!-- /container -->    
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="imgslider" src="images/ejercicios1.jpeg" alt="Crea" >
+      <div class="carousel-caption">
+        <img class="fondoletras" src="images/imgfondoletras.jpg">
+        <h3>Crea tus propios ejercicios</h3>
+        <p>Diséñalos con nuestra pizarra táctica para que no se te escape ningún detalle </p>
+        <p><a id="crearbtn" class="btn btn-primary btn-lg" href="#" role="button">Crear &raquo;</a></p>
+      </div>   
+    </div>
+   <div class="carousel-item">
+      <img class="imgslider" src="images/baloncesto.jpeg" alt="Visualizar"  >
+      <div class="carousel-caption">
+        <img class="fondoletras" src="images/imgfondoletras.jpg">
+        <h3>Visualiza tus ejercicios</h3>
+        <p> Ya no necesitas un cuaderno de tácticas, accede online de forma sencilla y rápida </p>
+        <p><a id="verbtn" class="btn btn-primary btn-lg" href="#" role="button">Visualizar &raquo;</a></p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img class="imgslider" src="images/comparte.jpg" alt="Compartir"  >
+      <div class="carousel-caption">
+        <img class="fondoletras" src="images/imgfondoletras.jpg">
+        <h3>Comparte ejercicios</h3>
+        <p>Tu y tus compañeros podréis compartir ejercicios para ahorrar tiempo y ayudaros </p>
+        <p><a id="sharebtn" class="btn btn-primary btn-lg" href="#" role="button">Compartir &raquo;</a></p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img class="imgslider" src="images/balonmano.jpeg" alt="Comprar" >
+      <div class="carousel-caption">
+        <img class="fondoletras" src="images/imgfondoletras.jpg">
+        <h3>Compra paquetes de ejercicios</h3>
+        <p>Ejercicios profesionales listos para usar </p>
+        <p><a id="buybtn" class="btn btn-primary btn-lg" href="#" role="button">Comprar &raquo;</a></p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img class="imgslider" src="images/prepentrenamientos.jpeg" alt="Entrenamientos" >
+      <div class="carousel-caption">
+        <img class="fondoletras" src="images/imgfondoletras.jpg">
+        <h3>Prepara entrenamientos</h3>
+        <p>Agrupa ejercicios para formas tus propios entrenamientos  </p>
+        <p><a id="agrupabtn" class="btn btn-primary btn-lg" href="#" role="button">Entrenamientos &raquo;</a></p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img class="imgslider" src="images/convocatorias.jpg" alt="Convocatorias" >
+      <div class="carousel-caption">
+        <img class="fondoletras" src="images/imgfondoletras.jpg">
+        <h3>Consulta convocatorias</h3>
+        <p>Conoce fácil y rápido las fechas de tus partidos </p>
+        <p><a id="convocbtn" class="btn btn-primary btn-lg" href="#" role="button">Convocatorias &raquo;</a></p>
+      </div>   
+    </div>
+
+
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+
+   
     <footer>
         <p>&copy; Easy2Train 2017</p>
     </footer>
-  </body>
+
+ <script type="text/javascript" src="js/slider.js"></script>
+      </body>
 </html>

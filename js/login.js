@@ -14,6 +14,10 @@ if (sesion==null){
     
     $("#contenido").load("./registrado.html", function(responseTxt, statusTxt, xhr){
 			if(statusTxt == "success"){
+        var script=document.createElement("script");
+        script.setAttribute("type","text/javascript");
+        script.setAttribute("src","js/registrado.js"); 
+        document.getElementsByTagName("body")[0].appendChild(script);
 			}	
 			if(statusTxt == "error"){
 				console.log("Error: " + xhr.status + ": " + xhr.statusText);

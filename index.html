@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html id="main_html" lang="en">
   <head>
+  	
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -43,11 +44,15 @@
           <li class="nav-item">
             <a class="nav-link" id="linkconvocatorias" href="#">Convocatorias</a>
 			</li>
+           <li class="nav-item">
+            <a class="nav-link" id="linkperfil" href="#">Perfil</a>
+      </li>         
 
         </ul>
 		<ul id="logout" class="navbar-nav">
+
 			<li>
-				 
+				    
 				   <button id="logoutbtn"  type="button" class="btn btn-default btn-sm" > 
 					     Cerrar sesión <img src="images/logout.png" height="20" width="20">
 				   </button>
@@ -127,11 +132,18 @@
 
     <!--modal de  botón más informacion-->
     <div id="openModal" class="modalDialog">
-      <div>
+      <div >
         <a href="#close" title="Close" class="close">X</a>
-        <h2>Easy2Train</h2>
-        <p>Actualmente disponible para:</p><p> · baloncesto </p> <p>  · balonmano </p>
-        <p>Estamos trabajando para implementar más deportes en la web.</p>
+        <h3>Easy2Train</h3>
+        <p  align="justify">Gracias a Easy2Train podrás introducir ejercicios desde cualquier ordenador y acceder a ellos cómodamente en cualquier momento desde cualquier dispositivo. </p>
+        <p align="justify" >Ya no tendrás que cargar con un incómodo cuaderno o bloque de papeles, sino que dispondrás de todos tus ejercicios en una única pantalla. Mucho más rápido, cómodo y eficaz.</p>
+        <a href="Demo.html">¡Pruébalo!</a>
+        <br>
+        <br>
+        <p>
+        <small align="justify">Actualmente disponible para baloncesto y balonmano. Estamos trabajando para implementar más deportes en la web.</small>
+        </p>
+       
       </div>
     </div>
 
@@ -180,33 +192,9 @@
     </div>
 <div id="mensaje"></div>
 
-    <!-- Parte con las columnas y fotos -->
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Facil acceso a convocatorias</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <img src="images/convocatorias.jpg" class="img-fluid" alt="Convocatorias">
-        </div>
-        <div class="col-md-4">
-          <h2>Crea ejecicios</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <img src="images/creaEjercicios.png" class="img-fluid" alt="Convocatorias">
-        </div>
-        <div class="col-md-4">
-          <h2>Prepara Entrenamientos</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <img src="images/preparaEntrenamientos.jpg" class="img-fluid" alt="PreparaEntrenamientos">
-        </div>
-      </div>
-
-      <hr>
-
-      <footer>
+ <footer>
         <p>&copy; Easy2Train 2017</p>
-      </footer>
-    </div> <!-- /container -->
+ </footer>
   </div>
 </div>
 
@@ -226,8 +214,8 @@
       
       <!-- Para cuando estas registrado-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
-    <script type="text/javascript" src="js/registrado.js"></script>
-
+<!--    <script type="text/javascript" src="js/registrado.js"></script>
+-->
 
   </body>
 </html>

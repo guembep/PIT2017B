@@ -1,9 +1,9 @@
 <?php
 	//Nos conectamos a la base de datos.
-	ini_set('session.gc_maxlifetime', 3600);
-	session_set_cookie_params(3600);
-	session_start();
-	include('conectarBD.php');
+//	ini_set('session.gc_maxlifetime', 3600);
+//	session_set_cookie_params(3600);
+//	session_start();
+	//include('conectarBD.php');
 
 	//Recogemos los datos del ejercicio en variables.
     $sport = $_POST['exercisesport'];  
@@ -31,10 +31,62 @@
     $data = array();
 	
 	
+	//Recogemos imagen externa en caso de que la haya
+	if ( isset($_FILES['imgexterna']) ) {
+
+		$foto_info=$_FILES['imgexterna'];
+		//print_r($foto_info);
+
+		if ($foto_info['error']!=0) {
+		  print("problema al subir el fichero");
+		  
+		}else{
+
+			$type=$foto_info['type'];
+
+			$validformat=false;
+			if ( $type=='image/png' ) {
+			  $ext='.png';
+			  $validformat=true;
+			} else if ( $type=='image/jpg' ) {
+			  $ext='.jpg';
+			  $validformat=true;
+			} else if ( $type=='image/jpeg' ) {
+			  $ext='.jpeg';
+			  $validformat=true;
+			} else if ( $type=='image/gif' ) {
+			  $ext='.gif';
+			  $validformat=true;
+			}
+			
+			if (!$validformat) {
+			  print("formato no soportado");
+			}else{	
+				
+				//Guardarla cambiando el nombre
+				$filename=$foto_info['name'];
+				$base=str_replace($ext,'',$filename);
+				//$filename=$_SESSION['id'].'.'.$ext;
+				$filename=$_SESSION['id'].'_'.sha1($filename).$ext;
+				if ( ! move_uploaded_file($foto_info['tmp_name'],"../images/imgexternas/".$filename) ) { 
+				  print("problema importando imagen");
+				}else {
+					print("ok"); 
+					//Guardar directorio imagen en DB
+					$directorioext="../images/imgexternas/".$filename;
+				}
+			}	
+		}	
+	}	
+		//-------------------------
 	//Si el usuario está registrado hacemos la petición para subir el ejercicio.
 	
 	if(isset($_SESSION['id'])){
+<<<<<<< HEAD
 
+=======
+		$sport = $_SESSION['deporte'];
+>>>>>>> 04a9f8c5104bd5ba6307f3847bb388b894e73901
         $iduser = (int)$_SESSION['id'];
         
         //$url =  Enchufamos la url con la imagen .png

@@ -12,16 +12,20 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet"/>
-
-    <!-- Custom styles for this template -->
-    <link href="css/jumbotron.css" rel="stylesheet"/>
-      
+   
       
       <!--JQuery-->
       <link href="css/popup.css" rel="stylesheet" />
       <link rel="stylesheet" href="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
       <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
       <script src="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+      
+     <!-- Formulario-->
+     
+     <link rel="stylesheet" href="css/index.css"/>
+      <script type="text/javascript" src="js/Form_CrearEjercicio.js"></script>
+      
+      
     <!--Pizarra--> 
               <!-- CSS STYLE -->
         <link rel="stylesheet" type="text/css" href="pizarra/style.css">
@@ -34,11 +38,11 @@
         <script type="text/javascript" src="./pizarra/1.js"></script>
         <script type="text/javascript" src="./pizarra/2.js"></script>
         <script type="text/javascript" src="./pizarra/markup_handball.js"></script>
-
+     
   </head>
 
   <body id="main_body">
-
+    
     
     <div class="container">
       <h1><p class="text-center">Introducir nuevo ejercicio</p></h1>
@@ -125,21 +129,11 @@
 						<input class="form-control input-group-addon" type="number" value="0" id="exerciseedad2">
                  </div>  
               </div>
-              
-              <div class="form-group row py-2">
-                  <label for="example-text-input" class="col-5 col-form-label">Imagen explicativa</label>                  
-                  <input type="checkbox"  id= "imgcheck" name="imgcheck" value="imgcheck"> <small> Marcar casilla si va a subir una imagen externa </small> <br>
-                 <div class= "col-9 input-group" style="visibility:hidden;" id="divimg">
-                    <input class="form-control input-group-addon " type="file" id="exerciseimg" name="imgexterna" multiple accept="image/*">
-                 </div>  
-              </div>
+             
 
-            <div class="form-group">
-              <button class="btn btn-primary" id="registrarejer">
-                <span class="glyphicon glyphicon-log-in"></span> &nbsp;Añadir
-             </button>
-            <!--  <input type="button" name="registrar" id="registrar" class="btn btn-success" value="Registrar"> -->
-        </div>
+            <div class="form-group" id="demoadd" >
+              <a id="demoadd" href="#popupDemo" data-rel="popup" data-transition="pop" class="btn btn-primary" style="color:white">Añadir</a>
+			</div>
 
             <br>
 
@@ -147,7 +141,7 @@
 
           </form>
 			<p id="resultado"></p>
-		
+				
        </div>
         <div class="col-md-6">
           <div id="left_menu_panel" style="font-size: 19px;">
@@ -3518,11 +3512,21 @@
     </div>    
 		    </div>
       </div>
+      
+      <!--popup de  que debe registrarse-->
+		<div id="containerDemo" class="col-8" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext">
+				<div data-role="popup" id="popupDemo" class="ui-content" data-theme="a" style="max-width:350px;" >
+				  <p>Registrate para continuar</p>
+				  <iframe id="iframeregistrar" src='registro.html' width="100%" height='92%' frameborder='0' ></iframe>
+				</div>  
+				 
+		  </div> 
+		
+		
+      
     </div>
       
-    
-      
-      
+   
      
         <!-- Bootstrap core JavaScript
         ================================================== -->
@@ -3535,7 +3539,8 @@
         
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
       <!--  <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
-        <script type="text/javascript" src="./js/Form_CrearEjercicio.js"></script>
+        <script type="text/javascript" src="js/demo.js"></script>
+      
       
   </body>
 </html>
