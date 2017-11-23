@@ -73,7 +73,7 @@
 				}else {
 					print("ok"); 
 					//Guardar directorio imagen en DB
-					$directorioext="../images/imgexternas/".$filename;
+					$imagename="../images/imgexternas/".$filename;
 				}
 			}	
 		}	
