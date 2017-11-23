@@ -43,12 +43,18 @@
     <div class="container">
       <h1><p class="text-center">Introducir nuevo ejercicio</p></h1>
       <div class="row">
-		  
+      
         <div class="col-md-3" style="overflow-y: scroll; height: 525px;">
 
 
           <form method="POST" id="form-registroejer">
 
+              <div class="form-group row py-2">
+                  <label for="example-text-input" class="col-5 col-form-label" >Deporte al que pertenece</label>
+                  <div class="col-8">
+                    <input class="form-control" type="text" placeholder="Baloncesto" id="exercisesport" name="exercisesport">
+                  </div>    
+              </div>
               
               <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label" >Categoria</label>
@@ -66,14 +72,14 @@
               
               
               <div class="form-group row py-2">
-                  <label for="example-text-input" class="col-5 col-form-label" >Nombre</label>
+                  <label for="example-text-input" class="col-5 col-form-label" >Nombre del ejercicio</label>
                   <div class="col-8">
                     <input class="form-control" type="text" placeholder="Ejercicio para mejorar pases" id="exercisename" name="exercisename">
                   </div>    
               </div>
               
               <div class="form-group row py-2">
-                  <label for="example-text-input" class="col-5 col-form-label">Descripcion</label>
+                  <label for="example-text-input" class="col-5 col-form-label">Descripcion del ejercicio</label>
                   <div class="col-8">
                     <textarea class="form-control row py-4"  id="exercisedescription" name="exercisedescription"  placeholder="Explique la organizacion, desarrollo, variantes (y lo que considere relevante) del ejercicio" ></textarea>
                   </div>    
@@ -86,7 +92,7 @@
                         <input class="form-control" type="text" placeholder="10 balones" id="exercisematerial" type="text" >
                         <div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;" >
                           <p>Introduce 'nº material' y presiona la tecla +. Al hacerlo podras seguir añadiendo más material.</p>
-						  <img src="images/mas.png"><small>La situación de la tecla puede variar</small>
+              <img src="images/mas.png"><small>La situación de la tecla puede variar</small>
                         </div>  
                   </div>    
               </div>
@@ -119,20 +125,22 @@
               <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label">Rango de edades </label>                  
                   <input type="checkbox"  id= "rangoedad" name="rangoedad" value="Rangoedad"> <small> Marcar casilla si hay un rango de edad concreto necesario para realizar el ejercicio </small> <br>
-                 <div class= "col-9 input-group" style="visibility:hidden;" id="divrangoedad">
-						<input class="form-control input-group-addon" type="number" value="0" id="exerciseedad1">
-						<p class="input-group-addon"> - </p>
-						<input class="form-control input-group-addon" type="number" value="0" id="exerciseedad2">
+                 <div class= "col-5 input-group" style="visibility:hidden;" id="divrangoedad">
+            <input class="form-control input-group-addon" type="number" value="0" id="exerciseedad1">
+            <p class="input-group-addon"> - </p>
+            <input class="form-control input-group-addon" type="number" value="0" id="exerciseedad2">
                  </div>  
               </div>
               
               <div class="form-group row py-2">
                   <label for="example-text-input" class="col-5 col-form-label">Imagen explicativa</label>                  
-                  <input type="checkbox"  id= "imgcheck" name="imgcheck" value="imgcheck"> <small> Marcar casilla si va a subir una imagen externa </small> <br>
+                  <input type="checkbox"  id= "imgcheck" name="imgcheck" value="imgcheck"> <small> Marcar casilla si va a subir una imagen externa </small> <small> (*) No es compatible con la pizarra </small><br>
                  <div class= "col-9 input-group" style="visibility:hidden;" id="divimg">
-                    <input class="form-control input-group-addon " type="file" id="exerciseimg" name="imgexterna" multiple accept="image/*">
+                    <input class="form-control input-group-addon " type="file" id="exerciseimg" name="imgexterna" accept="image/*">
                  </div>  
               </div>
+    
+            <br><br>
 
             <div class="form-group">
               <button class="btn btn-primary" id="registrarejer">
@@ -146,8 +154,8 @@
             <span id="result"></span>
 
           </form>
-			<p id="resultado"></p>
-		
+      <p id="resultado"></p>
+    
        </div>
         <div class="col-md-6">
           <div id="left_menu_panel" style="font-size: 19px;">
@@ -3516,7 +3524,7 @@
     <div class="bg-loading" id="bg_loading_shapes">
       <div class="bg-loading-image"></div>
     </div>    
-		    </div>
+        </div>
       </div>
     </div>
       

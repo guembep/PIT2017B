@@ -269,13 +269,13 @@
                         fd.append('exercisematerial', JSON.stringify(materialA)); //datos que se envian a traves de ajax*/
                         fd.append('imagename', Date.now());
                        
-                   /*    if ($("#imgcheck").prop('checked')){
+                    if ($("#imgcheck").prop('checked')){
 					 // fd.append('imgexterna',$("#exerciseimg"));
 						//var formData = new FormData();
 						var file=document.getElementById("exerciseimg").files[0];
 						  fd.append("imgexterna", file);
 						  // console.log("intentando ajax img ext");
-					     $.ajax({ 
+					   /*  $.ajax({ 
 							url: "./php/Form_CrearEjercicio.php",
 							type: "POST",
 							data: formData,
@@ -292,8 +292,9 @@
 								console.log('error: '+textStatus);
 								console.log(jqXHR.status);
 							}
-						 });    
-						}*/
+						 });  */  
+						}
+
 
 					$.ajax({
 		                url: "../php/Form_CrearEjercicio.php",
