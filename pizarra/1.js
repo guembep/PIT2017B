@@ -302,8 +302,8 @@
 		                data: fd,
 		                processData: false,
    						contentType: false,
-		                success: function() {
-							console.log("ok");
+		                success: function(response) {
+							console.log("ok: "+response);
 		                },
 		                error: function() {
 		                    console.log('error')

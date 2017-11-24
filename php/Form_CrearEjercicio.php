@@ -1,9 +1,9 @@
 <?php
 	//Nos conectamos a la base de datos.
-//	ini_set('session.gc_maxlifetime', 3600);
-//	session_set_cookie_params(3600);
-//	session_start();
-	//include('conectarBD.php');
+	ini_set('session.gc_maxlifetime', 3600);
+	session_set_cookie_params(3600);
+	session_start();
+	include('conectarBD.php');
 
 	//Recogemos los datos del ejercicio en variables.
     $sport = $_POST['exercisesport'];  
@@ -38,7 +38,7 @@
 		//print_r($foto_info);
 
 		if ($foto_info['error']!=0) {
-		  print("problema al subir el fichero");
+		  //print("problema al subir el fichero");
 		  
 		}else{
 
@@ -60,20 +60,21 @@
 			}
 			
 			if (!$validformat) {
-			  print("formato no soportado");
+			  //print("formato no soportado");
 			}else{	
 
 				//Guardarla cambiando el nombre
 				$filename=$foto_info['name'];
 				$base=str_replace($ext,'',$filename);
 				//$filename=$_SESSION['id'].'.'.$ext;
-				$imagename=$_SESSION['id'].'_'.sha1($filename).$ext;
+				$filename=$_SESSION['id'].'_'.sha1($filename).$ext;
 				if ( ! move_uploaded_file($foto_info['tmp_name'],"../images/imgexternas/".$filename) ) { 
-				  print("problema importando imagen");
-				}else {
-					print("ok"); 
+				  //print("problema importando imagen");
+				}else { 
 					//Guardar directorio imagen en DB
 					$imagename="../images/imgexternas/".$filename;
+
+					//print("ok-img: ").$imagename;
 				}
 			}	
 		}	
@@ -85,7 +86,7 @@
 
 		$sport = $_SESSION['deporte'];
         $iduser = (int)$_SESSION['id'];
-        
+        $datospizarra= "porhacer";
         //$url =  Enchufamos la url con la imagen .png
         //$club = $_SESSION['idequipo']; //Cuando tengamos url y equipo implementamos
         //$data['idequipo'] = $club;
@@ -100,7 +101,9 @@
 			$data['foto'] = var_dump($stmt);
 
 		}else{
-			move_uploaded_file($_FILES['imagen']['tmp_name'], $imagename);	
+			if ( !isset($_FILES['imgexterna']) ){
+				move_uploaded_file($_FILES['imagen']['tmp_name'], $imagename);	
+			}
 			$idejercicio =  mysqli_insert_id($db);
 			
 		    //$data['id'] = $idejercicio;
