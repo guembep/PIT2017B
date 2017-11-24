@@ -127,18 +127,26 @@ $(document).ready(function() {
                 let z;
                 var replc=datHtml;
                 z=info[i].id;
+                var ejercicioPlan = info[i];
                 $('#'+z).click( function(){
                 console.log("click");
                 //$('#contenido').load("./plantillaejer.html");
                 console.log(replc);
                 console.log(datHtml);
-
-                replc= replc.replace("#name#",info[i].nombre);
+                for (var key in ejercicioPlan){
+                  console.log("replace(#"+key+"),"+ejercicioPlan[key]);
+                  if(ejercicioPlan[key]==0){
+                    console.log("Algo escondo "+key);
+                    $('.cl'+key).hide();
+                  }
+                  replc= replc.replace("#"+key+"#",ejercicioPlan[key]);
+                }
+          /*      replc= replc.replace("#name#",info[i].nombre);
                 replc= replc.replace("#description#",info[i].explicacion);
                 replc= replc.replace("#sport#",info[i].deporte);
                 replc= replc.replace("#category#",info[i].categoria);
                 replc= replc.replace("#subcategory#",info[i].subcategoria);
-                replc= replc.replace("#rutaimg#",info[i].foto);
+                replc= replc.replace("#rutaimg#",info[i].foto);*/
       //          replc= replc.replace("#duracion#",info[i].explicacion);
     //            replc= replc.replace("#minpeople#",info[i].explicacion);
   //              replc= replc.replace("#maxpeople#",info[i].explicacion);
