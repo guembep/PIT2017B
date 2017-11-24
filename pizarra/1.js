@@ -1,3 +1,4 @@
+$('#modalCrearEjercicio').modal('hide');
 (function() {
     function a(a) {
         if (!(a instanceof HTMLElement || a instanceof SVGElement)) throw Error("an HTMLElement or SVGElement is required; got " + a);
@@ -258,6 +259,13 @@
                         d = URL.createObjectURL(e);
                          fd = new FormData();
                         fd.append('imagen', e);
+                        var deporte = $('#param_board_type').val();
+                        if( deporte == "handball" ){
+                            key = localStorage.getItem("main_handball");
+                        }else if( deporte == "basketball-new" ){
+                            key = localStorage.getItem("main_basketball-new");
+
+                        }
                         fd.append('exercisesport', $("#exercisesport").val() );
                         fd.append('exercisestype', $("#exercisetype").val() );
                         fd.append('exercisesub', $("#exercisesub").val() );
@@ -268,7 +276,7 @@
                         fd.append('exercisemax', $("#exercisemax").val() );
                         fd.append('exercisematerial', JSON.stringify(materialA)); //datos que se envian a traves de ajax*/
                         fd.append('imagename', Date.now());
-                       
+                        fd.append('datospizarra', key);
                     if ($("#imgcheck").prop('checked')){
 					 // fd.append('imgexterna',$("#exerciseimg"));
 						//var formData = new FormData();
@@ -302,36 +310,16 @@
 		                data: fd,
 		                processData: false,
    						contentType: false,
-		                success: function(response) {
-							console.log("ok: "+response);
-							if (response=="[object Object]"){
-								$("#result").text("Ejercicio guardado");
-								//Vaciar info formulario
-								$("#exercisetype").val("");
-								$("#exercisesub").val("");
-								$("#exercisename").val("");
-								$("#exercisedescription").val("");
-								$("#materialintroduced").val("");
-								$("#exercisetime").val("");
-								$("#minpeople").attr('checked',false); 
-            					document.getElementById("divexercisemin").style.visibility = "hidden"; 
-            					$("iframe").contents().find("#exercisemin").val(0)
-								$("#maxpeople").attr('checked',false); 
-								$("iframe").contents().find("#exercisemax").val(0)
-           						document.getElementById("divexercisemax").style.visibility = "hidden"; 
-								$("#rangoedad").attr('checked',false); 
-            					document.getElementById("divrangoedad").style.visibility = "hidden"; 
-            					$("iframe").contents().find("#exerciseedad1").val(0)
-            					$("iframe").contents().find("#exerciseedad2").val(0)
-								$("#imgcheck").attr('checked',false); 
-								document.getElementById("divimg").style.visibility = "hidden"; 
-							}else{
-								$("#result").text("Problema al guardar ejercicio");
-							}
-		                },
-		                error: function() {
+                        success:( function(response) {
+                            estado = response['estado'];
+                            if( estado == 'subido' ){
+                                console.log("modal");
+                                $('#modalCrearEjercicio').modal('show');
+                            }
+                        }),
+		                error:( function() {
 		                    console.log('error')
-	                	}
+	                	})
 	           		 });                        
                 } catch (u) {
                     console.warn("This browser does not support object URLs. Falling back to string URL."), c.href = b
@@ -720,3 +708,9 @@ var AppTexts = function() {
             }) : $("#bg_loading_link_data_store").hide()
         }
     };
+                                $('#modalCrearEjercicio').on('hidden.bs.modal', function (e) {
+                                      $('#form-registroejer').trigger("reset");
+                                      localStorage.removeItem("main_handball");
+                                      localStorage.removeItem("main_basketball-new");
+                                      $('#clear_all_button').click();
+                                });
