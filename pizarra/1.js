@@ -304,6 +304,30 @@
    						contentType: false,
 		                success: function(response) {
 							console.log("ok: "+response);
+							if (response=="[object Object]"){
+								$("#result").text("Ejercicio guardado");
+								//Vaciar info formulario
+								$("#exercisetype").val("");
+								$("#exercisesub").val("");
+								$("#exercisename").val("");
+								$("#exercisedescription").val("");
+								$("#materialintroduced").val("");
+								$("#exercisetime").val("");
+								$("#minpeople").attr('checked',false); 
+            					document.getElementById("divexercisemin").style.visibility = "hidden"; 
+            					$("iframe").contents().find("#exercisemin").val(0)
+								$("#maxpeople").attr('checked',false); 
+								$("iframe").contents().find("#exercisemax").val(0)
+           						document.getElementById("divexercisemax").style.visibility = "hidden"; 
+								$("#rangoedad").attr('checked',false); 
+            					document.getElementById("divrangoedad").style.visibility = "hidden"; 
+            					$("iframe").contents().find("#exerciseedad1").val(0)
+            					$("iframe").contents().find("#exerciseedad2").val(0)
+								$("#imgcheck").attr('checked',false); 
+								document.getElementById("divimg").style.visibility = "hidden"; 
+							}else{
+								$("#result").text("Problema al guardar ejercicio");
+							}
 		                },
 		                error: function() {
 		                    console.log('error')
