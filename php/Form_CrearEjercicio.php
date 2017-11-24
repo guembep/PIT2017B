@@ -17,7 +17,7 @@
 	$personmin = (int)$_POST['exercisemin'];
 	$personmax = (int)$_POST['exercisemax'];
 	$imagename = "../images/ejercicios/".sha1($_POST['imagename']).".png";
-
+	
 	//$sport = "Baloncesto";
 	//$category = "Ataque";
 	//$subcategory = "Tiro";
@@ -62,18 +62,18 @@
 			if (!$validformat) {
 			  print("formato no soportado");
 			}else{	
-				
+
 				//Guardarla cambiando el nombre
 				$filename=$foto_info['name'];
 				$base=str_replace($ext,'',$filename);
 				//$filename=$_SESSION['id'].'.'.$ext;
-				$filename=$_SESSION['id'].'_'.sha1($filename).$ext;
+				$imagename=$_SESSION['id'].'_'.sha1($filename).$ext;
 				if ( ! move_uploaded_file($foto_info['tmp_name'],"../images/imgexternas/".$filename) ) { 
 				  print("problema importando imagen");
 				}else {
 					print("ok"); 
 					//Guardar directorio imagen en DB
-					$directorioext="../images/imgexternas/".$filename;
+					$imagename="../images/imgexternas/".$filename;
 				}
 			}	
 		}	
@@ -82,21 +82,18 @@
 	//Si el usuario está registrado hacemos la petición para subir el ejercicio.
 	
 	if(isset($_SESSION['id'])){
-<<<<<<< HEAD
 
-=======
 		$sport = $_SESSION['deporte'];
->>>>>>> 04a9f8c5104bd5ba6307f3847bb388b894e73901
         $iduser = (int)$_SESSION['id'];
         
         //$url =  Enchufamos la url con la imagen .png
         //$club = $_SESSION['idequipo']; //Cuando tengamos url y equipo implementamos
         //$data['idequipo'] = $club;
 
-		$stmt = $db->prepare("INSERT INTO `ejercicios`(`deporte`, `idequipo`, `categoria`, `subcategoria`, `nombre`, `explicacion`, `duracion`, `material`, `personasmin`, `personasmax`, `foto`, `idusuario`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+		$stmt = $db->prepare("INSERT INTO `ejercicios`(`deporte`, `idequipo`, `categoria`, `subcategoria`, `nombre`, `explicacion`, `duracion`, `material`, `personasmin`, `personasmax`, `foto`, `idusuario` , `datospizarra`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 		
 		//echo 'Deporte: ' .$sport;
-	    $stmt->bind_param('sissssssiisi', $sport, $club, $category, $subcategory, $name, $description, $duration, $material, $personmin, $personmax, $imagename, $iduser);
+	    $stmt->bind_param('sissssssiisis', $sport, $club, $category, $subcategory, $name, $description, $duration, $material, $personmin, $personmax, $imagename, $iduser, $datospizarra);
 
 	    if($stmt->execute()===false){
 			$data['estado']='error1';
@@ -126,6 +123,7 @@
 	    $data['estado'] = "No hay sesion de usuario";
 	    
 	}
+	header('Content-type: application/json; charset=utf-8');
 	echo json_encode($data);
 	
 ?>

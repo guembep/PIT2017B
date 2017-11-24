@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
     color: white;
     text-shadow: black 0.3em 0.3em 0.3em;
-    padding-bottom: 55vh ;
+    height: 100vh;
     margin-bottom: 20px;
     border-radius: 0%;
 }
@@ -44,7 +44,6 @@
 }
 
 .modalDialog > div {
-	width: 400px;
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
@@ -89,6 +88,9 @@
 	    height: 70%;
 	    z-index:500000000;
 	}
+	.modalDialog > div {
+		width: 400px;
+	}
 }
 
 @media screen and (max-width: 750px) {
@@ -100,6 +102,9 @@
 		width: 90%;
 		height: 90%;
 		z-index: 500000000;
+	}
+	.modalDialog > div {
+		width: 75%;
 	}
 }
 
