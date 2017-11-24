@@ -114,21 +114,46 @@ $(document).ready(function() {
           htmlEjer+=ejerHTML[index];
         }
           console.log(htmlEjer);
+          var htmlplantilla="";
           $('.faq-cat-content').html(htmlEjer);
+          $.ajax({
+            async: false,
+            dataType: 'html',
+            url: './plantillaejer.html',
 
-          $.each(info,function(i,element){
-            let z;
-            var replc;
-            z=info[i].id;
-            $('#'+z).click( function(){
-              console.log("Le has dado al id="+z);
+            success: function(datHtml){
+              $.each(info,function(i,element){
+                console.log("each");
+                let z;
+                var replc=datHtml;
+                z=info[i].id;
+                $('#'+z).click( function(){
+                console.log("click");
+                //$('#contenido').load("./plantillaejer.html");
+                console.log(replc);
+                console.log(datHtml);
 
-            $('#contenido').load("./plantillaejer.html");
-            var auxili=  $('#contenido');
-            console.log(auxili);
-            auxili.replace('#name','Hello');
-            });
+                replc= replc.replace("#name#",info[i].nombre);
+                replc= replc.replace("#description#",info[i].explicacion);
+                replc= replc.replace("#sport#",info[i].deporte);
+                replc= replc.replace("#category#",info[i].categoria);
+                replc= replc.replace("#subcategory#",info[i].subcategoria);
+                replc= replc.replace("#rutaimg#",info[i].foto);
+      //          replc= replc.replace("#duracion#",info[i].explicacion);
+    //            replc= replc.replace("#minpeople#",info[i].explicacion);
+  //              replc= replc.replace("#maxpeople#",info[i].explicacion);
+//                replc= replc.replace("#age#",info[i].explicacion);
+
+
+                htmlplantilla+=replc;
+                console.log(htmlplantilla);
+                $('#contenido').html(htmlplantilla);
+                });
+              });
+            }
           });
+
+
             $('.collapse').on('show.bs.collapse', function() {
                 var id = $(this).attr('id');
                 $('a[href="#' + id + '"]').closest('.panel-heading').addClass('active-faq');
