@@ -64,14 +64,7 @@ $(document).ready(function() {
               console.log(info[i].nombre);
             ejerHTML[info[i].categoria]+='<div class="panel panel-default panel-faq"> <div class="panel-heading"> <a data-toggle="collapse" data-parent="#accordion-cat-'+aux+'" href="#faq-cat-'+aux+'-sub-'+ejerEnCat[info[i].categoria]+'"> <h4 id="cat1Ej1" class="panel-title">'+info[i].nombre+'<span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span> </h4> </a> </div> <div id="faq-cat-'+aux+'-sub-'+ejerEnCat[info[i].categoria]+'" class="panel-collapse collapse"> <div id="'+info[i].id+'" class="panel-body"> '+info[i].explicacion+' </div> </div> </div>'
           }
-          let z = info[i].id;
-          $('#'+z).click( function(){
-            alert('Has clickeado en '+info[i].nombre);
-            console.log("Esto es otro logeamiento");
-          });
-          $('#1').click( function(){
-            console.log("Esto es un log ktpsas");
-          });
+
         });
         console.log(ejerHTML);
         console.log(categorias);
@@ -122,6 +115,20 @@ $(document).ready(function() {
         }
           console.log(htmlEjer);
           $('.faq-cat-content').html(htmlEjer);
+
+          $.each(info,function(i,element){
+            let z;
+            var replc;
+            z=info[i].id;
+            $('#'+z).click( function(){
+              console.log("Le has dado al id="+z);
+
+            $('#contenido').load("./plantillaejer.html");
+            var auxili=  $('#contenido');
+            console.log(auxili);
+            auxili.replace('#name','Hello');
+            });
+          });
             $('.collapse').on('show.bs.collapse', function() {
                 var id = $(this).attr('id');
                 $('a[href="#' + id + '"]').closest('.panel-heading').addClass('active-faq');
