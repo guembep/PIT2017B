@@ -10,7 +10,7 @@
         </div>
           <br>
           <h6>Cambiar foto de perfil</h6>
-          <input class="form-control" type="file">
+          <input class="form-control" name="imagen" type="file">
         </div>
       </div>
       
@@ -18,8 +18,23 @@
       <div class="col-md-8 personal-info">
         
         <h3>Datos Personales</h3>
-        
-        <form class="form-horizontal" role="form">
+        <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Datos modificados correctamente</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <form class="form-horizontal" method="POST" role="form" id="form-cambios">
           <div class="form-group">
             <label class="col-lg-3 control-label">Usuario:</label>
             <div class="col-lg-8">
@@ -43,31 +58,31 @@
           <div class="form-group">
             <label class="col-lg-3 control-label">Equipo:</label>
             <div class="col-lg-8">
-              <input id="modprofileequipo" class="form-control" value="Bishop" type="text">
+              <input id="modprofileequipo" name="modprofileequipo" class="form-control" value="Bishop" type="text">
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-3 control-label">Password:</label>
             <div class="col-md-8">
-              <input class="form-control" value="" type="password">
+              <input class="form-control" name="pass1" id="pass1" type="password">
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-3 control-label">Confirm password:</label>
             <div class="col-md-8">
-              <input class="form-control" value="" type="password">
+              <input class="form-control" name="pass2" id="pass2" type="password">
             </div>
           </div>
           <div class="form-group">
             <label class="col-md-3 control-label"></label>
             <div class="col-md-8">
-              <input class="btn btn-primary" value="Guardar Cambios" type="button">
+              <button type="submit" name="botonguardarcambios" class="btn btn-primary" id="botonguardarcambios">Guardar Cambios</button>
               <span></span>
-              <input class="btn btn-default" value="Cancelar" type="reset">
             </div>
           </div>
-        </form>
+       </form>
+
       </div>
   </div>
 </div>
-<hr>
+<script type="text/javascript"  src="js/editardatos.js"></script>
