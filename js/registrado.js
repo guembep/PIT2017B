@@ -5,8 +5,8 @@ $(document).ready(function(){
 	$("#linkconvocatorias").click(function (){ convocatorias();});
 	$("#linkperfil").click(function (){perfil();});
 
-	
-	
+
+
 
 
 	function lista(){
@@ -15,7 +15,7 @@ $(document).ready(function(){
 			/*$("#contenido").load("./htmlcojoejerciciophp.html", function(responseTxt, statusTxt, xhr){
 					if(statusTxt == "success"){
 					console.log("Carga de listado correcta");
-					}	
+					}
 					if(statusTxt == "error"){
 						console.log("Error: " + xhr.status + ": " + xhr.statusText);
 					}
@@ -33,15 +33,15 @@ $(document).ready(function(){
 				 error:(function(xhr, status){
 						 console.log( "La solicitud ha fallado: " +  status);
 				 })
-			});				
+			});
 	}
 
 	function ejercicios(){
-		
+
 		$("#title").show();
 		$("#title").html("Ejercicios");
-		$("#contenido").html("<br>"); 
-		
+		$("#contenido").html("<br>");
+
 		var div= document.createElement("div");
 			div.setAttribute("class","container");
 		var div2= document.createElement("div");
@@ -101,16 +101,16 @@ $(document).ready(function(){
 		div.append(div2);
 
 		$("#contenido").append(div);
-		
-		
-		$("#botonAddExercise").click(function (){console.log("acceder a añadir ejercicio"); 
+
+
+		$("#botonAddExercise").click(function (){console.log("acceder a añadir ejercicio");
 		nuevoejercicio();
 		});
-		
+
 		$("#botonListado").click(function (){
-		console.log("acceder a lista de ejercicios"); 
-		lista();	
-		});	
+		console.log("acceder a lista de ejercicios");
+		lista();
+		});
 
 		$("#botonCompra").click(function(){
 			console.log("acceder a compra de ejercicios");
@@ -118,7 +118,7 @@ $(document).ready(function(){
 		})
 
 	}
-		
+
 	function convocatorias(){
 
 		$("#title").show();
@@ -127,7 +127,7 @@ $(document).ready(function(){
 	}
 
 	function nuevoejercicio(){
-		
+
 		$("#title").show();
 		console.log("Cargando pagina de nuevo ejercicio");
 		$("#title").html("");
@@ -145,8 +145,8 @@ $(document).ready(function(){
 				 error:(function(xhr, status){
 						 console.log( "La solicitud ha fallado: " +  status);
 				 })
-			});				
-		
+			});
+
 	}
 
 	function perfil(){

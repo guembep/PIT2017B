@@ -14,25 +14,29 @@
 			/*$("#contenido").load("./htmlcojoejerciciophp.html", function(responseTxt, statusTxt, xhr){
 					if(statusTxt == "success"){
 					console.log("Carga de listado correcta");
-					}	
+					}
 					if(statusTxt == "error"){
 						console.log("Error: " + xhr.status + ": " + xhr.statusText);
 					}
 				});	*/
-			$.ajax({
+		/*	$.ajax({
 				url: "./php/cogerejerciciosBD.php",
 				success:( function (response) {
 						console.log( "La solicitud se ha completado correctamente" );
-					/*	var div = document.getElementById("demo");
+					*//*	var div = document.getElementById("demo");
 						div.textContent = data.email;
 						data.email;
 						data.id;*/
-						$("#contenido").html("Listado de ejercicios: "+response);
+						/* //$("#contenido").html("Listado de ejercicios: "+response);
 				 }),
 				 error:(function(xhr, status){
 						 console.log( "La solicitud ha fallado: " +  status);
 				 })
-			});				
+			});	*/
+				//document.location.href = "https://easy2train.es/pruebaView/prueba.html"
+				//	$("#contenido").html("hello");
+				$('#contenido').load("/prueba.html");
+
 	}
 
 
@@ -44,7 +48,7 @@
 	}
 
 	function nuevoejercicio(){
-		
+
 		$("#title").show();
 		console.log("Cargando pagina de nuevo ejercicio");
 		$("#title").html("");
@@ -62,8 +66,8 @@
 				 error:(function(xhr, status){
 						 console.log( "La solicitud ha fallado: " +  status);
 				 })
-			});				
-		
+			});
+
 	}
 
 	function compra(){
