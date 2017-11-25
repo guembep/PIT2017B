@@ -20,7 +20,7 @@ $(document).ready(function(){
 						console.log("Error: " + xhr.status + ": " + xhr.statusText);
 					}
 				});	*/
-			$.ajax({
+			/*$.ajax({
 				url: "./php/cogerejerciciosBD.php",
 				success:( function (response) {
 						console.log( "La solicitud se ha completado correctamente" );
@@ -28,12 +28,14 @@ $(document).ready(function(){
 						div.textContent = data.email;
 						data.email;
 						data.id;*/
-						$("#contenido").html("Listado de ejercicios: "+response);
+				/*		$("#contenido").html("Listado de ejercicios: "+response);
 				 }),
 				 error:(function(xhr, status){
 						 console.log( "La solicitud ha fallado: " +  status);
 				 })
-			});
+			});*/
+
+				$('#contenido').load("/prueba.html");
 	}
 
 	function ejercicios(){
