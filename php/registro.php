@@ -9,6 +9,11 @@
 	$email=$_POST['email'];
 	$user=$_POST['user'];
 	$deporte=$_POST['deporte'];
+	if(isset($_POST['club'])){
+		$equipo=$_POST['club'];
+	}else{
+		$equipo="";
+	}
 	$pass=$_POST['pass'];
 	$pass2=$_POST['rpass'];
 	$pass=sha1($pass);
@@ -37,15 +42,25 @@
 					$data['estado']='emailexiste';
 				}
 			}
+			session_start();
+			session_destroy(); // destroy session
+			setcookie("PHPSESSID","",time()-3600,"/"); // delete session cookie 
 		}else{
-			$stmt = $db->prepare("INSERT INTO users (email, user, deporte, pass) VALUES (?, ?, ?, ?)");
-			$stmt->bind_param('ssss',$email,$user,$deporte,$pass);
+			$stmt = $db->prepare("INSERT INTO users (email, user, deporte, equipo ,pass) VALUES (?, ?, ?, ?, ?)");
+			$stmt->bind_param('sssss',$email,$user,$deporte,$equipo,$pass);
 			if($stmt->execute()===false){
 				$data['estado']='error';
+				session_start();
+				session_destroy(); // destroy session
+				setcookie("PHPSESSID","",time()-3600,"/"); // delete session cookie 
 			}else{
 				$data['estado']='registrado';
-				$_SESSION['id']=$user;
+				$_SESSION['user']=$user;
+				$id = mysqli_insert_id($db);
+				$_SESSION['id']=$id;
 				$_SESSION['email']=$email;
+				$_SESSION['equipo']=$equipo;
+				$_SESSION['deporte']=$deporte;
 			}
 			$stmt->close();
 		}	
