@@ -74,17 +74,34 @@
 
           <h1><p class=" mt-2 text-center">Registro</p></h1>
 
+            <!-- Modal -->
+      <div class="modal fade" id="modalregistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Usuario registrado correctamente</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
           <form method="POST" id="form-registro">
 
             <div class="form-group">
               <label for="email">Email</label>
               <input type="text" name="email" id="email" class="form-control">
             </div>
-
+			<div id = "alert_placeholder_email"></div>
             <div class="form-group">
               <label for="user">Usuario</label>
               <input type="text" name="user" id="user" class="form-control">
             </div>
+			<div id = "alert_placeholder_user"></div>
           <div class="row">
             <div class="form-inline col-sm">
                 <span class="mr-1 mt-1"><label class"" for="deporte">Deporte:</label></span>

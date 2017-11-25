@@ -1,3 +1,6 @@
+$('#modalregistro').modal('hide');
+$('#alertemail').hide();
+$('#alertuser').hide();
 $(document).ready(function(){
 
   /*$('#registrar').click(function(){ */
@@ -52,36 +55,34 @@ $(document).ready(function(){
 
   /*Envio de formulario */
   function submitForm(){
-    $('#Reg').fadeOut();
-    $('#Log').fadeOut();
-
-    setTimeout(function(){
-      $('#Log').load('./loginMini.html').fadeIn();
-    },800);
     var data = $("#form-registro").serialize();
     $.ajax({
       type : 'POST',
       url : './php/registro.php',
       data : data,
-      beforeSend: function(){
+      beforeSend:( function(){
         $('#registrar').val("Comprobando información...");
         console.log(data);
-      },
-      success: function(data){
+      }),
+      success:( function(data){
         estado = data['estado'];
+        console.log(estado);
         if(estado=="registrado"){
           $('#registrar').val('Registrando...');
           console.log("Todo deberia ir bien");
-        //  $('#logReg').load("../loginMini.html");
-          /* El plan es aqui quitar el form de registro y poner un login */
-        }else{
-          $("#resultado").fadeIn(1000, function(){
-          $("#resultado").html('<div class="alert alert-danger"> <span class="glyphicon glyphicon-info-sign"></span> &nbsp;'+data+' !</div>');
-          $('#registrar').val("Registrar");
-          });
+          $('#modalregistro').modal('show');
+        }else if(estado=="userexiste"){
+          console.log("prob");
+          $('#alert_placeholder_user').html('<div class="alert alert-danger"><a class="close" data-dismiss="alert">×</a><span>Usuario existe</span></div>');
+        }else if(estado=="emailexiste"){
+          $('#alert_placeholder_email').html('<div class="alert alert-danger"><a class="close" data-dismiss="alert">×</a><span>Email existe</span></div>');
+
         }
-      }
+      })
     });
     return false;
   }
 });
+                                $('#modalregistro').on('hidden.bs.modal', function (e) {
+                                      document.location.href="https://easy2train.es";
+                                });
