@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 
 	function lista(){
-		$("#title").show();
+		$("#title").hide();
 		console.log("Cargando listado...");
 			/*$("#contenido").load("./htmlcojoejerciciophp.html", function(responseTxt, statusTxt, xhr){
 					if(statusTxt == "success"){
@@ -28,7 +28,8 @@ $(document).ready(function(){
 						div.textContent = data.email;
 						data.email;
 						data.id;*/
-						$("#contenido").html("Listado de ejercicios: "+response);
+						$('#contenido').load("/prueba.html");
+
 				 }),
 				 error:(function(xhr, status){
 						 console.log( "La solicitud ha fallado: " +  status);
