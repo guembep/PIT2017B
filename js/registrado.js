@@ -131,7 +131,7 @@ $(document).ready(function(){
 
 	function nuevoejercicio(){
 
-		$("#title").show();
+		$("#title").hide();
 		console.log("Cargando pagina de nuevo ejercicio");
 		$("#title").html("");
 		$("#contenido").html("");
