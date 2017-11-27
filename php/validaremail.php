@@ -41,7 +41,7 @@ function enviarEmail( $email, $link ){
  
    $cabeceras = 'MIME-Version: 1.0' . "\r\n";
    $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-   $cabeceras .= 'From: <psb2j@easy2train.es>' . "\r\n";
+   $cabeceras .= 'From: <info@easy2train.es>' . "\r\n";
    // Se envia el correo al usuario
    mail($email, "Recuperar contraseña", $mensaje, $cabeceras);
 }
