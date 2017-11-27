@@ -1,4 +1,4 @@
   
-function comprarEjercicios(){
-  document.comprarEjercicios.submit()
-}
+                                $('#modalcomprar').on('hidden.bs.modal', function (e) {
+                                      
+                                });
