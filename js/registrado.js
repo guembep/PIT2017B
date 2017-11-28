@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 
 	function lista(){
-		$("#title").show();
+		$("#title").hide();
 		console.log("Cargando listado...");
 			/*$("#contenido").load("./htmlcojoejerciciophp.html", function(responseTxt, statusTxt, xhr){
 					if(statusTxt == "success"){
@@ -28,6 +28,7 @@ $(document).ready(function(){
 						div.textContent = data.email;
 						data.email;
 						data.id;*/
+
 				/*		$("#contenido").html("Listado de ejercicios: "+response);
 				 }),
 				 error:(function(xhr, status){
@@ -130,7 +131,7 @@ $(document).ready(function(){
 
 	function nuevoejercicio(){
 
-		$("#title").show();
+		$("#title").hide();
 		console.log("Cargando pagina de nuevo ejercicio");
 		$("#title").html("");
 		$("#contenido").html("");

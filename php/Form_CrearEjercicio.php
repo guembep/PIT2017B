@@ -17,7 +17,7 @@
 	$personmin = (int)$_POST['exercisemin'];
 	$personmax = (int)$_POST['exercisemax'];
 	$imagename = "../images/ejercicios/".sha1($_POST['imagename']).".png";
-	
+	$datospizarra= $_POST['datospizarra'];
 	//$sport = "Baloncesto";
 	//$category = "Ataque";
 	//$subcategory = "Tiro";
@@ -33,7 +33,7 @@
 	
 	//Recogemos imagen externa en caso de que la haya
 	if ( isset($_FILES['imgexterna']) ) {
-
+		$datospizarra= "nohay";
 		$foto_info=$_FILES['imgexterna'];
 		//print_r($foto_info);
 
@@ -86,7 +86,6 @@
 
 		$sport = $_SESSION['deporte'];
         $iduser = (int)$_SESSION['id'];
-        $datospizarra= "porhacer";
         //$url =  Enchufamos la url con la imagen .png
         //$club = $_SESSION['idequipo']; //Cuando tengamos url y equipo implementamos
         //$data['idequipo'] = $club;
