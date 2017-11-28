@@ -71,6 +71,7 @@ $(document).ready(function(){
           $('#registrar').val('Registrando...');
           console.log("Todo deberia ir bien");
           $('#modalregistro').modal('show');
+          localStorage["registronuevo"] = "true";
         }else if(estado=="userexiste"){
           console.log("prob");
           $('#alert_placeholder_user').html('<div class="alert alert-danger"><a class="close" data-dismiss="alert">×</a><span>Usuario existe</span></div>');
