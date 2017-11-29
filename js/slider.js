@@ -9,38 +9,18 @@
 	$("#convocbtn").click(function (){console.log("-> ver convocatorias"); convocatorias();});
 
 	function lista(){
+
+		localStorage["paginasvisitadas"] = "visualizarejercicios, "+localStorage["paginasvisitadas"];
+
 		$("#title").show();
-		console.log("Cargando listado...");
-			/*$("#contenido").load("./htmlcojoejerciciophp.html", function(responseTxt, statusTxt, xhr){
-					if(statusTxt == "success"){
-					console.log("Carga de listado correcta");
-					}
-					if(statusTxt == "error"){
-						console.log("Error: " + xhr.status + ": " + xhr.statusText);
-					}
-				});	*/
-		/*	$.ajax({
-				url: "./php/cogerejerciciosBD.php",
-				success:( function (response) {
-						console.log( "La solicitud se ha completado correctamente" );
-					*//*	var div = document.getElementById("demo");
-						div.textContent = data.email;
-						data.email;
-						data.id;*/
-						/* //$("#contenido").html("Listado de ejercicios: "+response);
-				 }),
-				 error:(function(xhr, status){
-						 console.log( "La solicitud ha fallado: " +  status);
-				 })
-			});	*/
-				//document.location.href = "https://easy2train.es/pruebaView/prueba.html"
-				//	$("#contenido").html("hello");
-				$('#contenido').load("/prueba.html");
+		$('#contenido').load("/prueba.html");
 
 	}
 
 
 	function convocatorias(){
+
+		localStorage["paginasvisitadas"] = "convocatorias, "+localStorage["paginasvisitadas"];
 
 		$("#title").show();
 		$("#title").html("Próximos Partidos");
@@ -48,6 +28,8 @@
 	}
 
 	function nuevoejercicio(){
+	
+		localStorage["paginasvisitadas"] = "nuevoejercicio, "+localStorage["paginasvisitadas"];
 
 		$("#title").show();
 		console.log("Cargando pagina de nuevo ejercicio");
@@ -71,6 +53,9 @@
 	}
 
 	function compra(){
+
+		localStorage["paginasvisitadas"] = "compra, "+localStorage["paginasvisitadas"];
+
 		$("#title").html("");
 		$("#contenido").html("");
 		$("#contenido").load('/comprarEjercicios.html');
