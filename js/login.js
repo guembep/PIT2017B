@@ -10,9 +10,17 @@ if (sesion==null){
 }else{
 	$('#siUser').show();
 	$("#logout").show();
-  $("#back").show();
   $('#noUser').hide();
   $('#login').hide();
+
+   if (window.localStorage) {
+       $("#back").show();
+    }
+    else {
+      console.log('Browser no soporta LocalStorage');
+      $("#back").hide();
+    }
+
     
     $("#contenido").load("./registrado.html", function(responseTxt, statusTxt, xhr){
 			if(statusTxt == "success"){
@@ -72,7 +80,11 @@ $(document).ready(function(){
               
             document.location.href="https://easy2train.es";
 
-            localStorage["paginasvisitadas"] = "https://.easy2train.es";
+            if (window.localStorage) {
+              localStorage["paginasvisitadas"] = "https://.easy2train.es";
+            }
+
+            
            // $("#inicio").attr("href", "https://www.easy2train.es");
            // $('#bodyNav').load('./registrado.html');
             //  $('#logReg').load("../loginMini.html");

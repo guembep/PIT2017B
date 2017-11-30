@@ -8,8 +8,9 @@ $(document).ready(function(){
 
 
 	function lista(){
-		
-		localStorage["paginasvisitadas"] = "visualizarejercicios, "+localStorage["paginasvisitadas"];
+		if (window.localStorage) {
+			localStorage["paginasvisitadas"] = "visualizarejercicios, "+localStorage["paginasvisitadas"];
+		}
 
 		$("#title").hide();
 		console.log("Cargando listado...");
@@ -17,8 +18,9 @@ $(document).ready(function(){
 	}
 
 	function ejercicios(){
-
-		localStorage["paginasvisitadas"] = "menuejercicios, "+localStorage["paginasvisitadas"];
+		if (window.localStorage) {
+			localStorage["paginasvisitadas"] = "menuejercicios, "+localStorage["paginasvisitadas"];
+		}
 
 		$("#title").show();
 		$("#title").html("Ejercicios");
@@ -103,9 +105,9 @@ $(document).ready(function(){
 
 	function convocatorias(){
 
-
-		localStorage["paginasvisitadas"] = "convocatorias, "+localStorage["paginasvisitadas"];
-
+		if (window.localStorage) {
+			localStorage["paginasvisitadas"] = "convocatorias, "+localStorage["paginasvisitadas"];
+		}
 		$("#title").show();
 		$("#title").html("Próximos Partidos");
 		$("#contenido").load('/scrapper.html');
@@ -113,8 +115,9 @@ $(document).ready(function(){
 
 	function nuevoejercicio(){
 
-
-		localStorage["paginasvisitadas"] = "nuevoejercicio, "+localStorage["paginasvisitadas"];
+		if (window.localStorage) {
+			localStorage["paginasvisitadas"] = "nuevoejercicio, "+localStorage["paginasvisitadas"];
+		}
 
 		$("#title").hide();
 		console.log("Cargando pagina de nuevo ejercicio");
@@ -138,43 +141,44 @@ $(document).ready(function(){
 	}
 
 	function perfil(){
-
-		localStorage["paginasvisitadas"] = "perfil, "+localStorage["paginasvisitadas"];
-
+		if (window.localStorage) {
+			localStorage["paginasvisitadas"] = "perfil, "+localStorage["paginasvisitadas"];
+		}
 		$("#title").html("");
 		$("#contenido").html("");
 		$("#contenido").load('/perfil.html');
 	}
 
 	function compra(){
-
-		localStorage["paginasvisitadas"] = "compra, "+localStorage["paginasvisitadas"];
-
+		if (window.localStorage) {
+			localStorage["paginasvisitadas"] = "compra, "+localStorage["paginasvisitadas"];
+		}
 		$("#title").html("");
 		$("#contenido").html("");
 		$("#contenido").load('/comprarEjercicios.html');
 	}
 
 	function volver(){
-	    console.log("Atrás");
-	    var back=localStorage["paginasvisitadas"].split(", ")[1]; //La 0 es la actual
-	    console.log(back);
-	    if ((back==undefined) || (back=="https://easy2train.es")){
-	      location.href="https://easy2train.es";
-	    }else if (back=="menuejercicios"){
-	      ejercicios();
-	    }else if (back=="compra"){
-	      compra();
-	    }else if (back=="nuevoejercicio"){
-	      nuevoejercicio();
-	    }else if (back=="visualizarejercicios"){
-	      lista();
-	    }else if (back=="convocatorias"){
-	      convocatorias();
-	    }else if (back=="perfil"){
-	      perfil();
-	    }
-	    localStorage["paginasvisitadas"]=localStorage["paginasvisitadas"].replace(localStorage["paginasvisitadas"].split(", ")[0]+", "+localStorage["paginasvisitadas"].split(", ")[1]+", ","" ); //actualizar variable local
-	  
+		if (window.localStorage) {
+		    console.log("Atrás");
+		    var back=localStorage["paginasvisitadas"].split(", ")[1]; //La 0 es la actual
+		    console.log(back);
+		    if ((back==undefined) || (back=="https://easy2train.es")){
+		      location.href="https://easy2train.es";
+		    }else if (back=="menuejercicios"){
+		      ejercicios();
+		    }else if (back=="compra"){
+		      compra();
+		    }else if (back=="nuevoejercicio"){
+		      nuevoejercicio();
+		    }else if (back=="visualizarejercicios"){
+		      lista();
+		    }else if (back=="convocatorias"){
+		      convocatorias();
+		    }else if (back=="perfil"){
+		      perfil();
+		    }
+		    localStorage["paginasvisitadas"]=localStorage["paginasvisitadas"].replace(localStorage["paginasvisitadas"].split(", ")[0]+", "+localStorage["paginasvisitadas"].split(", ")[1]+", ","" ); //actualizar variable local
+		 }else{console.log("actualizar el navegador para utilizar esta función");}
   	};
 });
