@@ -1,4 +1,4 @@
-$('#modalOpinion').on('hidden.bs.modal', function (e) {
+$('#submitOpinion').click(function () {
     var data = $("#correoOpinion").serialize();
     $.ajax({
       type : 'POST',

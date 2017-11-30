@@ -1,4 +1,4 @@
-$('#modalcomprar').on('hidden.bs.modal', function (e) {
+$('#submitcomprar').click(function () {
     var data = $("#comprarEjercicios").serialize();
     $.ajax({
       type : 'POST',
@@ -30,4 +30,4 @@ $('#comprarEjercicios input').on('keyup blur', function () { // fires on every k
         } else {
             $('#submitcomprar').prop('disabled', 'disabled');   // disables button
         }
-    });
+});
