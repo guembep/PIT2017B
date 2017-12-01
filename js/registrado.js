@@ -162,7 +162,9 @@ $(document).ready(function(){
 		if (window.localStorage) {
 		    console.log("Atrás");
 		    var back=localStorage["paginasvisitadas"].split(", ")[1]; //La 0 es la actual
-		    console.log(back);
+		}
+		    //console.log(back);
+
 		    if ((back==undefined) || (back=="https://easy2train.es")){
 		      location.href="https://easy2train.es";
 		    }else if (back=="menuejercicios"){
@@ -178,7 +180,8 @@ $(document).ready(function(){
 		    }else if (back=="perfil"){
 		      perfil();
 		    }
+		 if(window.localStorage){   
 		    localStorage["paginasvisitadas"]=localStorage["paginasvisitadas"].replace(localStorage["paginasvisitadas"].split(", ")[0]+", "+localStorage["paginasvisitadas"].split(", ")[1]+", ","" ); //actualizar variable local
-		 }else{console.log("actualizar el navegador para utilizar esta función");}
+		 }
   	};
 });
