@@ -12,6 +12,7 @@
 	$pass=$_POST['pass'];
 	$pass2=$_POST['rpass'];
 	$pass=sha1($pass);
+	$comunidadautonoma=$_POST['comunidad'];
 	/*$data = array();
 	$email="b@b.b";
 	$user="user1";
@@ -38,8 +39,8 @@
 				}
 			}
 		}else{
-			$stmt = $db->prepare("INSERT INTO users (email, user, deporte, pass) VALUES (?, ?, ?, ?)");
-			$stmt->bind_param('ssss',$email,$user,$deporte,$pass);
+			$stmt = $db->prepare("INSERT INTO users (email, user, deporte, pass, comunidadautonoma) VALUES (?, ?, ?, ?, ?)");
+			$stmt->bind_param('sssss',$email,$user,$deporte,$pass,$comunidadautonoma);
 			if($stmt->execute()===false){
 				$data['estado']='error';
 			}else{

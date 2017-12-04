@@ -17,6 +17,7 @@
 	$pass=$_POST['pass'];
 	$pass2=$_POST['rpass'];
 	$pass=sha1($pass);
+	$comunidadautonoma=$_POST['comunidad'];
 	/*$data = array();
 	$email="b@b.b";
 	$user="user1";
@@ -46,8 +47,8 @@
 			session_destroy(); // destroy session
 			setcookie("PHPSESSID","",time()-3600,"/"); // delete session cookie 
 		}else{
-			$stmt = $db->prepare("INSERT INTO users (email, user, deporte, equipo ,pass) VALUES (?, ?, ?, ?, ?)");
-			$stmt->bind_param('sssss',$email,$user,$deporte,$equipo,$pass);
+			$stmt = $db->prepare("INSERT INTO users (email, user, deporte, equipo ,pass, comunidadautonoma) VALUES (?, ?, ?, ?, ?, ?)");
+			$stmt->bind_param('ssssss',$email,$user,$deporte,$equipo,$pass, $comunidadautonoma);
 			if($stmt->execute()===false){
 				$data['estado']='error';
 				session_start();
@@ -61,6 +62,7 @@
 				$_SESSION['email']=$email;
 				$_SESSION['equipo']=$equipo;
 				$_SESSION['deporte']=$deporte;
+				$_SESSION['comunidad']=$comunidadautonoma;
 			}
 			$stmt->close();
 		}	
