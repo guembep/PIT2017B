@@ -1,3 +1,4 @@
+$('#myModal').modal('hide');
 $(document).ready(function() {
   var categorias=[];
   var nomCategorias=[];
@@ -144,6 +145,7 @@ $(document).ready(function() {
      }),
      error:(function(xhr, status){
          console.log( "La solicitud ha fallado: " +  status);
+         $('#myModal').modal('show');
      })
   });
 });

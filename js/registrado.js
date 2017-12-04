@@ -1,3 +1,4 @@
+$('#myModal').modal('hide');
 
 $(document).ready(function(){
 
@@ -11,7 +12,13 @@ $(document).ready(function(){
 		if (window.localStorage) {
 			localStorage["paginasvisitadas"] = "visualizarejercicios, "+localStorage["paginasvisitadas"];
 		}
-
+		$.ajax({
+			url: "../php/cogerejerciciosBD.php",
+			error:(function(xhr, status){
+         		console.log( "La solicitud ha fallado: " +  status);
+         		$('#myModal').modal('show');
+    		})
+		})
 		$("#title").hide();
 		console.log("Cargando listado...");
 		$('#contenido').load("/prueba.html");
