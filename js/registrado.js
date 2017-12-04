@@ -23,7 +23,8 @@ $(document).ready(function(){
 		}
 
 		$("#title").show();
-		$("#title").html("Ejercicios");
+		$("#title").html("");
+		
 		$("#contenido").html("<br>");
 
 		var div= document.createElement("div");
@@ -32,16 +33,16 @@ $(document).ready(function(){
 			div2.setAttribute("class","row");
 		var div3= document.createElement("div");
 			div3.setAttribute("class","col-md-4");
-		var h=document.createElement("h2");
+		var h=document.createElement("h5");
 			h.innerHTML="Ver lista de ejercicios";
 		var enlace=document.createElement("a");
 			enlace.setAttribute("href","#");
 		var listado = document.createElement( "img" );
-			listado.setAttribute("src","./images/verejercicios.jpg");
+			listado.setAttribute("src","./images/verejercicios.png");
 			listado.setAttribute("id","botonListado");
 			listado.setAttribute("alt","Ver listado de ejercicios");
-			listado.setAttribute("height","200");
-			listado.setAttribute("width","200");
+			listado.setAttribute("height","250");
+			listado.setAttribute("width","250");
 		div3.append(h);
 		enlace.append(listado);
 		div3.append(enlace);
@@ -49,7 +50,7 @@ $(document).ready(function(){
 
 		var div3crea= document.createElement("div");
 			div3crea.setAttribute("class","col-md-4");
-		var hcrea=document.createElement("h2");
+		var hcrea=document.createElement("h5");
 			hcrea.innerHTML="Añadir nuevo ejercicio";
 		var enlacecrea=document.createElement("a");
 			enlacecrea.setAttribute("href","#");
@@ -57,7 +58,8 @@ $(document).ready(function(){
 			nuevoejer.setAttribute("src","./images/creaEjercicios.png");
 			nuevoejer.setAttribute("id","botonAddExercise");
 			nuevoejer.setAttribute("alt","Añadir un nuevo ejercicio");
-			nuevoejer.setAttribute("height","200");
+			nuevoejer.setAttribute("height","250");
+			nuevoejer.setAttribute("width","250");
 		div3crea.append(hcrea);
 		enlacecrea.append(nuevoejer);
 		div3crea.append(enlacecrea);
@@ -67,7 +69,7 @@ $(document).ready(function(){
 
 		var div3compra = document.createElement("div");
 			div3compra.setAttribute("class","col-md-4");
-		var hcompra = document.createElement("h2");
+		var hcompra = document.createElement("h5");
 			hcompra.innerHTML = "Compra paquetes de ejercicios";
 		var enlacecompra = document.createElement("a");
 			enlacecompra.setAttribute("href","#");
@@ -75,8 +77,8 @@ $(document).ready(function(){
 			compraejers.setAttribute("src","./images/comprarEjercicios.png");
 			compraejers.setAttribute("id","botonCompra");
 			compraejers.setAttribute("alt","Compra paquetes de ejercicios");
-			compraejers.setAttribute("heigth","200");
-			compraejers.setAttribute("width", "200");
+			compraejers.setAttribute("heigth","250");
+			compraejers.setAttribute("width", "250");
 
 		div3compra.append(hcompra);
 		enlacecompra.append(compraejers);
@@ -85,7 +87,6 @@ $(document).ready(function(){
 		div.append(div2);
 
 		$("#contenido").append(div);
-
 
 		$("#botonAddExercise").click(function (){console.log("acceder a añadir ejercicio");
 		nuevoejercicio();
