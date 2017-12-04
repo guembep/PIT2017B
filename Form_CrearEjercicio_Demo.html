@@ -43,7 +43,29 @@
     
     
     <div class="container">
-      <h1><p class="text-center">Introducir nuevo ejercicio</p></h1>
+      <h1><p class="text-center">Introducir nuevo ejercicio
+          <a href="#popupInstrucciones" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Instrucciones"> <img src="images/info.ico" height="20px" width="20px" style="margin-top: -100%;"></a>
+                  <div class="col-8" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext">
+                        <div data-role="popup" id="popupInstrucciones" class="ui-content" data-theme="a" style="max-width:350px;" >
+                          <h4 style="text-decoration: underline;">Instrucciones para usar la pizarra interactiva:  </h4>
+                          <!--<video  type="video/webm" src="videos/Easy2Train_Instrucciones.webm" width="50%">
+-->           <div style="text-align:center">
+                 <video width="75%" controls poster="images/share.png">
+                  <source src="videos/Easy2Train_Instrucciones.webm" type="video/webm">
+                </video> 
+            </div>
+                          <p> En la parte inferior de la pizarra encontrarás el menú con todas las opciones </p>
+                          <p><img src="images/barraPizarra.png" width="100%"><p>
+                          <p>Para colocar a los jugadores, selecciona <img src="images/jugadorPizarra.png"> y arrástralo hasta su lugar en el campo, el número aumentará automáticamente para añadir otros jugadores. Si lo deseas puedes cambiar ese número o darle un nombre haciendo click derecho sobre él: <p>
+                          <p style="text-align: center;"><img src="images/nombrePizarra.png"></p>
+                          <p> Los balones están representados con <img src="images/pelotasPizarra.png">.
+                          <p> Para dibujar los movimientos dispones de variedad de líneas:
+                         <p style="text-align: center;"> <img src="images/lineasPizarra.png" style="vertical-align: bottom;"> <img src="images/lineas2Pizarra.png"style="vertical-align: bottom;"> <img src="images/lineas3Pizarra.png" style="vertical-align: bottom;"> <img src="images/colorLineasPizarra.png" style="vertical-align: bottom;"></p>
+                          <p> Si quieres modificar lo que has dibujado, puedes borrar un único objeto haciendo click derecho sobre él y pulsado el botón <img src="images/deleteObjPizarra.png" width="130px">. Si quieres borrar todo el contenido, pulsa sobre <img src="images/borrarPizarra.png" width="25px" height="25px">. <p>
+                        </div>  
+                  </div> 
+
+      </p></h1>
       <div class="row">
 		  
         <div class="col-md-3" style="overflow-y: scroll; height: 525px;">
