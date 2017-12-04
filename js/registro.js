@@ -84,6 +84,7 @@ $(document).ready(function(){
     return false;
   }
 });
-                                $('#modalregistro').on('hidden.bs.modal', function (e) {
-                                      document.location.href="https://easy2train.es";
-                                });
+
+$('#modalregistro').on('hidden.bs.modal', function (e) {
+      document.location.href="https://easy2train.es";
+});

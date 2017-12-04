@@ -56,12 +56,12 @@ $(document).ready(function(){
     $('#Log').fadeOut();
 
     setTimeout(function(){
-      $('#Log').load('./loginMini.html').fadeIn();
+      $('#Log').load('./pruebas/loginMini.html').fadeIn();
     },800);
     var data = $("#form-registro").serialize();
     $.ajax({
       type : 'POST',
-      url : './php/registro.php',
+      url : './pruebas/php/registro.php',
       data : data,
       beforeSend: function(){
         $('#registrar').val("Comprobando información...");
