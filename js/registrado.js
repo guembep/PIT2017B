@@ -1,5 +1,5 @@
-$('#myModal').modal('hide');
 
+$('#modalExer').modal('hide');
 $(document).ready(function(){
 
 	$("#linkejercicios").click(function (){ ejercicios();});
@@ -16,7 +16,7 @@ $(document).ready(function(){
 			url: "../php/cogerejerciciosBD.php",
 			error:(function(xhr, status){
          		console.log( "La solicitud ha fallado: " +  status);
-         		$('#myModal').modal('show');
+         		$('#modalExer').modal('show');
     		})
 		})
 		$("#title").hide();
