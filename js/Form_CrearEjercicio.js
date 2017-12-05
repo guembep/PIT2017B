@@ -4,9 +4,22 @@ $(document).ready(function() {
   $(".container").attr("style","max-width: "+ancho+"px;")   ;
   var i=0;    
   var matseparado= [];
+  var idejercicio;
   var  input=document.getElementById("exercisematerial");
   var  material=document.getElementById("materialintroduced");
   input.addEventListener("keypress", mas);
+  if(Cookies.get("idejercicio")!== undefined){
+    idejercicio=Cookies.get("idejercicio");
+    $.ajax({
+      url: "../php/cogerejerciciosId.php?idejercicio="+idejercicio,
+      error:(function(xhr, status){
+            console.log( "La solicitud ha fallado: " +  status);
+        }),
+      success:(function(response){
+        console.log(response['datos']);
+      })
+    })
+  }
 
   function mas(e){
 	    $("#resultadomat").html("");

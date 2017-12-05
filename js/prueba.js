@@ -92,6 +92,7 @@ $(document).ready(function() {
                 z=info[i].id;
                 var ejercicioPlan = info[i];
                 $('#'+z).click( function(){
+                Cookies.set('idejercicio',z);
                 console.log("click");
                 //$('#contenido').load("./plantillaejer.html");
                 $("#title").hide();
