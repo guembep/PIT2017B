@@ -6,8 +6,8 @@ ini_set('session.gc_maxlifetime', 3600);
 session_set_cookie_params(3600);
 session_start();
 include('conectarBD.php');
-if(isset($_GET['idejercicio'])){
-	$idejercicio=$_GET['idejercicio'];
+if(isset($_POST['idejercicio'])){
+	$idejercicio=$_POST['idejercicio'];
 }
 // Cogemos lo datos de los ejercicios de la BD si el usuario está registrado
 
