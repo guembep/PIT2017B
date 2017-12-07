@@ -302,8 +302,8 @@ $('#modalCrearEjercicio').modal('hide');
 							}
 						 });  */  
 						}
-
-
+                var idejer = getCookie('idejercicio');
+                if(idejercicio == undefined){
 					$.ajax({
 		                url: "../php/Form_CrearEjercicio.php",
 		                type: "POST",
@@ -320,7 +320,26 @@ $('#modalCrearEjercicio').modal('hide');
 		                error:( function() {
 		                    console.log('error')
 	                	})
-	           		 });                        
+	           		 });
+                 }else{
+                    $.ajax({
+                        url: "../php/updateCrearEjercicio.php",
+                        type: "POST",
+                        data: fd,
+                        processData: false,
+                        contentType: false,
+                        success:( function(response) {
+                            estado = response['estado'];
+                            if( estado == 'subido' ){
+                                console.log("modal");
+                                $('#modalCrearEjercicio').modal('show');
+                            }
+                        }),
+                        error:( function() {
+                            console.log('error')
+                        })
+                     });
+                 }                        
                 } catch (u) {
                     console.warn("This browser does not support object URLs. Falling back to string URL."), c.href = b
                 }
@@ -714,3 +733,18 @@ var AppTexts = function() {
                                       localStorage.removeItem("main_basketball-new");
                                       $('#clear_all_button').click();
                                 });
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
