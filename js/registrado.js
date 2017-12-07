@@ -136,8 +136,10 @@ $(document).ready(function(){
 				success:( function (response) {
 						console.log(response['deporte']);
 						if( response['deporte'] == "baloncesto"){
+                            localStorage.removeItem("main_basketball-new");
 							$("#contenido").append("<iframe src='https://easy2train.es/Form_CrearEjercicioBasket.html' width='"+window.innerWidth+"'' height='800' frameborder='0' transparency='transparency'></iframe>");
 						}else if(response['deporte'] == "balonmano"){
+							localStorage.removeItem("main_handball");
 							$("#contenido").append("<iframe src='https://easy2train.es/Form_CrearEjercicio.html' width='"+window.innerWidth+"'' height='800' frameborder='0' transparency='transparency'></iframe>");
 						}
 				 }),

@@ -93,6 +93,7 @@ $(document).ready(function() {
                 var ejercicioPlan = info[i];
                 $('#'+z).click( function(){
                 Cookies.set('idejercicio',z);
+                localstorage(z);
                 console.log("click");
                 //$('#contenido').load("./plantillaejer.html");
                 $("#title").hide();
@@ -150,3 +151,47 @@ $(document).ready(function() {
      })
   });
 });
+
+function localstorage(z){
+   var idejercicio=z;
+   console.log(z+"local")
+   if(idejercicio !== undefined){
+      $.ajax({
+        type: "POST",
+        url: "../php/cogerejercicioId.php",
+        data: {
+          "idejercicio":idejercicio
+        },
+        error:(function(xhr, status){
+              console.log( "La solicitud ha fallado: " +  status);
+          }),
+        success:(function(response){
+          console.log(response);
+          deporte=response['deporte']
+          console.log(deporte+"akiiiii");
+          if( deporte == "balonmano" ){
+            console.log(idejercicio+"AKIII2");
+            localStorage.setItem("main_handball",response['datospizarra']);
+          }else if( deporte == "baloncesto" ){
+            localStorage.setItem("main_basketball-new",response['datospizarra']);
+          }
+        })
+      })
+    }
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
