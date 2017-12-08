@@ -4,9 +4,20 @@
 	$("#sharebtn").text("Próximamente...");
 	//$("#sharebtn").click(function(){compartir();});
 	$("#buybtn").click(function (){console.log("-> comprar pkts");  compra();});
-	$("#agrupabtn").text("Próximamente...");
-	//$("#agrupabtn").click(function(){agrupa();});
+	//$("#agrupabtn").text("Próximamente...");
+	$("#agrupabtn").click(function(){agrupa();});
 	$("#convocbtn").click(function (){console.log("-> ver convocatorias"); convocatorias();});
+
+	function agrupa(){
+		localStorage["paginasvisitadas"] = "entrenamientos, "+localStorage["paginasvisitadas"];
+
+		$("#title").show();
+		$("#title").html("Mis entrenamientos");
+		$("#contenido").html("");
+		//CAMBIAR direccion!!!!!!!!!!!!!!!!
+		$("#contenido").append("<iframe src='https://easy2train.es/pruebas/entrenamientos.html' width='"+window.innerWidth+"'' height='800' frameborder='0' transparency='transparency'></iframe>");
+		
+	}
 
 	function lista(){
 

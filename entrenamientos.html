@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+		<link rel="stylesheet" href="css/entrenamientos.css" type="text/css" media="screen"/>
+		
+	</head>
+	<body>
+		<div id="main_container">
+			<!-- tables inside this DIV could have draggable content -->
+
+			<div id="message">Arrastra un ejercicio al entrenamiento </div>
+			<div id="redips-drag">
+	
+				<!-- left container (table with subjects) -->
+				<div id="left">
+					<table id="table1">
+						<colgroup>
+							<col width="190"/>
+						</colgroup>
+						<tbody id="tbodyLEFT">
+							<!--<tr><td class="dark"><div id="ar" class="redips-drag redips-clone ar">Ejercicio1</div><input id="b_ar" class="ar" type="button" value="" onclick="redips.report('ar')" title="Show only Arts"/></td></tr>
+							-->
+						</tbody>
+					</table>
+				</div><!-- left container -->
+				
+				<!-- right container -->
+				<div id="right">
+					<select name="entrenamiento" class="custom-select " id="SelEntrenamiento">
+	                  <option value="-" selected>Selecciona un entrenamiento</option>
+	                  <option value="add">Añadir un entrenamiento</option>
+	                </select>
+	                <table id= "addEntr">
+	                	<colgroup>
+							<col width="20"/>
+							<col width="200"/>
+						</colgroup>
+						<tbody>
+							<tr>	
+								<td>Nombre: </td>
+								<td><input type="text" placeholder="Entrenamiento x" id="entName"></td>
+							</tr>
+							<tr>
+								<td colspan="2"><button id="btnAddEnt">Añadir</button></td>
+							</tr>
+						</tbody>
+					</table>	
+					<br>	
+					<table id="table2">
+						<colgroup>
+							<col width="200"/>
+							<col width="200"/>
+							<col width="200"/>
+							<col width="200"/>
+						</colgroup>
+						<tbody>
+							<tr class="redips-mark dark"></tr>
+							<tr>	
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>	
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>	
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>	
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>	
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>	
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td colspan="4"><button id="save">Guardar cambios de este entrenamiento</button></td>
+							</tr>
+						</tbody>
+					</table>
+					
+				</div><!-- right container -->
+			</div><!-- drag container -->
+		</div><!-- main container -->
+
+<div id="menu">
+      <ul>
+            <li id="eliminar">Eliminar</li>
+      </ul>
+</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+    <script language="javascript" type="text/javascript"  src="js/jquery.min.js"></script>
+
+	<!--	<script type="text/javascript" src="js/redips-drag-min.js"></script>-->
+    <script type="text/javascript" src="js/plantillaEntrenamientos.js"></script>
+	</body>
+</html>
