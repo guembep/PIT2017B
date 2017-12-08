@@ -169,6 +169,18 @@ $(document).ready(function(){
 		$("#contenido").load('/comprarEjercicios.html');
 	}
 
+	function agrupa(){
+		if (window.localStorage) {
+			localStorage["paginasvisitadas"] = "entrenamientos, "+localStorage["paginasvisitadas"];
+		}
+		$("#title").show();
+		$("#title").html("Mis entrenamientos");
+		$("#contenido").html("");
+		//CAMBIAR direccion!!!!!!!!!!!!!!!!
+		$("#contenido").append("<iframe src='https://easy2train.es/pruebas/entrenamientos.html' width='"+window.innerWidth+"'' height='800' frameborder='0' transparency='transparency'></iframe>");
+		
+	}
+
 	function volver(){
 		if (window.localStorage) {
 		    console.log("Atrás");
@@ -192,7 +204,10 @@ $(document).ready(function(){
 		      convocatorias();
 		    }else if (back=="perfil"){
 		      perfil();
+		    }else if (back=="entrenamientos"){ console.log("a entrenamientos");
+		      agrupa();
 		    }
+
 		 if(window.localStorage){   
 		    localStorage["paginasvisitadas"]=localStorage["paginasvisitadas"].replace(localStorage["paginasvisitadas"].split(", ")[0]+", "+localStorage["paginasvisitadas"].split(", ")[1]+", ","" ); //actualizar variable local
 		 }
