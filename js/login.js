@@ -24,11 +24,7 @@ if (sesion==null){
     
     $("#contenido").load("./registrado.html", function(responseTxt, statusTxt, xhr){
 			if(statusTxt == "success"){
-        var script=document.createElement("script");
-        script.setAttribute("type","text/javascript");
-        script.setAttribute("src","js/registrado.js"); 
-        document.getElementsByTagName("body")[0].appendChild(script);
-
+     
         var script2=document.createElement("script");
         script2.setAttribute("type","text/javascript");
         script2.setAttribute("src","js/slider.js"); 
