@@ -1,5 +1,4 @@
-
-
+var itemselected;
 /*jslint white: true, browser: true, undef: true, nomen: true, eqeqeq: true, plusplus: false, bitwise: true, regexp: true, strict: true, newcap: true, immed: true, maxerr: 14 */
 /*global window: false, REDIPS: true */
 
@@ -37,6 +36,7 @@ redips.init = function () {
 			console.log('Content has been changed!');
 		    $("#right").find(".ejer").bind("contextmenu", function(e){
 	          $("#menu").css({'display':'block', 'left':e.pageX, 'top':e.pageY});
+	          itemselected=$(this).attr('id');
 	          return false;
 			});
 		}
@@ -91,7 +91,7 @@ $("#right").find(".ejer").mousedown(function(e){
           switch(e.target.id){
                 case "eliminar":
                       //Eliminar el elemento
-                      $("#"+$("#right").find(".ejer").attr("id")).remove();
+                      $("#"+ itemselected).remove();
                       break;
           }
            
