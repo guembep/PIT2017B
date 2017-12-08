@@ -8,6 +8,7 @@ $.ajax({
         url: 'php/scrapperv2.php',
         dataType: "json",
         success: function(data){
+            console.log(data);
             for (var i in data){
               if (i%2 == 0) {
                 contenidotabla += htmltabla.replace("#evenodd", "id=\"par\"")
