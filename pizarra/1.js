@@ -303,7 +303,7 @@ $('#modalCrearEjercicio').modal('hide');
 						 });  */  
 						}
                 var idejer = getCookie('idejercicio');
-                if(idejercicio == undefined){
+                if(idejercicio == ""){
 					$.ajax({
 		                url: "../php/Form_CrearEjercicio.php",
 		                type: "POST",
