@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="css/entrenamientos.css" type="text/css" media="screen"/>
 		
 	</head>
-	<body>
+	<body onload="REDIPS.drag.init()">
 		<div id="main_container">
 			<!-- tables inside this DIV could have draggable content -->
 
@@ -19,7 +19,7 @@
 							<col width="190"/>
 						</colgroup>
 						<tbody id="tbodyLEFT">
-							<!--<tr><td class="dark"><div id="ar" class="redips-drag redips-clone ar">Ejercicio1</div><input id="b_ar" class="ar" type="button" value="" onclick="redips.report('ar')" title="Show only Arts"/></td></tr>
+						<!--<tr><td class="dark"><div id="ar" class="redips-drag redips-clone ar">Ejercicio1</div><input id="b_ar" class="ar" type="button" value="" onclick="redips.report('ar')" title="Show only Arts"/></td></tr>
 							-->
 						</tbody>
 					</table>
@@ -31,6 +31,7 @@
 	                  <option value="-" selected>Selecciona un entrenamiento</option>
 	                  <option value="add">Añadir un entrenamiento</option>
 	                </select>
+	                <button id="save">Guardar cambios de este entrenamiento</button>
 	                <table id= "addEntr">
 	                	<colgroup>
 							<col width="20"/>
@@ -92,9 +93,6 @@
 								<td></td>
 								<td></td>
 							</tr>
-							<tr>
-								<td colspan="4"><button id="save">Guardar cambios de este entrenamiento</button></td>
-							</tr>
 						</tbody>
 					</table>
 					
@@ -115,6 +113,10 @@
     <script language="javascript" type="text/javascript"  src="js/jquery.min.js"></script>
 
 	<!--	<script type="text/javascript" src="js/redips-drag-min.js"></script>-->
-    <script type="text/javascript" src="js/plantillaEntrenamientos.js"></script>
+   <script type="text/javascript" src="js/plantillaEntrenamientos.js"></script>
+
+  <script type="text/javascript" src="js/redips-drag-min.js"></script>
+<!--   <script type="text/javascript" src="js/script.js"></script>
+-->
 	</body>
 </html>

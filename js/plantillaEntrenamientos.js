@@ -1,4 +1,5 @@
 $.ajax({
+    async: false,
     url: "../../../php/cogerejerciciosBD.php",
     success:( function (response) {
     	ejercicios=response;
@@ -27,11 +28,65 @@ $.ajax({
     	});
     	trLEFT.appendChild(tdLEFT);
     	document.getElementById("tbodyLEFT").appendChild(trLEFT);
+
     }),
     error:(function(xhr, status){
          console.log( "La solicitud ha fallado: " +  status);
 	})
 });
+
+
+
+
+
+
+/*
+
+        trLEFT=document.createElement("tr");
+        tdLEFT=document.createElement("td");
+        tdLEFT.setAttribute("class", "dark ejXX");
+            divLEFT=document.createElement("div");
+            divLEFT.setAttribute("id", "ejer");
+           // divLEFT.setAttribute("class", "redips-drag redips-clone ejer");
+            divLEFT.innerHTML="Mis ejercicios: ";
+            input=document.createElement("input");
+            input.setAttribute("id","b_ejer");
+            input.setAttribute("class","ejer");
+            input.setAttribute("type","button");
+            input.setAttribute("value","");
+            input.setAttribute("onclick","redips.report('ejer')");
+            input.setAttribute("title","mostrar ejercicio");
+            tdLEFT.appendChild(divLEFT);
+            tdLEFT.appendChild(input);
+        trLEFT.appendChild(tdLEFT);
+        document.getElementById("tbodyLEFT").appendChild(trLEFT);
+
+$(".ejXX").hide();
+
+
+trLEFT=document.createElement("tr");
+        tdLEFT=document.createElement("td");
+        tdLEFT.setAttribute("class", "dark");
+            divLEFT=document.createElement("div");
+            divLEFT.setAttribute("id", "ejer");
+            divLEFT.setAttribute("class", "redips-drag redips-clone ejer");
+            divLEFT.innerHTML="zzzzzzzzzzz";
+            input=document.createElement("input");
+            input.setAttribute("id","b_ejer");
+            input.setAttribute("class","ejer");
+            input.setAttribute("type","button");
+            input.setAttribute("value","");
+            input.setAttribute("onclick","redips.report('ejer')");
+            input.setAttribute("title","mostrar ejercicio");
+            tdLEFT.appendChild(divLEFT);
+            tdLEFT.appendChild(input);
+       
+        trLEFT.appendChild(tdLEFT);
+        document.getElementById("tbodyLEFT").appendChild(trLEFT);
+*/
+
+
+
 
 
   //Otro ajax con los entremaniemtos 
@@ -89,17 +144,20 @@ $(".tablaEntr").each(function(key, element){
 });
 
 $("#addEntr").hide();
+$("#save").hide();
 $('#SelEntrenamiento').on('change', function (e) {
     var optionSelected = $("option:selected", this);
     var valueSelected = this.value;
     if (valueSelected=="add"){
     	$("#addEntr").show();
 		$("#table2").hide();
+        $("#save").hide();
     }else{
     	$("#addEntr").hide();
+        
     	
     	if (valueSelected!="-"){
-
+            $("#save").show();
 			$("#table2").show();
 	   	//cargar elementos en tabla según elemento seleccionado
 	   	$("#table2").find("tr").get(0).innerHTML=valueSelected;
@@ -109,6 +167,7 @@ $('#SelEntrenamiento').on('change', function (e) {
 	  */ 	
 	   }else{
 	   	 $("#table2").hide();
+         $("#save").hide();
 	   }
     }
 
@@ -193,6 +252,7 @@ $("#btnAddEnt").click( function(){
 });
 
 
-$("body").append('<script type="text/javascript" src="js/redips-drag-min.js"></script>');
+//$("head").append('<script type="text/javascript" src="js/redips-drag-min.js"></script>');
 $("body").append('<script type="text/javascript" src="js/entrenamientos.js"></script>');
+
 	
