@@ -36,8 +36,15 @@ $.ajax({
 });
 
 
-
-
+//<tr><td class="redips-trash" title="Trash">Trash</td></tr>
+   /*     trLEFT=document.createElement("tr");
+        tdLEFT=document.createElement("td");
+        tdLEFT.setAttribute("class", "redips-trash");
+        tdLEFT.setAttribute("title", "Trash");
+        tdLEFT.innerHTML="Eliminar";
+        trLEFT.appendChild(tdLEFT);
+        document.getElementById("tbodyLEFT").appendChild(trLEFT)
+*/
 
 
 /*
