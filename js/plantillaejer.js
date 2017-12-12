@@ -1,5 +1,6 @@
 
-
+$('#modaleliminarejercicio').modal('hide');
+var click="false";
 $(document).ready(function(){
 	function editarejercicio(){
 
@@ -28,7 +29,44 @@ $(document).ready(function(){
 
 	}
 
+	function modaleliminar(){
+	  console.log('modal eliminar');
+	  $('#modaleliminarejercicio').modal('show');
+	}
+
+
+	function eliminarejercicio(){
+	   var idejercicio=getCookie("idejercicio");
+	   if(idejercicio!== undefined){
+	      $.ajax({
+	        type: "POST",
+	        url: "../php/eliminarejercicio.php",
+	        data: {
+	          "idejercicio":idejercicio
+	        },
+	        error:(function(xhr, status){
+	              console.log( "La solicitud ha fallado: " +  status);
+	          }),
+	        success:(function(response){
+	          console.log(response);
+	          click="true";
+	          $('#modaleliminarejercicio').modal('hide');
+	        })
+	      })
+	    }
+	}
+	$('#modaleliminarejercicio').on('hidden.bs.modal', function (e) {
+		if(click=="false"){
+
+		}
+		else if(click=="true"){
+			lista();
+		}
+	})
 	$("#botoneditarejer").click(function(){editarejercicio()});
+	$("#botoneliminarejer").click(function(){modaleliminar()});
+	$("#confeliminarejer").click(function(){eliminarejercicio()});
+
 
 
 });
@@ -49,3 +87,4 @@ function getCookie(cname) {
     }
     return "";
 }
+
