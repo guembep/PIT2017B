@@ -16,6 +16,7 @@ $.ajax({
     		divLEFT.setAttribute("id", "ejer"+i);
     		divLEFT.setAttribute("class", "redips-drag redips-clone ejer");
     		divLEFT.innerHTML=ejercicios[i].categoria +" - "+ ejercicios[i].subcategoria +" : "+ ejercicios[i].nombre;
+            divLEFT.setAttribute("tiempo", ejercicios[i].duracion);
     		input=document.createElement("input");
     		input.setAttribute("id","b_ejer"+i);
     		input.setAttribute("class","ejer"+i);
@@ -152,6 +153,7 @@ $(".tablaEntr").each(function(key, element){
 
 $("#addEntr").hide();
 $("#save").hide();
+$("#calctime").hide();
 $('#SelEntrenamiento').on('change', function (e) {
     var optionSelected = $("option:selected", this);
     var valueSelected = this.value;
@@ -159,12 +161,14 @@ $('#SelEntrenamiento').on('change', function (e) {
     	$("#addEntr").show();
 		$("#table2").hide();
         $("#save").hide();
+        $("#calctime").hide();
     }else{
     	$("#addEntr").hide();
         
     	
     	if (valueSelected!="-"){
             $("#save").show();
+            $("#calctime").show();
 			$("#table2").show();
 	   	//cargar elementos en tabla según elemento seleccionado
 	   	$("#table2").find("tr").get(0).innerHTML=valueSelected;
@@ -175,6 +179,7 @@ $('#SelEntrenamiento').on('change', function (e) {
 	   }else{
 	   	 $("#table2").hide();
          $("#save").hide();
+        $("#calctime").hide();
 	   }
     }
 

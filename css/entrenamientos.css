@@ -183,3 +183,23 @@ div#redips-drag td {
       -webkit-box-shadow: 0 0 5px#888;
       box-shadow: 0 0 5px #888;
 }
+
+
+
+/* Estilo de tabla entrenamiento */
+#table2 tr:first-child{ 
+	/*Título de tabla*/
+	text-align: center;
+}
+
+ #table2  {
+      counter-reset: contador 0;
+    }
+ #table2  td:before {
+    	content: "( " counter(contador) " )";
+	 	counter-increment: contador;
+    }
+
+ #table2 tr td{
+ 	color:grey;
+ }   
