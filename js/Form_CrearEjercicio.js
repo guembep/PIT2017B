@@ -101,10 +101,6 @@ $(document).ready(function() {
 		  },
           exercisename: {
             required : true
-          },
-          exercisedescription: {
-            required : true,
-            minlength : 10
           }
         },
         messages: {
@@ -119,10 +115,6 @@ $(document).ready(function() {
 		  },
           exercisename: {
               required: "Introduce un nombre"
-          },
-          exercisedescription: {
-            required: "Introduce una descripcion",
-            minlength: "La descripcion es demasiado corta"
           }
         },
         submitHandler: function (){ //Enviar datos a servidor

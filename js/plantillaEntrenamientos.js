@@ -98,7 +98,7 @@ trLEFT=document.createElement("tr");
 
 
   //Otro ajax con los entremaniemtos 
- /* $.ajax({
+  $.ajax({
     url: "../php/cogerentrenamientosBD.php",
     success:( function (response) {
     	console.log("Creando plantilla con entrenamientos del usuario");
@@ -111,9 +111,12 @@ trLEFT=document.createElement("tr");
     	opcion.setAttribute("value",entrenamientos[i].nombre);
     	opcion.innerHTML=entrenamientos[i].nombre;
     	$("#SelEntrenamiento").append(opcion);
+        var ejercicios=[];
+        ejercicios[entrenamientos['nombre']]=entrenamientos['ejercicios'];
+
     	//Crear tablas con contenido de db
     	//...
-    	var table=document.createElement("table");
+ /*   	var table=document.createElement("table");
     	table.setAttribute("class","tablaEntr");
     	var colgroup=document.createElement("colgroup");
     	var col=document.createElement("col");
@@ -136,16 +139,13 @@ trLEFT=document.createElement("tr");
 	    	tbody.appendChild(tr2);
 	    }	
 	    table.appendChild(tbody);
-    }	
-
-    }
+ */ })
     error:(function(xhr, status){
          console.log( "La solicitud ha fallado: " +  status);
-         $('#myModal').modal('show');
-
 	})
+})
 });  
-*/
+
 $("#table2").hide();
 $(".tablaEntr").each(function(key, element){
   $(".tablaEntr")[key].hide();
