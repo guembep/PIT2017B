@@ -143,6 +143,7 @@ $("#right").find(".ejer").mousedown(function(e){
     		}
     		ejercicios=ejercicios+"}";
     		fd.append("entrenamiento_ejers",ejercicios);
+    		
     		$.ajax({ 
 		                url: "../php/addEntrenamiento.php",
 		                type: "POST",
@@ -152,7 +153,7 @@ $("#right").find(".ejer").mousedown(function(e){
    						contentType: false,
                         success:( function(response) {
                             estado = response['estado'];
-                            if( estado == 'subido' ){
+                            if( estado == 'actualizado' ){
                                 console.log("guardado");
                             }
                         }),

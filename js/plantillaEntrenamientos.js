@@ -5,7 +5,7 @@ $.ajax({
     	ejercicios=response;
     	//En tabla izquierda añadir los ejercicios del usuario
 
-//<tr><td class="dark"><div id="ar" class="redips-drag redips-clone ar">Ejercicio1</div><input id="b_ar" class="ar" type="button" value="" onclick="redips.report('ar')" title="Show only Arts"/></td></tr>
+        //<tr><td class="dark"><div id="ar" class="redips-drag redips-clone ar">Ejercicio1</div><input id="b_ar" class="ar" type="button" value="" onclick="redips.report('ar')" title="Show only Arts"/></td></tr>
 							
 
     	trLEFT=document.createElement("tr");
@@ -36,115 +36,28 @@ $.ajax({
 	})
 });
 
+//ajax con los entremaniemtos 
+$.ajax({
 
-//<tr><td class="redips-trash" title="Trash">Trash</td></tr>
-   /*     trLEFT=document.createElement("tr");
-        tdLEFT=document.createElement("td");
-        tdLEFT.setAttribute("class", "redips-trash");
-        tdLEFT.setAttribute("title", "Trash");
-        tdLEFT.innerHTML="Eliminar";
-        trLEFT.appendChild(tdLEFT);
-        document.getElementById("tbodyLEFT").appendChild(trLEFT)
-*/
-
-
-/*
-
-        trLEFT=document.createElement("tr");
-        tdLEFT=document.createElement("td");
-        tdLEFT.setAttribute("class", "dark ejXX");
-            divLEFT=document.createElement("div");
-            divLEFT.setAttribute("id", "ejer");
-           // divLEFT.setAttribute("class", "redips-drag redips-clone ejer");
-            divLEFT.innerHTML="Mis ejercicios: ";
-            input=document.createElement("input");
-            input.setAttribute("id","b_ejer");
-            input.setAttribute("class","ejer");
-            input.setAttribute("type","button");
-            input.setAttribute("value","");
-            input.setAttribute("onclick","redips.report('ejer')");
-            input.setAttribute("title","mostrar ejercicio");
-            tdLEFT.appendChild(divLEFT);
-            tdLEFT.appendChild(input);
-        trLEFT.appendChild(tdLEFT);
-        document.getElementById("tbodyLEFT").appendChild(trLEFT);
-
-$(".ejXX").hide();
-
-
-trLEFT=document.createElement("tr");
-        tdLEFT=document.createElement("td");
-        tdLEFT.setAttribute("class", "dark");
-            divLEFT=document.createElement("div");
-            divLEFT.setAttribute("id", "ejer");
-            divLEFT.setAttribute("class", "redips-drag redips-clone ejer");
-            divLEFT.innerHTML="zzzzzzzzzzz";
-            input=document.createElement("input");
-            input.setAttribute("id","b_ejer");
-            input.setAttribute("class","ejer");
-            input.setAttribute("type","button");
-            input.setAttribute("value","");
-            input.setAttribute("onclick","redips.report('ejer')");
-            input.setAttribute("title","mostrar ejercicio");
-            tdLEFT.appendChild(divLEFT);
-            tdLEFT.appendChild(input);
-       
-        trLEFT.appendChild(tdLEFT);
-        document.getElementById("tbodyLEFT").appendChild(trLEFT);
-*/
-
-
-
-
-
-  //Otro ajax con los entremaniemtos 
-  $.ajax({
-    url: "../php/cogerentrenamientosBD.php",
+    async: false,
+    url: "../php/cogerEntrenamientosBD.php",
     success:( function (response) {
-    	console.log("Creando plantilla con entrenamientos del usuario");
-    	entrenamientos=response;
-    	//añadirlos a checkbox y crear tantas tablas como entrenamientos.
+        entrenamientos=response;
  
-//<option value="entrenamiento 1">Entrenamiento 1</option>
-	$.each(entrenamientos,function(i,element){
-    	var opcion=document.createElement("option");
-    	opcion.setAttribute("value",entrenamientos[i].nombre);
-    	opcion.innerHTML=entrenamientos[i].nombre;
-    	$("#SelEntrenamiento").append(opcion);
-        var ejercicios=[];
-        ejercicios[entrenamientos['nombre']]=entrenamientos['ejercicios'];
+        //<option value="entrenamiento 1">Entrenamiento 1</option>
+        $.each(entrenamientos,function(i,element){
+            var opcion=document.createElement("option");
+            opcion.setAttribute("value",entrenamientos[i].nombre);
+            opcion.innerHTML=entrenamientos[i].nombre;
+            $("#SelEntrenamiento").append(opcion);
+        })
 
-    	//Crear tablas con contenido de db
-    	//...
- /*   	var table=document.createElement("table");
-    	table.setAttribute("class","tablaEntr");
-    	var colgroup=document.createElement("colgroup");
-    	var col=document.createElement("col");
-    	col.setAttribute("width","200");
-    	for (var x=0; x<4; x++){
-    		colgroup.appendChild(col);
-    	}
-    	table.appendChild(colgroup);
-    	var tbody = document.createElement("tbody");
-    	var tr = document.createElement("tr");
-    	tr.setAttribute("class", "redips-mark dark");
-    	tr.innerHTML= entrenamientos[i].nombre ;
-    	tbody.appendChild(tr);
-    	for (var x=0; x<4; x++){
-	    	tr2= document.createElement("tr");
-	    	td=document.createElement("td");
-	    	for (var x=0; x<4; x++){
-	    		tr2.appendChild(td);
-	    	}
-	    	tbody.appendChild(tr2);
-	    }	
-	    table.appendChild(tbody);
- */ })
+    }),
     error:(function(xhr, status){
          console.log( "La solicitud ha fallado: " +  status);
-	})
-})
+    })
 });  
+
 
 $("#table2").hide();
 $(".tablaEntr").each(function(key, element){
@@ -155,6 +68,7 @@ $("#addEntr").hide();
 $("#save").hide();
 $("#calctime").hide();
 $('#SelEntrenamiento').on('change', function (e) {
+
     var optionSelected = $("option:selected", this);
     var valueSelected = this.value;
     if (valueSelected=="add"){
@@ -167,6 +81,9 @@ $('#SelEntrenamiento').on('change', function (e) {
         
     	
     	if (valueSelected!="-"){
+
+            $("#table2").find(".ejer").remove();
+
             $("#save").show();
             $("#calctime").show();
 			$("#table2").show();
@@ -176,11 +93,54 @@ $('#SelEntrenamiento').on('change', function (e) {
     	palabra = palabra.replace(/\s/g,"_");
 	   	$("#"+palabra).show();
 	  */ 	
+            //Coger de DB lo que ya se había guardado
+
+              //ajax con los entremaniemtos 
+                $.ajax({
+                    async: false,
+                    url: "../php/cogerEntrenamientosBD.php",
+                    success:( function (response) {
+                        entrenamientos=response;
+                        
+                        $.each(entrenamientos,function(i,element){
+                            var ejercicios=[];
+                            ejercicios[entrenamientos['nombre']]=entrenamientos['ejercicios'];
+                             if (entrenamientos[i].nombre==valueSelected){
+                               
+                                  ejerc= entrenamientos[i].ejercicios ;
+                                  ejerc=ejerc.replace("{","");
+                                  ejerc=ejerc.replace(", }","");
+                                  ejerc=ejerc.replace("}","");
+                                  ejers=[];
+                                  ejers=ejerc.split(", ");
+                                  for (j=0;j<ejers.length;j++){
+                                      ejercicio=ejers[j].replace(":","::");
+                                      ejercicio=ejercicio.split("::");
+
+                                    if (ejercicio.length>1 ){
+                                      ejercicio[0]=ejercicio[0].replace(/"/g,"");
+                                      ejercicio[0]=ejercicio[0].replace(/'/g,"");
+                                      ejercicio[1]=ejercicio[1].replace(/'/g,"");
+                                      $("#table2").find("."+ejercicio[0]).append(ejercicio[1]); 
+                                     }                                                                     
+                                  }
+                                      
+                            }
+                        })
+                    }),
+                    error:(function(xhr, status){
+                         console.log( "La solicitud ha fallado: " +  status);
+                    })
+                });  
+
+                redips.init();
+
 	   }else{
 	   	 $("#table2").hide();
          $("#save").hide();
         $("#calctime").hide();
 	   }
+
     }
 
 });
@@ -190,9 +150,10 @@ $("#btnAddEnt").click( function(){
 		//Añadir a db
 		//...
 		//Añadir al select 
+        var nuevo=$("#entName").val();
     	var opcion=document.createElement("option");
-    	opcion.setAttribute("value",$("#entName").val());
-    	opcion.innerHTML=$("#entName").val();
+    	opcion.setAttribute("value",nuevo);
+    	opcion.innerHTML=nuevo;
     	$("#SelEntrenamiento").append(opcion);
 
     	//Añadir tabla
@@ -227,7 +188,7 @@ $("#btnAddEnt").click( function(){
 						</tbody>
 					</table>
    */ 	
-    	var table=document.createElement("table");
+   /* 	var table=document.createElement("table");
     	table.setAttribute("class","tablaEntr");
     	palabra=$("#entName").val();
     	palabra = palabra.replace(/\s/g,"_");
@@ -258,8 +219,28 @@ $("#btnAddEnt").click( function(){
 	    table.appendChild(tbody);
 	    $("#right").append(table);
 	    $(".tablaEntr:last").hide();
-	    $("#entName").val("");
-	}
+	    
+        */
+	
+      
+
+        $.ajax({ 
+                        url: "../php/addEntrenamiento.php",
+                        type: "POST",
+                        async: false,
+                        data: {"entrenamiento_nuevo":nuevo},
+                        success:( function(response) {
+                            estado = response['estado'];
+                            if( estado == 'creado' ){
+                                console.log("creado");
+                            }
+                        }),
+                        error:( function() {
+                            console.log('error');
+                        })
+                     });
+        $("#entName").val("");
+    }
 
 });
 
