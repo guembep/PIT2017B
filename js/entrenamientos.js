@@ -33,48 +33,12 @@ redips.init = function () {
 		// if checkbox is checked and original element is of clone type then clone spread subjects to the week
 		// print message only if target and source table cell differ
 		if (rd.td.target !== rd.td.source) { 
-			console.log('Content has been changed!');
 		    $("#right").find(".ejer").bind("contextmenu", function(e){
 	          $("#menu").css({'display':'block', 'left':e.pageX, 'top':e.pageY});
 	          itemselected=$(this).attr('id');
 	          return false;
 			});
-			console.log("Actualizando duracion...")
-			var duracion="00:00:00";
-	    	for (var i=0; i<$("#table2").find(".ejer").length; i++){
-	    		tiempos=$("#table2").find(".ejer")[i].getAttribute("tiempo").split(":");
-	    		tiemposdur=duracion.split(":");
-	    		//Sumar las horas
-	    		tiemposdur[0]=parseInt(tiemposdur[0])
-	    		//Sumar los minutos
-	    		tiemposdur[1]=parseInt(tiempos[0])+parseInt(tiemposdur[1]);
-	    		//Sumar los segundos
-	    		tiemposdur[2]=parseInt(tiempos[1])+parseInt(tiemposdur[2]);
-	    		if (tiemposdur[2]>=60){
-	    			tiemposdur[1]=tiemposdur[1]+1;
-	    			tiemposdur[2]=tiemposdur[2]-60;
-	    		}
-	    		if (tiemposdur[1]>=60){
-	    			tiemposdur[0]=tiemposdur[0]+1;
-	    			tiemposdur[1]=tiemposdur[1]-60;
-	    		}
-	    		if(tiemposdur[0]>=10){
-	    			duracion=tiemposdur[0]
-	    		}else{
-	    			duracion="0"+tiemposdur[0]
-	    		}
-	    		if(tiemposdur[1]>=10){
-	    			duracion=duracion+":"+tiemposdur[1]
-	    		}else{
-	    			duracion=duracion+":0"+tiemposdur[1]
-	    		}
-	    		if(tiemposdur[2]>=10){
-	    			duracion=duracion+":"+tiemposdur[2]
-	    		}else{
-	    			duracion=duracion+":0"+tiemposdur[2]
-	    		}
-	    	}
-	    	$("#calctime").html("Duración: "+duracion+ " (hh:mm:ss)");
+			calcularDuracion();
 		}
 		
 	};
@@ -163,3 +127,41 @@ $("#right").find(".ejer").mousedown(function(e){
 	           		 });
 	           		 
 	});
+
+function calcularDuracion(){
+	var duracion="00:00:00";
+	    	for (var i=0; i<$("#table2").find(".ejer").length; i++){
+	    		tiempos=$("#table2").find(".ejer")[i].getAttribute("tiempo").split(":");
+	    		tiemposdur=duracion.split(":");
+	    		//Sumar las horas
+	    		tiemposdur[0]=parseInt(tiemposdur[0])
+	    		//Sumar los minutos
+	    		tiemposdur[1]=parseInt(tiempos[0])+parseInt(tiemposdur[1]);
+	    		//Sumar los segundos
+	    		tiemposdur[2]=parseInt(tiempos[1])+parseInt(tiemposdur[2]);
+	    		if (tiemposdur[2]>=60){
+	    			tiemposdur[1]=tiemposdur[1]+1;
+	    			tiemposdur[2]=tiemposdur[2]-60;
+	    		}
+	    		if (tiemposdur[1]>=60){
+	    			tiemposdur[0]=tiemposdur[0]+1;
+	    			tiemposdur[1]=tiemposdur[1]-60;
+	    		}
+	    		if(tiemposdur[0]>=10){
+	    			duracion=tiemposdur[0]
+	    		}else{
+	    			duracion="0"+tiemposdur[0]
+	    		}
+	    		if(tiemposdur[1]>=10){
+	    			duracion=duracion+":"+tiemposdur[1]
+	    		}else{
+	    			duracion=duracion+":0"+tiemposdur[1]
+	    		}
+	    		if(tiemposdur[2]>=10){
+	    			duracion=duracion+":"+tiemposdur[2]
+	    		}else{
+	    			duracion=duracion+":0"+tiemposdur[2]
+	    		}
+	    	}
+	    	$("#calctime").html("Duración: "+duracion+ " (hh:mm:ss)");
+}
