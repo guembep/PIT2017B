@@ -148,84 +148,86 @@ $('#SelEntrenamiento').on('change', function (e) {
 
 $("#btnAddEnt").click( function(){
 	if ($("#entName").val()!=""){
+
 		//Añadir a db
 		//...
 		//Añadir al select 
         var nuevo=$("#entName").val();
-    	var opcion=document.createElement("option");
-    	opcion.setAttribute("value",nuevo);
-    	opcion.innerHTML=nuevo;
-    	$("#SelEntrenamiento").append(opcion);
+        if( validate(nuevo)=="yes"){
+        	var opcion=document.createElement("option");
+        	opcion.setAttribute("value",nuevo);
+        	opcion.innerHTML=nuevo;
+        	$("#SelEntrenamiento").append(opcion);
 
-    	//Añadir tabla
-   /*
-   <table id="tableE1">
-						<colgroup>
-							<col width="200"/>
-							<col width="200"/>
-							<col width="200"/>
-							<col width="200"/>
-						</colgroup>
-						<tbody>
-							<tr class="redips-mark dark">Entrenamiento 1</tr>
-							<tr>	
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>	
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>	
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						</tbody>
-					</table>
-   */ 	
-   /* 	var table=document.createElement("table");
-    	table.setAttribute("class","tablaEntr");
-    	palabra=$("#entName").val();
-    	palabra = palabra.replace(/\s/g,"_");
-    	table.setAttribute("id",palabra);
-    	var colgroup=document.createElement("colgroup");
-    	var col=[]
-    	for (var x=0; x<4; x++){
-    		col[x]=document.createElement("col");
-    		col[x].setAttribute("width","200");
-    		colgroup.appendChild(col[x]);
-    	}
-    	table.appendChild(colgroup);
-    	var tbody = document.createElement("tbody");
-    	var tr = document.createElement("tr");
-    	tr.setAttribute("class", "redips-mark dark");
-    	tr.innerHTML= $("#entName").val() ;
-    	tbody.appendChild(tr);
-    	tr2=[];
-    	td=[];
-    	for (var x=0; x<8; x++){
-	    	tr2[x]= document.createElement("tr");
-	    	for (var w=0; w<4; w++){
-	    		td[w]=document.createElement("td");
-	    		tr2[x].appendChild(td[w]);
-	    	}
-	    	tbody.appendChild(tr2[x]);
-	    }	
-	    table.appendChild(tbody);
-	    $("#right").append(table);
-	    $(".tablaEntr:last").hide();
-	    
-        */
+                	//Añadir tabla
+               /*
+               <table id="tableE1">
+            						<colgroup>
+            							<col width="200"/>
+            							<col width="200"/>
+            							<col width="200"/>
+            							<col width="200"/>
+            						</colgroup>
+            						<tbody>
+            							<tr class="redips-mark dark">Entrenamiento 1</tr>
+            							<tr>	
+            								<td></td>
+            								<td></td>
+            								<td></td>
+            								<td></td>
+            							</tr>
+            							<tr>	
+            								<td></td>
+            								<td></td>
+            								<td></td>
+            								<td></td>
+            							</tr>
+            							<tr>	
+            								<td></td>
+            								<td></td>
+            								<td></td>
+            								<td></td>
+            							</tr>
+            						</tbody>
+            					</table>
+               */ 	
+               /* 	var table=document.createElement("table");
+                	table.setAttribute("class","tablaEntr");
+                	palabra=$("#entName").val();
+                	palabra = palabra.replace(/\s/g,"_");
+                	table.setAttribute("id",palabra);
+                	var colgroup=document.createElement("colgroup");
+                	var col=[]
+                	for (var x=0; x<4; x++){
+                		col[x]=document.createElement("col");
+                		col[x].setAttribute("width","200");
+                		colgroup.appendChild(col[x]);
+                	}
+                	table.appendChild(colgroup);
+                	var tbody = document.createElement("tbody");
+                	var tr = document.createElement("tr");
+                	tr.setAttribute("class", "redips-mark dark");
+                	tr.innerHTML= $("#entName").val() ;
+                	tbody.appendChild(tr);
+                	tr2=[];
+                	td=[];
+                	for (var x=0; x<8; x++){
+            	    	tr2[x]= document.createElement("tr");
+            	    	for (var w=0; w<4; w++){
+            	    		td[w]=document.createElement("td");
+            	    		tr2[x].appendChild(td[w]);
+            	    	}
+            	    	tbody.appendChild(tr2[x]);
+            	    }	
+            	    table.appendChild(tbody);
+            	    $("#right").append(table);
+            	    $(".tablaEntr:last").hide();
+            	    
+                    */
 	
       
 
-        $.ajax({ 
+            $.ajax({ 
                         url: "../php/addEntrenamiento.php",
                         type: "POST",
                         async: false,
@@ -239,10 +241,12 @@ $("#btnAddEnt").click( function(){
                         error:( function() {
                             toastr.error("Ha ocurrido un problema, vuelva a intentarlo en unos minutos");
                         })
-                     });
-        $("#entName").val("");
+             });
+            $("#entName").val("");
+        }else{
+            toastr.warning("Hay caracteres no admitidos en el nombre del entrenamiento")
+        }
     }
-
 });
 
 
@@ -286,4 +290,15 @@ function calcularDuracion(){
                 }
             }
             $("#calctime").html("Duración: "+duracion+ " (hh:mm:ss)");
+}
+
+function validate(cctt) {
+  var valid = "0123456789ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyzÁÉÍÓÚáéíóúü.,+¿?¡!@#$%&()= _-:"
+  var ok = "yes";
+  var temp;
+  for (var i=0; i<cctt.length; i++) {
+      temp = "" + cctt.substring(i, i+1);
+      if (valid.indexOf(temp) == "-1") ok = "no";
+  }
+  return ok;
 }
