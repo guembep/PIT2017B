@@ -118,11 +118,11 @@ $("#right").find(".ejer").mousedown(function(e){
                         success:( function(response) {
                             estado = response['estado'];
                             if( estado == 'actualizado' ){
-                                console.log("guardado");
+                                toastr.success('Entrenamiento actualizado');
                             }
                         }),
 		                error:( function() {
-		                    console.log('error')
+		                    toastr.error("Ha ocurrido un problema, vuelva a intentarlo en unos minutos");
 	                	})
 	           		 });
 	           		 
@@ -165,3 +165,9 @@ function calcularDuracion(){
 	    	}
 	    	$("#calctime").html("Duración: "+duracion+ " (hh:mm:ss)");
 }
+
+
+$(document).ready(function() {
+    toastr.options.timeOut = 2500; 
+    toastr.info('Crea un entrenamiento y arrastra los ejercicios hasta su tabla');
+  });

@@ -32,7 +32,7 @@ $.ajax({
 
     }),
     error:(function(xhr, status){
-         console.log( "La solicitud ha fallado: " +  status);
+         toastr.warning('Ha ocurrido un problema al cargar los ejercicios, inténtelo de nuevo');
 	})
 });
 
@@ -54,7 +54,7 @@ $.ajax({
 
     }),
     error:(function(xhr, status){
-         console.log( "La solicitud ha fallado: " +  status);
+        toastr.warning('Ha ocurrido un problema al cargar los entremaniemtos, inténtelo de nuevo');
     })
 });  
 
@@ -129,7 +129,7 @@ $('#SelEntrenamiento').on('change', function (e) {
                         })
                     }),
                     error:(function(xhr, status){
-                         console.log( "La solicitud ha fallado: " +  status);
+                                toastr.warning('Ha ocurrido un problema al cargar los entremaniemtos, inténtelo de nuevo');
                     })
                 });  
 
@@ -233,11 +233,11 @@ $("#btnAddEnt").click( function(){
                         success:( function(response) {
                             estado = response['estado'];
                             if( estado == 'creado' ){
-                                console.log("creado");
+                                toastr.success('Entrenamiento creado');
                             }
                         }),
                         error:( function() {
-                            console.log('error');
+                            toastr.error("Ha ocurrido un problema, vuelva a intentarlo en unos minutos");
                         })
                      });
         $("#entName").val("");
