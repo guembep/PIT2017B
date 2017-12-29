@@ -5,6 +5,7 @@ $(document).ready(function(){
 	$("#linkejercicios").click(function (){ ejercicios();});
 	$("#linkconvocatorias").click(function (){ convocatorias();});
 	$("#linkperfil").click(function (){perfil();});
+	$("#linkentrenamientos").click(function (){agrupa();});
 	$("#back").click(function(){volver()});
 
 
